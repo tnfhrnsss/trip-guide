@@ -122,6 +122,8 @@ function loadSelection(regions) {
   let saved = null;
   try { saved = JSON.parse(storageGet(sessionStorage, selectionKey()) || 'null'); } catch (_) {}
   const region = regions.find(r => r.id === saved?.region) || regions[0];
+  // 저장된 area가 null이면 '전체' 선택 상태
+  if (saved?.region === region.id && saved.area === null) return { region, area: null };
   const area = region.areas.find(a => a.id === saved?.area) || region.areas[0] || null;
   return { region, area };
 }
@@ -147,7 +149,8 @@ function initGeoTabs({ includeWeatherOnly = true, onChange }) {
   function renderAreas() {
     const areas = sel.region.areas;
     areasEl.classList.toggle('hidden', areas.length < 2);
-    areasEl.innerHTML = areas.map(a => `
+    areasEl.innerHTML = `<button class="area-chip${sel.area ? '' : ' active'}" data-area="all">${t('cat.all')}</button>`
+      + areas.map(a => `
       <button class="area-chip${a === sel.area ? ' active' : ''}" data-area="${a.id}">${tx(a.name)}</button>
     `).join('');
   }
@@ -169,8 +172,8 @@ function initGeoTabs({ includeWeatherOnly = true, onChange }) {
 
   areasEl.addEventListener('click', e => {
     const btn = e.target.closest('.area-chip');
-    if (!btn || btn.dataset.area === sel.area?.id) return;
-    sel.area = sel.region.areas.find(a => a.id === btn.dataset.area);
+    if (!btn || btn.dataset.area === (sel.area?.id || 'all')) return;
+    sel.area = sel.region.areas.find(a => a.id === btn.dataset.area) || null;
     changed();
   });
 

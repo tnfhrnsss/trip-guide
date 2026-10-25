@@ -1,4 +1,4 @@
-const CACHE = 'trip-guide-v5';
+const CACHE = 'trip-guide-v6';
 
 const APP_SHELL = [
   './',
@@ -50,8 +50,8 @@ self.addEventListener('activate', e => {
 self.addEventListener('fetch', e => {
   const url = new URL(e.request.url);
 
-  // Weather API: network-first, cache fallback
-  if (url.hostname === 'api.open-meteo.com') {
+  // Weather API + JSON data: network-first, cache fallback (새 데이터가 바로 보이도록)
+  if (url.hostname === 'api.open-meteo.com' || url.pathname.endsWith('.json')) {
     e.respondWith(
       fetch(e.request)
         .then(res => {

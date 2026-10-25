@@ -42,7 +42,7 @@ trip-guide/
 ├── map.html            ← Leaflet 지도
 ├── restroom.html       ← 화장실 찾기 (현재 위치 기반)
 ├── manifest.json       ← PWA
-├── sw.js               ← Service Worker (캐시 버전: trip-guide-v5)
+├── sw.js               ← Service Worker (캐시 버전: trip-guide-v6)
 ├── css/style.css       ← 단일 CSS, CSS 변수 기반
 ├── js/
 │   ├── i18n.js         ← 다국어: t(), tx(), applyI18n(), 언어 전환 (geo.js보다 먼저 로드)
@@ -69,7 +69,7 @@ trip-guide/
 
 ## 지역 구조 (국가 → 지역 → 구역)
 
-화면: 지역 탭(`#region-tabs`) + 구역 칩(`#area-chips`, 구역이 2개 이상일 때만 표시). 모두 `regions.json`에서 생성 — HTML에 탭을 직접 쓰지 않는다.
+화면: 지역 탭(`#region-tabs`) + 구역 칩(`#area-chips`, 구역이 2개 이상일 때만 표시, 맨 앞에 '전체' 칩 = area null). 모두 `regions.json`에서 생성 — HTML에 탭을 직접 쓰지 않는다.
 
 | 국가 | 지역 (`region`) | 구역 (`area`) |
 |------|----------------|---------------|
@@ -241,9 +241,9 @@ trip-guide/
 
 ## Service Worker (sw.js)
 
-- 캐시 이름: `trip-guide-v5`
-- 전략: App Shell은 cache-first, Open-Meteo API는 network-first + cache fallback
-- **새 파일 추가 시** (국가 데이터 포함) `APP_SHELL` 배열에 경로 추가 후 캐시 이름 버전 올리기 (`trip-guide-v5` 등)
+- 캐시 이름: `trip-guide-v6`
+- 전략: App Shell(HTML·JS·CSS)은 cache-first, Open-Meteo API와 `.json`(데이터·문구)은 network-first + cache fallback
+- **새 파일 추가 시** (국가 데이터 포함) `APP_SHELL` 배열에 경로 추가 후 캐시 이름 버전 올리기 (`trip-guide-v7` 등)
 
 ---
 
