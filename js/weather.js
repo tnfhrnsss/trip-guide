@@ -36,13 +36,29 @@ async function fetchCityWeather(point) {
   return res.json();
 }
 
+function dayInfo(data, i) {
+  return {
+    info: wmoInfo(data.daily.weathercode[i]),
+    max:  Math.round(data.daily.temperature_2m_max[i]),
+    min:  Math.round(data.daily.temperature_2m_min[i]),
+    rain: data.daily.precipitation_probability_max[i] ?? 0,
+  };
+}
+
+// 접힌 상태에서 보이는 한 줄 요약 + 펼치면 보이는 카드
 function buildCards(point, data) {
+  const today = dayInfo(data, 0);
+  const next  = dayInfo(data, 1);
+  const summary = `
+    <button class="w-summary" type="button" title="${t('weather.toggle')}">
+      <span class="w-sum-city">${point.name}</span>
+      <span class="w-sum-today">${today.info.icon} ${today.max}°/${today.min}° · 💧${today.rain}%</span>
+      <span class="w-sum-next">${t('weather.tomorrow')} ${next.info.icon} ${next.max}°</span>
+      <span class="w-chevron" aria-hidden="true">▾</span>
+    </button>`;
   const days = [t('weather.today'), t('weather.tomorrow')];
-  return [0, 1].map(i => {
-    const info = wmoInfo(data.daily.weathercode[i]);
-    const max  = Math.round(data.daily.temperature_2m_max[i]);
-    const min  = Math.round(data.daily.temperature_2m_min[i]);
-    const rain = data.daily.precipitation_probability_max[i] ?? 0;
+  const cards = [0, 1].map(i => {
+    const { info, max, min, rain } = dayInfo(data, i);
     return `
       <div class="w-card">
         <div class="w-city">${point.name}</div>
@@ -53,6 +69,24 @@ function buildCards(point, data) {
         <div class="w-rain">${t('weather.rain', { rain })}</div>
       </div>`;
   }).join('');
+  return `${summary}<div class="w-cards">${cards}</div>`;
+}
+
+// 펼침 상태는 기기에 기억 (기본: 접힘)
+function isWeatherOpen() {
+  try { return localStorage.getItem('trip_weather_open') === '1'; } catch (_) { return false; }
+}
+
+function bindWeatherToggle(el) {
+  const section = el.closest('.weather-section');
+  if (!section || section.dataset.toggleBound) return;
+  section.dataset.toggleBound = '1';
+  section.classList.toggle('open', isWeatherOpen());
+  el.addEventListener('click', e => {
+    if (!e.target.closest('.w-summary')) return;
+    const open = section.classList.toggle('open');
+    try { localStorage.setItem('trip_weather_open', open ? '1' : '0'); } catch (_) {}
+  });
 }
 
 // point: geo.js의 weatherPoint() 결과 { key, name, lat, lng, timezone }
@@ -60,6 +94,7 @@ async function initWeather(containerId, point) {
   const el = document.getElementById(containerId);
   if (!el) return;
   if (!point) { el.innerHTML = ''; return; }
+  bindWeatherToggle(el);
 
   const CACHE_KEY = `trip_weather_v1_${point.key}`;
   const TTL = 30 * 60 * 1000; // 30분

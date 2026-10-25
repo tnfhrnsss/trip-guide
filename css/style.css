@@ -175,20 +175,40 @@ body {
   opacity: 1;
 }
 
-/* ── Weather Strip ── */
+/* ── Weather Strip (기본 접힘: 한 줄 요약, .open이면 카드 표시) ── */
 .weather-section {
   background: var(--surface);
   border-bottom: 1px solid var(--border);
-  padding: 10px 0;
 }
-.weather-scroll {
+.w-summary {
   display: flex;
+  align-items: center;
   gap: 8px;
-  padding: 0 16px;
+  width: 100%;
+  padding: 8px 16px;
+  border: none;
+  background: none;
+  font: inherit;
+  font-size: 13px;
+  color: var(--text);
+  text-align: left;
+  cursor: pointer;
+}
+.w-sum-city  { font-size: 11px; font-weight: 700; color: var(--primary); white-space: nowrap; }
+.w-sum-today { font-weight: 700; white-space: nowrap; }
+.w-sum-next  { color: var(--muted); font-size: 12px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.w-chevron   { margin-left: auto; color: var(--muted); transition: transform .15s; }
+.weather-section.open .w-chevron { transform: rotate(180deg); }
+
+.w-cards {
+  display: none;
+  gap: 8px;
+  padding: 0 16px 10px;
   overflow-x: auto;
   scrollbar-width: none;
 }
-.weather-scroll::-webkit-scrollbar { display: none; }
+.w-cards::-webkit-scrollbar { display: none; }
+.weather-section.open .w-cards { display: flex; }
 
 .w-card {
   flex-shrink: 0;
@@ -252,6 +272,9 @@ body {
   color: #fff;
   border-color: var(--primary);
 }
+.cat-row:has(+ .price-row:not(.hidden)) { border-bottom: none; }
+.price-row { align-items: center; padding-top: 0; }
+.price-label { flex-shrink: 0; font-size: 12px; font-weight: 600; color: var(--muted); }
 
 /* ── Store List ── */
 .store-list {

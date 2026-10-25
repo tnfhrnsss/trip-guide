@@ -42,7 +42,7 @@ trip-guide/
 ├── map.html            ← Leaflet 지도
 ├── restroom.html       ← 화장실 찾기 (현재 위치 기반)
 ├── manifest.json       ← PWA
-├── sw.js               ← Service Worker (캐시 버전: trip-guide-v4)
+├── sw.js               ← Service Worker (캐시 버전: trip-guide-v5)
 ├── css/style.css       ← 단일 CSS, CSS 변수 기반
 ├── js/
 │   ├── i18n.js         ← 다국어: t(), tx(), applyI18n(), 언어 전환 (geo.js보다 먼저 로드)
@@ -98,6 +98,7 @@ trip-guide/
   "id": "us", "name": { "ko": "미국", "en": "USA", "ja": "アメリカ" }, "flag": "🇺🇸", "currency": "$",
   "maps": "google|naver",   // naver면 주소(현지어)로 네이버 지도 검색. 좌표 검색은 항상 구글
   "menu_lang": "en|ko",     // 메뉴판·간판 언어. 선택지 아래, 가게 이름 아래에 이 언어 표기를 작게 보여줌
+  "price_tiers": [{ "id": "4k", "label": L, "min": 4000, "max": 5000 }],  // 선택 (한국만) — 가게 coffee_price로 거르는 가격대 칩. min 이상 max 미만
   "store_categories": [{ "id": "bagel", "label": { "ko": "베이글", "en": "Bagel", "ja": "ベーグル" }, "emoji": "🥯", "color": "#F59E0B" }],
   "spot_categories":  [{ "id": "landmark", "label": { "ko": "...", "en": "...", "ja": "..." }, "emoji": "🗽" }]
 }] }
@@ -146,7 +147,8 @@ trip-guide/
   "lat": 0.0, "lng": 0.0,
   "tip_expected": true|false,             // 선택 (미국)
   "has_seating": true|false,              // 선택
-  "price_range": "$X~Y",                  // 선택 — 추천 메뉴 기준 1인 예상 (한국 데이터는 아직 없음)
+  "price_range": "$X~Y",                  // 선택 — 추천 메뉴 기준 1인 예상 (미국)
+  "coffee_price": 4500,                   // 선택 (한국) — 아메리카노(없으면 기본 커피) 가격. 카드에 ☕ ₩4,500으로 표시, 가격대 칩 필터 기준
   "description": L,
   "order_guide": [                        // 주문 가이드: 단계 + 선택지만 (대화 예문 없음)
     {
@@ -199,20 +201,22 @@ trip-guide/
 | **Queens** (5곳) | Xi'an Famous Foods, Joe's Shanghai, Nan Xiang Xiao Long Bao, Taverna Kyclades, New World Mall Food Court | other×5 |
 | **Washington D.C.** (9곳) | Old Ebbitt Grill, Founding Farmers, District Taco, Shake Shack DC, Mitsitam Native Foods Café, Jaleo by José Andrés, Eastern Market, Ted's Bulletin, Ben's Chili Bowl | other×5, taco, burger, deli×2 |
 
-### 한국 강남구 (data/kr/) — 가게 12곳, 스팟 6곳
+### 한국 강남구 (data/kr/) — 가게 22곳 (카페 14곳), 스팟 6곳
 
-출처: visitgangnam.net(강남구 관광 사이트) 목록 + 웹 검색으로 주소 확인, 좌표는 Nominatim(OpenStreetMap). 가격은 확인하지 못해 비워 둠.
+출처: visitgangnam.net(강남구 관광 사이트) 목록 + 웹 검색으로 주소 확인, 좌표는 Nominatim(OpenStreetMap). 2026-10 카페 10곳 추가 + 아메리카노 가격(`coffee_price`)은 polle.com 매장 페이지 메뉴·후기 기준 (바뀔 수 있음). 노티드·랄프스 커피는 가격 미확인.
 
-| 구역 | 가게 | 스팟 |
+| 구역 | 가게 (☕ 아메리카노) | 스팟 |
 |------|------|------|
-| 강남역·신논현 | 쉐이크쉑 강남 | — |
-| 역삼 | 블루보틀 역삼 | — |
-| 선릉 | — | 선릉과 정릉 |
-| 삼성·코엑스 | 테라로사 포스코센터점, 고운님 | 봉은사, 별마당 도서관, 코엑스 아쿠아리움 |
-| 강남구청·학동 | 구테로이테, 진미평양냉면 | — |
+| 강남역·신논현 | 쉐이크쉑 강남, 사운즈 커피 (4,500 — 주간 필터 커피), 리퍼크 (4,900) | — |
+| 역삼 | 블루보틀 역삼 (5,900) | — |
+| 선릉 | 알렉산더 커피 스튜디오 (4,500) | 선릉과 정릉 |
+| 삼성·코엑스 | 테라로사 포스코센터점 (5,500), 카페 드 리옹 코엑스 (5,800), 포스톤즈 삼성본점 (5,500), 고운님 | 봉은사, 별마당 도서관, 코엑스 아쿠아리움 |
+| 강남구청·학동 | 구테로이테 (4,800), 파퓰러 커피 로스터스 (4,000), 폴 바셋 강남구청역점 (룽고 5,300), 진미평양냉면 | — |
 | 청담 | 두루 | — |
-| 압구정로데오·도산공원 | 런던베이글뮤지엄 도산, 노티드 청담, 누데이크 하우스 도산, 변강쇠떡볶이 | 도산공원 |
-| 신사·가로수길 | 마일스톤커피 | 가로수길 |
+| 압구정로데오·도산공원 | 런던베이글뮤지엄 도산 (5,000 — 안국점 기준), 노티드 청담, 누데이크 하우스 도산 (5,500), 변강쇠떡볶이 | 도산공원 |
+| 신사·가로수길 | 마일스톤커피 (5,300), 테일러 커피 신사 (5,500), 블루보틀 압구정 (5,900), 랄프스 커피 가로수길 | 가로수길 |
+
+- 가격대 칩: 3~4천원 / 4~5천원 / 5~6천원 / 6천원 이상 (`nations.json` `price_tiers`). 현재 3~4천원·6천원 이상에 해당하는 가게는 없음
 
 ### 미국 관광 스팟 (data/us/spots.json) — 총 27곳
 
@@ -231,12 +235,13 @@ trip-guide/
 - API: `https://api.open-meteo.com/v1/forecast` (timezone은 지역 설정값)
 - 캐시: `localStorage` 키 `trip_weather_v1_{nation}_{지점 id}`, TTL 30분
 - 호출: `initWeather('weather-scroll', weatherPoint(region, area))` — 선택이 바뀔 때마다 호출
+- 화면: 기본은 접힌 한 줄 요약(`.w-summary`: 지점·오늘 최고/최저·강수·내일). 누르면 `.weather-section.open`으로 오늘·내일 카드(`.w-cards`) 펼침. 상태는 `localStorage` `trip_weather_open` (`'1'` = 펼침)
 
 ---
 
 ## Service Worker (sw.js)
 
-- 캐시 이름: `trip-guide-v4`
+- 캐시 이름: `trip-guide-v5`
 - 전략: App Shell은 cache-first, Open-Meteo API는 network-first + cache fallback
 - **새 파일 추가 시** (국가 데이터 포함) `APP_SHELL` 배열에 경로 추가 후 캐시 이름 버전 올리기 (`trip-guide-v5` 등)
 
@@ -280,7 +285,7 @@ Service Worker는 `http://localhost`에서만 동작 (https 불필요).
 - [x] 2단계: 다국어(ko/en/ja) — `i18n/*.json` + `data-i18n` 속성, 헤더 언어 전환
 - [x] 3단계: 데이터 다국어화 — 텍스트 필드를 `{ko,en,ja}`로, `ordering_flow`(영어 Q&A) → `order_guide`(단계·선택지만), `sauce_guide` → `menu_guide`
 - [x] 4단계: 한국(`data/kr/`) — 강남구 역 구역, 카페 중심 데이터, 네이버 지도 링크
-- [ ] 한국 데이터 보강: 강남역·역삼·선릉 등 가게가 적은 구역, 가격 정보
+- [ ] 한국 데이터 보강: 역삼·청담 카페, 3~4천원·6천원 이상 가격대 카페, 카페 외 가게 가격 정보
 - [ ] 한국 화장실: 공공데이터포털 '전국공중화장실표준데이터'로 강남구 JSON 만들기 (현재는 OpenStreetMap)
 - [ ] 서초구 추가 (내년)
 - [ ] 지도(map.html)에 스팟 핀도 표시

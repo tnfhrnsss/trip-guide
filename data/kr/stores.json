@@ -9,6 +9,7 @@
       "address": { "ko": "서울 강남구 언주로168길 33", "en": "33 Eonju-ro 168-gil, Gangnam-gu, Seoul", "ja": "ソウル江南区彦州路168ギル33" },
       "lat": 37.52621,
       "lng": 127.03527,
+      "coffee_price": 5000,
       "has_seating": true,
       "description": {
         "ko": "서울에서 가장 줄이 긴 베이글 카페 중 하나. 런던 감성 인테리어와 쫄깃한 베이글로 유명.",
@@ -183,6 +184,7 @@
       },
       "lat": 37.52581,
       "lng": 127.0359,
+      "coffee_price": 5500,
       "description": {
         "ko": "젠틀몬스터의 디저트 브랜드. 예술 작품 같은 디저트와 전시 공간 같은 매장. 하우스 도산 지하 1층.",
         "en": "Gentle Monster's dessert brand — art-like desserts in a gallery-like space, on B1 of Haus Dosan.",
@@ -258,6 +260,7 @@
       "address": { "ko": "서울 강남구 논현로159길 49", "en": "49 Nonhyeon-ro 159-gil, Gangnam-gu, Seoul", "ja": "ソウル江南区論峴路159ギル49" },
       "lat": 37.52301,
       "lng": 127.02694,
+      "coffee_price": 5300,
       "description": {
         "ko": "2014년부터 가로수길을 지켜온 카페. 아인슈페너와 애플 크럼블이 대표 메뉴.",
         "en": "A Garosu-gil café holding its ground since 2014. Famous for its einspänner and apple crumble.",
@@ -335,6 +338,7 @@
       "address": { "ko": "서울 강남구 선릉로131길 16 1층", "en": "1F, 16 Seolleung-ro 131-gil, Gangnam-gu, Seoul", "ja": "ソウル江南区宣陵路131ギル16 1階" },
       "lat": 37.5177,
       "lng": 127.03966,
+      "coffee_price": 4800,
       "description": {
         "ko": "커피 전문 카페. 버터스카치 베이스의 시그니처 에스프레소 음료와 커피 코스로 유명.",
         "en": "A coffee specialist known for its butterscotch-based signature espresso drink and coffee tasting courses.",
@@ -405,6 +409,7 @@
       },
       "lat": 37.50569,
       "lng": 127.0559,
+      "coffee_price": 5500,
       "has_seating": true,
       "description": {
         "ko": "강릉에서 시작한 로스터리 카페. 1만 권이 넘는 책으로 둘러싸인 높은 층고의 공간이 압권.",
@@ -490,6 +495,7 @@
       },
       "lat": 37.49983,
       "lng": 127.03239,
+      "coffee_price": 5900,
       "description": {
         "ko": "미국 오클랜드에서 시작한 스페셜티 커피 브랜드. 역삼역 근처 강남N타워 1층.",
         "en": "The specialty coffee brand born in Oakland, on the ground floor of Gangnam N Tower near Yeoksam Station.",
@@ -908,6 +914,760 @@
           "ko": "7호선 청담역에서 갈 수 있어요. 문의 02-3443-8834.",
           "en": "Reach it from Cheongdam Station (Line 7). Phone: 02-3443-8834.",
           "ja": "7号線清潭駅から。問い合わせ 02-3443-8834。"
+        },
+        {
+          "ko": "한국은 팁 문화가 없어요. 표시된 가격만 내면 돼요.",
+          "en": "There's no tipping in Korea — just pay the listed price.",
+          "ja": "韓国にチップ文化はありません。表示価格だけでOK。"
+        }
+      ]
+    },
+    {
+      "id": "sounds-coffee",
+      "name": { "ko": "사운즈 커피", "en": "Sounds Coffee", "ja": "サウンズコーヒー" },
+      "category": "cafe",
+      "region": "gangnam",
+      "area": "gangnam-sinnonhyeon",
+      "address": {
+        "ko": "서울 강남구 강남대로 358 강남358타워 1층",
+        "en": "1F Gangnam 358 Tower, 358 Gangnam-daero, Gangnam-gu, Seoul",
+        "ja": "ソウル江南区江南大路358 江南358タワー1階"
+      },
+      "lat": 37.49505,
+      "lng": 127.02977,
+      "has_seating": true,
+      "coffee_price": 4500,
+      "description": {
+        "ko": "강남역 근처의 넓은 핸드드립 카페. 필터 커피를 비교적 싼 값에 마실 수 있고 원두도 많이 팔아요.",
+        "en": "A spacious hand-drip café near Gangnam Station — filter coffee at fair prices and a big selection of beans.",
+        "ja": "江南駅近くの広いハンドドリップカフェ。フィルターコーヒーを手頃な価格で飲めて、豆の販売も豊富。"
+      },
+      "order_guide": [
+        {
+          "step": 1,
+          "title": { "ko": "음료 고르기", "en": "Choose a drink", "ja": "ドリンクを選ぶ" },
+          "note": {
+            "ko": "포장하면 필터 커피가 400~600원 싸져요.",
+            "en": "Filter coffee is ₩400–600 cheaper to go.",
+            "ja": "持ち帰りだとフィルターコーヒーが400〜600ウォン安くなります。"
+          },
+          "options": [
+            { "name": { "ko": "주간 커피 (₩4,500)", "en": "Weekly coffee (₩4,500)", "ja": "今週のコーヒー（₩4,500）" }, "recommended": true },
+            { "name": { "ko": "필터 A·B (₩4,700)", "en": "Filter A or B (₩4,700)", "ja": "フィルターA・B（₩4,700）" } },
+            { "name": { "ko": "필터 D (₩5,500)", "en": "Filter D (₩5,500)", "ja": "フィルターD（₩5,500）" } },
+            { "name": { "ko": "카페라떼 (₩4,500)", "en": "Café latte (₩4,500)", "ja": "カフェラテ（₩4,500）" } },
+            { "name": { "ko": "사운즈 라떼 (₩4,900)", "en": "Sounds latte (₩4,900)", "ja": "サウンズラテ（₩4,900）" } }
+          ]
+        },
+        {
+          "step": 2,
+          "title": { "ko": "매장 / 포장", "en": "For here or to go", "ja": "店内／持ち帰り" },
+          "options": [
+            { "name": { "ko": "매장", "en": "For here", "ja": "店内" }, "recommended": true },
+            { "name": { "ko": "포장", "en": "To go", "ja": "持ち帰り" } }
+          ]
+        }
+      ],
+      "menu_guide": [
+        {
+          "name": { "ko": "주간 커피", "en": "Weekly coffee", "ja": "今週のコーヒー" },
+          "description": {
+            "ko": "매주 원두가 바뀌는 필터 커피. 아메리카노 대신 마시기 좋아요.",
+            "en": "A filter coffee with beans that change every week — a good pick instead of an Americano.",
+            "ja": "毎週豆が替わるフィルターコーヒー。アメリカーノの代わりにおすすめ。"
+          },
+          "recommended": true
+        },
+        {
+          "name": { "ko": "우유 아이스크림", "en": "Milk ice cream", "ja": "ミルクアイスクリーム" },
+          "description": { "ko": "후기에서 자주 칭찬받는 디저트.", "en": "A dessert reviewers often praise.", "ja": "レビューでよく褒められるデザート。" }
+        }
+      ],
+      "tips": [
+        {
+          "ko": "강남역에서 저녁에 커피 한잔하기 좋다는 후기가 많아요.",
+          "en": "Reviewers like it for an evening coffee near Gangnam Station.",
+          "ja": "江南駅で夜にコーヒーを飲むのに良いというレビューが多い。"
+        },
+        {
+          "ko": "가격은 메뉴판·후기 기준이라 바뀔 수 있어요.",
+          "en": "Prices come from posted menus and reviews and may change.",
+          "ja": "価格はメニュー表・レビュー時点のもので、変わることがあります。"
+        },
+        {
+          "ko": "한국은 팁 문화가 없어요. 표시된 가격만 내면 돼요.",
+          "en": "There's no tipping in Korea — just pay the listed price.",
+          "ja": "韓国にチップ文化はありません。表示価格だけでOK。"
+        }
+      ]
+    },
+    {
+      "id": "reperk",
+      "name": { "ko": "리퍼크", "en": "reperk", "ja": "リパーク" },
+      "category": "cafe",
+      "region": "gangnam",
+      "area": "gangnam-sinnonhyeon",
+      "address": { "ko": "서울 강남구 강남대로 382 1층", "en": "1F, 382 Gangnam-daero, Gangnam-gu, Seoul", "ja": "ソウル江南区江南大路382 1階" },
+      "lat": 37.4971,
+      "lng": 127.02851,
+      "has_seating": true,
+      "coffee_price": 4900,
+      "description": {
+        "ko": "강남역 큰길가 사무 빌딩 1층 카페. 아이스크림 라떼와 바스크 치즈케이크가 인기예요.",
+        "en": "A café on the ground floor of an office tower on Gangnam-daero, popular for its ice cream latte and Basque cheesecake.",
+        "ja": "江南大路沿いのオフィスビル1階のカフェ。アイスクリームラテとバスクチーズケーキが人気。"
+      },
+      "order_guide": [
+        {
+          "step": 1,
+          "title": { "ko": "음료 고르기", "en": "Choose a drink", "ja": "ドリンクを選ぶ" },
+          "options": [
+            { "name": { "ko": "아메리카노 (₩4,900)", "en": "Americano (₩4,900)", "ja": "アメリカーノ（₩4,900）" } },
+            { "name": { "ko": "카페라떼 (₩5,400)", "en": "Café latte (₩5,400)", "ja": "カフェラテ（₩5,400）" } },
+            { "name": { "ko": "아이스크림 라떼", "en": "Ice cream latte", "ja": "アイスクリームラテ" }, "recommended": true },
+            { "name": { "ko": "M3 카페라떼 (₩6,900)", "en": "M3 café latte (₩6,900)", "ja": "M3カフェラテ（₩6,900）" } }
+          ]
+        },
+        {
+          "step": 2,
+          "title": { "ko": "디저트", "en": "Dessert", "ja": "デザート" },
+          "options": [
+            { "name": { "ko": "바스크 치즈케이크", "en": "Basque cheesecake", "ja": "バスクチーズケーキ" }, "recommended": true }
+          ]
+        },
+        {
+          "step": 3,
+          "title": { "ko": "매장 / 포장", "en": "For here or to go", "ja": "店内／持ち帰り" },
+          "options": [
+            { "name": { "ko": "매장", "en": "For here", "ja": "店内" }, "recommended": true },
+            { "name": { "ko": "포장", "en": "To go", "ja": "持ち帰り" } }
+          ]
+        }
+      ],
+      "menu_guide": [
+        {
+          "name": { "ko": "아이스크림 라떼", "en": "Ice cream latte", "ja": "アイスクリームラテ" },
+          "description": {
+            "ko": "아이스크림을 올린 라떼. 이 집에서 가장 맛있다는 후기가 많아요.",
+            "en": "A latte topped with ice cream — many reviewers call it the best thing here.",
+            "ja": "アイスクリームをのせたラテ。この店で一番おいしいというレビューが多い。"
+          },
+          "recommended": true
+        },
+        {
+          "name": { "ko": "바스크 치즈케이크", "en": "Basque cheesecake", "ja": "バスクチーズケーキ" },
+          "description": { "ko": "부드럽고 치즈 맛이 진한 케이크.", "en": "Soft, with a rich cheese flavor.", "ja": "やわらかくチーズの風味が濃いケーキ。" }
+        }
+      ],
+      "tips": [
+        {
+          "ko": "평일 21:00까지 연다는 후기가 있어요 (방문 전 확인).",
+          "en": "A review says it's open until 9pm on weekdays (check before going).",
+          "ja": "平日21:00まで営業というレビューあり（訪問前に確認）。"
+        },
+        {
+          "ko": "강남역에서 약속 전에 기다리기 좋아요.",
+          "en": "Handy for waiting before meeting someone at Gangnam Station.",
+          "ja": "江南駅での待ち合わせ前の時間つぶしに便利。"
+        },
+        {
+          "ko": "가격은 메뉴판·후기 기준이라 바뀔 수 있어요.",
+          "en": "Prices come from posted menus and reviews and may change.",
+          "ja": "価格はメニュー表・レビュー時点のもので、変わることがあります。"
+        },
+        {
+          "ko": "한국은 팁 문화가 없어요. 표시된 가격만 내면 돼요.",
+          "en": "There's no tipping in Korea — just pay the listed price.",
+          "ja": "韓国にチップ文化はありません。表示価格だけでOK。"
+        }
+      ]
+    },
+    {
+      "id": "alexander-coffee-studio",
+      "name": { "ko": "알렉산더 커피 스튜디오", "en": "Alexander Coffee Studio", "ja": "アレクサンダーコーヒースタジオ" },
+      "category": "cafe",
+      "region": "gangnam",
+      "area": "seolleung",
+      "address": { "ko": "서울 강남구 테헤란로51길 23", "en": "23 Teheran-ro 51-gil, Gangnam-gu, Seoul", "ja": "ソウル江南区テヘラン路51ギル23" },
+      "lat": 37.50519,
+      "lng": 127.04575,
+      "coffee_price": 4500,
+      "description": {
+        "ko": "선릉 직장가 골목의 스페셜티 커피 카페. 여러 로스터리 원두를 골라 마실 수 있고 구움과자도 맛있어요.",
+        "en": "A specialty coffee café on a side street in Seolleung's office district, with beans from several roasters and good baked goods.",
+        "ja": "宣陵のオフィス街の路地にあるスペシャルティコーヒーカフェ。複数のロースターの豆を選べて、焼き菓子もおいしい。"
+      },
+      "order_guide": [
+        {
+          "step": 1,
+          "title": { "ko": "음료 고르기", "en": "Choose a drink", "ja": "ドリンクを選ぶ" },
+          "options": [
+            {
+              "name": { "ko": "아메리카노 · 롱블랙 (₩4,500)", "en": "Americano or long black (₩4,500)", "ja": "アメリカーノ・ロングブラック（₩4,500）" },
+              "recommended": true
+            },
+            { "name": { "ko": "오늘의 커피 (₩4,500)", "en": "Coffee of the day (₩4,500)", "ja": "本日のコーヒー（₩4,500）" } },
+            { "name": { "ko": "코르타도 · 플랫화이트 (₩4,800)", "en": "Cortado or flat white (₩4,800)", "ja": "コルタード・フラットホワイト（₩4,800）" } }
+          ]
+        },
+        {
+          "step": 2,
+          "title": { "ko": "디저트", "en": "Dessert", "ja": "デザート" },
+          "options": [
+            { "name": { "ko": "레몬 파운드케이크", "en": "Lemon pound cake", "ja": "レモンパウンドケーキ" }, "recommended": true },
+            { "name": { "ko": "바나나 브레드 (₩4,500)", "en": "Banana bread (₩4,500)", "ja": "バナナブレッド（₩4,500）" } },
+            { "name": { "ko": "휘낭시에 (₩3,300)", "en": "Financier (₩3,300)", "ja": "フィナンシェ（₩3,300）" } }
+          ]
+        },
+        {
+          "step": 3,
+          "title": { "ko": "매장 / 포장", "en": "For here or to go", "ja": "店内／持ち帰り" },
+          "options": [
+            { "name": { "ko": "매장", "en": "For here", "ja": "店内" }, "recommended": true },
+            { "name": { "ko": "포장", "en": "To go", "ja": "持ち帰り" } }
+          ]
+        }
+      ],
+      "menu_guide": [
+        {
+          "name": { "ko": "롱블랙", "en": "Long black", "ja": "ロングブラック" },
+          "description": {
+            "ko": "뜨거운 물에 에스프레소를 부어 진하게 마시는 커피.",
+            "en": "Espresso poured over hot water — stronger than a regular Americano.",
+            "ja": "お湯にエスプレッソを注いだ濃いめのコーヒー。"
+          },
+          "recommended": true
+        },
+        {
+          "name": { "ko": "레몬 파운드케이크", "en": "Lemon pound cake", "ja": "レモンパウンドケーキ" },
+          "description": { "ko": "후기에서 특히 칭찬이 많은 케이크.", "en": "The cake reviewers rave about most.", "ja": "レビューで特に評判のケーキ。" },
+          "recommended": true
+        }
+      ],
+      "tips": [
+        { "ko": "선릉역에서 걸어갈 수 있어요.", "en": "Walkable from Seolleung Station.", "ja": "宣陵駅から徒歩圏内。" },
+        {
+          "ko": "가격은 메뉴판·후기 기준이라 바뀔 수 있어요.",
+          "en": "Prices come from posted menus and reviews and may change.",
+          "ja": "価格はメニュー表・レビュー時点のもので、変わることがあります。"
+        },
+        {
+          "ko": "한국은 팁 문화가 없어요. 표시된 가격만 내면 돼요.",
+          "en": "There's no tipping in Korea — just pay the listed price.",
+          "ja": "韓国にチップ文化はありません。表示価格だけでOK。"
+        }
+      ]
+    },
+    {
+      "id": "popular-coffee-roasters",
+      "name": { "ko": "파퓰러 커피 로스터스", "en": "Popular Coffee Roasters", "ja": "ポピュラーコーヒーロースターズ" },
+      "category": "cafe",
+      "region": "gangnam",
+      "area": "gangnam-gu-office",
+      "address": { "ko": "서울 강남구 학동로21길 6 1층", "en": "1F, 6 Hakdong-ro 21-gil, Gangnam-gu, Seoul", "ja": "ソウル江南区鶴洞路21ギル6 1階" },
+      "lat": 37.51623,
+      "lng": 127.02626,
+      "has_seating": true,
+      "coffee_price": 4000,
+      "description": {
+        "ko": "학동역 근처 로스터리 카페. 아메리카노 원두를 고를 수 있고 값이 합리적이에요. 좌석이 넉넉해요.",
+        "en": "A roastery café near Hakdong Station — pick your beans for the Americano at a fair price, with plenty of seats.",
+        "ja": "鶴洞駅近くのロースタリーカフェ。アメリカーノの豆を選べて価格も手頃。席数が多い。"
+      },
+      "order_guide": [
+        {
+          "step": 1,
+          "title": { "ko": "음료 고르기", "en": "Choose a drink", "ja": "ドリンクを選ぶ" },
+          "note": {
+            "ko": "산미가 있는 원두 두 가지 중에서 고를 수 있어요. 디카페인도 돼요.",
+            "en": "You can choose between two beans, both on the brighter side. Decaf is available.",
+            "ja": "酸味のある豆2種類から選べます。デカフェも可。"
+          },
+          "options": [
+            { "name": { "ko": "아메리카노 (₩4,000)", "en": "Americano (₩4,000)", "ja": "アメリカーノ（₩4,000）" }, "recommended": true },
+            {
+              "name": { "ko": "에스프레소 그라니따 (₩5,000)", "en": "Espresso granita (₩5,000)", "ja": "エスプレッソグラニータ（₩5,000）" },
+              "recommended": true
+            },
+            { "name": { "ko": "크림라떼 (₩5,000)", "en": "Cream latte (₩5,000)", "ja": "クリームラテ（₩5,000）" } },
+            { "name": { "ko": "카푸치노 (₩5,500)", "en": "Cappuccino (₩5,500)", "ja": "カプチーノ（₩5,500）" } }
+          ]
+        },
+        {
+          "step": 2,
+          "title": { "ko": "디저트", "en": "Dessert", "ja": "デザート" },
+          "options": [
+            { "name": { "ko": "까눌레 (약 ₩3,000)", "en": "Canelé (about ₩3,000)", "ja": "カヌレ（約₩3,000）" }, "recommended": true }
+          ]
+        },
+        {
+          "step": 3,
+          "title": { "ko": "매장 / 포장", "en": "For here or to go", "ja": "店内／持ち帰り" },
+          "options": [
+            { "name": { "ko": "매장", "en": "For here", "ja": "店内" }, "recommended": true },
+            { "name": { "ko": "포장", "en": "To go", "ja": "持ち帰り" } }
+          ]
+        }
+      ],
+      "menu_guide": [
+        {
+          "name": { "ko": "에스프레소 그라니따", "en": "Espresso granita", "ja": "エスプレッソグラニータ" },
+          "description": {
+            "ko": "에스프레소를 얼려 갈아 만든 시원한 디저트 음료.",
+            "en": "Frozen, shaved espresso — a cold, dessert-like drink.",
+            "ja": "エスプレッソを凍らせて削った冷たいデザートドリンク。"
+          },
+          "recommended": true
+        },
+        {
+          "name": { "ko": "까눌레", "en": "Canelé", "ja": "カヌレ" },
+          "description": {
+            "ko": "겉은 바삭하고 속은 촉촉한 프랑스 구움과자.",
+            "en": "A French pastry, crisp outside and custardy inside.",
+            "ja": "外はカリッと中はしっとりのフランス焼き菓子。"
+          },
+          "recommended": true
+        }
+      ],
+      "tips": [
+        {
+          "ko": "큰 테이블이 있어 노트북 작업하기 좋다는 후기가 있어요.",
+          "en": "Reviewers say the big tables are good for working on a laptop.",
+          "ja": "大きなテーブルがありノートPC作業に向いているというレビューあり。"
+        },
+        { "ko": "7호선 학동역에서 가까워요.", "en": "Close to Hakdong Station (Line 7).", "ja": "7号線鶴洞駅から近い。" },
+        {
+          "ko": "가격은 메뉴판·후기 기준이라 바뀔 수 있어요.",
+          "en": "Prices come from posted menus and reviews and may change.",
+          "ja": "価格はメニュー表・レビュー時点のもので、変わることがあります。"
+        },
+        {
+          "ko": "한국은 팁 문화가 없어요. 표시된 가격만 내면 돼요.",
+          "en": "There's no tipping in Korea — just pay the listed price.",
+          "ja": "韓国にチップ文化はありません。表示価格だけでOK。"
+        }
+      ]
+    },
+    {
+      "id": "paul-bassett-gangnam-gu-office",
+      "name": { "ko": "폴 바셋 강남구청역점", "en": "Paul Bassett Gangnam-gu Office", "ja": "ポールバセット 江南区庁駅店" },
+      "category": "cafe",
+      "region": "gangnam",
+      "area": "gangnam-gu-office",
+      "address": {
+        "ko": "서울 강남구 학동로 401 금하빌딩 1층",
+        "en": "1F Geumha Bldg, 401 Hakdong-ro, Gangnam-gu, Seoul",
+        "ja": "ソウル江南区鶴洞路401 クムハビル1階"
+      },
+      "lat": 37.5177,
+      "lng": 127.04179,
+      "has_seating": true,
+      "coffee_price": 5300,
+      "description": {
+        "ko": "한국의 커피 체인. 넓고 쾌적하며, 우유 아이스크림을 올린 아이스크림 라떼가 유명해요.",
+        "en": "A Korean coffee chain — roomy and comfortable, famous for its ice cream latte.",
+        "ja": "韓国のコーヒーチェーン。広くて快適で、アイスクリームラテが有名。"
+      },
+      "order_guide": [
+        {
+          "step": 1,
+          "title": { "ko": "음료 고르기", "en": "Choose a drink", "ja": "ドリンクを選ぶ" },
+          "note": {
+            "ko": "이 체인은 아메리카노를 '룽고'라고 불러요.",
+            "en": "This chain calls its Americano a \"lungo\".",
+            "ja": "このチェーンではアメリカーノを「ルンゴ」と呼びます。"
+          },
+          "options": [
+            { "name": { "ko": "룽고 (₩5,300)", "en": "Lungo (₩5,300)", "ja": "ルンゴ（₩5,300）" } },
+            { "name": { "ko": "카페라떼 (₩5,900)", "en": "Café latte (₩5,900)", "ja": "カフェラテ（₩5,900）" } },
+            {
+              "name": { "ko": "아이스크림 카페라떼 (₩7,500)", "en": "Ice cream latte (₩7,500)", "ja": "アイスクリームカフェラテ（₩7,500）" },
+              "recommended": true
+            }
+          ]
+        },
+        {
+          "step": 2,
+          "title": { "ko": "따뜻하게 / 아이스", "en": "Hot or iced", "ja": "ホット／アイス" },
+          "options": [
+            { "name": { "ko": "아이스", "en": "Iced", "ja": "アイス" }, "recommended": true },
+            { "name": { "ko": "따뜻하게", "en": "Hot", "ja": "ホット" } }
+          ]
+        },
+        {
+          "step": 3,
+          "title": { "ko": "매장 / 포장", "en": "For here or to go", "ja": "店内／持ち帰り" },
+          "options": [
+            { "name": { "ko": "매장", "en": "For here", "ja": "店内" }, "recommended": true },
+            { "name": { "ko": "포장", "en": "To go", "ja": "持ち帰り" } }
+          ]
+        }
+      ],
+      "menu_guide": [
+        {
+          "name": { "ko": "아이스크림 카페라떼", "en": "Ice cream latte", "ja": "アイスクリームカフェラテ" },
+          "description": {
+            "ko": "진한 라떼 위에 우유 아이스크림을 올린 대표 메뉴.",
+            "en": "The signature: a strong latte topped with milk ice cream.",
+            "ja": "濃いラテにミルクアイスをのせた看板メニュー。"
+          },
+          "recommended": true
+        }
+      ],
+      "tips": [
+        {
+          "ko": "7호선·수인분당선 강남구청역 바로 앞이에요.",
+          "en": "Right by Gangnam-gu Office Station (Line 7, Suin-Bundang Line).",
+          "ja": "7号線・水仁盆唐線 江南区庁駅のすぐ前。"
+        },
+        {
+          "ko": "가격은 메뉴판·후기 기준이라 바뀔 수 있어요.",
+          "en": "Prices come from posted menus and reviews and may change.",
+          "ja": "価格はメニュー表・レビュー時点のもので、変わることがあります。"
+        },
+        {
+          "ko": "한국은 팁 문화가 없어요. 표시된 가격만 내면 돼요.",
+          "en": "There's no tipping in Korea — just pay the listed price.",
+          "ja": "韓国にチップ文化はありません。表示価格だけでOK。"
+        }
+      ]
+    },
+    {
+      "id": "cafe-de-lyon-coex",
+      "name": { "ko": "카페 드 리옹 코엑스", "en": "Café de Lyon COEX", "ja": "カフェ・ド・リヨン COEX" },
+      "category": "cafe",
+      "region": "gangnam",
+      "area": "samseong",
+      "address": {
+        "ko": "서울 강남구 영동대로 513 스타필드 코엑스몰 지하1층 I105호",
+        "en": "B1 I105, Starfield COEX Mall, 513 Yeongdong-daero, Gangnam-gu, Seoul",
+        "ja": "ソウル江南区永東大路513 スターフィールドCOEXモール 地下1階 I105"
+      },
+      "lat": 37.5122,
+      "lng": 127.059,
+      "has_seating": true,
+      "coffee_price": 5800,
+      "description": {
+        "ko": "코엑스몰 안의 디저트 카페. 밀푀유와 오트 솔트 라떼가 대표 메뉴예요.",
+        "en": "A dessert café inside COEX Mall, known for its mille-feuille and oat salt latte.",
+        "ja": "COEXモール内のデザートカフェ。ミルフィーユとオーツソルトラテが看板。"
+      },
+      "order_guide": [
+        {
+          "step": 1,
+          "title": { "ko": "음료 고르기", "en": "Choose a drink", "ja": "ドリンクを選ぶ" },
+          "options": [
+            { "name": { "ko": "오,쏠 라떼 (₩6,800)", "en": "Oat salt latte (₩6,800)", "ja": "オーツソルトラテ（₩6,800）" }, "recommended": true },
+            { "name": { "ko": "아메리카노 (₩5,800)", "en": "Americano (₩5,800)", "ja": "アメリカーノ（₩5,800）" } },
+            { "name": { "ko": "카페라떼 (₩5,900)", "en": "Café latte (₩5,900)", "ja": "カフェラテ（₩5,900）" } }
+          ]
+        },
+        {
+          "step": 2,
+          "title": { "ko": "밀푀유", "en": "Mille-feuille", "ja": "ミルフィーユ" },
+          "note": { "ko": "저녁에는 품절될 때가 있어요.", "en": "It can sell out by evening.", "ja": "夜には売り切れることがあります。" },
+          "options": [
+            {
+              "name": { "ko": "바닐라 밀푀유 (₩8,400)", "en": "Vanilla mille-feuille (₩8,400)", "ja": "バニラミルフィーユ（₩8,400）" },
+              "recommended": true
+            },
+            { "name": { "ko": "말차 밀푀유 (₩8,600)", "en": "Matcha mille-feuille (₩8,600)", "ja": "抹茶ミルフィーユ（₩8,600）" } }
+          ]
+        },
+        {
+          "step": 3,
+          "title": { "ko": "매장 / 포장", "en": "For here or to go", "ja": "店内／持ち帰り" },
+          "options": [
+            { "name": { "ko": "매장", "en": "For here", "ja": "店内" }, "recommended": true },
+            { "name": { "ko": "포장", "en": "To go", "ja": "持ち帰り" } }
+          ]
+        }
+      ],
+      "menu_guide": [
+        {
+          "name": { "ko": "오,쏠 라떼", "en": "Oat salt latte", "ja": "オーツソルトラテ" },
+          "description": {
+            "ko": "귀리 우유에 짭짤한 맛을 더한 시그니처 라떼.",
+            "en": "The signature latte with oat milk and a salty touch.",
+            "ja": "オーツミルクに塩気を加えた看板ラテ。"
+          },
+          "recommended": true
+        },
+        {
+          "name": { "ko": "밀푀유", "en": "Mille-feuille", "ja": "ミルフィーユ" },
+          "description": { "ko": "얇은 파이 사이에 크림을 겹겹이 넣은 디저트.", "en": "Layers of flaky pastry and cream.", "ja": "薄いパイとクリームを重ねたデザート。" },
+          "recommended": true
+        }
+      ],
+      "tips": [
+        {
+          "ko": "늘 붐비고 대기가 있을 수 있어요. 좌석 간격이 좁은 편이에요.",
+          "en": "Usually busy, sometimes with a wait; tables are close together.",
+          "ja": "いつも混んでいて待つことも。席の間隔は狭め。"
+        },
+        { "ko": "별마당 도서관과 같은 코엑스몰 안이에요.", "en": "In the same mall as Starfield Library.", "ja": "ピョルマダン図書館と同じCOEXモール内。" },
+        {
+          "ko": "가격은 메뉴판·후기 기준이라 바뀔 수 있어요.",
+          "en": "Prices come from posted menus and reviews and may change.",
+          "ja": "価格はメニュー表・レビュー時点のもので、変わることがあります。"
+        },
+        {
+          "ko": "한국은 팁 문화가 없어요. 표시된 가격만 내면 돼요.",
+          "en": "There's no tipping in Korea — just pay the listed price.",
+          "ja": "韓国にチップ文化はありません。表示価格だけでOK。"
+        }
+      ]
+    },
+    {
+      "id": "fourstones-samseong",
+      "name": { "ko": "포스톤즈 삼성본점", "en": "Fourstones Samseong", "ja": "フォーストーンズ 三成本店" },
+      "category": "cafe",
+      "region": "gangnam",
+      "area": "samseong",
+      "address": { "ko": "서울 강남구 테헤란로103길 5 1층", "en": "1F, 5 Teheran-ro 103-gil, Gangnam-gu, Seoul", "ja": "ソウル江南区テヘラン路103ギル5 1階" },
+      "lat": 37.50981,
+      "lng": 127.06388,
+      "coffee_price": 5500,
+      "description": {
+        "ko": "삼성역 근처 카페. 커피보다 공간 분위기가 좋다는 평이 많아요.",
+        "en": "A café near Samseong Station that reviewers love more for its space than its coffee.",
+        "ja": "三成駅近くのカフェ。コーヒーより空間の雰囲気が良いという評判。"
+      },
+      "order_guide": [
+        {
+          "step": 1,
+          "title": { "ko": "음료 고르기", "en": "Choose a drink", "ja": "ドリンクを選ぶ" },
+          "options": [
+            { "name": { "ko": "포스톤즈 라떼 (₩7,000)", "en": "Fourstones latte (₩7,000)", "ja": "フォーストーンズラテ（₩7,000）" }, "recommended": true },
+            { "name": { "ko": "아메리카노 (₩5,500)", "en": "Americano (₩5,500)", "ja": "アメリカーノ（₩5,500）" } },
+            { "name": { "ko": "카페라떼 (₩6,300)", "en": "Café latte (₩6,300)", "ja": "カフェラテ（₩6,300）" } }
+          ]
+        },
+        {
+          "step": 2,
+          "title": { "ko": "매장 / 포장", "en": "For here or to go", "ja": "店内／持ち帰り" },
+          "options": [
+            { "name": { "ko": "매장", "en": "For here", "ja": "店内" }, "recommended": true },
+            { "name": { "ko": "포장", "en": "To go", "ja": "持ち帰り" } }
+          ]
+        }
+      ],
+      "menu_guide": [
+        {
+          "name": { "ko": "포스톤즈 라떼", "en": "Fourstones latte", "ja": "フォーストーンズラテ" },
+          "description": { "ko": "이 집 이름을 붙인 대표 라떼.", "en": "The house latte named after the café.", "ja": "店名を冠した看板ラテ。" },
+          "recommended": true
+        }
+      ],
+      "tips": [
+        {
+          "ko": "2호선 삼성역에서 걸어갈 수 있어요. 코엑스와도 가까워요.",
+          "en": "Walkable from Samseong Station (Line 2), near COEX.",
+          "ja": "2号線三成駅から徒歩圏内。COEXにも近い。"
+        },
+        {
+          "ko": "가격은 메뉴판·후기 기준이라 바뀔 수 있어요.",
+          "en": "Prices come from posted menus and reviews and may change.",
+          "ja": "価格はメニュー表・レビュー時点のもので、変わることがあります。"
+        },
+        {
+          "ko": "한국은 팁 문화가 없어요. 표시된 가격만 내면 돼요.",
+          "en": "There's no tipping in Korea — just pay the listed price.",
+          "ja": "韓国にチップ文化はありません。表示価格だけでOK。"
+        }
+      ]
+    },
+    {
+      "id": "taylor-coffee-sinsa",
+      "name": { "ko": "테일러 커피 신사", "en": "Taylor Coffee Sinsa", "ja": "テイラーコーヒー 新沙" },
+      "category": "cafe",
+      "region": "gangnam",
+      "area": "sinsa",
+      "address": { "ko": "서울 강남구 강남대로160길 31 1층", "en": "1F, 31 Gangnam-daero 160-gil, Gangnam-gu, Seoul", "ja": "ソウル江南区江南大路160ギル31 1階" },
+      "lat": 37.51986,
+      "lng": 127.0209,
+      "has_seating": true,
+      "coffee_price": 5500,
+      "description": {
+        "ko": "커피 맛으로 알려진 서울 로스터리 카페의 가로수길 지점. 크림 올린 커피가 인기예요.",
+        "en": "The Garosu-gil branch of a Seoul roastery known for its coffee; the cream-topped drinks are favorites.",
+        "ja": "コーヒーの味で知られるソウルのロースタリーのカロスキル店。クリームをのせたコーヒーが人気。"
+      },
+      "order_guide": [
+        {
+          "step": 1,
+          "title": { "ko": "음료 고르기", "en": "Choose a drink", "ja": "ドリンクを選ぶ" },
+          "options": [
+            { "name": { "ko": "아인슈페너 (₩7,000)", "en": "Einspänner (₩7,000)", "ja": "アインシュペナー（₩7,000）" }, "recommended": true },
+            { "name": { "ko": "크림 모카 (₩7,000)", "en": "Cream mocha (₩7,000)", "ja": "クリームモカ（₩7,000）" } },
+            { "name": { "ko": "아메리카노 (₩5,500)", "en": "Americano (₩5,500)", "ja": "アメリカーノ（₩5,500）" } },
+            { "name": { "ko": "카페라떼 (₩6,000)", "en": "Café latte (₩6,000)", "ja": "カフェラテ（₩6,000）" } }
+          ]
+        },
+        {
+          "step": 2,
+          "title": { "ko": "매장 / 포장", "en": "For here or to go", "ja": "店内／持ち帰り" },
+          "options": [
+            { "name": { "ko": "매장", "en": "For here", "ja": "店内" }, "recommended": true },
+            { "name": { "ko": "포장", "en": "To go", "ja": "持ち帰り" } }
+          ]
+        }
+      ],
+      "menu_guide": [
+        {
+          "name": { "ko": "아인슈페너", "en": "Einspänner", "ja": "アインシュペナー" },
+          "description": {
+            "ko": "진한 커피 위에 달콤한 크림을 두껍게 올린 커피.",
+            "en": "Strong coffee under a thick layer of sweet cream.",
+            "ja": "濃いコーヒーに甘いクリームをたっぷりのせたコーヒー。"
+          },
+          "recommended": true
+        }
+      ],
+      "tips": [
+        {
+          "ko": "3호선 신사역에서 가로수길 쪽으로 걸어가면 돼요.",
+          "en": "Walk toward Garosu-gil from Sinsa Station (Line 3).",
+          "ja": "3号線新沙駅からカロスキル方面へ徒歩。"
+        },
+        {
+          "ko": "가격은 메뉴판·후기 기준이라 바뀔 수 있어요.",
+          "en": "Prices come from posted menus and reviews and may change.",
+          "ja": "価格はメニュー表・レビュー時点のもので、変わることがあります。"
+        },
+        {
+          "ko": "한국은 팁 문화가 없어요. 표시된 가격만 내면 돼요.",
+          "en": "There's no tipping in Korea — just pay the listed price.",
+          "ja": "韓国にチップ文化はありません。表示価格だけでOK。"
+        }
+      ]
+    },
+    {
+      "id": "blue-bottle-apgujeong",
+      "name": { "ko": "블루보틀 압구정", "en": "Blue Bottle Apgujeong", "ja": "ブルーボトル 狎鴎亭" },
+      "category": "cafe",
+      "region": "gangnam",
+      "area": "sinsa",
+      "address": {
+        "ko": "서울 강남구 논현로 854 안다즈 서울강남 1층",
+        "en": "1F Andaz Seoul Gangnam, 854 Nonhyeon-ro, Gangnam-gu, Seoul",
+        "ja": "ソウル江南区論峴路854 アンダーズソウル江南1階"
+      },
+      "lat": 37.52532,
+      "lng": 127.02893,
+      "has_seating": true,
+      "coffee_price": 5900,
+      "description": {
+        "ko": "안다즈 호텔 1층의 블루보틀. 가로수길 북쪽 끝, 압구정역에서 가까워요.",
+        "en": "Blue Bottle on the ground floor of the Andaz hotel, at the north end of Garosu-gil near Apgujeong Station.",
+        "ja": "アンダーズホテル1階のブルーボトル。カロスキルの北端、狎鴎亭駅の近く。"
+      },
+      "order_guide": [
+        {
+          "step": 1,
+          "title": { "ko": "음료 고르기", "en": "Choose a drink", "ja": "ドリンクを選ぶ" },
+          "options": [
+            { "name": { "ko": "아메리카노 (₩5,900)", "en": "Americano (₩5,900)", "ja": "アメリカーノ（₩5,900）" } },
+            { "name": { "ko": "라떼 (₩6,900)", "en": "Latte (₩6,900)", "ja": "ラテ（₩6,900）" }, "recommended": true },
+            { "name": { "ko": "핸드드립", "en": "Pour-over", "ja": "ハンドドリップ" } }
+          ]
+        },
+        {
+          "step": 2,
+          "title": { "ko": "따뜻하게 / 아이스", "en": "Hot or iced", "ja": "ホット／アイス" },
+          "options": [
+            { "name": { "ko": "아이스", "en": "Iced", "ja": "アイス" }, "recommended": true },
+            { "name": { "ko": "따뜻하게", "en": "Hot", "ja": "ホット" } }
+          ]
+        },
+        {
+          "step": 3,
+          "title": { "ko": "매장 / 포장", "en": "For here or to go", "ja": "店内／持ち帰り" },
+          "options": [
+            { "name": { "ko": "매장", "en": "For here", "ja": "店内" }, "recommended": true },
+            { "name": { "ko": "포장", "en": "To go", "ja": "持ち帰り" } }
+          ]
+        }
+      ],
+      "menu_guide": [
+        {
+          "name": { "ko": "라떼", "en": "Latte", "ja": "ラテ" },
+          "description": { "ko": "라떼아트가 예쁘다는 후기가 많아요.", "en": "Reviewers often mention the pretty latte art.", "ja": "ラテアートがきれいというレビューが多い。" },
+          "recommended": true
+        }
+      ],
+      "tips": [
+        { "ko": "3호선 압구정역에서 걸어갈 수 있어요.", "en": "Walkable from Apgujeong Station (Line 3).", "ja": "3号線狎鴎亭駅から徒歩圏内。" },
+        {
+          "ko": "가격은 메뉴판·후기 기준이라 바뀔 수 있어요.",
+          "en": "Prices come from posted menus and reviews and may change.",
+          "ja": "価格はメニュー表・レビュー時点のもので、変わることがあります。"
+        },
+        {
+          "ko": "한국은 팁 문화가 없어요. 표시된 가격만 내면 돼요.",
+          "en": "There's no tipping in Korea — just pay the listed price.",
+          "ja": "韓国にチップ文化はありません。表示価格だけでOK。"
+        }
+      ]
+    },
+    {
+      "id": "ralphs-coffee-garosu",
+      "name": { "ko": "랄프스 커피 가로수길", "en": "Ralph's Coffee Garosu-gil", "ja": "ラルフズコーヒー カロスキル" },
+      "category": "cafe",
+      "region": "gangnam",
+      "area": "sinsa",
+      "address": {
+        "ko": "서울 강남구 가로수길 31 폴로 랄프 로렌 1층",
+        "en": "1F Polo Ralph Lauren, 31 Garosu-gil, Gangnam-gu, Seoul",
+        "ja": "ソウル江南区カロスキル31 ポロ ラルフローレン1階"
+      },
+      "lat": 37.5201,
+      "lng": 127.0227,
+      "description": {
+        "ko": "2024년 9월 문을 연 한국 첫 랄프스 커피. 폴로 랄프 로렌 매장 1층에 있어요.",
+        "en": "Korea's first Ralph's Coffee, opened in September 2024 on the ground floor of the Polo Ralph Lauren store.",
+        "ja": "2024年9月にオープンした韓国初のラルフズコーヒー。ポロ ラルフローレン店舗の1階。"
+      },
+      "order_guide": [
+        {
+          "step": 1,
+          "title": { "ko": "음료 고르기", "en": "Choose a drink", "ja": "ドリンクを選ぶ" },
+          "note": { "ko": "가격은 아직 확인하지 못했어요.", "en": "Prices not confirmed yet.", "ja": "価格は未確認です。" },
+          "options": [
+            { "name": { "ko": "랄프스 커피 스페셜", "en": "Ralph's Coffee Special", "ja": "ラルフズコーヒースペシャル" }, "recommended": true },
+            { "name": { "ko": "우지 말차 라떼", "en": "Uji matcha latte", "ja": "宇治抹茶ラテ" } },
+            { "name": { "ko": "클래식 레모네이드", "en": "Classic lemonade", "ja": "クラシックレモネード" } }
+          ]
+        },
+        {
+          "step": 2,
+          "title": { "ko": "디저트", "en": "Dessert", "ja": "デザート" },
+          "options": [
+            { "name": { "ko": "랄프스 브라우니", "en": "Ralph's brownie", "ja": "ラルフズブラウニー" }, "recommended": true },
+            { "name": { "ko": "케이크 · 쿠키", "en": "Cake or cookies", "ja": "ケーキ・クッキー" } }
+          ]
+        },
+        {
+          "step": 3,
+          "title": { "ko": "매장 / 포장", "en": "For here or to go", "ja": "店内／持ち帰り" },
+          "options": [
+            { "name": { "ko": "매장", "en": "For here", "ja": "店内" }, "recommended": true },
+            { "name": { "ko": "포장", "en": "To go", "ja": "持ち帰り" } }
+          ]
+        }
+      ],
+      "menu_guide": [
+        {
+          "name": { "ko": "랄프스 커피 스페셜", "en": "Ralph's Coffee Special", "ja": "ラルフズコーヒースペシャル" },
+          "description": { "ko": "엄선한 원두를 섞은 하우스 블렌드 커피.", "en": "The house blend made from selected beans.", "ja": "厳選した豆のハウスブレンドコーヒー。" },
+          "recommended": true
+        }
+      ],
+      "tips": [
+        {
+          "ko": "3호선 신사역 8번 출구에서 가로수길로 걸어가면 돼요.",
+          "en": "Walk up Garosu-gil from Sinsa Station Exit 8 (Line 3).",
+          "ja": "3号線新沙駅8番出口からカロスキルへ徒歩。"
         },
         {
           "ko": "한국은 팁 문화가 없어요. 표시된 가격만 내면 돼요.",

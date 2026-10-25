@@ -198,6 +198,40 @@ function initCatChips(containerId, kind, onChange) {
   };
 }
 
+// ── 가격대 칩 (nations.json price_tiers, 아메리카노 가격 coffee_price 기준) ──
+function priceTierOf(price) {
+  if (price == null) return null;
+  const tier = (Geo.nation.price_tiers || []).find(p => price >= (p.min ?? 0) && price < (p.max ?? Infinity));
+  return tier ? tier.id : null;
+}
+
+function initPriceChips(containerId, onChange) {
+  const el = document.getElementById(containerId);
+  const tiers = Geo.nation.price_tiers || [];
+  if (!tiers.length) return { reset() {} };
+  el.classList.remove('hidden');
+  el.innerHTML = `<span class="price-label">${t('price.label')}</span>`
+    + `<button class="cat-chip active" data-tier="all">${t('cat.all')}</button>`
+    + tiers.map(p => `<button class="cat-chip" data-tier="${p.id}">${tx(p.label)}</button>`).join('');
+
+  el.addEventListener('click', e => {
+    const chip = e.target.closest('.cat-chip');
+    if (!chip) return;
+    el.querySelectorAll('.cat-chip').forEach(c => c.classList.toggle('active', c === chip));
+    onChange(chip.dataset.tier);
+  });
+
+  return {
+    reset() {
+      el.querySelectorAll('.cat-chip').forEach(c => c.classList.toggle('active', c.dataset.tier === 'all'));
+    },
+  };
+}
+
+function coffeePriceLabel(price) {
+  return price == null ? '' : `☕ ${Geo.nation.currency}${price.toLocaleString('en-US')}`;
+}
+
 // ── 국가 전환 (국가가 2개 이상일 때만 표시) ──
 function initNationSwitch(containerId) {
   const el = document.getElementById(containerId);

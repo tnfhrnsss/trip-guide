@@ -1,4 +1,4 @@
-const CACHE = 'trip-guide-v4';
+const CACHE = 'trip-guide-v5';
 
 const APP_SHELL = [
   './',

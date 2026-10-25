@@ -2,14 +2,17 @@ let stores   = [];
 let region   = null;
 let area     = null;
 let category = 'all'; // 'all' = 필터 없음 (전체)
+let tier     = 'all'; // 가격대 칩
 let query    = '';
 let catChips = null;
+let priceChips = null;
 
 function filtered() {
   const q = query.trim().toLowerCase();
   return stores.filter(s => {
     if (!matchesPlace(s, region, area)) return false;
     if (category !== 'all' && s.category !== category) return false;
+    if (tier !== 'all' && priceTierOf(s.coffee_price) !== tier) return false;
     if (q && !searchText(s.name).includes(q) && !s.category.includes(q)
         && !catLabel('store', s.category).toLowerCase().includes(q)) return false;
     return true;
@@ -28,7 +31,8 @@ function renderList() {
       <div class="store-card-top">
         <div class="store-name">${tx(s.name)}</div>
         <div style="display:flex;align-items:center;gap:6px;flex-shrink:0">
-          ${s.price_range ? `<span class="price-tag">${s.price_range}</span>` : ''}
+          ${s.coffee_price != null ? `<span class="price-tag" title="${t('price.label')}">${coffeePriceLabel(s.coffee_price)}</span>`
+            : s.price_range ? `<span class="price-tag">${s.price_range}</span>` : ''}
           <div class="cat-tag">${catLabel('store', s.category)}</div>
         </div>
       </div>
@@ -46,7 +50,9 @@ function onGeoChange(sel) {
   region = sel.region;
   area = sel.area;
   category = 'all';
+  tier = 'all';
   catChips.reset();
+  priceChips.reset();
   initWeather('weather-scroll', weatherPoint(region, area));
   document.getElementById('store-section').classList.toggle('hidden', !!region.weather_only);
   if (!region.weather_only) renderList();
@@ -66,6 +72,10 @@ async function init() {
   initLangSwitch('lang-switch');
   catChips = initCatChips('cat-row', 'store', cat => {
     category = cat;
+    renderList();
+  });
+  priceChips = initPriceChips('price-row', id => {
+    tier = id;
     renderList();
   });
   initSearch();

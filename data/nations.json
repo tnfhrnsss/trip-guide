@@ -33,6 +33,12 @@
       "currency": "₩",
       "maps": "naver",
       "menu_lang": "ko",
+      "price_tiers": [
+        { "id": "3k", "label": { "ko": "3~4천원", "en": "₩3–4k", "ja": "3〜4千ウォン" }, "max": 4000 },
+        { "id": "4k", "label": { "ko": "4~5천원", "en": "₩4–5k", "ja": "4〜5千ウォン" }, "min": 4000, "max": 5000 },
+        { "id": "5k", "label": { "ko": "5~6천원", "en": "₩5–6k", "ja": "5〜6千ウォン" }, "min": 5000, "max": 6000 },
+        { "id": "6k", "label": { "ko": "6천원 이상", "en": "₩6k+", "ja": "6千ウォン以上" }, "min": 6000 }
+      ],
       "store_categories": [
         { "id": "cafe", "label": { "ko": "카페", "en": "Café", "ja": "カフェ" }, "emoji": "☕", "color": "#78350F" },
         { "id": "bakery", "label": { "ko": "베이커리", "en": "Bakery", "ja": "ベーカリー" }, "emoji": "🥯", "color": "#D97706" },
