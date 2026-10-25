@@ -1,8 +1,10 @@
 # Trip Guide
 
-여행자를 위한 **오프라인 우선 웹앱**. 뉴욕·퀸즈·워싱턴 D.C.·나이아가라와 서울 강남구. 한국어·영어·일본어 지원.
+여행자를 위한 **오프라인 우선 웹앱**. 국가 → 지역 → 구역 3단계 구조.
+- 🇺🇸 미국: 뉴욕(다운타운·미드타운·어퍼사이드·퀸즈), 워싱턴 D.C., 나이아가라(날씨만)
+- 🇰🇷 한국: 서울 강남구 — 지하철역 주변 구역별 카페·맛집 (서초구는 추가 예정)
 
-현지 맛집에서 당황하지 않고 주문할 수 있도록 돕는 한영 병기 주문 가이드 + 관광 스팟 + 화장실 찾기.
+화면과 데이터 전체가 **한국어·영어·일본어**로 나옵니다. 외국인도 현지 가게에서 주문 순서와 선택지를 보고 바로 주문할 수 있습니다.
 
 > **라이브**: https://tnfhrnsss.github.io/trip-guide/
 
@@ -14,86 +16,44 @@
 
 | 기능 | 설명 |
 |------|------|
-| 맛집 주문 가이드 | 가게별 예상 질문 순서, 추천 답변, 소스 설명 한국어 제공 |
-| 관광 스팟 | 무료/유료, 예약 여부, 팁, Google Maps 연결 |
-| 날씨 | 지역별 오늘·내일 날씨 (Open-Meteo, 미국 동부 타임존) |
-| 지도 | Leaflet + OpenStreetMap, 카테고리별 핀 |
-| 화장실 찾기 | 현재 위치 기반 주변 화장실 Leaflet 지도 표시 |
-| 오프라인 | Service Worker로 앱 전체 캐시 |
-| PWA | 홈 화면에 설치 가능 |
+| 주문 가이드 | 가게별 주문 단계 + 선택지 + 추천 표시. 선택지 아래에 현지 메뉴판 표기를 작게 보여줌 |
+| 메뉴·팁 | 대표 메뉴 설명, 방문 팁 (영업시간, 가까운 역, 대기 등) |
+| 가격 | 미국: 1인 예상 가격대 / 한국: 아메리카노 가격 + 가격대 필터 (3~4천원 · 4~5천원 · 5~6천원 · 6천원 이상) |
+| 관광 스팟 | 무료/유료, 예약 여부, 운영시간, 팁 |
+| 날씨 | 구역별 오늘·내일 날씨 (Open-Meteo). 기본은 한 줄 요약, 누르면 펼침 |
+| 지도 | Leaflet + OpenStreetMap 핀. 길찾기는 미국 Google 지도, 한국 네이버 지도 |
+| 화장실 찾기 | 현재 위치 기반 주변 화장실 |
+| 다국어 | 헤더에서 KO / EN / JA 전환 |
+| 오프라인 · PWA | Service Worker 캐시, 홈 화면에 설치 가능 |
 
 ---
 
-## 지역 커버리지
+## 데이터 현황
 
-### 맛집 (45곳)
+### 🇰🇷 강남구 — 가게 22곳 (카페 14곳), 스팟 6곳
 
-**Manhattan — 다운타운 (14곳)**
-- Ess-a-Bagel (베이글) `$10~16`
-- Katz's Delicatessen (델리) `$25~35`
-- Joe's Pizza (피자) `$3~5`
-- Los Tacos No. 1 (타코) `$9~14`
-- Tacombi (타코) `$25~35`
-- Ippudo NY (라멘) `$20~28`
-- Dominique Ansel Bakery (베이커리) `$6~14`
-- Clinton St. Baking Co. (베이커리) `$15~22`
-- Russ & Daughters Cafe (델리) `$18~28`
-- Sadelle's (베이커리) `$18~30`
-- Breads Bakery (베이커리) `$5~9`
-- Blue Bottle Coffee (커피) `$5~8`
-- Intelligentsia Coffee (커피) `$5~8`
-- La Colombe Coffee (커피) `$5~8`
+| 구역 | 가게 (☕ 아메리카노) | 스팟 |
+|------|------|------|
+| 강남역·신논현 | 쉐이크쉑 강남, 사운즈 커피 (4,500), 리퍼크 (4,900) | — |
+| 역삼 | 블루보틀 역삼 (5,900) | — |
+| 선릉 | 알렉산더 커피 스튜디오 (4,500) | 선릉과 정릉 |
+| 삼성·코엑스 | 테라로사 포스코센터점 (5,500), 카페 드 리옹 코엑스 (5,800), 포스톤즈 삼성본점 (5,500), 고운님 | 봉은사, 별마당 도서관, 코엑스 아쿠아리움 |
+| 강남구청·학동 | 구테로이테 (4,800), 파퓰러 커피 로스터스 (4,000), 폴 바셋 강남구청역점 (5,300), 진미평양냉면 | — |
+| 청담 | 두루 | — |
+| 압구정로데오·도산공원 | 런던베이글뮤지엄 도산 (5,000), 노티드 청담, 누데이크 하우스 도산 (5,500), 변강쇠떡볶이 | 도산공원 |
+| 신사·가로수길 | 마일스톤커피 (5,300), 테일러 커피 신사 (5,500), 블루보틀 압구정 (5,900), 랄프스 커피 가로수길 | 가로수길 |
 
-**Manhattan — 미드타운 (11곳)**
-- Stumptown Coffee Roasters (커피) `$7~9`
-- The Halal Guys (기타) `$8~12`
-- Totto Ramen (라멘) `$18~25`
-- Go Go Curry (기타) `$12~16`
-- Shake Shack (버거) `$10~15`
-- Burger Joint (버거) `$13~17`
-- Magnolia Bakery (베이커리) `$4~7`
-- Junior's Restaurant (기타) `$10~20`
-- Jongro BBQ (기타) `$25~40`
-- Dallas BBQ Times Square (기타) `$15~30`
-- CAVA (기타) `$12~16`
+> 가격은 메뉴판·후기 기준(2026년 10월 조사)이라 바뀔 수 있습니다.
 
-**Manhattan — 어퍼사이드 (6곳)**
-- Levain Bakery (베이커리) `$4~6`
-- Absolute Bagels (베이글) `$3~8`
-- Gray's Papaya (기타) `$3~6`
-- Cafe Lalo (커피) `$8~14`
-- Hungarian Pastry Shop (베이커리) `$3~6`
-- Zabar's (델리) `$5~12`
+### 🇺🇸 미국 — 맛집 45곳, 스팟 27곳
 
-**Queens — 플러싱·Astoria (5곳)**
-- Xi'an Famous Foods (기타) `$12~18`
-- Joe's Shanghai (기타) `$20~30`
-- Nan Xiang Xiao Long Bao (기타) `$8~12`
-- Taverna Kyclades (기타) `$50~80`
-- New World Mall Food Court (기타) `$8~15`
-
-**Washington D.C. (9곳)**
-- Old Ebbitt Grill (기타) `$18~30`
-- Founding Farmers (기타) `$15~25`
-- District Taco (타코) `$8~13`
-- Shake Shack DC (버거) `$10~16`
-- Mitsitam Native Foods Café (기타) `$10~16`
-- Jaleo by José Andrés (기타) `$15~28`
-- Eastern Market (기타) `$5~15`
-- Ted's Bulletin (델리) `$12~20`
-- Ben's Chili Bowl (델리) `$8~14`
-
-### 관광 스팟 (27곳)
-
-**Manhattan — 다운타운 (8곳)**: 브루클린 브리지, 자유의 여신상, 휘트니 미술관, 하이라인, 첼시 마켓, 트레이더 조, 소호, 9/11 메모리얼
-
-**Manhattan — 미드타운 (10곳)**: 베슬, 엣지 전망대, 타임스 스퀘어, 엠파이어 스테이트, 탑 오브 더 록, 그랜드 센트럴, 뉴욕 공립도서관, MoMA, H Mart 코리아타운, 홀푸드 마켓
-
-**Manhattan — 어퍼사이드 (3곳)**: 센트럴 파크, The Met, 자연사 박물관
-
-**Queens (2곳)**: 플러싱 메도스 코로나 파크, H Mart 플러싱
-
-**Washington D.C. (4곳)**: 링컨 기념관, 워싱턴 기념탑, 스미소니언 자연사 박물관, 국회의사당
+| 구역 | 맛집 | 스팟 |
+|------|------|------|
+| 다운타운 | Ess-a-Bagel, Katz's, Joe's Pizza, Los Tacos No. 1, Tacombi, Ippudo, Dominique Ansel, Clinton St., Russ & Daughters Cafe, Sadelle's, Breads Bakery, Blue Bottle, Intelligentsia, La Colombe (14) | 브루클린 브리지, 자유의 여신상, 휘트니 미술관, 하이라인, 첼시 마켓, 트레이더 조, 소호, 9/11 메모리얼 (8) |
+| 미드타운 | Stumptown, The Halal Guys, Totto Ramen, Go Go Curry, Shake Shack, Burger Joint, Magnolia, Junior's, Jongro BBQ, Dallas BBQ, CAVA (11) | 베슬, 엣지, 타임스 스퀘어, 엠파이어 스테이트, 탑 오브 더 록, 그랜드 센트럴, 뉴욕 공립도서관, MoMA, H Mart 코리아타운, 홀푸드 (10) |
+| 어퍼사이드 | Levain, Absolute Bagels, Gray's Papaya, Cafe Lalo, Hungarian Pastry Shop, Zabar's (6) | 센트럴 파크, The Met, 자연사 박물관 (3) |
+| 퀸즈 | Xi'an Famous Foods, Joe's Shanghai, Nan Xiang, Taverna Kyclades, New World Mall (5) | 플러싱 메도스 코로나 파크, H Mart 플러싱 (2) |
+| 워싱턴 D.C. | Old Ebbitt Grill, Founding Farmers, District Taco, Shake Shack DC, Mitsitam, Jaleo, Eastern Market, Ted's Bulletin, Ben's Chili Bowl (9) | 링컨 기념관, 워싱턴 기념탑, 스미소니언 자연사 박물관, 국회의사당 (4) |
 
 ---
 
@@ -104,9 +64,7 @@
 python3 -m http.server 8787
 ```
 
-브라우저에서 `http://localhost:8787` 접속.
-
-> 빌드 도구 불필요. 순수 HTML + CSS + Vanilla JS.
+브라우저에서 `http://localhost:8787` 접속. 빌드 도구 불필요 (순수 HTML + CSS + Vanilla JS).
 
 ---
 
@@ -115,11 +73,12 @@ python3 -m http.server 8787
 ```
 Frontend   HTML5 + Vanilla JS (빌드 없음)
 스타일     CSS (모바일 우선, 단일 파일)
+다국어     i18n/{ko,en,ja}.json + 데이터 안의 { ko, en, ja } 객체
 지도       Leaflet.js + OpenStreetMap
 날씨       Open-Meteo API (무료, API 키 불필요)
 데이터     data/nations.json + data/{국가}/*.json (로컬)
-오프라인   Service Worker (PWA, trip-guide-v1)
-배포       GitHub Pages
+오프라인   Service Worker (trip-guide-v6) — 화면 파일은 캐시 우선, JSON은 네트워크 우선
+배포       GitHub Pages (main 브랜치 루트)
 ```
 
 ---
@@ -128,95 +87,97 @@ Frontend   HTML5 + Vanilla JS (빌드 없음)
 
 ```
 (저장소 루트)
-├── index.html       푸드 홈 (맛집 목록)
-├── store.html       가게 상세 (주문 흐름 · 소스 · 팁)
+├── index.html       푸드 홈 (가게 목록)
+├── store.html       가게 상세 (주문 가이드 · 메뉴 · 팁)
 ├── spots.html       관광 스팟
 ├── map.html         지도
-├── restroom.html    화장실 찾기 (현재 위치 기반)
+├── restroom.html    화장실 찾기
 ├── manifest.json    PWA 설정
-├── sw.js            Service Worker (trip-guide-v1)
+├── sw.js            Service Worker
 ├── css/style.css
 ├── js/
-│   ├── geo.js       국가 → 지역 → 구역 공용 로직
-│   ├── app.js       맛집 홈 로직
-│   ├── store.js     가게 상세 로직
-│   ├── spots.js     스팟 로직
-│   ├── map.js       지도 로직
-│   ├── restroom.js  화장실 찾기 로직
-│   └── weather.js   날씨 API (지역별 타임존)
+│   ├── i18n.js      다국어 (t, tx, 언어 전환)
+│   ├── geo.js       국가 → 지역 → 구역 공용 로직, 카테고리·가격대 칩
+│   ├── app.js       푸드 홈
+│   ├── store.js     가게 상세
+│   ├── spots.js     스팟
+│   ├── map.js       지도
+│   ├── restroom.js  화장실 찾기
+│   └── weather.js   날씨
+├── i18n/            ko.json · en.json · ja.json (화면 문구)
 └── data/
-    ├── nations.json 국가 목록 + 카테고리 등 국가 설정
-    └── us/
-        ├── regions.json 지역(뉴욕·워싱턴·나이아가라) + 구역
-        ├── stores.json  맛집 데이터 (45곳)
-        └── spots.json   스팟 데이터 (27곳)
+    ├── nations.json 국가 설정 (통화, 지도 서비스, 카테고리, 가격대)
+    ├── us/          regions.json · stores.json · spots.json
+    └── kr/          regions.json · stores.json · spots.json
 ```
 
 ---
 
 ## 데이터 추가 방법
 
-### 맛집 추가 (`data/us/stores.json`)
+글자는 모두 `{ "ko": "...", "en": "...", "ja": "..." }` 형태로 씁니다 (아래 `L`).
 
-`"stores"` 배열에 항목 추가:
+### 가게 (`data/{국가}/stores.json`의 `"stores"` 배열)
 
 ```json
 {
   "id": "가게-이름-kebab",
-  "name": "영문 가게명",
-  "category": "bagel|pizza|deli|coffee|taco|ramen|burger|bakery|other",
-  "region": "new-york|washington",
-  "area": "downtown|midtown|uptown|queens|null",
-  "address": "주소",
+  "name": "Shake Shack 또는 L",
+  "category": "nations.json의 store_categories id",
+  "region": "gangnam",
+  "area": "gangnam-sinnonhyeon",
+  "address": "주소 또는 L",
   "lat": 0.0, "lng": 0.0,
-  "tip_expected": true,
-  "has_seating": true,
+  "coffee_price": 4500,
   "price_range": "$X~Y",
-  "description": "한국어 설명",
-  "ordering_flow": [...],
-  "sauce_guide": [...],
-  "tips": [...]
+  "has_seating": true,
+  "description": L,
+  "order_guide": [
+    { "step": 1, "title": L, "note": L, "options": [{ "name": L, "recommended": true }] }
+  ],
+  "menu_guide": [{ "name": L, "description": L, "recommended": true }],
+  "tips": [L]
 }
 ```
 
-### 관광 스팟 추가 (`data/us/spots.json`)
+- `coffee_price`: 한국 카페 아메리카노 가격 (가격대 필터 기준). `price_range`: 미국 1인 예상 가격
+- `note`, `recommended`, `coffee_price`, `price_range`, `has_seating`, `tip_expected`는 선택
 
-루트 배열에 항목 추가:
+### 관광 스팟 (`data/{국가}/spots.json`의 `"spots"` 배열)
 
 ```json
 {
   "id": "스팟-이름-kebab",
-  "name_ko": "한국어 스팟명",
-  "region": "new-york|washington",
-  "area": "downtown|midtown|uptown|queens|null",
-  "category": "landmark|museum|park|view|market",
-  "address": "주소",
+  "name": L,
+  "region": "gangnam", "area": "samseong",
+  "category": "nations.json의 spot_categories id",
+  "address": "주소 또는 L",
   "lat": 0.0, "lng": 0.0,
   "admission": "free|paid",
-  "admission_note": "무료 or 유료 ($30)",
+  "admission_note": L,
   "reservation": false,
-  "hours": "운영시간",
-  "description_ko": "한국어 설명",
-  "tips": [...]
+  "hours": L,
+  "description": L,
+  "tips": [L]
 }
 ```
 
-> JSON 추가 후 코드 수정 없이 자동 반영됨.
+JSON만 고치면 코드 수정 없이 반영됩니다. 새 지역·구역은 `regions.json`에 추가합니다. 자세한 규칙은 `.claude/CLAUDE.md`를 참고하세요.
 
 ---
 
-## GitHub Pages 배포
+## 배포
 
-저장소: https://github.com/tnfhrnsss/nyc
-
-배포 URL: https://tnfhrnsss.github.io/trip-guide/
-
-GitHub 저장소 Settings → Pages → Source: `main` 브랜치, `/ (root)` 선택.
+- 저장소: https://github.com/tnfhrnsss/trip-guide
+- 배포 URL: https://tnfhrnsss.github.io/trip-guide/
+- Settings → Pages → Source: `main` 브랜치, `/ (root)`. main에 푸시하면 자동 반영
 
 ---
 
 ## 향후 계획
 
-- [ ] 지도에 스팟 핀 통합 (맛집 + 관광지 통합 뷰)
+- [ ] 강남구 데이터 보강 (역삼·청담 카페, 카페 외 가게 가격)
+- [ ] 한국 화장실: 공공데이터 공중화장실 데이터 사용
+- [ ] 서초구 추가
+- [ ] 지도에 스팟 핀 표시
 - [ ] PWA 아이콘 개선
-- [ ] 팁 계산기 (18/20/22%)
