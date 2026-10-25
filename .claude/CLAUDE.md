@@ -42,16 +42,19 @@ trip-guide/
 ├── map.html            ← Leaflet 지도
 ├── restroom.html       ← 화장실 찾기 (현재 위치 기반)
 ├── manifest.json       ← PWA
-├── sw.js               ← Service Worker (캐시 버전: trip-guide-v1)
+├── sw.js               ← Service Worker (캐시 버전: trip-guide-v2)
 ├── css/style.css       ← 단일 CSS, CSS 변수 기반
 ├── js/
-│   ├── geo.js          ← 국가/지역/구역 공용 로직 (모든 페이지가 먼저 로드)
+│   ├── i18n.js         ← 다국어: t(), tx(), applyI18n(), 언어 전환 (geo.js보다 먼저 로드)
+│   ├── geo.js          ← 국가/지역/구역 공용 로직 (loadGeo()가 loadI18n()도 호출)
 │   ├── app.js          ← 푸드 홈 로직
 │   ├── store.js        ← 가게 상세 로직
 │   ├── spots.js        ← 관광 스팟 로직
 │   ├── map.js          ← Leaflet 지도 로직
 │   ├── restroom.js     ← 화장실 찾기 로직
 │   └── weather.js      ← Open-Meteo API + localStorage 캐시
+├── i18n/
+│   ├── ko.json / en.json / ja.json   ← 화면 문구 (키 동일하게 유지)
 ├── data/
 │   ├── nations.json    ← 국가 목록 + 국가 단위 설정 (통화, 지도 링크, 카테고리)
 │   └── us/
@@ -87,10 +90,10 @@ trip-guide/
 
 ```json
 { "nations": [{
-  "id": "us", "name": "미국", "flag": "🇺🇸", "currency": "$",
+  "id": "us", "name": { "ko": "미국", "en": "USA", "ja": "アメリカ" }, "flag": "🇺🇸", "currency": "$",
   "maps": "google|naver",
-  "store_categories": [{ "id": "bagel", "label": "베이글", "emoji": "🥯", "color": "#F59E0B" }],
-  "spot_categories":  [{ "id": "landmark", "label": "랜드마크", "emoji": "🗽" }]
+  "store_categories": [{ "id": "bagel", "label": { "ko": "베이글", "en": "Bagel", "ja": "ベーグル" }, "emoji": "🥯", "color": "#F59E0B" }],
+  "spot_categories":  [{ "id": "landmark", "label": { "ko": "...", "en": "...", "ja": "..." }, "emoji": "🗽" }]
 }] }
 ```
 
@@ -98,14 +101,25 @@ trip-guide/
 
 ```json
 { "regions": [{
-  "id": "new-york", "name": "뉴욕", "timezone": "America/New_York",
+  "id": "new-york", "name": { "ko": "뉴욕", "en": "New York", "ja": "ニューヨーク" }, "timezone": "America/New_York",
   "center": [40.758, -73.9855], "zoom": 13,
   "weather_only": false,
-  "weather": { "name": "뉴욕", "lat": 0, "lng": 0 },
-  "areas": [{ "id": "downtown", "name": "다운타운", "weather": { "name": "...", "lat": 0, "lng": 0 } }]
+  "weather": { "name": { "ko": "...", "en": "...", "ja": "..." }, "lat": 0, "lng": 0 },
+  "areas": [{ "id": "downtown", "name": { "ko": "다운타운", "en": "Downtown", "ja": "ダウンタウン" }, "weather": { ... } }]
 }] }
 ```
 날씨 지점: 구역에 `weather`가 있으면 그것, 없으면 지역 `weather`.
+
+---
+
+## 다국어 (i18n.js)
+
+- 지원 언어: `ko`, `en`, `ja`. 언어 결정: `localStorage` `trip_lang` > 브라우저 언어 > `en`
+- **화면 문구**: `i18n/{lang}.json`의 키. HTML은 `data-i18n`(글자), `data-i18n-html`(태그 포함), `data-i18n-placeholder`, `data-i18n-title`(title + aria-label). JS는 `t('key', { name: 값 })` — `{name}` 자리 채움
+- **데이터 글자**: `{ "ko": "...", "en": "...", "ja": "..." }` 객체 → `tx(value)`로 표시. 현재 언어 > en > ko 순으로 대체. 문자열이면 그대로 표시 (아직 번역 안 된 데이터)
+- 새 문구 추가 시 **세 파일 모두에 같은 키** 추가. 빠지면 영어 → 키 이름 순으로 표시됨
+- 언어 전환 버튼(`#lang-switch`): 푸드·스팟·화장실 헤더. 전환 시 페이지 새로고침
+- 현재 `nations.json`, `regions.json`의 이름·카테고리는 다국어 객체. `stores.json`, `spots.json`은 3단계에서 변환
 
 ---
 
@@ -204,9 +218,9 @@ trip-guide/
 
 ## Service Worker (sw.js)
 
-- 캐시 이름: `trip-guide-v1`
+- 캐시 이름: `trip-guide-v2`
 - 전략: App Shell은 cache-first, Open-Meteo API는 network-first + cache fallback
-- **새 파일 추가 시** (국가 데이터 포함) `APP_SHELL` 배열에 경로 추가 후 캐시 이름 버전 올리기 (`trip-guide-v2` 등)
+- **새 파일 추가 시** (국가 데이터 포함) `APP_SHELL` 배열에 경로 추가 후 캐시 이름 버전 올리기 (`trip-guide-v3` 등)
 
 ---
 
@@ -245,7 +259,7 @@ Service Worker는 `http://localhost`에서만 동작 (https 불필요).
 
 - [x] 1단계: 이름 변경, 앱을 저장소 루트로 이동, 국가/지역/구역 구조 (`geo.js`, `nations.json`, `regions.json`)
 - [x] GitHub 저장소 이름 `nyc` → `trip-guide` 변경 (Pages: https://tnfhrnsss.github.io/trip-guide/ — main 머지 후 반영)
-- [ ] 2단계: 다국어(ko/en/ja) — `i18n/*.json` + `data-i18n` 속성, 헤더 언어 전환
+- [x] 2단계: 다국어(ko/en/ja) — `i18n/*.json` + `data-i18n` 속성, 헤더 언어 전환
 - [ ] 3단계: 데이터 다국어화 — 텍스트 필드를 `{ko,en,ja}`로, `ordering_flow`(영어 Q&A) → `order_guide`(단계·선택지만), `sauce_guide` → `menu_guide`
 - [ ] 4단계: 한국(`data/kr/`) — 강남구 역 구역, 카페 중심 데이터, 네이버 지도 링크, 공공데이터 화장실
 - [ ] 지도(map.html)에 스팟 핀도 표시

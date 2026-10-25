@@ -14,8 +14,8 @@ function renderHeader(s) {
   document.getElementById('store-detail-meta').innerHTML = `
     <span class="meta-tag">${catLabel('store', s.category)}</span>
     <span class="meta-tag">📍 ${placeName(s)}</span>
-    ${s.tip_expected ? '<span class="meta-tag">🪙 Tip</span>' : ''}
-    ${s.has_seating  ? '<span class="meta-tag">🪑</span>' : ''}
+    ${s.tip_expected ? `<span class="meta-tag" title="${t('tag.tip_title')}">${t('tag.tip')}</span>` : ''}
+    ${s.has_seating  ? `<span class="meta-tag" title="${t('tag.seating_title')}">🪑</span>` : ''}
   `;
 
 }
@@ -52,7 +52,7 @@ function renderSauce(guide) {
           <div class="sauce-name">${g.name}</div>
           <div class="sauce-name-ko">${g.name_ko}</div>
         </div>
-        ${g.recommended ? '<span class="sauce-rec">✦ 추천</span>' : ''}
+        ${g.recommended ? `<span class="sauce-rec">${t('store.recommended')}</span>` : ''}
       </div>
       <div class="sauce-desc">${g.description_ko}</div>
     </div>

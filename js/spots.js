@@ -14,14 +14,14 @@ function filtered() {
 }
 
 function admBadge(s) {
-  if (s.admission === 'free') return '<span class="badge-free">무료</span>';
-  if (s.admission === 'paid') return '<span class="badge-paid">유료</span>';
+  if (s.admission === 'free') return `<span class="badge-free">${t('spots.free')}</span>`;
+  if (s.admission === 'paid') return `<span class="badge-paid">${t('spots.paid')}</span>`;
   return '';
 }
 
 function resBadge(s) {
-  if (s.reservation === true)            return '<span class="badge-res">예약 필수</span>';
-  if (s.reservation === 'recommended')   return '<span class="badge-res-rec">예약 권장</span>';
+  if (s.reservation === true)            return `<span class="badge-res">${t('spots.res_required')}</span>`;
+  if (s.reservation === 'recommended')   return `<span class="badge-res-rec">${t('spots.res_recommended')}</span>`;
   return '';
 }
 
@@ -30,7 +30,7 @@ function renderSpots() {
   const items = filtered();
 
   if (!items.length) {
-    list.innerHTML = '<div class="empty-msg">등록된 스팟이 없습니다.<br>다른 지역을 선택해보세요.</div>';
+    list.innerHTML = `<div class="empty-msg">${t('spots.empty')}</div>`;
     return;
   }
 
@@ -53,7 +53,7 @@ function renderSpots() {
             ${s.tips.map(t => `<div class="tip-item">${t}</div>`).join('')}
           </div>
           <button class="tips-toggle" data-id="${s.id}">
-            ${open ? '▲ 팁 접기' : '▼ 팁 보기'}
+            ${open ? t('spots.tips_hide') : t('spots.tips_show')}
           </button>
         ` : ''}
         <div class="spot-address">
@@ -90,6 +90,7 @@ async function init() {
   await loadGeo();
   spots = await loadData('spots.json', 'spots');
   initNationSwitch('nation-switch');
+  initLangSwitch('lang-switch');
   catChips = initCatChips('cat-row', 'spot', cat => {
     category = cat;
     renderSpots();

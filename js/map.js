@@ -28,13 +28,13 @@ function addMarkers(stores) {
           <div style="font-size:12px;color:#718096;margin-bottom:7px">${catLabel('store', s.category)}</div>
           <div style="font-size:12px;margin-bottom:8px;line-height:1.4">${s.description}</div>
           <div style="display:flex;gap:8px;font-size:12px;color:#718096;margin-bottom:10px">
-            ${s.tip_expected ? '<span>🪙 Tip</span>' : ''}
+            ${s.tip_expected ? `<span>${t('tag.tip')}</span>` : ''}
             ${s.has_seating  ? '<span>🪑</span>' : ''}
           </div>
           <a href="store.html?nation=${Geo.nation.id}&id=${s.id}"
             style="display:block;background:#2563EB;color:#fff;padding:8px 12px;
             border-radius:8px;text-align:center;text-decoration:none;font-size:13px;font-weight:700">
-            주문 가이드 보기 →
+            ${t('map.view_guide')}
           </a>
         </div>
       `)
@@ -53,7 +53,7 @@ function locateUser() {
       color: '#fff',
       weight: 3,
       fillOpacity: 1,
-    }).addTo(mapInstance).bindPopup('📍 현재 위치').openPopup();
+    }).addTo(mapInstance).bindPopup(t('map.here')).openPopup();
     mapInstance.setView([lat, lng], 15);
   }, () => {});
 }

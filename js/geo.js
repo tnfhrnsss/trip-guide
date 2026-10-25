@@ -16,8 +16,9 @@ async function fetchJson(url) {
   return res.json();
 }
 
-// ?nation= 파라미터 > 저장된 국가 > 첫 번째 국가
+// 다국어를 먼저 불러온 뒤 국가를 정한다: ?nation= 파라미터 > 저장된 국가 > 첫 번째 국가
 async function loadGeo() {
+  await loadI18n();
   Geo.nations = (await fetchJson('data/nations.json')).nations;
   const param = new URLSearchParams(location.search).get('nation');
   const saved = storageGet(localStorage, 'trip_nation');
@@ -47,19 +48,21 @@ function findRegion(id) {
 }
 
 function regionName(id) {
-  return findRegion(id)?.name || id;
+  const r = findRegion(id);
+  return r ? tx(r.name) : id;
 }
 
 // 카드에 표시할 위치명: 구역이 있으면 구역명, 없으면 지역명
 function placeName(item) {
   const area = findRegion(item.region)?.areas.find(a => a.id === item.area);
-  return area?.name || regionName(item.region);
+  return area ? tx(area.name) : regionName(item.region);
 }
 
 // ── 카테고리 (국가 설정의 store_categories / spot_categories) ──
 function catInfo(kind, id) {
   const list = Geo.nation[`${kind}_categories`] || [];
-  return list.find(c => c.id === id) || { id, label: id, emoji: '📍' };
+  const c = list.find(c => c.id === id);
+  return c ? { ...c, label: tx(c.label) } : { id, label: id, emoji: '📍' };
 }
 
 function catLabel(kind, id) {
@@ -80,7 +83,7 @@ function weatherPoint(region, area) {
   const w = area?.weather || region.weather;
   if (!w) return null;
   const key = `${Geo.nation.id}_${area?.weather ? area.id : region.id}`;
-  return { key, name: w.name, lat: w.lat, lng: w.lng, timezone: region.timezone };
+  return { key, name: tx(w.name), lat: w.lat, lng: w.lng, timezone: region.timezone };
 }
 
 // 구역이 선택되면 구역 id로만 비교한다 (여러 지역에 걸친 구역 대응)
@@ -116,7 +119,7 @@ function initGeoTabs({ includeWeatherOnly = true, onChange }) {
 
   function renderTabs() {
     tabsEl.innerHTML = regions.map(r => `
-      <button class="region-tab${r === sel.region ? ' active' : ''}" data-region="${r.id}">${r.name}</button>
+      <button class="region-tab${r === sel.region ? ' active' : ''}" data-region="${r.id}">${tx(r.name)}</button>
     `).join('');
   }
 
@@ -124,7 +127,7 @@ function initGeoTabs({ includeWeatherOnly = true, onChange }) {
     const areas = sel.region.areas;
     areasEl.classList.toggle('hidden', areas.length < 2);
     areasEl.innerHTML = areas.map(a => `
-      <button class="area-chip${a === sel.area ? ' active' : ''}" data-area="${a.id}">${a.name}</button>
+      <button class="area-chip${a === sel.area ? ' active' : ''}" data-area="${a.id}">${tx(a.name)}</button>
     `).join('');
   }
 
@@ -157,8 +160,8 @@ function initGeoTabs({ includeWeatherOnly = true, onChange }) {
 function initCatChips(containerId, kind, onChange) {
   const el = document.getElementById(containerId);
   const cats = Geo.nation[`${kind}_categories`] || [];
-  el.innerHTML = `<button class="cat-chip active" data-cat="all">전체</button>`
-    + cats.map(c => `<button class="cat-chip" data-cat="${c.id}">${c.emoji} ${c.label}</button>`).join('');
+  el.innerHTML = `<button class="cat-chip active" data-cat="all">${t('cat.all')}</button>`
+    + cats.map(c => `<button class="cat-chip" data-cat="${c.id}">${c.emoji} ${tx(c.label)}</button>`).join('');
 
   el.addEventListener('click', e => {
     const chip = e.target.closest('.cat-chip');
@@ -180,7 +183,7 @@ function initNationSwitch(containerId) {
   if (!el || Geo.nations.length < 2) return;
   el.classList.remove('hidden');
   el.innerHTML = Geo.nations.map(n => `
-    <button class="nation-btn${n === Geo.nation ? ' active' : ''}" data-nation="${n.id}" title="${n.name}">${n.flag}</button>
+    <button class="nation-btn${n === Geo.nation ? ' active' : ''}" data-nation="${n.id}" title="${tx(n.name)}">${n.flag}</button>
   `).join('');
   el.addEventListener('click', e => {
     const btn = e.target.closest('.nation-btn');

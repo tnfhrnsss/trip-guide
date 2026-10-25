@@ -19,7 +19,7 @@ function renderList() {
   const list = document.getElementById('store-list');
   const items = filtered();
   if (!items.length) {
-    list.innerHTML = `<div class="empty-msg">등록된 가게가 없습니다.<br>다른 지역이나 카테고리를 선택해보세요.</div>`;
+    list.innerHTML = `<div class="empty-msg">${t('food.empty')}</div>`;
     return;
   }
   list.innerHTML = items.map(s => `
@@ -34,8 +34,8 @@ function renderList() {
       <div class="store-desc">${s.description}</div>
       <div class="store-meta">
         <span class="meta-tag">📍 ${placeName(s)}</span>
-        ${s.tip_expected ? '<span class="meta-tag">🪙 Tip</span>' : ''}
-        ${s.has_seating  ? '<span class="meta-tag">🪑</span>' : ''}
+        ${s.tip_expected ? `<span class="meta-tag" title="${t('tag.tip_title')}">${t('tag.tip')}</span>` : ''}
+        ${s.has_seating  ? `<span class="meta-tag" title="${t('tag.seating_title')}">🪑</span>` : ''}
       </div>
     </a>
   `).join('');
@@ -62,6 +62,7 @@ async function init() {
   await loadGeo();
   stores = await loadData('stores.json', 'stores');
   initNationSwitch('nation-switch');
+  initLangSwitch('lang-switch');
   catChips = initCatChips('cat-row', 'store', cat => {
     category = cat;
     renderList();

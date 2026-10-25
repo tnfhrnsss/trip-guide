@@ -2,27 +2,27 @@
   "nations": [
     {
       "id": "us",
-      "name": "미국",
+      "name": { "ko": "미국", "en": "USA", "ja": "アメリカ" },
       "flag": "🇺🇸",
       "currency": "$",
       "maps": "google",
       "store_categories": [
-        { "id": "bagel",  "label": "베이글",   "emoji": "🥯", "color": "#F59E0B" },
-        { "id": "burger", "label": "버거",     "emoji": "🍔", "color": "#DC2626" },
-        { "id": "pizza",  "label": "피자",     "emoji": "🍕", "color": "#EF4444" },
-        { "id": "deli",   "label": "델리",     "emoji": "🥪", "color": "#8B5CF6" },
-        { "id": "coffee", "label": "커피",     "emoji": "☕", "color": "#78350F" },
-        { "id": "bakery", "label": "베이커리", "emoji": "🥐", "color": "#D97706" },
-        { "id": "taco",   "label": "타코",     "emoji": "🌮", "color": "#16A34A" },
-        { "id": "ramen",  "label": "라멘",     "emoji": "🍜", "color": "#EA580C" },
-        { "id": "other",  "label": "기타",     "emoji": "🍽️", "color": "#059669" }
+        { "id": "bagel", "label": { "ko": "베이글", "en": "Bagel", "ja": "ベーグル" }, "emoji": "🥯", "color": "#F59E0B" },
+        { "id": "burger", "label": { "ko": "버거", "en": "Burger", "ja": "バーガー" }, "emoji": "🍔", "color": "#DC2626" },
+        { "id": "pizza", "label": { "ko": "피자", "en": "Pizza", "ja": "ピザ" }, "emoji": "🍕", "color": "#EF4444" },
+        { "id": "deli", "label": { "ko": "델리", "en": "Deli", "ja": "デリ" }, "emoji": "🥪", "color": "#8B5CF6" },
+        { "id": "coffee", "label": { "ko": "커피", "en": "Coffee", "ja": "コーヒー" }, "emoji": "☕", "color": "#78350F" },
+        { "id": "bakery", "label": { "ko": "베이커리", "en": "Bakery", "ja": "ベーカリー" }, "emoji": "🥐", "color": "#D97706" },
+        { "id": "taco", "label": { "ko": "타코", "en": "Tacos", "ja": "タコス" }, "emoji": "🌮", "color": "#16A34A" },
+        { "id": "ramen", "label": { "ko": "라멘", "en": "Ramen", "ja": "ラーメン" }, "emoji": "🍜", "color": "#EA580C" },
+        { "id": "other", "label": { "ko": "기타", "en": "Other", "ja": "その他" }, "emoji": "🍽️", "color": "#059669" }
       ],
       "spot_categories": [
-        { "id": "landmark", "label": "랜드마크", "emoji": "🗽" },
-        { "id": "museum",   "label": "박물관",   "emoji": "🏛️" },
-        { "id": "park",     "label": "공원",     "emoji": "🌿" },
-        { "id": "view",     "label": "전망대",   "emoji": "🔭" },
-        { "id": "market",   "label": "마켓",     "emoji": "🛍️" }
+        { "id": "landmark", "label": { "ko": "랜드마크", "en": "Landmark", "ja": "ランドマーク" }, "emoji": "🗽" },
+        { "id": "museum", "label": { "ko": "박물관", "en": "Museum", "ja": "博物館" }, "emoji": "🏛️" },
+        { "id": "park", "label": { "ko": "공원", "en": "Park", "ja": "公園" }, "emoji": "🌿" },
+        { "id": "view", "label": { "ko": "전망대", "en": "Observation deck", "ja": "展望台" }, "emoji": "🔭" },
+        { "id": "market", "label": { "ko": "마켓", "en": "Market", "ja": "マーケット" }, "emoji": "🛍️" }
       ]
     }
   ]

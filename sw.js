@@ -1,4 +1,4 @@
-const CACHE = 'trip-guide-v1';
+const CACHE = 'trip-guide-v2';
 
 const APP_SHELL = [
   './',
@@ -8,6 +8,7 @@ const APP_SHELL = [
   './map.html',
   './restroom.html',
   './css/style.css',
+  './js/i18n.js',
   './js/geo.js',
   './js/app.js',
   './js/store.js',
@@ -15,6 +16,9 @@ const APP_SHELL = [
   './js/map.js',
   './js/restroom.js',
   './js/weather.js',
+  './i18n/ko.json',
+  './i18n/en.json',
+  './i18n/ja.json',
   './data/nations.json',
   './data/us/regions.json',
   './data/us/stores.json',

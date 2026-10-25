@@ -3,18 +3,23 @@
 let map, userMarker, currentLat, currentLng;
 let currentRadius = 100;
 
-document.getElementById('wc-btn').addEventListener('click', locate);
-loadGeo().catch(() => {});
+async function init() {
+  try { await loadGeo(); } catch (_) {}
+  initLangSwitch('lang-switch');
+  document.getElementById('wc-btn').addEventListener('click', locate);
+}
+
+document.addEventListener('DOMContentLoaded', init);
 
 function locate() {
   const btn = document.getElementById('wc-btn');
   btn.disabled = true;
-  btn.textContent = '위치 확인 중…';
+  btn.textContent = t('wc.locating');
 
   if (!navigator.geolocation) {
-    showInfo('이 브라우저는 위치 서비스를 지원하지 않습니다.');
+    showInfo(t('wc.no_geo'));
     btn.disabled = false;
-    btn.textContent = '📍 내 위치로 검색하기';
+    btn.textContent = t('wc.locate');
     return;
   }
 
@@ -37,14 +42,14 @@ function onPosition(pos) {
 
 function onGeoError(err) {
   const msgs = {
-    1: '위치 접근 권한이 거부되었습니다. 브라우저 설정에서 허용해주세요.',
-    2: '위치를 확인할 수 없습니다. GPS 신호를 확인해주세요.',
-    3: '위치 확인 시간이 초과되었습니다. 다시 시도해주세요.'
+    1: 'wc.geo_denied',
+    2: 'wc.geo_unavailable',
+    3: 'wc.geo_timeout'
   };
-  showInfo(msgs[err.code] || '위치 확인 중 오류가 발생했습니다.');
+  showInfo(t(msgs[err.code] || 'wc.geo_error'));
   const btn = document.getElementById('wc-btn');
   btn.disabled = false;
-  btn.textContent = '📍 다시 시도';
+  btn.textContent = t('wc.retry');
 }
 
 function initMap(lat, lng) {
@@ -69,11 +74,11 @@ function initMap(lat, lng) {
     color: '#fff',
     weight: 2.5,
     fillOpacity: 1
-  }).addTo(map).bindPopup('📍 내 위치');
+  }).addTo(map).bindPopup(t('wc.me'));
 }
 
 async function fetchToilets(lat, lng, radius) {
-  showInfo('화장실 검색 중…');
+  showInfo(t('wc.searching'));
   document.getElementById('wc-list').innerHTML = '';
 
   // Remove previous toilet markers (keep user marker)
@@ -98,9 +103,9 @@ async function fetchToilets(lat, lng, radius) {
   } catch (e) {
     clearTimeout(timer);
     if (e.name === 'AbortError') {
-      showInfo('검색 시간이 초과되었습니다. 다시 시도해주세요.');
+      showInfo(t('wc.timeout'));
     } else {
-      showInfo('검색 중 오류가 발생했습니다. 잠시 후 다시 시도해주세요.');
+      showInfo(t('wc.error'));
     }
   }
 }
@@ -110,15 +115,15 @@ function renderResults(elements, userLat, userLng, radius) {
 
   if (!elements || elements.length === 0) {
     if (radius === 100) {
-      showInfo(`반경 100m 내 화장실을 찾지 못했습니다.`);
+      showInfo(t('wc.none_info', { radius }));
       list.innerHTML = `
         <div class="empty-msg">
-          반경 100m 내 등록된 화장실이 없습니다.<br>
-          <button class="wc-expand-btn" onclick="expandSearch()">반경 300m로 다시 검색</button>
+          ${t('wc.none_near', { radius })}<br>
+          <button class="wc-expand-btn" onclick="expandSearch()">${t('wc.expand', { radius: 300 })}</button>
         </div>`;
     } else {
-      showInfo(`반경 ${radius}m 내 화장실을 찾지 못했습니다.`);
-      list.innerHTML = `<div class="empty-msg">주변에 등록된 화장실 정보가 없습니다.<br>조금 이동 후 다시 검색해보세요.</div>`;
+      showInfo(t('wc.none_info', { radius }));
+      list.innerHTML = `<div class="empty-msg">${t('wc.none_far')}</div>`;
     }
     return;
   }
@@ -129,8 +134,7 @@ function renderResults(elements, userLat, userLng, radius) {
     return { ...el, _lat: lat, _lng: lng, _dist: haversine(userLat, userLng, lat, lng) };
   }).sort((a, b) => a._dist - b._dist);
 
-  const label = radius === 100 ? '100m' : `${radius}m`;
-  showInfo(`반경 ${label} 내 화장실 ${items.length}곳 발견 · <button class="wc-refresh-btn" onclick="reSearch()">새로고침</button>`);
+  showInfo(`${t('wc.found', { radius, count: items.length })} · <button class="wc-refresh-btn" onclick="reSearch()">${t('wc.refresh')}</button>`);
 
   items.forEach((item, i) => {
     const icon = L.divIcon({
@@ -141,7 +145,7 @@ function renderResults(elements, userLat, userLng, radius) {
     });
     L.marker([item._lat, item._lng], { icon })
       .addTo(map)
-      .bindPopup(`<strong>${item.tags?.name || '화장실'}</strong><br>${feeLabel(item.tags)} · ${Math.round(item._dist)}m`);
+      .bindPopup(`<strong>${item.tags?.name || t('wc.default_name')}</strong><br>${feeLabel(item.tags)} · ${Math.round(item._dist)}m`);
   });
 
   list.innerHTML = items.map((item, i) => buildCard(item, i + 1)).join('');
@@ -149,14 +153,14 @@ function renderResults(elements, userLat, userLng, radius) {
 
 function buildCard(item, num) {
   const tags = item.tags || {};
-  const name = tags.name || '공중화장실';
+  const name = tags.name || t('wc.default_name');
   const dist = Math.round(item._dist);
   const fee = feeLabel(tags);
   const access = accessLabel(tags);
   const hoursHtml = tags.opening_hours
     ? `<span class="wc-hours">⏰ ${tags.opening_hours}</span>` : '';
   const wcHtml = tags.wheelchair === 'yes'
-    ? '<span class="wc-badge wc-badge-wc">♿ 휠체어</span>' : '';
+    ? `<span class="wc-badge wc-badge-wc">${t('wc.wheelchair')}</span>` : '';
   const url = mapsUrl(`${item._lat},${item._lng}`);
 
   return `
@@ -166,7 +170,7 @@ function buildCard(item, num) {
         <div class="wc-card-body">
           <div class="wc-name">${name}</div>
           <div class="wc-meta">
-            <span class="wc-badge ${fee === '무료' ? 'wc-badge-free' : 'wc-badge-paid'}">${fee}</span>
+            <span class="wc-badge ${isPaid(tags) ? 'wc-badge-paid' : 'wc-badge-free'}">${fee}</span>
             <span class="wc-badge wc-badge-access">${access}</span>
             ${wcHtml}
           </div>
@@ -174,20 +178,24 @@ function buildCard(item, num) {
         </div>
         <div class="wc-dist">${dist}m</div>
       </div>
-      <a class="wc-maps-btn" href="${url}" target="_blank">지도에서 보기 →</a>
+      <a class="wc-maps-btn" href="${url}" target="_blank">${t('wc.view_map')}</a>
     </div>`;
 }
 
+function isPaid(tags) {
+  return tags?.fee === 'yes';
+}
+
 function feeLabel(tags) {
-  return tags?.fee === 'yes' ? '유료' : '무료';
+  return isPaid(tags) ? t('wc.fee_paid') : t('wc.fee_free');
 }
 
 function accessLabel(tags) {
   const a = tags?.access;
-  if (a === 'private') return '비공개';
-  if (a === 'customers') return '고객 전용';
-  if (a === 'permissive') return '허용';
-  return '공용';
+  if (a === 'private') return t('wc.access_private');
+  if (a === 'customers') return t('wc.access_customers');
+  if (a === 'permissive') return t('wc.access_permissive');
+  return t('wc.access_public');
 }
 
 function showInfo(html) {

@@ -1,28 +1,30 @@
+// WMO 날씨 코드 → i18n 키(wmo.*) + 아이콘
 const WMO = {
-  0:  { ko: '맑음',       icon: '☀️' },
-  1:  { ko: '대체로 맑음', icon: '🌤️' },
-  2:  { ko: '구름 조금',   icon: '⛅' },
-  3:  { ko: '흐림',       icon: '🌥️' },
-  45: { ko: '안개',       icon: '🌫️' },
-  48: { ko: '짙은 안개',  icon: '🌫️' },
-  51: { ko: '이슬비',     icon: '🌦️' },
-  53: { ko: '이슬비',     icon: '🌦️' },
-  55: { ko: '이슬비',     icon: '🌦️' },
-  61: { ko: '비',         icon: '🌧️' },
-  63: { ko: '비',         icon: '🌧️' },
-  65: { ko: '폭우',       icon: '🌧️' },
-  71: { ko: '눈',         icon: '🌨️' },
-  73: { ko: '눈',         icon: '🌨️' },
-  75: { ko: '폭설',       icon: '❄️' },
-  80: { ko: '소나기',     icon: '🌦️' },
-  81: { ko: '소나기',     icon: '🌦️' },
-  82: { ko: '강한 소나기', icon: '⛈️' },
-  95: { ko: '뇌우',       icon: '⛈️' },
-  99: { ko: '뇌우+우박',  icon: '⛈️' },
+  0:  { key: 'clear',         icon: '☀️' },
+  1:  { key: 'mostly_clear',  icon: '🌤️' },
+  2:  { key: 'partly_cloudy', icon: '⛅' },
+  3:  { key: 'overcast',      icon: '🌥️' },
+  45: { key: 'fog',           icon: '🌫️' },
+  48: { key: 'dense_fog',     icon: '🌫️' },
+  51: { key: 'drizzle',       icon: '🌦️' },
+  53: { key: 'drizzle',       icon: '🌦️' },
+  55: { key: 'drizzle',       icon: '🌦️' },
+  61: { key: 'rain',          icon: '🌧️' },
+  63: { key: 'rain',          icon: '🌧️' },
+  65: { key: 'heavy_rain',    icon: '🌧️' },
+  71: { key: 'snow',          icon: '🌨️' },
+  73: { key: 'snow',          icon: '🌨️' },
+  75: { key: 'heavy_snow',    icon: '❄️' },
+  80: { key: 'showers',       icon: '🌦️' },
+  81: { key: 'showers',       icon: '🌦️' },
+  82: { key: 'heavy_showers', icon: '⛈️' },
+  95: { key: 'thunder',       icon: '⛈️' },
+  99: { key: 'thunder_hail',  icon: '⛈️' },
 };
 
 function wmoInfo(code) {
-  return WMO[code] || { ko: '알 수 없음', icon: '🌡️' };
+  const w = WMO[code] || { key: 'unknown', icon: '🌡️' };
+  return { label: t(`wmo.${w.key}`), icon: w.icon };
 }
 
 async function fetchCityWeather(point) {
@@ -35,7 +37,7 @@ async function fetchCityWeather(point) {
 }
 
 function buildCards(point, data) {
-  const days = ['오늘', '내일'];
+  const days = [t('weather.today'), t('weather.tomorrow')];
   return [0, 1].map(i => {
     const info = wmoInfo(data.daily.weathercode[i]);
     const max  = Math.round(data.daily.temperature_2m_max[i]);
@@ -46,9 +48,9 @@ function buildCards(point, data) {
         <div class="w-city">${point.name}</div>
         <div class="w-day">${days[i]}</div>
         <div class="w-temp">${info.icon} ${max}°</div>
-        <div class="w-cond">${info.ko}</div>
-        <div class="w-hilo">최고 ${max}° / 최저 ${min}°</div>
-        <div class="w-rain">💧 강수 ${rain}%</div>
+        <div class="w-cond">${info.label}</div>
+        <div class="w-hilo">${t('weather.hilo', { max, min })}</div>
+        <div class="w-rain">${t('weather.rain', { rain })}</div>
       </div>`;
   }).join('');
 }
@@ -71,7 +73,7 @@ async function initWeather(containerId, point) {
     }
   } catch (_) {}
 
-  el.innerHTML = '<div class="w-loading">날씨 불러오는 중…</div>';
+  el.innerHTML = `<div class="w-loading">${t('weather.loading')}</div>`;
 
   // 실시간 fetch
   try {
@@ -87,10 +89,10 @@ async function initWeather(containerId, point) {
         const banner = document.getElementById('offline-banner');
         if (banner) banner.classList.remove('hidden');
       } else {
-        el.innerHTML = '<div class="w-loading">날씨 정보를 불러올 수 없습니다.</div>';
+        el.innerHTML = `<div class="w-loading">${t('weather.error')}</div>`;
       }
     } catch (_2) {
-      el.innerHTML = '<div class="w-loading">날씨 정보를 불러올 수 없습니다.</div>';
+      el.innerHTML = `<div class="w-loading">${t('weather.error')}</div>`;
     }
   }
 }
