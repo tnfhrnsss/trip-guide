@@ -70,6 +70,13 @@ function catLabel(kind, id) {
   return `${c.emoji} ${c.label}`;
 }
 
+// 메뉴판에 적힌 이름 (국가 설정의 menu_lang). 지금 보이는 이름과 같으면 ''
+function menuName(name) {
+  if (!name || typeof name !== 'object') return '';
+  const local = name[Geo.nation?.menu_lang];
+  return local && local !== tx(name) ? local : '';
+}
+
 // ── 지도 링크 (국가 설정의 maps) ──
 function mapsUrl(query) {
   if (Geo.nation?.maps === 'naver') {

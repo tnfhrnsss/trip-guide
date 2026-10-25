@@ -42,7 +42,7 @@ trip-guide/
 ├── map.html            ← Leaflet 지도
 ├── restroom.html       ← 화장실 찾기 (현재 위치 기반)
 ├── manifest.json       ← PWA
-├── sw.js               ← Service Worker (캐시 버전: trip-guide-v2)
+├── sw.js               ← Service Worker (캐시 버전: trip-guide-v3)
 ├── css/style.css       ← 단일 CSS, CSS 변수 기반
 ├── js/
 │   ├── i18n.js         ← 다국어: t(), tx(), applyI18n(), 언어 전환 (geo.js보다 먼저 로드)
@@ -91,7 +91,7 @@ trip-guide/
 ```json
 { "nations": [{
   "id": "us", "name": { "ko": "미국", "en": "USA", "ja": "アメリカ" }, "flag": "🇺🇸", "currency": "$",
-  "maps": "google|naver",
+  "maps": "google|naver", "menu_lang": "en",
   "store_categories": [{ "id": "bagel", "label": { "ko": "베이글", "en": "Bagel", "ja": "ベーグル" }, "emoji": "🥯", "color": "#F59E0B" }],
   "spot_categories":  [{ "id": "landmark", "label": { "ko": "...", "en": "...", "ja": "..." }, "emoji": "🗽" }]
 }] }
@@ -119,7 +119,7 @@ trip-guide/
 - **데이터 글자**: `{ "ko": "...", "en": "...", "ja": "..." }` 객체 → `tx(value)`로 표시. 현재 언어 > en > ko 순으로 대체. 문자열이면 그대로 표시 (아직 번역 안 된 데이터)
 - 새 문구 추가 시 **세 파일 모두에 같은 키** 추가. 빠지면 영어 → 키 이름 순으로 표시됨
 - 언어 전환 버튼(`#lang-switch`): 푸드·스팟·화장실 헤더. 전환 시 페이지 새로고침
-- 현재 `nations.json`, `regions.json`의 이름·카테고리는 다국어 객체. `stores.json`, `spots.json`은 3단계에서 변환
+- 모든 데이터(`nations.json`, `regions.json`, `stores.json`, `spots.json`)의 표시 글자는 다국어 객체
 
 ---
 
@@ -127,38 +127,35 @@ trip-guide/
 
 ### stores.json — 맛집
 
-루트 구조: `{ "stores": [ ... ] }`
+루트 구조: `{ "stores": [ ... ] }`. `L` = `{ "ko": "...", "en": "...", "ja": "..." }` 다국어 객체.
 
 ```json
 {
   "id": "string (URL용 kebab-case)",
-  "name": "string (영문)",
+  "name": "string (가게 원래 이름)",
   "category": "nations.json의 store_categories id",
   "region": "regions.json의 지역 id",
   "area": "regions.json의 구역 id | null",
   "address": "string",
   "lat": 0.0, "lng": 0.0,
-  "tip_expected": true|false,
-  "has_seating": true|false,
+  "tip_expected": true|false,             // 선택 (미국)
+  "has_seating": true|false,              // 선택
   "price_range": "$X~Y",                  // 추천 메뉴 기준 1인 예상
-  "description": "string (한국어 1~2줄)",
-  "ordering_flow": [
+  "description": L,
+  "order_guide": [                        // 주문 가이드: 단계 + 선택지만 (대화 예문 없음)
     {
       "step": 1,
-      "question_en": "string",
-      "question_ko": "string",
-      "tip": "string (선택)",
-      "options": [
-        { "en": "string", "ko": "string", "recommended": true|false }
-      ]
+      "title": L,                         // 예: "베이글 고르기"
+      "note": L,                          // 선택 — 💡 팁
+      "options": [ { "name": L, "recommended": true } ]   // recommended는 추천일 때만
     }
   ],
-  "sauce_guide": [
-    { "name": "string", "name_ko": "string", "description_ko": "string", "recommended": true|false }
-  ],
-  "tips": ["string", ...]
+  "menu_guide": [ { "name": L, "description": L, "recommended": true } ],
+  "tips": [L, ...]
 }
 ```
+
+- 선택지·메뉴 이름 아래에는 **메뉴판 표기**(`nations.json`의 `menu_lang`, 미국은 `en`)가 작게 표시됨 — 현재 언어 이름과 같으면 숨김 (`menuName()`)
 
 ### spots.json — 관광 스팟
 
@@ -167,18 +164,18 @@ trip-guide/
 ```json
 {
   "id": "string",
-  "name_ko": "string (한국어명)",
+  "name": L,
   "region": "regions.json의 지역 id",
   "area": "regions.json의 구역 id | null",
   "category": "nations.json의 spot_categories id",
   "address": "string",
   "lat": 0.0, "lng": 0.0,
   "admission": "free|paid",
-  "admission_note": "string (예: '무료' 또는 '유료 ($30)')",
+  "admission_note": L,
   "reservation": false|true|"recommended",
-  "hours": "string",
-  "description_ko": "string",
-  "tips": ["string", ...]
+  "hours": L,
+  "description": L,
+  "tips": [L, ...]
 }
 ```
 
@@ -218,9 +215,9 @@ trip-guide/
 
 ## Service Worker (sw.js)
 
-- 캐시 이름: `trip-guide-v2`
+- 캐시 이름: `trip-guide-v3`
 - 전략: App Shell은 cache-first, Open-Meteo API는 network-first + cache fallback
-- **새 파일 추가 시** (국가 데이터 포함) `APP_SHELL` 배열에 경로 추가 후 캐시 이름 버전 올리기 (`trip-guide-v3` 등)
+- **새 파일 추가 시** (국가 데이터 포함) `APP_SHELL` 배열에 경로 추가 후 캐시 이름 버전 올리기 (`trip-guide-v4` 등)
 
 ---
 
@@ -260,7 +257,7 @@ Service Worker는 `http://localhost`에서만 동작 (https 불필요).
 - [x] 1단계: 이름 변경, 앱을 저장소 루트로 이동, 국가/지역/구역 구조 (`geo.js`, `nations.json`, `regions.json`)
 - [x] GitHub 저장소 이름 `nyc` → `trip-guide` 변경 (Pages: https://tnfhrnsss.github.io/trip-guide/ — main 머지 후 반영)
 - [x] 2단계: 다국어(ko/en/ja) — `i18n/*.json` + `data-i18n` 속성, 헤더 언어 전환
-- [ ] 3단계: 데이터 다국어화 — 텍스트 필드를 `{ko,en,ja}`로, `ordering_flow`(영어 Q&A) → `order_guide`(단계·선택지만), `sauce_guide` → `menu_guide`
+- [x] 3단계: 데이터 다국어화 — 텍스트 필드를 `{ko,en,ja}`로, `ordering_flow`(영어 Q&A) → `order_guide`(단계·선택지만), `sauce_guide` → `menu_guide`
 - [ ] 4단계: 한국(`data/kr/`) — 강남구 역 구역, 카페 중심 데이터, 네이버 지도 링크, 공공데이터 화장실
 - [ ] 지도(map.html)에 스팟 핀도 표시
 - [ ] PWA 아이콘 개선

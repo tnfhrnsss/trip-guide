@@ -2,7 +2,11 @@
   "spots": [
     {
       "id": "brooklyn-bridge",
-      "name_ko": "브루클린 브리지",
+      "name": {
+        "ko": "브루클린 브리지",
+        "en": "Brooklyn Bridge",
+        "ja": "ブルックリン橋"
+      },
       "region": "new-york",
       "area": "downtown",
       "category": "landmark",
@@ -10,20 +14,52 @@
       "lat": 40.7061,
       "lng": -73.9969,
       "admission": "free",
-      "admission_note": "무료",
       "reservation": false,
-      "hours": "24시간",
-      "description_ko": "1883년 개통된 뉴욕의 상징. 보행자 통로로 맨해튼↔브루클린 DUMBO까지 도보 가능. 스카이라인 뷰가 압도적.",
+      "admission_note": {
+        "ko": "무료",
+        "en": "Free",
+        "ja": "無料"
+      },
+      "hours": {
+        "ko": "24시간",
+        "en": "24 hours",
+        "ja": "24時間"
+      },
+      "description": {
+        "ko": "1883년 개통된 뉴욕의 상징. 보행자 통로로 맨해튼↔브루클린 DUMBO까지 걸어갈 수 있어요. 스카이라인 뷰가 압도적.",
+        "en": "A New York icon opened in 1883. Walk the pedestrian path between Manhattan and DUMBO in Brooklyn. The skyline views are stunning.",
+        "ja": "1883年開通のNYの象徴。歩道でマンハッタンからブルックリンのDUMBOまで歩けます。スカイラインの眺めは圧巻。"
+      },
       "tips": [
-        "맨해튼 입구: Park Row & Centre St 부근",
-        "왕복 약 2.4km, 40~50분 소요",
-        "브루클린 쪽 DUMBO Washington St에서 찍는 브리지+빌딩 사진이 인스타 명소",
-        "자전거 레인과 보행자 레인 구분 — 자전거 레인에 서지 말 것"
+        {
+          "ko": "맨해튼 입구: Park Row & Centre St 부근",
+          "en": "Manhattan entrance: near Park Row & Centre St",
+          "ja": "マンハッタン側の入口：パーク・ロウとセンター通り付近"
+        },
+        {
+          "ko": "왕복 약 2.4km, 40~50분 소요",
+          "en": "About 2.4 km round trip, 40–50 minutes",
+          "ja": "往復約2.4km、40〜50分"
+        },
+        {
+          "ko": "브루클린 쪽 DUMBO Washington St에서 찍는 다리+빌딩 사진이 인기 사진 명소",
+          "en": "The bridge-and-buildings shot from Washington St in DUMBO is a famous photo spot",
+          "ja": "ブルックリン側DUMBOのワシントン通りから撮る橋＋ビルの写真が人気"
+        },
+        {
+          "ko": "자전거 도로와 보행자 도로가 나뉘어 있어요 — 자전거 도로에 서지 마세요",
+          "en": "Bike and pedestrian lanes are separate — don't stand in the bike lane",
+          "ja": "自転車レーンと歩行者レーンは分かれています。自転車レーンに立たないように"
+        }
       ]
     },
     {
       "id": "statue-of-liberty-ferry",
-      "name_ko": "자유의 여신상 (무료 페리)",
+      "name": {
+        "ko": "자유의 여신상 (무료 페리)",
+        "en": "Statue of Liberty (free ferry)",
+        "ja": "自由の女神（無料フェリー）"
+      },
       "region": "new-york",
       "area": "downtown",
       "category": "landmark",
@@ -31,21 +67,57 @@
       "lat": 40.7013,
       "lng": -74.0132,
       "admission": "free",
-      "admission_note": "무료 (스태튼 아일랜드 페리)",
       "reservation": false,
-      "hours": "24시간 (30분 간격 운항)",
-      "description_ko": "돈 한 푼 안 내고 자유의 여신상을 가장 가까이 볼 수 있는 방법. 통근용 공공 페리라 무료. 여신상 섬 상륙은 별도 유료.",
+      "admission_note": {
+        "ko": "무료 (스태튼 아일랜드 페리)",
+        "en": "Free (Staten Island Ferry)",
+        "ja": "無料（スタテン島フェリー）"
+      },
+      "hours": {
+        "ko": "24시간 (30분 간격 운항)",
+        "en": "24 hours (every 30 minutes)",
+        "ja": "24時間（30分間隔で運航）"
+      },
+      "description": {
+        "ko": "돈 한 푼 안 내고 자유의 여신상을 가까이 볼 수 있는 방법. 통근용 공공 페리라 무료. 여신상 섬 상륙은 별도 유료.",
+        "en": "The free way to see the Statue of Liberty up close — it's a public commuter ferry. Landing on Liberty Island requires a separate paid ticket.",
+        "ja": "お金をかけずに自由の女神を間近で見る方法。通勤用の公共フェリーなので無料。島への上陸は別料金。"
+      },
       "tips": [
-        "탑승 방법: 지하철 1호선 South Ferry역 또는 4·5호선 Bowling Green역 → 화이트홀 터미널 도보 3분",
-        "30분마다 운항. 편도 25분 소요. 돌아오는 배도 무료",
-        "여신상이 가장 잘 보이는 곳은 배 오른쪽(뱃머리 기준 우현) — 탑승 후 자리 잡기",
-        "섬에 직접 상륙해 받침대·왕관 올라가려면 별도 유료 티켓(statueofnewyork.com) 필요",
-        "일몰 시간대 페리를 타면 여신상+맨해튼 스카이라인 뷰 최고"
+        {
+          "ko": "타는 법: 지하철 1호선 South Ferry역 또는 4·5호선 Bowling Green역 → 화이트홀 터미널 도보 3분",
+          "en": "Getting there: South Ferry (1 train) or Bowling Green (4/5 trains), then 3 minutes' walk to Whitehall Terminal",
+          "ja": "行き方：地下鉄1線サウス・フェリー駅か4・5線ボウリング・グリーン駅からホワイトホール・ターミナルへ徒歩3分"
+        },
+        {
+          "ko": "30분마다 운항. 편도 25분. 돌아오는 배도 무료",
+          "en": "Every 30 minutes, 25 minutes each way. The return trip is free too",
+          "ja": "30分ごとに運航、片道25分。帰りも無料"
+        },
+        {
+          "ko": "여신상이 가장 잘 보이는 곳은 배 오른쪽(우현) — 타면 바로 자리 잡기",
+          "en": "Best views are from the right (starboard) side on the way out — grab a spot early",
+          "ja": "女神が一番よく見えるのは右舷側。乗ったらすぐ場所を確保"
+        },
+        {
+          "ko": "섬에 내려 받침대·왕관까지 올라가려면 별도 유료 티켓 필요 (statueofnewyork.com)",
+          "en": "To land and climb the pedestal or crown, buy a separate ticket (statueofnewyork.com)",
+          "ja": "島に上陸して台座や王冠に登るには別途有料チケットが必要（statueofnewyork.com）"
+        },
+        {
+          "ko": "해 질 무렵 페리를 타면 여신상+맨해튼 스카이라인 뷰가 최고",
+          "en": "Ride at sunset for the best views of the statue and the Manhattan skyline",
+          "ja": "夕暮れ時に乗ると女神＋マンハッタンの夜景が最高"
+        }
       ]
     },
     {
       "id": "whitney-museum",
-      "name_ko": "휘트니 미술관 (Whitney Museum)",
+      "name": {
+        "ko": "휘트니 미술관",
+        "en": "Whitney Museum",
+        "ja": "ホイットニー美術館"
+      },
       "region": "new-york",
       "area": "downtown",
       "category": "museum",
@@ -53,21 +125,57 @@
       "lat": 40.7396,
       "lng": -74.0089,
       "admission": "paid",
-      "admission_note": "유료 ($25) / 금요일 17~22시 무료 / 매달 둘째주 일요일 무료",
       "reservation": "recommended",
-      "hours": "10:30~18:00 (금요일 22:00)",
-      "description_ko": "미국 현대·동시대 미술 전문 미술관. 하이라인 남쪽 끝 바로 옆 위치. 허드슨강 뷰 테라스가 인상적.",
+      "admission_note": {
+        "ko": "유료 ($25) / 금요일 17~22시 무료 / 매달 둘째 주 일요일 무료",
+        "en": "Paid ($25) / Free Fridays 5–10pm / Free on the second Sunday of each month",
+        "ja": "有料（$25）／金曜17〜22時無料／毎月第2日曜無料"
+      },
+      "hours": {
+        "ko": "10:30~18:00 (금요일 22:00)",
+        "en": "10:30am–6pm (Fri until 10pm)",
+        "ja": "10:30〜18:00（金曜22:00まで）"
+      },
+      "description": {
+        "ko": "미국 현대·동시대 미술 전문 미술관. 하이라인 남쪽 끝 바로 옆. 허드슨강이 보이는 테라스가 인상적.",
+        "en": "Museum of modern and contemporary American art, right by the southern end of the High Line, with impressive Hudson River terraces.",
+        "ja": "アメリカの近現代美術専門の美術館。ハイライン南端のすぐそば。ハドソン川を望むテラスが印象的。"
+      },
       "tips": [
-        "무료 입장 1: 금요일 오후 5시~10시 무료입장 (사전 예약 권장)",
-        "무료 입장 2: 매달 둘째주 일요일 무료입장 (사전 예약 필수 — whitney.org)",
-        "하이라인 산책 후 남쪽 끝에서 도보 1분 거리 — 동선 연계 완벽",
-        "옥상 테라스에서 허드슨강 + 하이라인 뷰가 일품. 입장객 누구나 이용 가능",
-        "첼시 마켓, Intelligentsia Coffee와 같은 블록 — 커피+관람 코스 추천"
+        {
+          "ko": "무료 입장 1: 금요일 오후 5시~10시 (사전 예약 권장)",
+          "en": "Free entry 1: Fridays 5–10pm (reserve ahead)",
+          "ja": "無料入場1：金曜17〜22時（事前予約推奨）"
+        },
+        {
+          "ko": "무료 입장 2: 매달 둘째 주 일요일 (사전 예약 필수 — whitney.org)",
+          "en": "Free entry 2: second Sunday of each month (reservation required — whitney.org)",
+          "ja": "無料入場2：毎月第2日曜（事前予約必須 — whitney.org）"
+        },
+        {
+          "ko": "하이라인 남쪽 끝에서 도보 1분 — 동선 연결 완벽",
+          "en": "1 minute from the High Line's southern end — a perfect pairing",
+          "ja": "ハイライン南端から徒歩1分。動線が完璧"
+        },
+        {
+          "ko": "옥상 테라스의 허드슨강 + 하이라인 뷰가 일품. 입장객 누구나 이용 가능",
+          "en": "The rooftop terraces have superb Hudson River and High Line views, open to all visitors",
+          "ja": "屋上テラスからのハドソン川とハイラインの眺めは格別。入館者なら誰でも利用可"
+        },
+        {
+          "ko": "첼시 마켓, Intelligentsia Coffee와 가까워 커피+관람 코스 추천",
+          "en": "Close to Chelsea Market and Intelligentsia Coffee — combine art and coffee",
+          "ja": "チェルシーマーケットやインテリジェンシアにも近く、コーヒー＋鑑賞コースに"
+        }
       ]
     },
     {
       "id": "high-line",
-      "name_ko": "하이라인 (The High Line)",
+      "name": {
+        "ko": "하이라인",
+        "en": "The High Line",
+        "ja": "ハイライン"
+      },
       "region": "new-york",
       "area": "downtown",
       "category": "park",
@@ -75,20 +183,52 @@
       "lat": 40.748,
       "lng": -74.0048,
       "admission": "free",
-      "admission_note": "무료",
       "reservation": false,
-      "hours": "7:00~22:00 (계절별 상이)",
-      "description_ko": "폐 화물철도를 공원으로 재생한 1.6마일 고가 산책로. 미트패킹~허드슨 야즈 연결. 도심 속 가장 세련된 산책 코스.",
+      "admission_note": {
+        "ko": "무료",
+        "en": "Free",
+        "ja": "無料"
+      },
+      "hours": {
+        "ko": "7:00~22:00 (계절별 상이)",
+        "en": "7am–10pm (varies by season)",
+        "ja": "7:00〜22:00（季節により異なる）"
+      },
+      "description": {
+        "ko": "폐 화물철도를 공원으로 재생한 약 2.3km 고가 산책로. 미트패킹~허드슨 야즈 연결. 도심 속 가장 세련된 산책 코스.",
+        "en": "A 1.45-mile elevated park built on an old freight rail line, linking the Meatpacking District to Hudson Yards. The city's most stylish walk.",
+        "ja": "廃線の貨物鉄道を再生した約2.3kmの空中公園。ミートパッキングからハドソン・ヤードまで。都会で最もおしゃれな散歩道。"
+      },
       "tips": [
-        "남쪽 입구: Gansevoort St & Washington St",
-        "중간중간 음료·스낵 매점 있음",
-        "봄~가을이 가장 아름다움",
-        "Hudson Yards의 Vessel과 북쪽 끝에서 연결됨"
+        {
+          "ko": "남쪽 입구: Gansevoort St & Washington St",
+          "en": "Southern entrance: Gansevoort St & Washington St",
+          "ja": "南側の入口：ガンズヴォート通りとワシントン通り"
+        },
+        {
+          "ko": "중간중간 음료·간식 매점이 있어요",
+          "en": "Drink and snack stands along the way",
+          "ja": "途中に飲み物や軽食の売店あり"
+        },
+        {
+          "ko": "봄~가을이 가장 아름다워요",
+          "en": "Prettiest from spring to fall",
+          "ja": "春〜秋が一番きれい"
+        },
+        {
+          "ko": "북쪽 끝에서 허드슨 야즈의 베슬과 연결돼요",
+          "en": "The northern end connects to the Vessel at Hudson Yards",
+          "ja": "北端はハドソン・ヤードのベッセルにつながっています"
+        }
       ]
     },
     {
       "id": "chelsea-market",
-      "name_ko": "첼시 마켓 (Chelsea Market)",
+      "name": {
+        "ko": "첼시 마켓",
+        "en": "Chelsea Market",
+        "ja": "チェルシーマーケット"
+      },
       "region": "new-york",
       "area": "downtown",
       "category": "market",
@@ -96,20 +236,52 @@
       "lat": 40.7424,
       "lng": -74.0048,
       "admission": "free",
-      "admission_note": "무료 입장",
       "reservation": false,
-      "hours": "월~토 7:00~21:00 / 일 8:00~20:00",
-      "description_ko": "구 나비스코 공장을 개조한 실내 푸드 마켓. Los Tacos No.1, The Lobster Place 등 유명 맛집 집결. 쇼핑+식사 동시에.",
+      "admission_note": {
+        "ko": "무료 입장",
+        "en": "Free entry",
+        "ja": "入場無料"
+      },
+      "hours": {
+        "ko": "월~토 7:00~21:00 / 일 8:00~20:00",
+        "en": "Mon–Sat 7am–9pm / Sun 8am–8pm",
+        "ja": "月〜土 7:00〜21:00／日 8:00〜20:00"
+      },
+      "description": {
+        "ko": "옛 나비스코 공장을 개조한 실내 푸드 마켓. Los Tacos No.1, The Lobster Place 등 유명 맛집이 모여 있어 쇼핑+식사를 한 번에.",
+        "en": "Indoor food market in the former Nabisco factory, home to Los Tacos No.1, The Lobster Place, and more. Shop and eat in one stop.",
+        "ja": "旧ナビスコ工場を改装した屋内フードマーケット。Los Tacos No.1やThe Lobster Placeなど人気店が集結。買い物と食事が一度に。"
+      },
       "tips": [
-        "Los Tacos No.1 — 현금만 가능",
-        "The Lobster Place — 랍스터 롤 뉴욕 최상급",
-        "실내라 날씨 상관없이 방문 가능",
-        "하이라인 남쪽 출구와 바로 연결"
+        {
+          "ko": "Los Tacos No.1 — 현금만 가능",
+          "en": "Los Tacos No.1 — cash only",
+          "ja": "Los Tacos No.1 — 現金のみ"
+        },
+        {
+          "ko": "The Lobster Place — 랍스터 롤이 뉴욕 최상급",
+          "en": "The Lobster Place — one of NYC's best lobster rolls",
+          "ja": "The Lobster Place — NY最高級のロブスターロール"
+        },
+        {
+          "ko": "실내라 날씨와 상관없이 방문 가능",
+          "en": "Indoors, so good in any weather",
+          "ja": "屋内なので天気を問わず楽しめます"
+        },
+        {
+          "ko": "하이라인과 바로 연결돼요",
+          "en": "Connects right to the High Line",
+          "ja": "ハイラインとすぐつながっています"
+        }
       ]
     },
     {
       "id": "trader-joes-union-sq",
-      "name_ko": "트레이더 조 (Trader Joe's)",
+      "name": {
+        "ko": "트레이더 조",
+        "en": "Trader Joe's",
+        "ja": "トレーダー・ジョーズ"
+      },
       "region": "new-york",
       "area": "downtown",
       "category": "market",
@@ -117,21 +289,57 @@
       "lat": 40.7352,
       "lng": -73.9897,
       "admission": "free",
-      "admission_note": "무료 입장",
       "reservation": false,
-      "hours": "월~일 8:00~22:00",
-      "description_ko": "뉴욕 여행자 필수 마트. 저렴한 가격에 품질 좋은 자체 브랜드 제품이 가득. 간식·냉동식품·와인·커피가 특히 저렴. 줄이 길어도 회전이 빨라 금방 입장 가능.",
+      "admission_note": {
+        "ko": "무료 입장",
+        "en": "Free entry",
+        "ja": "入場無料"
+      },
+      "hours": {
+        "ko": "월~일 8:00~22:00",
+        "en": "Daily 8am–10pm",
+        "ja": "毎日 8:00〜22:00"
+      },
+      "description": {
+        "ko": "뉴욕 여행자 필수 마트. 저렴하고 품질 좋은 자체 브랜드 제품이 가득. 간식·냉동식품·와인·커피가 특히 저렴. 줄이 길어도 회전이 빨라요.",
+        "en": "A must-visit grocery store packed with affordable, high-quality house-brand products — especially snacks, frozen food, wine, and coffee. Lines move fast.",
+        "ja": "NY旅行者必訪のスーパー。安くて質の良いプライベートブランドが充実。お菓子・冷凍食品・ワイン・コーヒーが特に安い。行列でも回転が速い。"
+      },
       "tips": [
-        "자체 브랜드(PB) 제품이 핵심 — Everything But The Bagel Seasoning, 냉동 만두, 그래놀라바 강력 추천",
-        "Mandarin Orange Chicken(냉동 오렌지 치킨) — 뉴요커 최애 냉동식품",
-        "와인·맥주 가격이 매우 저렴 (와인 $5~10)",
-        "입구에서 장바구니 대신 바구니를 챙기면 계산이 훨씬 빠름",
-        "현금·카드 모두 가능, 자체 앱 없음 — 가격이 전부 저렴함"
+        {
+          "ko": "자체 브랜드 제품이 핵심 — Everything But The Bagel Seasoning, 냉동 만두, 그래놀라바 강력 추천",
+          "en": "House brands are the draw — try Everything But The Bagel Seasoning, frozen dumplings, and granola bars",
+          "ja": "PB商品が目玉。Everything But The Bagelシーズニング、冷凍餃子、グラノーラバーがおすすめ"
+        },
+        {
+          "ko": "Mandarin Orange Chicken (냉동 오렌지 치킨) — 뉴요커 최애 냉동식품",
+          "en": "Mandarin Orange Chicken — a New Yorker favorite in the freezer aisle",
+          "ja": "マンダリン・オレンジチキン（冷凍）— NYっ子に人気の冷凍食品"
+        },
+        {
+          "ko": "와인·맥주가 매우 저렴 (와인 $5~10)",
+          "en": "Wine and beer are very cheap (wine $5–10)",
+          "ja": "ワインやビールがとても安い（ワイン$5〜10）"
+        },
+        {
+          "ko": "입구에서 바구니를 챙기면 계산이 훨씬 빨라요",
+          "en": "Grab a basket at the entrance for a quicker checkout",
+          "ja": "入口でカゴを取ると会計が速い"
+        },
+        {
+          "ko": "현금·카드 모두 가능. 할인 앱 없이도 가격이 전부 저렴해요",
+          "en": "Cash and card accepted. No app needed — prices are low across the board",
+          "ja": "現金・カード可。アプリなしでも全体的に安い"
+        }
       ]
     },
     {
       "id": "soho",
-      "name_ko": "소호 (SoHo)",
+      "name": {
+        "ko": "소호",
+        "en": "SoHo",
+        "ja": "ソーホー"
+      },
       "region": "new-york",
       "area": "downtown",
       "category": "landmark",
@@ -139,20 +347,52 @@
       "lat": 40.7256,
       "lng": -73.9982,
       "admission": "free",
-      "admission_note": "무료",
       "reservation": false,
-      "hours": "24시간 (매장 11:00~19:00)",
-      "description_ko": "뉴욕 최고 쇼핑·예술 지구. 19세기 주철 건축물(Cast Iron Architecture)과 플래그십 스토어, 갤러리가 공존. 걷는 것만으로도 볼거리 가득.",
+      "admission_note": {
+        "ko": "무료",
+        "en": "Free",
+        "ja": "無料"
+      },
+      "hours": {
+        "ko": "24시간 (매장 11:00~19:00)",
+        "en": "24 hours (shops 11am–7pm)",
+        "ja": "24時間（店舗 11:00〜19:00）"
+      },
+      "description": {
+        "ko": "뉴욕 최고의 쇼핑·예술 지구. 19세기 주철 건축물과 플래그십 스토어, 갤러리가 공존. 걷기만 해도 볼거리 가득.",
+        "en": "New York's top shopping and art district, where 19th-century cast-iron buildings meet flagship stores and galleries. Just walking around is a treat.",
+        "ja": "NY屈指のショッピング＆アート地区。19世紀の鋳鉄建築、旗艦店、ギャラリーが共存。歩くだけで見どころいっぱい。"
+      },
       "tips": [
-        "Broadway & Prince St 교차로가 중심",
-        "독립 갤러리 다수 — 무료 관람 가능",
-        "나이키·애플 플래그십 스토어가 소호 버전이 가장 큼",
-        "주말엔 인파가 매우 많음. 평일 오전 추천"
+        {
+          "ko": "Broadway & Prince St 교차로가 중심",
+          "en": "The heart is Broadway & Prince St",
+          "ja": "中心はブロードウェイとプリンス通りの交差点"
+        },
+        {
+          "ko": "독립 갤러리가 많아요 — 무료 관람 가능",
+          "en": "Many independent galleries — free to browse",
+          "ja": "インディペンデント系ギャラリーが多数。無料で見学可"
+        },
+        {
+          "ko": "나이키·애플 플래그십 스토어는 소호 매장이 특히 커요",
+          "en": "The Nike and Apple flagships here are especially big",
+          "ja": "ナイキやアップルの旗艦店はソーホー店が特に大きい"
+        },
+        {
+          "ko": "주말엔 인파가 매우 많아요. 평일 오전 추천",
+          "en": "Weekends get very crowded — try a weekday morning",
+          "ja": "週末はとても混むので平日の午前がおすすめ"
+        }
       ]
     },
     {
       "id": "911-memorial",
-      "name_ko": "9/11 메모리얼",
+      "name": {
+        "ko": "9/11 메모리얼",
+        "en": "9/11 Memorial",
+        "ja": "9/11メモリアル"
+      },
       "region": "new-york",
       "area": "downtown",
       "category": "landmark",
@@ -160,20 +400,52 @@
       "lat": 40.7115,
       "lng": -74.0134,
       "admission": "free",
-      "admission_note": "야외 풀 무료 / 박물관 유료 ($33)",
       "reservation": false,
-      "hours": "야외 7:30~21:00 / 박물관 9:00~20:00",
-      "description_ko": "2001년 9/11 테러 현장에 조성된 추모 공간. 두 개의 거대한 폭포 풀이 희생자 이름을 새긴 벽으로 둘러싸여 있음. 숙연하고 아름다운 공간.",
+      "admission_note": {
+        "ko": "야외 풀 무료 / 박물관 유료 ($33)",
+        "en": "Memorial pools free / Museum paid ($33)",
+        "ja": "屋外プール無料／博物館有料（$33）"
+      },
+      "hours": {
+        "ko": "야외 7:30~21:00 / 박물관 9:00~20:00",
+        "en": "Memorial 7:30am–9pm / Museum 9am–8pm",
+        "ja": "屋外 7:30〜21:00／博物館 9:00〜20:00"
+      },
+      "description": {
+        "ko": "2001년 9/11 테러 현장에 조성된 추모 공간. 희생자 이름이 새겨진 벽에 둘러싸인 두 개의 거대한 폭포 풀. 숙연하고 아름다운 공간.",
+        "en": "Memorial built on the site of the 2001 attacks. Two vast waterfall pools are ringed by the names of the victims. Solemn and beautiful.",
+        "ja": "2001年の同時多発テロの跡地に造られた追悼の場。犠牲者の名が刻まれた壁に囲まれた2つの巨大な滝のプール。厳かで美しい空間。"
+      },
       "tips": [
-        "야외 메모리얼 풀은 무료. 박물관은 별도 입장권 필요",
-        "One World Trade Center(프리덤 타워)가 바로 옆",
-        "조용한 추모 공간 — 소음 자제",
-        "인근 Oculus(새 모양 교통허브) 외관도 볼거리"
+        {
+          "ko": "야외 메모리얼 풀은 무료. 박물관은 별도 입장권 필요",
+          "en": "The outdoor pools are free; the museum needs a ticket",
+          "ja": "屋外のプールは無料。博物館は別途チケットが必要"
+        },
+        {
+          "ko": "원 월드 트레이드 센터가 바로 옆",
+          "en": "One World Trade Center is right next door",
+          "ja": "ワン・ワールド・トレード・センターがすぐ隣"
+        },
+        {
+          "ko": "조용한 추모 공간이에요 — 소음 자제",
+          "en": "A place of remembrance — please keep quiet",
+          "ja": "静かな追悼の場です。私語は控えめに"
+        },
+        {
+          "ko": "근처 오큘러스(새 모양 교통 허브) 외관도 볼거리",
+          "en": "The nearby Oculus, a bird-shaped transit hub, is worth a look",
+          "ja": "近くのオキュラス（鳥の形の交通ハブ）の外観も見どころ"
+        }
       ]
     },
     {
       "id": "vessel",
-      "name_ko": "베슬 (Vessel)",
+      "name": {
+        "ko": "베슬",
+        "en": "Vessel",
+        "ja": "ベッセル"
+      },
       "region": "new-york",
       "area": "midtown",
       "category": "landmark",
@@ -181,20 +453,52 @@
       "lat": 40.7536,
       "lng": -74.0021,
       "admission": "free",
-      "admission_note": "무료 (온라인 사전 예약 필요)",
       "reservation": true,
-      "hours": "10:00~21:00",
-      "description_ko": "허드슨 야즈의 상징적 조형물. 154개 계단이 얽혀 16층 높이로 올라가는 독특한 벌집 구조. 하이라인 북쪽 끝과 바로 연결되어 함께 방문하기 좋음.",
+      "admission_note": {
+        "ko": "무료 (온라인 사전 예약 필요)",
+        "en": "Free (online reservation required)",
+        "ja": "無料（オンライン事前予約が必要）"
+      },
+      "hours": {
+        "ko": "10:00~21:00",
+        "en": "10am–9pm",
+        "ja": "10:00〜21:00"
+      },
+      "description": {
+        "ko": "허드슨 야즈의 상징적 조형물. 154개 계단이 얽혀 16층 높이로 올라가는 독특한 벌집 구조. 하이라인 북쪽 끝과 바로 연결돼 함께 방문하기 좋음.",
+        "en": "Hudson Yards' landmark: 154 interlocking flights of stairs rising 16 stories in a honeycomb shape. Connects directly to the High Line's northern end.",
+        "ja": "ハドソン・ヤードのシンボル。154の階段が絡み合い16階分そびえるハチの巣状の構造。ハイライン北端と直結。"
+      },
       "tips": [
-        "허드슨야즈 공식 사이트에서 무료 예약 후 방문",
-        "하이라인 끝에서 도보로 바로 연결됨 — 함께 코스로 추천",
-        "The Shed(공연·전시 공간)도 같은 허드슨야즈 내 위치",
-        "주변 쇼핑몰(Hudson Yards Shops)에서 쇼핑도 가능"
+        {
+          "ko": "허드슨 야즈 공식 사이트에서 무료 예약 후 방문",
+          "en": "Book a free ticket on the Hudson Yards website before you go",
+          "ja": "ハドソン・ヤード公式サイトで無料予約してから訪問"
+        },
+        {
+          "ko": "하이라인 끝에서 걸어서 바로 — 함께 코스로 추천",
+          "en": "Walk straight over from the end of the High Line",
+          "ja": "ハイラインの終点から歩いてすぐ。セットで回るのがおすすめ"
+        },
+        {
+          "ko": "공연·전시 공간 The Shed도 허드슨 야즈 안에 있어요",
+          "en": "The Shed arts center is also in Hudson Yards",
+          "ja": "パフォーマンス・展示施設のThe Shedもハドソン・ヤード内"
+        },
+        {
+          "ko": "주변 쇼핑몰(Hudson Yards Shops)에서 쇼핑도 가능",
+          "en": "Shop at the adjacent Hudson Yards mall",
+          "ja": "隣接するショッピングモールで買い物も"
+        }
       ]
     },
     {
       "id": "edge",
-      "name_ko": "엣지 전망대 (Edge)",
+      "name": {
+        "ko": "엣지 전망대",
+        "en": "Edge",
+        "ja": "エッジ展望台"
+      },
       "region": "new-york",
       "area": "midtown",
       "category": "view",
@@ -202,21 +506,57 @@
       "lat": 40.7537,
       "lng": -74.0022,
       "admission": "paid",
-      "admission_note": "유료 ($38~)",
       "reservation": "recommended",
-      "hours": "9:00~24:00 (금·토 1:00)",
-      "description_ko": "허드슨 야즈 100층 높이의 야외 전망대. 뉴욕 최고 높이의 야외 스카이덱. 유리 바닥 구간이 있어 아찔한 경험 가능. 베슬에서 도보 1분.",
+      "admission_note": {
+        "ko": "유료 ($38~)",
+        "en": "Paid (from $38)",
+        "ja": "有料（$38〜）"
+      },
+      "hours": {
+        "ko": "9:00~24:00 (금·토 1:00)",
+        "en": "9am–midnight (Fri–Sat until 1am)",
+        "ja": "9:00〜24:00（金・土は1:00まで）"
+      },
+      "description": {
+        "ko": "허드슨 야즈 100층 높이의 야외 전망대. 서반구에서 가장 높은 야외 스카이덱. 유리 바닥 구간이 있어 아찔한 경험. 베슬에서 도보 1분.",
+        "en": "Open-air observation deck 100 floors up at Hudson Yards — the highest outdoor sky deck in the Western Hemisphere, with a thrilling glass floor. 1 minute from the Vessel.",
+        "ja": "ハドソン・ヤード100階の屋外展望台。西半球で最も高い屋外スカイデッキ。ガラス床でスリル満点。ベッセルから徒歩1分。"
+      },
       "tips": [
-        "온라인 사전 예약 시 줄 없이 입장 가능 — edgenyc.com",
-        "유리 바닥(Sky Deck) 구간은 별도 구역, 고소공포증 주의",
-        "베슬·하이라인과 함께 허드슨 야즈 원스톱 코스로 추천",
-        "밤 9시 이후 야경 방문이 매우 아름다움",
-        "엠파이어 스테이트·탑 오브 더 록보다 더 높아 뉴욕 전체 조망 가능"
+        {
+          "ko": "온라인 사전 예약 시 줄 없이 입장 가능 — edgenyc.com",
+          "en": "Book online to skip the line — edgenyc.com",
+          "ja": "オンライン予約で並ばずに入場 — edgenyc.com"
+        },
+        {
+          "ko": "유리 바닥 구간은 별도 구역. 고소공포증 주의",
+          "en": "The glass floor is a separate section — not for the faint of heart",
+          "ja": "ガラス床は別エリア。高所恐怖症の方は注意"
+        },
+        {
+          "ko": "베슬·하이라인과 함께 허드슨 야즈 원스톱 코스로 추천",
+          "en": "Combine with the Vessel and High Line for a Hudson Yards day",
+          "ja": "ベッセル・ハイラインとあわせてハドソン・ヤードを一気に"
+        },
+        {
+          "ko": "밤 9시 이후 야경이 매우 아름다워요",
+          "en": "Night views after 9pm are gorgeous",
+          "ja": "21時以降の夜景がとても美しい"
+        },
+        {
+          "ko": "엠파이어 스테이트·탑 오브 더 록 전망대보다 높아 뉴욕 전체 조망 가능",
+          "en": "Higher than the Empire State and Top of the Rock decks, with views across the city",
+          "ja": "エンパイア・ステートやトップ・オブ・ザ・ロックの展望台より高く、NY全体を一望"
+        }
       ]
     },
     {
       "id": "times-square",
-      "name_ko": "타임스 스퀘어 (Times Square)",
+      "name": {
+        "ko": "타임스 스퀘어",
+        "en": "Times Square",
+        "ja": "タイムズスクエア"
+      },
       "region": "new-york",
       "area": "midtown",
       "category": "landmark",
@@ -224,20 +564,52 @@
       "lat": 40.758,
       "lng": -73.9855,
       "admission": "free",
-      "admission_note": "무료",
       "reservation": false,
-      "hours": "24시간",
-      "description_ko": "뉴욕의 심장. 브로드웨이와 7번가가 만나는 교차점. 대형 전광판과 네온사인, 항상 북적이는 인파. 밤에 가장 화려함.",
+      "admission_note": {
+        "ko": "무료",
+        "en": "Free",
+        "ja": "無料"
+      },
+      "hours": {
+        "ko": "24시간",
+        "en": "24 hours",
+        "ja": "24時間"
+      },
+      "description": {
+        "ko": "뉴욕의 심장. 브로드웨이와 7번가가 만나는 교차점. 대형 전광판과 네온사인, 항상 북적이는 인파. 밤에 가장 화려함.",
+        "en": "The heart of New York, where Broadway meets Seventh Avenue. Giant screens, neon, and crowds at all hours — most dazzling at night.",
+        "ja": "NYの中心。ブロードウェイと7番街が交わる交差点。巨大スクリーンとネオン、いつも賑わう人波。夜が一番華やか。"
+      },
       "tips": [
-        "낮보다 밤 방문이 훨씬 압도적",
-        "TKTS 부스에서 당일 브로드웨이 티켓 할인 구매 가능 (빨간 계단 밑)",
-        "주변 체인 식당 피하고 한 블록만 벗어나면 훨씬 맛있음",
-        "신년 볼 드롭 행사(12/31)는 이른 오후부터 자리 확보 필요"
+        {
+          "ko": "낮보다 밤 방문이 훨씬 압도적",
+          "en": "Night is far more impressive than day",
+          "ja": "昼より夜の方がはるかに圧巻"
+        },
+        {
+          "ko": "TKTS 부스(빨간 계단 밑)에서 당일 브로드웨이 티켓 할인 구매 가능",
+          "en": "Buy discounted same-day Broadway tickets at the TKTS booth (under the red steps)",
+          "ja": "TKTSブース（赤い階段の下）で当日のブロードウェイ割引チケットを購入可"
+        },
+        {
+          "ko": "주변 체인 식당을 피하고 한 블록만 벗어나면 훨씬 맛있어요",
+          "en": "Skip the chains — walk one block away for better food",
+          "ja": "周辺のチェーン店を避け、1ブロック離れるとずっとおいしい店が"
+        },
+        {
+          "ko": "신년 볼 드롭(12/31)은 이른 오후부터 자리 확보 필요",
+          "en": "For the New Year's Eve ball drop (12/31), claim a spot by early afternoon",
+          "ja": "大晦日のボールドロップ（12/31）は昼過ぎから場所取りが必要"
+        }
       ]
     },
     {
       "id": "empire-state",
-      "name_ko": "엠파이어 스테이트 빌딩",
+      "name": {
+        "ko": "엠파이어 스테이트 빌딩",
+        "en": "Empire State Building",
+        "ja": "エンパイア・ステート・ビル"
+      },
       "region": "new-york",
       "area": "midtown",
       "category": "view",
@@ -245,20 +617,52 @@
       "lat": 40.7484,
       "lng": -73.9967,
       "admission": "paid",
-      "admission_note": "유료 ($44~, 층별 상이)",
       "reservation": "recommended",
-      "hours": "10:00~22:00",
-      "description_ko": "1931년 개통, 뉴욕의 가장 상징적인 마천루. 86층 오픈 전망대에서 맨해튼 360도 파노라마. 102층 최상층 전망대도 있음.",
+      "admission_note": {
+        "ko": "유료 ($44~, 층별 상이)",
+        "en": "Paid (from $44, varies by deck)",
+        "ja": "有料（$44〜、階により異なる）"
+      },
+      "hours": {
+        "ko": "10:00~22:00",
+        "en": "10am–10pm",
+        "ja": "10:00〜22:00"
+      },
+      "description": {
+        "ko": "1931년 완공, 뉴욕의 가장 상징적인 마천루. 86층 야외 전망대에서 맨해튼 360도 파노라마. 102층 최상층 전망대도 있음.",
+        "en": "Completed in 1931, New York's most iconic skyscraper. The open-air 86th-floor deck offers 360° Manhattan views; there's also a 102nd-floor deck.",
+        "ja": "1931年完成、NYで最も象徴的な摩天楼。86階の屋外展望台からマンハッタン360度のパノラマ。102階の最上階展望台も。"
+      },
       "tips": [
-        "온라인 사전 예약 시 줄 스킵 가능",
-        "86층 오픈 전망대가 보통 충분",
-        "해 질 무렵 방문 시 낮+야경 모두 볼 수 있어 가장 인기",
-        "꼭대기 조명 색상이 날마다 바뀜 — 방문 전 확인"
+        {
+          "ko": "온라인 사전 예약 시 줄 스킵 가능",
+          "en": "Book online to skip lines",
+          "ja": "オンライン予約で行列をスキップ"
+        },
+        {
+          "ko": "보통은 86층 야외 전망대로 충분",
+          "en": "The 86th-floor deck is usually enough",
+          "ja": "通常は86階の屋外展望台で十分"
+        },
+        {
+          "ko": "해 질 무렵 방문하면 낮+야경을 모두 볼 수 있어 가장 인기",
+          "en": "Sunset visits let you see both day and night views — the most popular time",
+          "ja": "夕暮れ時なら昼と夜景の両方が見られて一番人気"
+        },
+        {
+          "ko": "꼭대기 조명 색이 날마다 바뀌어요 — 방문 전 확인",
+          "en": "The tower lights change color daily — check before you go",
+          "ja": "頂上のライトの色は毎日変わるので事前にチェック"
+        }
       ]
     },
     {
       "id": "top-of-rock",
-      "name_ko": "탑 오브 더 록 (30 Rock)",
+      "name": {
+        "ko": "탑 오브 더 록",
+        "en": "Top of the Rock",
+        "ja": "トップ・オブ・ザ・ロック"
+      },
       "region": "new-york",
       "area": "midtown",
       "category": "view",
@@ -266,20 +670,52 @@
       "lat": 40.7587,
       "lng": -73.9787,
       "admission": "paid",
-      "admission_note": "유료 ($40~)",
       "reservation": "recommended",
-      "hours": "10:00~22:00",
-      "description_ko": "록펠러 센터 70층 전망대. 엠파이어 스테이트 빌딩이 뷰 안에 들어와 사진이 더 예쁨. 유리 난간으로 장애물 없는 탁 트인 뷰.",
+      "admission_note": {
+        "ko": "유료 ($40~)",
+        "en": "Paid (from $40)",
+        "ja": "有料（$40〜）"
+      },
+      "hours": {
+        "ko": "10:00~22:00",
+        "en": "10am–10pm",
+        "ja": "10:00〜22:00"
+      },
+      "description": {
+        "ko": "록펠러 센터 70층 전망대. 엠파이어 스테이트 빌딩이 뷰에 들어와 사진이 더 예뻐요. 유리 난간으로 탁 트인 뷰.",
+        "en": "Observation deck on the 70th floor of Rockefeller Center. The Empire State Building is in the view, making for better photos. Glass panels give open views.",
+        "ja": "ロックフェラー・センター70階の展望台。エンパイア・ステート・ビルが景色に入るので写真映えする。ガラスの手すりで開放的な眺め。"
+      },
       "tips": [
-        "엠파이어 스테이트 빌딩을 사진에 담고 싶다면 여기가 정답",
-        "일몰 1시간 전 시간대가 가장 인기",
-        "NBC 스튜디오 투어도 같은 건물에서 예약 가능",
-        "크리스마스 시즌엔 아이스링크+대형 트리로 분위기 최고"
+        {
+          "ko": "엠파이어 스테이트 빌딩을 사진에 담고 싶다면 여기가 정답",
+          "en": "Want the Empire State Building in your photos? This is the place",
+          "ja": "エンパイア・ステート・ビルを写真に入れたいならここ"
+        },
+        {
+          "ko": "일몰 1시간 전이 가장 인기",
+          "en": "The hour before sunset is most popular",
+          "ja": "日没1時間前が一番人気"
+        },
+        {
+          "ko": "NBC 스튜디오 투어도 같은 건물에서 예약 가능",
+          "en": "NBC Studio Tours can be booked in the same building",
+          "ja": "同じビルでNBCスタジオツアーも予約可"
+        },
+        {
+          "ko": "크리스마스 시즌엔 아이스링크+대형 트리로 분위기 최고",
+          "en": "At Christmas, the ice rink and giant tree make it magical",
+          "ja": "クリスマスシーズンはスケートリンクと巨大ツリーで雰囲気最高"
+        }
       ]
     },
     {
       "id": "grand-central",
-      "name_ko": "그랜드 센트럴 터미널",
+      "name": {
+        "ko": "그랜드 센트럴 터미널",
+        "en": "Grand Central Terminal",
+        "ja": "グランド・セントラル駅"
+      },
       "region": "new-york",
       "area": "midtown",
       "category": "landmark",
@@ -287,20 +723,52 @@
       "lat": 40.7527,
       "lng": -73.9772,
       "admission": "free",
-      "admission_note": "무료",
       "reservation": false,
-      "hours": "5:30~2:00",
-      "description_ko": "1913년 개통. 터키석 빛 천장에 별자리 벽화가 그려진 메인 홀이 압도적. 뉴욕 영화·드라마 단골 촬영지.",
+      "admission_note": {
+        "ko": "무료",
+        "en": "Free",
+        "ja": "無料"
+      },
+      "hours": {
+        "ko": "5:30~2:00",
+        "en": "5:30am–2am",
+        "ja": "5:30〜翌2:00"
+      },
+      "description": {
+        "ko": "1913년 개통. 청록색 천장에 별자리 벽화가 그려진 메인 홀이 압도적. 뉴욕 영화·드라마 단골 촬영지.",
+        "en": "Opened in 1913. The main concourse with its turquoise, constellation-painted ceiling is breathtaking — a favorite film and TV location.",
+        "ja": "1913年開業。星座が描かれたターコイズ色の天井のメインホールは圧巻。NYの映画やドラマの定番ロケ地。"
+      },
       "tips": [
-        "메인 콩코스 2층 발코니에서 내려다보는 뷰가 명당",
-        "지하 Grand Central Market에서 간식 쇼핑 가능",
-        "속삭임의 회랑(Whispering Gallery): 아치 끝에서 속삭이면 반대편에서 들림",
-        "무료 입장이라 잠깐 들러도 충분"
+        {
+          "ko": "메인 콩코스 2층 발코니에서 내려다보는 뷰가 명당",
+          "en": "The best view is from the balcony overlooking the main concourse",
+          "ja": "メインコンコースを見下ろすバルコニーが特等席"
+        },
+        {
+          "ko": "지하 Grand Central Market에서 간식 쇼핑 가능",
+          "en": "Grab snacks at Grand Central Market",
+          "ja": "グランド・セントラル・マーケットで軽食の買い物も"
+        },
+        {
+          "ko": "속삭임의 회랑: 아치 한쪽 모서리에서 속삭이면 반대편에서 들려요",
+          "en": "Whispering Gallery: whisper into one corner of the arch and someone in the opposite corner can hear you",
+          "ja": "ささやきの回廊：アーチの角でささやくと反対側で聞こえる"
+        },
+        {
+          "ko": "무료라 잠깐 들러도 충분",
+          "en": "It's free, so a quick stop is fine",
+          "ja": "無料なので少し立ち寄るだけでもOK"
+        }
       ]
     },
     {
       "id": "nypl",
-      "name_ko": "뉴욕 공립도서관 (NYPL)",
+      "name": {
+        "ko": "뉴욕 공립도서관",
+        "en": "New York Public Library",
+        "ja": "ニューヨーク公共図書館"
+      },
       "region": "new-york",
       "area": "midtown",
       "category": "landmark",
@@ -308,21 +776,57 @@
       "lat": 40.7532,
       "lng": -73.9822,
       "admission": "free",
-      "admission_note": "무료",
       "reservation": false,
-      "hours": "월·목·금·토 10:00~18:00 / 화·수 10:00~20:00 / 일 13:00~17:00",
-      "description_ko": "1911년 개관. 5번가와 42번가 코너에 위치한 보자르 양식 석조 건물. 입구를 지키는 두 마리 사자 조각상이 상징. 내부 열람실은 그 자체로 예술.",
+      "admission_note": {
+        "ko": "무료",
+        "en": "Free",
+        "ja": "無料"
+      },
+      "hours": {
+        "ko": "월·목·금·토 10:00~18:00 / 화·수 10:00~20:00 / 일 13:00~17:00",
+        "en": "Mon, Thu–Sat 10am–6pm / Tue–Wed 10am–8pm / Sun 1–5pm",
+        "ja": "月・木・金・土 10:00〜18:00／火・水 10:00〜20:00／日 13:00〜17:00"
+      },
+      "description": {
+        "ko": "1911년 개관. 5번가와 42번가 모퉁이의 보자르 양식 석조 건물. 입구를 지키는 두 사자상이 상징. 열람실은 그 자체로 예술.",
+        "en": "Opened in 1911, a Beaux-Arts landmark at Fifth Avenue and 42nd Street guarded by two famous lions. The reading room is a work of art.",
+        "ja": "1911年開館。5番街と42丁目の角に建つボザール様式の石造建築。入口を守る2頭のライオン像が象徴。閲覧室はそれ自体が芸術。"
+      },
       "tips": [
-        "입구 양쪽 사자상 이름: Patience(인내)와 Fortitude(불굴) — 포토스팟",
-        "3층 Rose Main Reading Room — 천장 벽화와 황금빛 조명이 압도적",
-        "그랜드 센트럴에서 도보 5분, 브라이언트 파크 바로 옆",
-        "무료 입장이라 잠깐 들러 내부 구경만 해도 충분",
-        "화·수요일 오후 8시까지 연장 운영"
+        {
+          "ko": "입구 양쪽 사자상 이름: Patience(인내)와 Fortitude(불굴) — 사진 명소",
+          "en": "The lions are named Patience and Fortitude — a classic photo spot",
+          "ja": "入口のライオンの名前はペイシェンス（忍耐）とフォーティテュード（不屈）。撮影スポット"
+        },
+        {
+          "ko": "3층 Rose Main Reading Room — 천장 벽화와 황금빛 조명이 압도적",
+          "en": "The third-floor Rose Main Reading Room has stunning ceiling murals and golden light",
+          "ja": "3階のローズ・メイン閲覧室は天井画と黄金色の照明が圧巻"
+        },
+        {
+          "ko": "그랜드 센트럴에서 도보 5분, 브라이언트 파크 바로 옆",
+          "en": "5 minutes from Grand Central, right next to Bryant Park",
+          "ja": "グランド・セントラルから徒歩5分、ブライアント・パークのすぐ隣"
+        },
+        {
+          "ko": "무료라 잠깐 들러 내부 구경만 해도 충분",
+          "en": "Free entry — even a quick look inside is worth it",
+          "ja": "無料なので中を少し見るだけでも十分"
+        },
+        {
+          "ko": "화·수요일은 오후 8시까지 연장 운영",
+          "en": "Open until 8pm on Tuesdays and Wednesdays",
+          "ja": "火・水は20時まで延長営業"
+        }
       ]
     },
     {
       "id": "moma",
-      "name_ko": "현대미술관 (MoMA)",
+      "name": {
+        "ko": "현대미술관 (MoMA)",
+        "en": "Museum of Modern Art (MoMA)",
+        "ja": "ニューヨーク近代美術館（MoMA）"
+      },
       "region": "new-york",
       "area": "midtown",
       "category": "museum",
@@ -330,20 +834,52 @@
       "lat": 40.7614,
       "lng": -73.9776,
       "admission": "paid",
-      "admission_note": "유료 ($30)",
       "reservation": false,
-      "hours": "10:30~17:30 (금요일 21:00)",
-      "description_ko": "세계 최고 수준의 현대미술관. 반 고흐 '별이 빛나는 밤', 피카소, 워홀 등 다수 소장. 5개 층에 걸친 방대한 컬렉션.",
+      "admission_note": {
+        "ko": "유료 ($30)",
+        "en": "Paid ($30)",
+        "ja": "有料（$30）"
+      },
+      "hours": {
+        "ko": "10:30~17:30 (금요일 21:00)",
+        "en": "10:30am–5:30pm (Fri until 9pm)",
+        "ja": "10:30〜17:30（金曜21:00まで）"
+      },
+      "description": {
+        "ko": "세계 최고 수준의 현대미술관. 반 고흐 '별이 빛나는 밤', 피카소, 워홀 등 다수 소장. 5개 층에 걸친 방대한 컬렉션.",
+        "en": "One of the world's great modern art museums, with Van Gogh's 'The Starry Night', Picasso, Warhol, and more across five floors.",
+        "ja": "世界最高峰の近代美術館。ゴッホ『星月夜』、ピカソ、ウォーホルなどを所蔵。5フロアにわたる膨大なコレクション。"
+      },
       "tips": [
-        "금요일 저녁 연장 운영",
-        "오디오 가이드 앱(MoMA) 미리 다운로드 추천",
-        "조각 정원(Abby Aldrich Rockefeller Sculpture Garden) — 야외 무료 개방일 있음",
-        "근처 무료 갤러리도 함께 방문 추천"
+        {
+          "ko": "금요일 저녁 연장 운영",
+          "en": "Open late on Fridays",
+          "ja": "金曜は夜まで延長営業"
+        },
+        {
+          "ko": "MoMA 오디오 가이드 앱 미리 다운로드 추천",
+          "en": "Download the MoMA audio guide app ahead of time",
+          "ja": "MoMAの音声ガイドアプリを事前にダウンロード"
+        },
+        {
+          "ko": "조각 정원(Abby Aldrich Rockefeller Sculpture Garden) — 무료 개방되는 날이 있어요",
+          "en": "The Sculpture Garden is open free on some days",
+          "ja": "彫刻庭園（アビー・アルドリッチ・ロックフェラー彫刻庭園）は無料開放日あり"
+        },
+        {
+          "ko": "근처 무료 갤러리도 함께 방문 추천",
+          "en": "Pair it with nearby free galleries",
+          "ja": "近くの無料ギャラリーもあわせて"
+        }
       ]
     },
     {
       "id": "hmart-koreatown",
-      "name_ko": "H Mart 코리아타운",
+      "name": {
+        "ko": "H Mart 코리아타운",
+        "en": "H Mart Koreatown",
+        "ja": "Hマート コリアタウン"
+      },
       "region": "new-york",
       "area": "midtown",
       "category": "market",
@@ -351,21 +887,57 @@
       "lat": 40.7483,
       "lng": -73.9882,
       "admission": "free",
-      "admission_note": "무료 입장",
       "reservation": false,
-      "hours": "월~일 8:00~23:00",
-      "description_ko": "뉴욕 코리아타운 중심의 한인 마트. 한국 라면·과자·음료·김치·반찬 등 한국 식품 총망라. 집 떠나온 한국인의 성지. 건물 내 한국 식당가도 함께 있음.",
+      "admission_note": {
+        "ko": "무료 입장",
+        "en": "Free entry",
+        "ja": "入場無料"
+      },
+      "hours": {
+        "ko": "월~일 8:00~23:00",
+        "en": "Daily 8am–11pm",
+        "ja": "毎日 8:00〜23:00"
+      },
+      "description": {
+        "ko": "뉴욕 코리아타운 중심의 한인 마트. 한국 라면·과자·음료·김치·반찬 등 한국 식품 총망라. 건물 안에 한국 식당가도 있음.",
+        "en": "Korean supermarket in the heart of Koreatown, stocked with ramyeon, snacks, drinks, kimchi, and side dishes. The building also has Korean restaurants.",
+        "ja": "NYコリアタウン中心の韓国系スーパー。ラーメン・お菓子・飲料・キムチ・惣菜など韓国食品が勢ぞろい。建物内に韓国料理店も。"
+      },
       "tips": [
-        "농심·오뚜기·삼양 라면 전 제품 구비",
-        "한국 과자·음료 미국에서 가장 저렴하게 구매 가능한 곳 중 하나",
-        "2~3층 푸드코트에 한국 식당 다수 — 순대국·떡볶이·김밥 등",
-        "코리아타운 32번가 일대에 한국 식당·노래방·PC방이 모여 있음",
-        "짐이 많으면 근처 한국 식료품점 여럿과 비교하며 쇼핑 가능"
+        {
+          "ko": "농심·오뚜기·삼양 라면 전 제품 구비",
+          "en": "Full lineup of Nongshim, Ottogi, and Samyang ramyeon",
+          "ja": "農心・オットギ・三養のラーメンが全種類そろう"
+        },
+        {
+          "ko": "한국 과자·음료를 미국에서 가장 저렴하게 살 수 있는 곳 중 하나",
+          "en": "One of the cheapest places in the US for Korean snacks and drinks",
+          "ja": "韓国のお菓子や飲料をアメリカで最も安く買える店のひとつ"
+        },
+        {
+          "ko": "위층 푸드코트에 한국 식당 다수 — 순댓국·떡볶이·김밥 등",
+          "en": "Upstairs food court with Korean dishes like sundae-guk, tteokbokki, and gimbap",
+          "ja": "上階のフードコートに韓国料理店多数（スンデクッ・トッポッキ・キンパなど）"
+        },
+        {
+          "ko": "코리아타운 32번가 일대에 한국 식당·노래방·PC방이 모여 있어요",
+          "en": "32nd Street is lined with Korean restaurants, karaoke bars, and PC bangs",
+          "ja": "32丁目一帯に韓国料理店・カラオケ・PCバンが集まっています"
+        },
+        {
+          "ko": "근처 한국 식료품점 여러 곳과 비교하며 쇼핑 가능",
+          "en": "Compare prices with other Korean grocers nearby",
+          "ja": "近くの他の韓国食料品店と比べながら買い物できます"
+        }
       ]
     },
     {
       "id": "whole-foods-columbus",
-      "name_ko": "홀푸드 마켓 (Whole Foods)",
+      "name": {
+        "ko": "홀푸드 마켓 (콜럼버스 서클)",
+        "en": "Whole Foods Market (Columbus Circle)",
+        "ja": "ホールフーズ・マーケット（コロンバス・サークル）"
+      },
       "region": "new-york",
       "area": "midtown",
       "category": "market",
@@ -373,21 +945,57 @@
       "lat": 40.7684,
       "lng": -73.9831,
       "admission": "free",
-      "admission_note": "무료 입장",
       "reservation": false,
-      "hours": "월~일 7:00~22:00",
-      "description_ko": "아마존 계열 프리미엄 유기농 마트. 콜럼버스 서클 쇼핑몰 타임워너 센터 지하에 위치. 핫바·샐러드바·스시바 등 즉석 음식 코너가 특히 유명. 센트럴파크 직전 위치.",
+      "admission_note": {
+        "ko": "무료 입장",
+        "en": "Free entry",
+        "ja": "入場無料"
+      },
+      "hours": {
+        "ko": "월~일 7:00~22:00",
+        "en": "Daily 7am–10pm",
+        "ja": "毎日 7:00〜22:00"
+      },
+      "description": {
+        "ko": "아마존 계열 프리미엄 유기농 마트. 콜럼버스 서클 쇼핑몰 지하. 핫바·샐러드바·스시바 등 즉석 음식 코너가 유명. 센트럴 파크 바로 앞.",
+        "en": "Amazon-owned premium organic grocer in the basement of the Columbus Circle mall. Known for its hot bar, salad bar, and sushi. Right by Central Park.",
+        "ja": "アマゾン傘下の高級オーガニックスーパー。コロンバス・サークルのショッピングモール地下。ホットバー・サラダバー・寿司などの惣菜が有名。セントラルパークのすぐ手前。"
+      },
       "tips": [
-        "핫바(Hot Bar) — 무게 달아 계산, 다양한 조리 음식으로 점심 대용 가능 ($10~15)",
-        "아마존 프라임 회원은 10% 할인 — 미국 아마존 계정 있으면 앱에서 QR 코드 사용",
-        "시즈닝·올리브오일·견과류 등 식품 기념품 구매하기 좋음",
-        "콜럼버스 서클 2층 테라스에서 센트럴파크 뷰 무료 감상 가능",
-        "일반 식품은 비싸지만 즉석 음식·커피는 합리적인 편"
+        {
+          "ko": "핫바 — 무게로 계산, 다양한 조리 음식으로 점심 대용 가능 ($10~15)",
+          "en": "Hot bar priced by weight — an easy lunch ($10–15)",
+          "ja": "ホットバーは量り売り。ランチ代わりに（$10〜15）"
+        },
+        {
+          "ko": "아마존 프라임 회원은 할인 — 미국 아마존 계정이 있으면 앱의 QR 코드 사용",
+          "en": "Amazon Prime members get discounts — show the QR code in the app if you have a US account",
+          "ja": "Amazonプライム会員は割引あり。米国アカウントがあればアプリのQRコードを提示"
+        },
+        {
+          "ko": "시즈닝·올리브오일·견과류 등 식품 기념품 구매하기 좋음",
+          "en": "Good for food souvenirs like seasonings, olive oil, and nuts",
+          "ja": "シーズニング・オリーブオイル・ナッツなど食品のお土産に"
+        },
+        {
+          "ko": "콜럼버스 서클 몰 위층에서 센트럴 파크 뷰를 무료로 감상 가능",
+          "en": "Enjoy free Central Park views from the upper floors of the mall",
+          "ja": "モールの上階からセントラルパークの眺めを無料で楽しめます"
+        },
+        {
+          "ko": "일반 식품은 비싸지만 즉석 음식·커피는 합리적인 편",
+          "en": "Groceries are pricey, but prepared food and coffee are reasonable",
+          "ja": "一般食品は高めですが惣菜やコーヒーは手頃"
+        }
       ]
     },
     {
       "id": "central-park",
-      "name_ko": "센트럴 파크 (Central Park)",
+      "name": {
+        "ko": "센트럴 파크",
+        "en": "Central Park",
+        "ja": "セントラルパーク"
+      },
       "region": "new-york",
       "area": "uptown",
       "category": "park",
@@ -395,20 +1003,52 @@
       "lat": 40.7829,
       "lng": -73.9654,
       "admission": "free",
-      "admission_note": "무료",
       "reservation": false,
-      "hours": "6:00~1:00",
-      "description_ko": "맨해튼 한복판 843에이커 도심 공원. 산책·피크닉·보트·야외 콘서트까지. 계절마다 전혀 다른 표정.",
+      "admission_note": {
+        "ko": "무료",
+        "en": "Free",
+        "ja": "無料"
+      },
+      "hours": {
+        "ko": "6:00~1:00",
+        "en": "6am–1am",
+        "ja": "6:00〜翌1:00"
+      },
+      "description": {
+        "ko": "맨해튼 한복판의 843에이커 도심 공원. 산책·피크닉·보트·야외 콘서트까지. 계절마다 전혀 다른 표정.",
+        "en": "An 843-acre park in the middle of Manhattan for walks, picnics, boating, and outdoor concerts. Each season brings a completely different look.",
+        "ja": "マンハッタンの真ん中にある843エーカーの公園。散歩・ピクニック・ボート・野外コンサートまで。季節ごとに全く違う表情。"
+      },
       "tips": [
-        "남쪽 Columbus Circle(59th St) 입구가 접근 가장 편함",
-        "Strawberry Fields(존 레논 추모지), Bethesda Fountain이 인기 포인트",
-        "봄 벚꽃(4월), 가을 단풍(10~11월)이 특히 아름다움",
-        "자전거 렌탈 가능. 공원 내 카페·레스토랑도 있음"
+        {
+          "ko": "남쪽 Columbus Circle(59th St) 입구가 가장 접근하기 편해요",
+          "en": "The Columbus Circle (59th St) entrance is the easiest",
+          "ja": "南側のコロンバス・サークル（59丁目）入口が一番便利"
+        },
+        {
+          "ko": "Strawberry Fields(존 레논 추모 공간), Bethesda Fountain이 인기 포인트",
+          "en": "Strawberry Fields (John Lennon memorial) and Bethesda Fountain are highlights",
+          "ja": "ストロベリー・フィールズ（ジョン・レノン追悼の地）とベセスダの噴水が人気"
+        },
+        {
+          "ko": "봄 벚꽃(4월), 가을 단풍(10~11월)이 특히 아름다워요",
+          "en": "Especially beautiful during spring blossoms (April) and fall foliage (Oct–Nov)",
+          "ja": "春の桜（4月）と秋の紅葉（10〜11月）が特に美しい"
+        },
+        {
+          "ko": "자전거 대여 가능. 공원 안에 카페·레스토랑도 있어요",
+          "en": "Bike rentals available, plus cafés and restaurants in the park",
+          "ja": "レンタサイクルあり。園内にカフェやレストランも"
+        }
       ]
     },
     {
       "id": "the-met",
-      "name_ko": "메트로폴리탄 미술관 (The Met)",
+      "name": {
+        "ko": "메트로폴리탄 미술관 (The Met)",
+        "en": "The Metropolitan Museum of Art (The Met)",
+        "ja": "メトロポリタン美術館"
+      },
       "region": "new-york",
       "area": "uptown",
       "category": "museum",
@@ -416,21 +1056,57 @@
       "lat": 40.7794,
       "lng": -73.9632,
       "admission": "paid",
-      "admission_note": "유료 ($30) / 현대백화점 앱 무료 바우처",
       "reservation": false,
-      "hours": "10:00~17:00 (금·토 21:00)",
-      "description_ko": "세계 3대 미술관 중 하나. 이집트 신전부터 현대미술까지 5000년 인류 미술사를 한 건물에서. 센트럴파크 바로 옆.",
+      "admission_note": {
+        "ko": "유료 ($30) / 현대백화점 앱 무료 바우처",
+        "en": "Paid ($30) / free voucher via Hyundai Department Store app (Korea)",
+        "ja": "有料（$30）／韓国・現代百貨店アプリの無料バウチャー"
+      },
+      "hours": {
+        "ko": "10:00~17:00 (금·토 21:00)",
+        "en": "10am–5pm (Fri–Sat until 9pm)",
+        "ja": "10:00〜17:00（金・土は21:00まで）"
+      },
+      "description": {
+        "ko": "세계 3대 미술관 중 하나. 이집트 신전부터 현대미술까지 5000년 인류 미술사를 한 건물에서. 센트럴 파크 바로 옆.",
+        "en": "One of the world's greatest museums, spanning 5,000 years of art from an Egyptian temple to modern works, right on Central Park.",
+        "ja": "世界三大美術館のひとつ。エジプトの神殿から現代美術まで5000年の美術史を一つの建物で。セントラルパークのすぐ隣。"
+      },
       "tips": [
-        "무료 입장 꿀팁: 현대백화점 앱 설치 → 검색창에 'MET' 검색 → 1인 2매 무료 입장 바우처 다운로드 가능!",
-        "하루로는 부족. 관심 섹션(이집트/그리스/인상파) 미리 정하기",
-        "옥상 테라스(Roof Garden) — 센트럴파크 뷰 최고, 4~10월 무료 개방",
-        "오디오 가이드 앱(The Met) 미리 다운로드 추천",
-        "입장 후 당일 재입장 가능"
+        {
+          "ko": "무료 입장 꿀팁(한국 이용자): 현대백화점 앱 → 'MET' 검색 → 1인 2매 무료 입장 바우처 다운로드!",
+          "en": "Tip for Korean users: in the Hyundai Department Store app, search 'MET' to download up to 2 free entry vouchers",
+          "ja": "韓国のユーザー向け：現代百貨店アプリで「MET」を検索すると1人2枚まで無料入場バウチャーをダウンロード可"
+        },
+        {
+          "ko": "하루로는 부족해요. 관심 섹션(이집트/그리스/인상파)을 미리 정하기",
+          "en": "One day isn't enough — pick your sections (Egypt, Greece, Impressionists) in advance",
+          "ja": "1日では足りないので、見たいエリア（エジプト・ギリシャ・印象派）を事前に決めて"
+        },
+        {
+          "ko": "옥상 정원(Roof Garden) — 센트럴 파크 뷰 최고, 4~10월 개방",
+          "en": "The Roof Garden has the best Central Park views, open April–October",
+          "ja": "屋上庭園はセントラルパークの眺めが最高。4〜10月に開放"
+        },
+        {
+          "ko": "The Met 오디오 가이드 앱 미리 다운로드 추천",
+          "en": "Download The Met's audio guide app in advance",
+          "ja": "メトロポリタン美術館の音声ガイドアプリを事前にダウンロード"
+        },
+        {
+          "ko": "입장 후 당일 재입장 가능",
+          "en": "Same-day re-entry is allowed",
+          "ja": "当日は再入場可"
+        }
       ]
     },
     {
       "id": "amnh",
-      "name_ko": "자연사 박물관 (AMNH)",
+      "name": {
+        "ko": "자연사 박물관 (AMNH)",
+        "en": "American Museum of Natural History",
+        "ja": "アメリカ自然史博物館"
+      },
       "region": "new-york",
       "area": "uptown",
       "category": "museum",
@@ -438,21 +1114,57 @@
       "lat": 40.7813,
       "lng": -73.9742,
       "admission": "paid",
-      "admission_note": "유료 ($28~) / 매일 17:30~18:00 자율 기부제",
       "reservation": false,
-      "hours": "10:00~17:30",
-      "description_ko": "영화 '박물관이 살아있다!' 촬영지. 공룡 화석, 거대 고래 모형, 우주 전시 등 압도적인 규모. 어린이 동반 여행에 강력 추천.",
+      "admission_note": {
+        "ko": "유료 ($28~) / 매일 17:30~18:00 자율 기부제",
+        "en": "Paid (from $28) / pay-what-you-wish daily 5:30–6pm",
+        "ja": "有料（$28〜）／毎日17:30〜18:00は任意の寄付制"
+      },
+      "hours": {
+        "ko": "10:00~17:30",
+        "en": "10am–5:30pm",
+        "ja": "10:00〜17:30"
+      },
+      "description": {
+        "ko": "영화 '박물관이 살아있다!' 촬영지. 공룡 화석, 거대 고래 모형, 우주 전시 등 압도적인 규모. 아이와 함께하는 여행에 강력 추천.",
+        "en": "The museum from 'Night at the Museum'. Dinosaur fossils, a giant blue whale, space exhibits — vast in scale. Highly recommended with kids.",
+        "ja": "映画『ナイト ミュージアム』の舞台。恐竜の化石、巨大なクジラの模型、宇宙の展示など圧倒的な規模。子連れ旅行に一押し。"
+      },
       "tips": [
-        "무료 입장 꿀팁: 매일 오후 4:30 입장 시 Pay-What-You-Wish(자율 기부제) 적용. 단 5:30 폐관이라 1시간 안에 관람해야 함",
-        "블루 웨일(Blue Whale) 모형이 걸린 해양생물 홀이 압도적",
-        "공룡 화석 홀 — 실물 크기 티라노사우루스",
-        "로즈 천문관(Hayden Planetarium)은 별도 티켓 필요",
-        "센트럴파크 바로 서쪽 — 공원 산책과 함께 방문 추천"
+        {
+          "ko": "무료 입장 꿀팁: 오후 4:30 입장 시 자율 기부제(Pay-What-You-Wish) 적용. 단 5:30 폐관이라 1시간 안에 관람",
+          "en": "Free-ish entry: pay what you wish if you enter around 4:30pm — but it closes at 5:30, so you only get an hour",
+          "ja": "無料入場のコツ：16:30頃の入場で任意の寄付制が適用。ただし17:30閉館なので1時間で見学"
+        },
+        {
+          "ko": "블루 웨일 모형이 걸린 해양생물 홀이 압도적",
+          "en": "The Hall of Ocean Life with its hanging blue whale is breathtaking",
+          "ja": "シロナガスクジラの模型が吊るされた海洋生物ホールは圧巻"
+        },
+        {
+          "ko": "공룡 화석 홀 — 실물 크기 티라노사우루스",
+          "en": "Dinosaur halls with a full-size T. rex",
+          "ja": "恐竜化石ホール — 実物大のティラノサウルス"
+        },
+        {
+          "ko": "헤이든 천체투영관은 별도 티켓 필요",
+          "en": "The Hayden Planetarium needs a separate ticket",
+          "ja": "ヘイデン・プラネタリウムは別途チケットが必要"
+        },
+        {
+          "ko": "센트럴 파크 바로 서쪽 — 공원 산책과 함께 방문 추천",
+          "en": "Just west of Central Park — combine with a walk in the park",
+          "ja": "セントラルパークのすぐ西。公園散歩とあわせて"
+        }
       ]
     },
     {
       "id": "flushing-meadows",
-      "name_ko": "플러싱 메도스 코로나 파크",
+      "name": {
+        "ko": "플러싱 메도스 코로나 파크",
+        "en": "Flushing Meadows Corona Park",
+        "ja": "フラッシング・メドウズ・コロナ・パーク"
+      },
       "region": "new-york",
       "area": "queens",
       "category": "park",
@@ -460,20 +1172,52 @@
       "lat": 40.7498,
       "lng": -73.8453,
       "admission": "free",
-      "admission_note": "무료",
       "reservation": false,
-      "hours": "24시간",
-      "description_ko": "1964년 세계박람회 개최지. 유니스피어(대형 지구 조형물), 뉴욕 과학관 등이 있는 퀸즈 최대 공원. 메츠 홈구장 인근.",
+      "admission_note": {
+        "ko": "무료",
+        "en": "Free",
+        "ja": "無料"
+      },
+      "hours": {
+        "ko": "24시간",
+        "en": "24 hours",
+        "ja": "24時間"
+      },
+      "description": {
+        "ko": "1964년 세계박람회 개최지. 유니스피어(대형 지구 조형물), 뉴욕 과학관 등이 있는 퀸즈 최대 공원. 메츠 홈구장 근처.",
+        "en": "Site of the 1964 World's Fair and Queens' largest park, home to the Unisphere and the New York Hall of Science. Near the Mets' stadium.",
+        "ja": "1964年の万国博覧会の会場。ユニスフィア（巨大な地球儀）やNY科学館があるクイーンズ最大の公園。メッツの本拠地の近く。"
+      },
       "tips": [
-        "7호선 Mets-Willets Point역 하차 도보 5분",
-        "유니스피어(Unisphere) — 높이 43m 지구 모형, 무료 포토존",
-        "Queens Museum(현대미술관)도 공원 내 위치 (유료)",
-        "플러싱 맛집 탐방과 함께 방문하기 좋음"
+        {
+          "ko": "7호선 Mets–Willets Point역에서 도보 5분",
+          "en": "5 minutes from Mets–Willets Point (7 train)",
+          "ja": "7線メッツ・ウィレッツ・ポイント駅から徒歩5分"
+        },
+        {
+          "ko": "유니스피어 — 높이 43m 지구 모형, 무료 포토존",
+          "en": "The Unisphere — a 43 m (140 ft) globe and free photo spot",
+          "ja": "ユニスフィア — 高さ43mの地球儀。無料の撮影スポット"
+        },
+        {
+          "ko": "Queens Museum(미술관)도 공원 안에 있어요 (유료)",
+          "en": "The Queens Museum is also in the park (paid)",
+          "ja": "クイーンズ美術館も園内にあります（有料）"
+        },
+        {
+          "ko": "플러싱 맛집 탐방과 함께 방문하기 좋아요",
+          "en": "Pairs well with a Flushing food crawl",
+          "ja": "フラッシングのグルメ巡りと一緒に"
+        }
       ]
     },
     {
       "id": "hmart-flushing",
-      "name_ko": "H Mart 플러싱",
+      "name": {
+        "ko": "H Mart 플러싱",
+        "en": "H Mart Flushing",
+        "ja": "Hマート フラッシング"
+      },
       "region": "new-york",
       "area": "queens",
       "category": "market",
@@ -481,21 +1225,57 @@
       "lat": 40.7569,
       "lng": -73.8317,
       "admission": "free",
-      "admission_note": "무료 입장",
       "reservation": false,
-      "hours": "월~일 8:00~22:00",
-      "description_ko": "플러싱 한인타운 중심의 대형 H Mart. 코리아타운점보다 규모가 크고 품목이 더 다양. 한국·중국·일본·동남아 식품이 모두 있는 아시아 종합 슈퍼마켓.",
+      "admission_note": {
+        "ko": "무료 입장",
+        "en": "Free entry",
+        "ja": "入場無料"
+      },
+      "hours": {
+        "ko": "월~일 8:00~22:00",
+        "en": "Daily 8am–10pm",
+        "ja": "毎日 8:00〜22:00"
+      },
+      "description": {
+        "ko": "플러싱 한인 상권 중심의 대형 H Mart. 코리아타운점보다 규모가 크고 품목이 다양. 한국·중국·일본·동남아 식품이 모두 있는 아시아 종합 슈퍼마켓.",
+        "en": "Large H Mart in the heart of Flushing's Korean community — bigger than the Koreatown store, with Korean, Chinese, Japanese, and Southeast Asian groceries.",
+        "ja": "フラッシングの韓国系商圏の中心にある大型Hマート。コリアタウン店より広く品数豊富。韓国・中国・日本・東南アジアの食品がそろうアジア総合スーパー。"
+      },
       "tips": [
-        "7호선 Flushing-Main St역에서 도보 5분",
-        "플러싱 한식당 탐방 전후로 장보기 최적 동선",
-        "한국 식재료·냉동식품 가격이 맨해튼보다 저렴",
-        "2층에 푸드코트 — 한국·중국·대만 음식 저렴하게 이용 가능",
-        "반찬·김치·떡 등 즉석 식품 코너가 특히 잘 갖춰져 있음"
+        {
+          "ko": "7호선 Flushing–Main St역에서 도보 5분",
+          "en": "5 minutes from Flushing–Main St (7 train)",
+          "ja": "7線フラッシング・メインストリート駅から徒歩5分"
+        },
+        {
+          "ko": "플러싱 맛집 탐방 전후로 장보기 좋은 동선",
+          "en": "Easy to shop before or after eating in Flushing",
+          "ja": "フラッシングでの食事の前後に買い物しやすい"
+        },
+        {
+          "ko": "한국 식재료·냉동식품이 맨해튼보다 저렴",
+          "en": "Korean ingredients and frozen foods are cheaper than in Manhattan",
+          "ja": "韓国食材や冷凍食品がマンハッタンより安い"
+        },
+        {
+          "ko": "푸드코트에서 한국·중국·대만 음식을 저렴하게",
+          "en": "Cheap Korean, Chinese, and Taiwanese food at the food court",
+          "ja": "フードコートで韓国・中国・台湾料理を安く"
+        },
+        {
+          "ko": "반찬·김치·떡 등 즉석 식품 코너가 특히 잘 갖춰져 있어요",
+          "en": "Great selection of banchan, kimchi, and rice cakes",
+          "ja": "惣菜・キムチ・餅などのコーナーが特に充実"
+        }
       ]
     },
     {
       "id": "lincoln-memorial",
-      "name_ko": "링컨 기념관",
+      "name": {
+        "ko": "링컨 기념관",
+        "en": "Lincoln Memorial",
+        "ja": "リンカーン記念堂"
+      },
       "region": "washington",
       "area": null,
       "category": "landmark",
@@ -503,20 +1283,52 @@
       "lat": 38.8893,
       "lng": -77.0502,
       "admission": "free",
-      "admission_note": "무료",
       "reservation": false,
-      "hours": "24시간",
-      "description_ko": "마틴 루터 킹 Jr.의 'I Have a Dream' 연설 장소. 계단에서 내려다보는 내셔널 몰 뷰가 압도적. 야간 조명이 특히 아름다움.",
+      "admission_note": {
+        "ko": "무료",
+        "en": "Free",
+        "ja": "無料"
+      },
+      "hours": {
+        "ko": "24시간",
+        "en": "24 hours",
+        "ja": "24時間"
+      },
+      "description": {
+        "ko": "마틴 루터 킹 Jr.의 'I Have a Dream' 연설 장소. 계단에서 내려다보는 내셔널 몰 뷰가 압도적. 야간 조명이 특히 아름다움.",
+        "en": "Where Martin Luther King Jr. gave his 'I Have a Dream' speech. The view down the National Mall from the steps is stunning, especially when lit at night.",
+        "ja": "キング牧師が「I Have a Dream」の演説をした場所。階段から見下ろすナショナル・モールの眺めは圧巻。夜のライトアップが特に美しい。"
+      },
       "tips": [
-        "해 질 무렵 또는 야간 방문이 가장 아름다움",
-        "Reflecting Pool(반영 풀)에 기념관이 비치는 뷰가 시그니처 포토스팟",
-        "베트남 참전 기념비(Vietnam Veterans Memorial)가 바로 옆",
-        "워싱턴 기념탑→링컨 기념관 일직선 — 내셔널 몰 산책 코스"
+        {
+          "ko": "해 질 무렵이나 밤에 방문하면 가장 아름다워요",
+          "en": "Most beautiful at sunset or after dark",
+          "ja": "夕暮れか夜が一番美しい"
+        },
+        {
+          "ko": "리플렉팅 풀에 기념관이 비치는 뷰가 대표 사진 명소",
+          "en": "The memorial reflected in the Reflecting Pool is the signature photo",
+          "ja": "リフレクティング・プールに映る記念堂が定番の撮影スポット"
+        },
+        {
+          "ko": "베트남 참전 기념비가 바로 옆",
+          "en": "The Vietnam Veterans Memorial is right next door",
+          "ja": "ベトナム戦争戦没者慰霊碑がすぐ隣"
+        },
+        {
+          "ko": "워싱턴 기념탑 → 링컨 기념관 일직선 — 내셔널 몰 산책 코스",
+          "en": "Washington Monument to Lincoln Memorial is a straight line — a classic Mall walk",
+          "ja": "ワシントン記念塔からリンカーン記念堂まで一直線。ナショナル・モールの散歩コース"
+        }
       ]
     },
     {
       "id": "washington-monument",
-      "name_ko": "워싱턴 기념탑",
+      "name": {
+        "ko": "워싱턴 기념탑",
+        "en": "Washington Monument",
+        "ja": "ワシントン記念塔"
+      },
       "region": "washington",
       "area": null,
       "category": "landmark",
@@ -524,20 +1336,52 @@
       "lat": 38.8895,
       "lng": -77.0353,
       "admission": "free",
-      "admission_note": "무료 (사전 예약 필수)",
       "reservation": true,
-      "hours": "9:00~17:00",
-      "description_ko": "높이 169m의 초대 대통령 기념탑. 엘리베이터로 정상 올라가 내셔널 몰 파노라마 뷰 감상 가능.",
+      "admission_note": {
+        "ko": "무료 (사전 예약 필수)",
+        "en": "Free (advance reservation required)",
+        "ja": "無料（事前予約必須）"
+      },
+      "hours": {
+        "ko": "9:00~17:00",
+        "en": "9am–5pm",
+        "ja": "9:00〜17:00"
+      },
+      "description": {
+        "ko": "높이 169m의 초대 대통령 기념탑. 엘리베이터로 정상에 올라 내셔널 몰 파노라마를 감상할 수 있어요.",
+        "en": "A 169 m (555 ft) obelisk honoring the first president. Ride the elevator to the top for panoramic National Mall views.",
+        "ja": "高さ169mの初代大統領の記念塔。エレベーターで頂上に上がり、ナショナル・モールのパノラマを楽しめます。"
+      },
       "tips": [
-        "사전 온라인 예약 필수 (recreation.gov) — 무료이나 예약 없으면 입장 어려움",
-        "당일 예약은 현장 8:30 선착순 배포",
-        "엘리베이터로 꼭대기까지 올라가 링컨 기념관·국회의사당 방향 조망",
-        "내셔널 몰 중앙에 위치해 산책 동선에 자연스럽게 포함됨"
+        {
+          "ko": "사전 온라인 예약 필수 (recreation.gov) — 무료지만 예약 없으면 입장 어려움",
+          "en": "Reserve online at recreation.gov — free, but hard to get in without one",
+          "ja": "recreation.govで事前予約必須。無料ですが予約なしでは入場困難"
+        },
+        {
+          "ko": "당일 티켓은 현장에서 8:30 선착순 배포",
+          "en": "Same-day tickets are handed out on site at 8:30am, first come, first served",
+          "ja": "当日券は現地で8:30から先着順に配布"
+        },
+        {
+          "ko": "꼭대기에서 링컨 기념관·국회의사당 방향 조망",
+          "en": "From the top, look toward the Lincoln Memorial and the Capitol",
+          "ja": "頂上からリンカーン記念堂や国会議事堂の方向を一望"
+        },
+        {
+          "ko": "내셔널 몰 중앙이라 산책 동선에 자연스럽게 포함돼요",
+          "en": "It's in the middle of the Mall, so it fits any walk",
+          "ja": "ナショナル・モールの中央にあり散歩ルートに自然と入ります"
+        }
       ]
     },
     {
       "id": "smithsonian-natural-history",
-      "name_ko": "스미소니언 자연사 박물관",
+      "name": {
+        "ko": "스미소니언 자연사 박물관",
+        "en": "Smithsonian National Museum of Natural History",
+        "ja": "スミソニアン国立自然史博物館"
+      },
       "region": "washington",
       "area": null,
       "category": "museum",
@@ -545,20 +1389,52 @@
       "lat": 38.8913,
       "lng": -77.0261,
       "admission": "free",
-      "admission_note": "무료",
       "reservation": false,
-      "hours": "10:00~17:30",
-      "description_ko": "세계 최대 자연사 박물관. 45캐럿 호프 다이아몬드, 공룡 화석, 거대 코끼리 박제 등. 내셔널 몰 바로 옆, 무료.",
+      "admission_note": {
+        "ko": "무료",
+        "en": "Free",
+        "ja": "無料"
+      },
+      "hours": {
+        "ko": "10:00~17:30",
+        "en": "10am–5:30pm",
+        "ja": "10:00〜17:30"
+      },
+      "description": {
+        "ko": "세계 최대 규모의 자연사 박물관. 45캐럿 호프 다이아몬드, 공룡 화석, 거대 코끼리 박제 등. 내셔널 몰 바로 옆, 무료.",
+        "en": "One of the world's largest natural history museums, with the 45-carat Hope Diamond, dinosaur fossils, and a giant elephant. On the National Mall and free.",
+        "ja": "世界最大級の自然史博物館。45カラットのホープダイヤモンド、恐竜の化石、巨大なゾウの剥製など。ナショナル・モールのすぐそばで無料。"
+      },
       "tips": [
-        "호프 다이아몬드(Hope Diamond) — 저주받았다는 전설의 45캐럿 청색 다이아몬드",
-        "Nation's T. rex 전시 — 공룡 화석 국보급",
-        "특별 전시는 별도 유료",
-        "National Gallery of Art(국립 미술관)도 같은 구역 — 무료 운영"
+        {
+          "ko": "호프 다이아몬드 — 저주받았다는 전설의 45캐럿 블루 다이아몬드",
+          "en": "The Hope Diamond — a legendary 'cursed' 45-carat blue diamond",
+          "ja": "ホープダイヤモンド — 呪いの伝説がある45カラットのブルーダイヤ"
+        },
+        {
+          "ko": "Nation's T. rex 전시 — 국보급 공룡 화석",
+          "en": "'The Nation's T. rex' — a national treasure of a fossil",
+          "ja": "「ネイションズ・T.レックス」— 国宝級の恐竜化石"
+        },
+        {
+          "ko": "특별 전시는 별도 유료",
+          "en": "Special exhibitions may cost extra",
+          "ja": "特別展は別途有料"
+        },
+        {
+          "ko": "국립 미술관(National Gallery of Art)도 같은 구역 — 무료",
+          "en": "The National Gallery of Art is nearby — also free",
+          "ja": "国立美術館（ナショナル・ギャラリー）も同じエリア。こちらも無料"
+        }
       ]
     },
     {
       "id": "us-capitol",
-      "name_ko": "미국 국회의사당",
+      "name": {
+        "ko": "미국 국회의사당",
+        "en": "U.S. Capitol",
+        "ja": "アメリカ合衆国議会議事堂"
+      },
       "region": "washington",
       "area": null,
       "category": "landmark",
@@ -566,15 +1442,43 @@
       "lat": 38.8899,
       "lng": -77.0091,
       "admission": "free",
-      "admission_note": "무료 (내부 투어 사전 예약 권장)",
       "reservation": "recommended",
-      "hours": "8:30~16:30 (주말·공휴일 휴관)",
-      "description_ko": "미국 의회(상·하원)가 열리는 건물. D.C. 어디서나 보이는 흰 돔이 랜드마크. 내부 투어 시 대리석 홀과 돔 천장화 관람 가능.",
+      "admission_note": {
+        "ko": "무료 (내부 투어 사전 예약 권장)",
+        "en": "Free (book interior tours in advance)",
+        "ja": "無料（内部ツアーは事前予約推奨）"
+      },
+      "hours": {
+        "ko": "8:30~16:30 (일요일·공휴일 휴관)",
+        "en": "8:30am–4:30pm (closed Sundays & holidays)",
+        "ja": "8:30〜16:30（日曜・祝日休館）"
+      },
+      "description": {
+        "ko": "미국 의회(상·하원)가 열리는 건물. D.C. 어디서나 보이는 흰 돔이 랜드마크. 내부 투어 때 대리석 홀과 돔 천장화를 볼 수 있어요.",
+        "en": "Home of the U.S. Congress. Its white dome is visible all over DC. Interior tours show marble halls and the dome's ceiling fresco.",
+        "ja": "米国議会（上院・下院）が開かれる建物。DCのどこからでも見える白いドームがランドマーク。内部ツアーで大理石のホールやドームの天井画を見学できます。"
+      },
       "tips": [
-        "내부 투어: visitthecapitol.gov에서 무료 예약",
-        "외부 관람은 예약 없이 24시간 가능",
-        "Capitol Visitor Center 지하 방문자 센터 무료 개방",
-        "워싱턴 기념탑·링컨 기념관과 일직선 — 내셔널 몰 걸으며 이동 가능"
+        {
+          "ko": "내부 투어: visitthecapitol.gov에서 무료 예약",
+          "en": "Interior tours: book free at visitthecapitol.gov",
+          "ja": "内部ツアー：visitthecapitol.govで無料予約"
+        },
+        {
+          "ko": "외부 관람은 예약 없이 언제든 가능",
+          "en": "You can see the outside anytime without a reservation",
+          "ja": "外観の見学は予約なしでいつでも可"
+        },
+        {
+          "ko": "지하 방문자 센터(Capitol Visitor Center) 무료 개방",
+          "en": "The underground Capitol Visitor Center is free",
+          "ja": "地下のビジターセンターは無料開放"
+        },
+        {
+          "ko": "워싱턴 기념탑·링컨 기념관과 일직선 — 내셔널 몰을 걸어서 이동 가능",
+          "en": "In line with the Washington Monument and Lincoln Memorial — walk the Mall between them",
+          "ja": "ワシントン記念塔・リンカーン記念堂と一直線。ナショナル・モールを歩いて移動できます"
+        }
       ]
     }
   ]

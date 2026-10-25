@@ -424,8 +424,7 @@ body {
   font-weight: 700;
   margin-bottom: 10px;
 }
-.step-q-en { font-size: 17px; font-weight: 700; color: var(--text); }
-.step-q-ko { font-size: 13px; color: var(--muted); margin-top: 3px; }
+.step-title { font-size: 17px; font-weight: 700; color: var(--text); }
 .step-tip {
   margin-top: 10px;
   padding: 7px 10px;
@@ -450,24 +449,25 @@ body {
   border-color: #FCD34D;
   background: #FFFBEB;
 }
-.opt-en { font-size: 15px; font-weight: 600; color: var(--text); }
-.opt-ko { font-size: 12px; color: var(--muted); margin-top: 2px; }
+.opt-name { font-size: 15px; font-weight: 600; color: var(--text); }
+/* 메뉴판 표기 (국가 menu_lang). 현재 언어와 다를 때만 표시 */
+.opt-menu { font-size: 12px; color: var(--muted); margin-top: 2px; }
 .rec-star { font-size: 16px; color: var(--gold); flex-shrink: 0; }
 
 /* ── Sauce Guide ── */
-.sauce-guide { padding: 14px 16px; }
-.sauce-card {
+.menu-guide { padding: 14px 16px; }
+.menu-card {
   background: var(--surface);
   border-radius: 12px;
   padding: 14px;
   margin-bottom: 10px;
   box-shadow: 0 1px 4px rgba(0,0,0,.06);
 }
-.sauce-top { display: flex; align-items: flex-start; justify-content: space-between; gap: 8px; }
-.sauce-name    { font-size: 15px; font-weight: 700; color: var(--text); }
-.sauce-name-ko { font-size: 12px; color: var(--muted); margin-top: 2px; }
-.sauce-desc    { font-size: 13px; color: var(--text); margin-top: 7px; line-height: 1.5; }
-.sauce-rec     { font-size: 12px; color: var(--gold); font-weight: 700; flex-shrink: 0; }
+.menu-top { display: flex; align-items: flex-start; justify-content: space-between; gap: 8px; }
+.menu-name    { font-size: 15px; font-weight: 700; color: var(--text); }
+.menu-name-sub { font-size: 12px; color: var(--muted); margin-top: 2px; }
+.menu-desc    { font-size: 13px; color: var(--text); margin-top: 7px; line-height: 1.5; }
+.menu-rec     { font-size: 12px; color: var(--gold); font-weight: 700; flex-shrink: 0; }
 
 /* ── Tips ── */
 .tips-section { padding: 14px 16px; }

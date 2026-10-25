@@ -31,7 +31,7 @@ function renderList() {
           <div class="cat-tag">${catLabel('store', s.category)}</div>
         </div>
       </div>
-      <div class="store-desc">${s.description}</div>
+      <div class="store-desc">${tx(s.description)}</div>
       <div class="store-meta">
         <span class="meta-tag">📍 ${placeName(s)}</span>
         ${s.tip_expected ? `<span class="meta-tag" title="${t('tag.tip_title')}">${t('tag.tip')}</span>` : ''}

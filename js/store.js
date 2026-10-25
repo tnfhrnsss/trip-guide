@@ -7,7 +7,7 @@ function renderHeader(s) {
   document.title = `${s.name} - Trip Guide`;
   document.getElementById('hdr-name').textContent = s.name;
   document.getElementById('store-detail-name').textContent = s.name;
-  document.getElementById('store-detail-desc').textContent = s.description;
+  document.getElementById('store-detail-desc').textContent = tx(s.description);
   document.getElementById('store-detail-address').innerHTML =
     `<a href="${mapsUrl(s.address)}" target="_blank" rel="noopener noreferrer">📍 ${s.address}</a>`;
 
@@ -20,20 +20,19 @@ function renderHeader(s) {
 
 }
 
-function renderOrdering(flow) {
-  const el = document.getElementById('ordering-flow');
-  el.innerHTML = flow.map(step => `
+function renderOrderGuide(guide) {
+  const el = document.getElementById('order-guide');
+  el.innerHTML = guide.map(step => `
     <div class="step-card">
       <div class="step-badge">${step.step}</div>
-      <div class="step-q-en">${step.question_en}</div>
-      <div class="step-q-ko">${step.question_ko}</div>
-      ${step.tip ? `<div class="step-tip">💡 ${step.tip}</div>` : ''}
+      <div class="step-title">${tx(step.title)}</div>
+      ${step.note ? `<div class="step-tip">💡 ${tx(step.note)}</div>` : ''}
       <div class="step-options">
         ${step.options.map(opt => `
           <div class="step-option${opt.recommended ? ' recommended' : ''}">
             <div>
-              <div class="opt-en">${opt.en}</div>
-              <div class="opt-ko">${opt.ko}</div>
+              <div class="opt-name">${tx(opt.name)}</div>
+              ${menuName(opt.name) ? `<div class="opt-menu">${menuName(opt.name)}</div>` : ''}
             </div>
             ${opt.recommended ? '<span class="rec-star">✦</span>' : ''}
           </div>
@@ -43,25 +42,25 @@ function renderOrdering(flow) {
   `).join('');
 }
 
-function renderSauce(guide) {
-  const el = document.getElementById('sauce-guide');
+function renderMenuGuide(guide) {
+  const el = document.getElementById('menu-guide');
   el.innerHTML = guide.map(g => `
-    <div class="sauce-card">
-      <div class="sauce-top">
+    <div class="menu-card">
+      <div class="menu-top">
         <div>
-          <div class="sauce-name">${g.name}</div>
-          <div class="sauce-name-ko">${g.name_ko}</div>
+          <div class="menu-name">${tx(g.name)}</div>
+          ${menuName(g.name) ? `<div class="menu-name-sub">${menuName(g.name)}</div>` : ''}
         </div>
-        ${g.recommended ? `<span class="sauce-rec">${t('store.recommended')}</span>` : ''}
+        ${g.recommended ? `<span class="menu-rec">${t('store.recommended')}</span>` : ''}
       </div>
-      <div class="sauce-desc">${g.description_ko}</div>
+      <div class="menu-desc">${tx(g.description)}</div>
     </div>
   `).join('');
 }
 
 function renderTips(tips) {
   const el = document.getElementById('tips-section');
-  el.innerHTML = tips.map(t => `<div class="tip-item">${t}</div>`).join('');
+  el.innerHTML = tips.map(tip => `<div class="tip-item">${tx(tip)}</div>`).join('');
 }
 
 function initTabs() {
@@ -84,9 +83,9 @@ async function init() {
   if (!store) { location.href = 'index.html'; return; }
 
   renderHeader(store);
-  if (store.ordering_flow?.length) renderOrdering(store.ordering_flow);
-  if (store.sauce_guide?.length)   renderSauce(store.sauce_guide);
-  if (store.tips?.length)          renderTips(store.tips);
+  if (store.order_guide?.length) renderOrderGuide(store.order_guide);
+  if (store.menu_guide?.length)  renderMenuGuide(store.menu_guide);
+  if (store.tips?.length)        renderTips(store.tips);
   initTabs();
 
   document.getElementById('back-btn').addEventListener('click', () => {

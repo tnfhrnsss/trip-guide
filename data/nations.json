@@ -6,6 +6,7 @@
       "flag": "🇺🇸",
       "currency": "$",
       "maps": "google",
+      "menu_lang": "en",
       "store_categories": [
         { "id": "bagel", "label": { "ko": "베이글", "en": "Bagel", "ja": "ベーグル" }, "emoji": "🥯", "color": "#F59E0B" },
         { "id": "burger", "label": { "ko": "버거", "en": "Burger", "ja": "バーガー" }, "emoji": "🍔", "color": "#DC2626" },

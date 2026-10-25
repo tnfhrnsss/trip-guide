@@ -39,18 +39,18 @@ function renderSpots() {
     return `
       <div class="spot-card" id="card-${s.id}">
         <div class="spot-top">
-          <div class="spot-name">${s.name_ko}</div>
+          <div class="spot-name">${tx(s.name)}</div>
           <div class="spot-badges">${admBadge(s)}${resBadge(s)}</div>
         </div>
         <div class="spot-meta">
           <span class="meta-tag">${catLabel('spot', s.category)}</span>
-          <span class="meta-tag">⏰ ${s.hours}</span>
+          <span class="meta-tag">⏰ ${tx(s.hours)}</span>
         </div>
-        <div class="spot-price-note">${s.admission_note}</div>
-        <div class="spot-desc">${s.description_ko}</div>
+        <div class="spot-price-note">${tx(s.admission_note)}</div>
+        <div class="spot-desc">${tx(s.description)}</div>
         ${s.tips?.length ? `
           <div class="spot-tips${open ? '' : ' hidden'}" id="tips-${s.id}">
-            ${s.tips.map(t => `<div class="tip-item">${t}</div>`).join('')}
+            ${s.tips.map(tip => `<div class="tip-item">${tx(tip)}</div>`).join('')}
           </div>
           <button class="tips-toggle" data-id="${s.id}">
             ${open ? t('spots.tips_hide') : t('spots.tips_show')}
