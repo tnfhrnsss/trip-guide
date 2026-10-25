@@ -356,6 +356,8 @@ body {
   padding: 14px 16px;
 }
 .store-detail-name { font-size: 22px; font-weight: 800; color: var(--text); line-height: 1.2; }
+/* 간판 표기 (현지어 이름) */
+.store-detail-local { font-size: 14px; color: var(--muted); margin-top: 2px; }
 .store-detail-meta { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 8px; }
 .store-detail-desc { font-size: 14px; color: var(--muted); margin-top: 8px; line-height: 1.5; }
 .store-detail-address { font-size: 12px; color: var(--muted); margin-top: 6px; }

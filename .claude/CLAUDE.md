@@ -7,8 +7,8 @@
 ## 프로젝트 개요
 
 여행자를 위한 오프라인 우선 웹앱. 국가 → 지역 → 구역 3단계 구조.
-- 현재: 미국(뉴욕·워싱턴 D.C.·나이아가라)
-- 예정: 한국(강남구 역 주변, 내년 서초구) — 외국인도 쓰도록 다국어(ko/en/ja)
+- 미국(뉴욕·워싱턴 D.C.·나이아가라), 한국(강남구 역 주변 — 서초구는 내년 추가 예정)
+- 외국인도 쓰도록 화면·데이터 전체 다국어(ko/en/ja)
 - 현지 맛집·카페 주문 가이드
 - 관광 스팟 정보 (무료/유료, 예약 여부, 팁)
 - 지역별 날씨 (Open-Meteo API)
@@ -42,7 +42,7 @@ trip-guide/
 ├── map.html            ← Leaflet 지도
 ├── restroom.html       ← 화장실 찾기 (현재 위치 기반)
 ├── manifest.json       ← PWA
-├── sw.js               ← Service Worker (캐시 버전: trip-guide-v3)
+├── sw.js               ← Service Worker (캐시 버전: trip-guide-v4)
 ├── css/style.css       ← 단일 CSS, CSS 변수 기반
 ├── js/
 │   ├── i18n.js         ← 다국어: t(), tx(), applyI18n(), 언어 전환 (geo.js보다 먼저 로드)
@@ -57,10 +57,11 @@ trip-guide/
 │   ├── ko.json / en.json / ja.json   ← 화면 문구 (키 동일하게 유지)
 ├── data/
 │   ├── nations.json    ← 국가 목록 + 국가 단위 설정 (통화, 지도 링크, 카테고리)
-│   └── us/
-│       ├── regions.json ← 지역 + 구역 + 날씨 지점
-│       ├── stores.json
-│       └── spots.json
+│   ├── us/
+│   │   ├── regions.json ← 지역 + 구역 + 날씨 지점
+│   │   ├── stores.json
+│   │   └── spots.json
+│   └── kr/              ← 같은 구조 (강남구)
 └── icons/
 ```
 
@@ -75,6 +76,10 @@ trip-guide/
 | `us` | `new-york` | `downtown`, `midtown`, `uptown`, `queens` |
 | `us` | `washington` | 없음 |
 | `us` | `niagara` (`weather_only`) | 없음 — 날씨만 표시, 스팟 페이지에서는 숨김 |
+| `kr` | `gangnam` | `gangnam-sinnonhyeon`, `yeoksam`, `seolleung`, `samseong`, `gangnam-gu-office`, `cheongdam`, `apgujeong-rodeo`, `sinsa` |
+| `kr` | `seocho` (`disabled`) | 없음 — 내년 추가 예정. `disabled: true`인 지역은 화면에서 제외 |
+
+- **서초구 추가 방법**: `data/kr/regions.json`의 `seocho`에 `areas`를 넣고 `disabled`를 지운 뒤 stores/spots에 `"region": "seocho"` 데이터 추가. 강남역처럼 경계에 걸친 역은 같은 구역 id(`gangnam-sinnonhyeon`)를 서초구 `areas`에도 넣으면 양쪽에서 보임
 
 - 필터: 구역이 선택되면 `item.area === area.id`, 아니면 `item.region === region.id` (`matchesPlace`). 여러 지역에 걸친 구역(예: 강남역)은 각 지역의 `areas`에 같은 id로 넣으면 된다.
 - 선택 상태: `sessionStorage` 키 `trip_sel_{nation}` (푸드·스팟 공유). 국가: `localStorage` 키 `trip_nation`, `?nation=` 파라미터가 우선.
@@ -91,7 +96,8 @@ trip-guide/
 ```json
 { "nations": [{
   "id": "us", "name": { "ko": "미국", "en": "USA", "ja": "アメリカ" }, "flag": "🇺🇸", "currency": "$",
-  "maps": "google|naver", "menu_lang": "en",
+  "maps": "google|naver",   // naver면 주소(현지어)로 네이버 지도 검색. 좌표 검색은 항상 구글
+  "menu_lang": "en|ko",     // 메뉴판·간판 언어. 선택지 아래, 가게 이름 아래에 이 언어 표기를 작게 보여줌
   "store_categories": [{ "id": "bagel", "label": { "ko": "베이글", "en": "Bagel", "ja": "ベーグル" }, "emoji": "🥯", "color": "#F59E0B" }],
   "spot_categories":  [{ "id": "landmark", "label": { "ko": "...", "en": "...", "ja": "..." }, "emoji": "🗽" }]
 }] }
@@ -132,15 +138,15 @@ trip-guide/
 ```json
 {
   "id": "string (URL용 kebab-case)",
-  "name": "string (가게 원래 이름)",
+  "name": "string | L",                   // 미국은 원래 이름 문자열, 한국은 L (간판 표기 = ko)
   "category": "nations.json의 store_categories id",
   "region": "regions.json의 지역 id",
   "area": "regions.json의 구역 id | null",
-  "address": "string",
+  "address": "string | L",                // 한국은 L — 지도 검색은 menu_lang 주소로 (addressQuery)
   "lat": 0.0, "lng": 0.0,
   "tip_expected": true|false,             // 선택 (미국)
   "has_seating": true|false,              // 선택
-  "price_range": "$X~Y",                  // 추천 메뉴 기준 1인 예상
+  "price_range": "$X~Y",                  // 선택 — 추천 메뉴 기준 1인 예상 (한국 데이터는 아직 없음)
   "description": L,
   "order_guide": [                        // 주문 가이드: 단계 + 선택지만 (대화 예문 없음)
     {
@@ -193,6 +199,21 @@ trip-guide/
 | **Queens** (5곳) | Xi'an Famous Foods, Joe's Shanghai, Nan Xiang Xiao Long Bao, Taverna Kyclades, New World Mall Food Court | other×5 |
 | **Washington D.C.** (9곳) | Old Ebbitt Grill, Founding Farmers, District Taco, Shake Shack DC, Mitsitam Native Foods Café, Jaleo by José Andrés, Eastern Market, Ted's Bulletin, Ben's Chili Bowl | other×5, taco, burger, deli×2 |
 
+### 한국 강남구 (data/kr/) — 가게 12곳, 스팟 6곳
+
+출처: visitgangnam.net(강남구 관광 사이트) 목록 + 웹 검색으로 주소 확인, 좌표는 Nominatim(OpenStreetMap). 가격은 확인하지 못해 비워 둠.
+
+| 구역 | 가게 | 스팟 |
+|------|------|------|
+| 강남역·신논현 | 쉐이크쉑 강남 | — |
+| 역삼 | 블루보틀 역삼 | — |
+| 선릉 | — | 선릉과 정릉 |
+| 삼성·코엑스 | 테라로사 포스코센터점, 고운님 | 봉은사, 별마당 도서관, 코엑스 아쿠아리움 |
+| 강남구청·학동 | 구테로이테, 진미평양냉면 | — |
+| 청담 | 두루 | — |
+| 압구정로데오·도산공원 | 런던베이글뮤지엄 도산, 노티드 청담, 누데이크 하우스 도산, 변강쇠떡볶이 | 도산공원 |
+| 신사·가로수길 | 마일스톤커피 | 가로수길 |
+
 ### 미국 관광 스팟 (data/us/spots.json) — 총 27곳
 
 | 구역 | 스팟 |
@@ -215,9 +236,9 @@ trip-guide/
 
 ## Service Worker (sw.js)
 
-- 캐시 이름: `trip-guide-v3`
+- 캐시 이름: `trip-guide-v4`
 - 전략: App Shell은 cache-first, Open-Meteo API는 network-first + cache fallback
-- **새 파일 추가 시** (국가 데이터 포함) `APP_SHELL` 배열에 경로 추가 후 캐시 이름 버전 올리기 (`trip-guide-v4` 등)
+- **새 파일 추가 시** (국가 데이터 포함) `APP_SHELL` 배열에 경로 추가 후 캐시 이름 버전 올리기 (`trip-guide-v5` 등)
 
 ---
 
@@ -258,7 +279,10 @@ Service Worker는 `http://localhost`에서만 동작 (https 불필요).
 - [x] GitHub 저장소 이름 `nyc` → `trip-guide` 변경 (Pages: https://tnfhrnsss.github.io/trip-guide/ — main 머지 후 반영)
 - [x] 2단계: 다국어(ko/en/ja) — `i18n/*.json` + `data-i18n` 속성, 헤더 언어 전환
 - [x] 3단계: 데이터 다국어화 — 텍스트 필드를 `{ko,en,ja}`로, `ordering_flow`(영어 Q&A) → `order_guide`(단계·선택지만), `sauce_guide` → `menu_guide`
-- [ ] 4단계: 한국(`data/kr/`) — 강남구 역 구역, 카페 중심 데이터, 네이버 지도 링크, 공공데이터 화장실
+- [x] 4단계: 한국(`data/kr/`) — 강남구 역 구역, 카페 중심 데이터, 네이버 지도 링크
+- [ ] 한국 데이터 보강: 강남역·역삼·선릉 등 가게가 적은 구역, 가격 정보
+- [ ] 한국 화장실: 공공데이터포털 '전국공중화장실표준데이터'로 강남구 JSON 만들기 (현재는 OpenStreetMap)
+- [ ] 서초구 추가 (내년)
 - [ ] 지도(map.html)에 스팟 핀도 표시
 - [ ] PWA 아이콘 개선
 

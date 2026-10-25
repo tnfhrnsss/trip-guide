@@ -1,0 +1,32 @@
+{
+  "regions": [
+    {
+      "id": "gangnam",
+      "name": { "ko": "강남구", "en": "Gangnam-gu", "ja": "江南区" },
+      "timezone": "Asia/Seoul",
+      "center": [37.511, 127.041],
+      "zoom": 14,
+      "weather": { "name": { "ko": "서울 강남구", "en": "Gangnam, Seoul", "ja": "ソウル江南区" }, "lat": 37.5172, "lng": 127.0473 },
+      "areas": [
+        { "id": "gangnam-sinnonhyeon", "name": { "ko": "강남역·신논현", "en": "Gangnam · Sinnonhyeon", "ja": "江南駅・新論峴" } },
+        { "id": "yeoksam", "name": { "ko": "역삼", "en": "Yeoksam", "ja": "駅三" } },
+        { "id": "seolleung", "name": { "ko": "선릉", "en": "Seolleung", "ja": "宣陵" } },
+        { "id": "samseong", "name": { "ko": "삼성·코엑스", "en": "Samseong · COEX", "ja": "三成・COEX" } },
+        { "id": "gangnam-gu-office", "name": { "ko": "강남구청·학동", "en": "Gangnam-gu Office · Hakdong", "ja": "江南区庁・鶴洞" } },
+        { "id": "cheongdam", "name": { "ko": "청담", "en": "Cheongdam", "ja": "清潭" } },
+        { "id": "apgujeong-rodeo", "name": { "ko": "압구정로데오·도산공원", "en": "Apgujeong Rodeo · Dosan Park", "ja": "狎鴎亭ロデオ・島山公園" } },
+        { "id": "sinsa", "name": { "ko": "신사·가로수길", "en": "Sinsa · Garosu-gil", "ja": "新沙・カロスキル" } }
+      ]
+    },
+    {
+      "id": "seocho",
+      "name": { "ko": "서초구", "en": "Seocho-gu", "ja": "瑞草区" },
+      "disabled": true,
+      "timezone": "Asia/Seoul",
+      "center": [37.4837, 127.0324],
+      "zoom": 14,
+      "weather": { "name": { "ko": "서울 서초구", "en": "Seocho, Seoul", "ja": "ソウル瑞草区" }, "lat": 37.4837, "lng": 127.0324 },
+      "areas": []
+    }
+  ]
+}

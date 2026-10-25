@@ -1,0 +1,220 @@
+{
+  "spots": [
+    {
+      "id": "seolleung-jeongneung",
+      "name": { "ko": "선릉과 정릉", "en": "Seolleung & Jeongneung Royal Tombs", "ja": "宣陵と靖陵" },
+      "region": "gangnam",
+      "area": "seolleung",
+      "category": "heritage",
+      "address": { "ko": "서울 강남구 선릉로100길 1", "en": "1 Seolleung-ro 100-gil, Gangnam-gu, Seoul", "ja": "ソウル江南区宣陵路100ギル1" },
+      "lat": 37.5072,
+      "lng": 127.04837,
+      "admission": "paid",
+      "admission_note": {
+        "ko": "유료 (성인 ₩1,000) / 매월 마지막 수요일 무료",
+        "en": "Paid (adults ₩1,000) / free on the last Wednesday of each month",
+        "ja": "有料（大人₩1,000）／毎月最終水曜は無料"
+      },
+      "reservation": false,
+      "hours": {
+        "ko": "화~일 06:00~21:00 (계절별 상이, 월요일 휴관)",
+        "en": "Tue–Sun 6am–9pm (varies by season; closed Mondays)",
+        "ja": "火〜日 6:00〜21:00（季節により異なる、月曜休館）"
+      },
+      "description": {
+        "ko": "유네스코 세계유산 조선왕릉. 빌딩 숲 한가운데 있는 고요한 숲길과 왕릉.",
+        "en": "UNESCO World Heritage royal tombs of the Joseon Dynasty — a quiet wooded park in the middle of Gangnam's towers.",
+        "ja": "ユネスコ世界遺産の朝鮮王陵。ビル群の真ん中にある静かな森の小道と王陵。"
+      },
+      "tips": [
+        { "ko": "선릉역에서 가까워요.", "en": "Close to Seolleung Station.", "ja": "宣陵駅から近い。" },
+        {
+          "ko": "24세 이하·65세 이상은 무료 (방문 전 확인).",
+          "en": "Free for ages 24 and under and 65 and over (check before visiting).",
+          "ja": "24歳以下・65歳以上は無料（訪問前に確認）。"
+        },
+        {
+          "ko": "산책로가 잘 되어 있어 도심 속 휴식에 좋아요.",
+          "en": "Well-kept walking paths — a calm break from the city.",
+          "ja": "散策路が整備されていて都会の中の休憩に最適。"
+        }
+      ]
+    },
+    {
+      "id": "bongeunsa",
+      "name": { "ko": "봉은사", "en": "Bongeunsa Temple", "ja": "奉恩寺" },
+      "region": "gangnam",
+      "area": "samseong",
+      "category": "heritage",
+      "address": { "ko": "서울 강남구 봉은사로 531", "en": "531 Bongeunsa-ro, Gangnam-gu, Seoul", "ja": "ソウル江南区奉恩寺路531" },
+      "lat": 37.51513,
+      "lng": 127.05679,
+      "admission": "free",
+      "admission_note": { "ko": "무료", "en": "Free", "ja": "無料" },
+      "reservation": false,
+      "hours": { "ko": "이른 아침~22:00경 (시간은 출처마다 다름)", "en": "Early morning to around 10pm (sources vary)", "ja": "早朝〜22:00頃（情報により異なる）" },
+      "description": {
+        "ko": "코엑스 바로 맞은편에 있는 천년 고찰. 거대한 미륵대불과 빌딩 숲이 어우러진 풍경.",
+        "en": "A temple with over a thousand years of history right across from COEX, where a giant Maitreya Buddha stands against the skyline.",
+        "ja": "COEXの向かいにある千年の古刹。巨大な弥勒大仏とビル群が織りなす風景。"
+      },
+      "tips": [
+        {
+          "ko": "9호선 봉은사역 또는 2호선 삼성역에서 가까워요.",
+          "en": "Near Bongeunsa (Line 9) or Samseong (Line 2) stations.",
+          "ja": "9号線奉恩寺駅または2号線三成駅から近い。"
+        },
+        {
+          "ko": "템플스테이·외국인 체험 프로그램이 있어요 (templestay.com에서 예약).",
+          "en": "Temple stay and foreigner programs are available (book at templestay.com).",
+          "ja": "テンプルステイや外国人向けプログラムあり（templestay.comで予約）。"
+        },
+        {
+          "ko": "사찰이니 법당 안에서는 조용히, 노출이 심한 옷은 피하세요.",
+          "en": "It's an active temple — keep quiet in the halls and dress modestly.",
+          "ja": "現役の寺院なので本堂では静かに、露出の多い服装は避けて。"
+        }
+      ]
+    },
+    {
+      "id": "starfield-library",
+      "name": { "ko": "별마당 도서관", "en": "Starfield Library", "ja": "ピョルマダン図書館" },
+      "region": "gangnam",
+      "area": "samseong",
+      "category": "culture",
+      "address": {
+        "ko": "서울 강남구 영동대로 513 스타필드 코엑스몰",
+        "en": "Starfield COEX Mall, 513 Yeongdong-daero, Gangnam-gu, Seoul",
+        "ja": "ソウル江南区永東大路513 スターフィールドCOEXモール"
+      },
+      "lat": 37.51253,
+      "lng": 127.05885,
+      "admission": "free",
+      "admission_note": { "ko": "무료", "en": "Free", "ja": "無料" },
+      "reservation": false,
+      "hours": { "ko": "매일 10:30~22:00", "en": "Daily 10:30am–10pm", "ja": "毎日 10:30〜22:00" },
+      "description": {
+        "ko": "코엑스몰 한가운데 13m 높이의 거대한 책장이 있는 열린 도서관. 서울 대표 사진 명소.",
+        "en": "An open library in the heart of COEX Mall with 13-meter-tall bookshelves — one of Seoul's iconic photo spots.",
+        "ja": "COEXモールの真ん中にある高さ13mの巨大な本棚の図書館。ソウルを代表する撮影スポット。"
+      },
+      "tips": [
+        {
+          "ko": "2호선 삼성역 5·6번 출구에서 코엑스몰로 바로 연결.",
+          "en": "Connected directly to COEX Mall from Samseong Station Exits 5–6 (Line 2).",
+          "ja": "2号線三成駅5・6番出口からCOEXモールに直結。"
+        },
+        { "ko": "책은 자유롭게 꺼내 읽을 수 있어요.", "en": "Feel free to pull books off the shelves and read.", "ja": "本は自由に手に取って読めます。" },
+        {
+          "ko": "주말 오후는 매우 붐벼요. 사진은 오전이 좋아요.",
+          "en": "Weekend afternoons get packed — mornings are best for photos.",
+          "ja": "週末の午後はとても混雑。写真は午前中がおすすめ。"
+        }
+      ]
+    },
+    {
+      "id": "coex-aquarium",
+      "name": { "ko": "코엑스 아쿠아리움", "en": "COEX Aquarium", "ja": "COEXアクアリウム" },
+      "region": "gangnam",
+      "area": "samseong",
+      "category": "culture",
+      "address": { "ko": "서울 강남구 영동대로 513 코엑스몰", "en": "COEX Mall, 513 Yeongdong-daero, Gangnam-gu, Seoul", "ja": "ソウル江南区永東大路513 COEXモール" },
+      "lat": 37.5125,
+      "lng": 127.0592,
+      "admission": "paid",
+      "admission_note": {
+        "ko": "유료 (성인 약 ₩27,000, 온라인 할인 있음)",
+        "en": "Paid (adults about ₩27,000; online discounts available)",
+        "ja": "有料（大人約₩27,000、オンライン割引あり）"
+      },
+      "reservation": "recommended",
+      "hours": { "ko": "10:00~21:00 (입장 마감 20:00)", "en": "10am–9pm (last entry 8pm)", "ja": "10:00〜21:00（入場は20:00まで）" },
+      "description": {
+        "ko": "코엑스몰 안의 대형 수족관. 비 오는 날이나 아이와 함께할 때 좋아요.",
+        "en": "A large aquarium inside COEX Mall — great on rainy days or with kids.",
+        "ja": "COEXモール内の大型水族館。雨の日や子連れに最適。"
+      },
+      "tips": [
+        {
+          "ko": "네이버 예약·공식 홈페이지에서 미리 사면 할인되는 경우가 많아요.",
+          "en": "Booking ahead online often gets you a discount.",
+          "ja": "オンラインで事前購入すると割引になることが多い。"
+        },
+        { "ko": "가격은 바뀔 수 있으니 방문 전 확인하세요.", "en": "Prices can change — check before you go.", "ja": "料金は変わることがあるので事前に確認を。" },
+        {
+          "ko": "별마당 도서관과 같은 코엑스몰 안이라 함께 둘러보기 좋아요.",
+          "en": "In the same mall as Starfield Library — easy to combine.",
+          "ja": "ピョルマダン図書館と同じモール内なのでセットで回りやすい。"
+        }
+      ]
+    },
+    {
+      "id": "dosan-park",
+      "name": { "ko": "도산공원", "en": "Dosan Park", "ja": "島山公園" },
+      "region": "gangnam",
+      "area": "apgujeong-rodeo",
+      "category": "park",
+      "address": { "ko": "서울 강남구 도산대로45길 20", "en": "20 Dosan-daero 45-gil, Gangnam-gu, Seoul", "ja": "ソウル江南区島山大路45ギル20" },
+      "lat": 37.52332,
+      "lng": 127.03641,
+      "admission": "free",
+      "admission_note": { "ko": "무료 (기념관 포함)", "en": "Free (including the memorial hall)", "ja": "無料（記念館含む）" },
+      "reservation": false,
+      "hours": {
+        "ko": "공원 상시 개방 / 기념관 10:00~17:00경 (명절 휴관, 시간은 확인 필요)",
+        "en": "Park always open / Memorial hall about 10am–5pm (closed on major holidays; check hours)",
+        "ja": "公園は常時開放／記念館は10:00〜17:00頃（祝日休館、時間は要確認）"
+      },
+      "description": {
+        "ko": "독립운동가 도산 안창호를 기리는 공원. 주변에 감각적인 카페·편집숍이 모여 있어 산책하기 좋아요.",
+        "en": "A park honoring independence activist Dosan Ahn Chang-ho, surrounded by stylish cafés and boutiques.",
+        "ja": "独立運動家・島山安昌浩を記念する公園。周辺におしゃれなカフェやセレクトショップが集まり散歩に最適。"
+      },
+      "tips": [
+        {
+          "ko": "압구정역 3번 출구에서 도보 약 15분, 압구정로데오역에서도 가까워요.",
+          "en": "About 15 minutes from Apgujeong Station Exit 3; also close to Apgujeong Rodeo.",
+          "ja": "狎鴎亭駅3番出口から徒歩約15分、狎鴎亭ロデオ駅からも近い。"
+        },
+        {
+          "ko": "런던베이글뮤지엄, 누데이크, 노티드가 모두 근처예요.",
+          "en": "London Bagel Museum, Nudake, and Knotted are all nearby.",
+          "ja": "ロンドンベーグルミュージアム、ヌデイク、ノッテッドがすべて近く。"
+        },
+        { "ko": "기념관 문의 02-541-1800.", "en": "Memorial hall phone: 02-541-1800.", "ja": "記念館の問い合わせ 02-541-1800。" }
+      ]
+    },
+    {
+      "id": "garosu-gil",
+      "name": { "ko": "가로수길", "en": "Garosu-gil", "ja": "カロスキル" },
+      "region": "gangnam",
+      "area": "sinsa",
+      "category": "shopping",
+      "address": { "ko": "서울 강남구 신사동 가로수길", "en": "Garosu-gil, Sinsa-dong, Gangnam-gu, Seoul", "ja": "ソウル江南区新沙洞カロスキル" },
+      "lat": 37.5205,
+      "lng": 127.0229,
+      "admission": "free",
+      "admission_note": { "ko": "무료", "en": "Free", "ja": "無料" },
+      "reservation": false,
+      "hours": { "ko": "상시 (매장마다 다름)", "en": "Always open (shop hours vary)", "ja": "常時（店舗により異なる）" },
+      "description": {
+        "ko": "은행나무 가로수가 늘어선 쇼핑 거리. 큰길과 골목 곳곳에 카페·패션 브랜드가 모여 있어요.",
+        "en": "A ginkgo-lined shopping street with cafés and fashion brands along the main road and side alleys.",
+        "ja": "イチョウ並木が続くショッピング通り。大通りと路地にカフェやファッションブランドが集まっています。"
+      },
+      "tips": [
+        { "ko": "3호선 신사역 8번 출구에서 도보 5분.", "en": "5 minutes from Sinsa Station Exit 8 (Line 3).", "ja": "3号線新沙駅8番出口から徒歩5分。" },
+        {
+          "ko": "큰길 뒤 골목(세로수길)에 작은 카페와 개성 있는 가게가 많아요.",
+          "en": "The back alleys hide many small cafés and indie shops.",
+          "ja": "大通り裏の路地に小さなカフェや個性的な店が多い。"
+        },
+        {
+          "ko": "가을 은행나무 단풍 시즌이 특히 예뻐요.",
+          "en": "Especially pretty when the ginkgo leaves turn gold in autumn.",
+          "ja": "秋のイチョウの黄葉シーズンが特にきれい。"
+        }
+      ]
+    }
+  ]
+}

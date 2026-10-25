@@ -24,7 +24,7 @@ function addMarkers(stores) {
     L.marker([s.lat, s.lng], { icon: customIcon(s.category) })
       .bindPopup(`
         <div style="min-width:190px;font-family:-apple-system,sans-serif">
-          <div style="font-weight:800;font-size:15px;margin-bottom:3px">${s.name}</div>
+          <div style="font-weight:800;font-size:15px;margin-bottom:3px">${tx(s.name)}</div>
           <div style="font-size:12px;color:#718096;margin-bottom:7px">${catLabel('store', s.category)}</div>
           <div style="font-size:12px;margin-bottom:8px;line-height:1.4">${tx(s.description)}</div>
           <div style="display:flex;gap:8px;font-size:12px;color:#718096;margin-bottom:10px">

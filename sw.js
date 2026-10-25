@@ -1,4 +1,4 @@
-const CACHE = 'trip-guide-v3';
+const CACHE = 'trip-guide-v4';
 
 const APP_SHELL = [
   './',
@@ -23,6 +23,9 @@ const APP_SHELL = [
   './data/us/regions.json',
   './data/us/stores.json',
   './data/us/spots.json',
+  './data/kr/regions.json',
+  './data/kr/stores.json',
+  './data/kr/spots.json',
   './manifest.json',
   'https://unpkg.com/leaflet@1.9.4/dist/leaflet.css',
   'https://unpkg.com/leaflet@1.9.4/dist/leaflet.js',

@@ -4,12 +4,18 @@ async function loadStore(id) {
 }
 
 function renderHeader(s) {
-  document.title = `${s.name} - Trip Guide`;
-  document.getElementById('hdr-name').textContent = s.name;
-  document.getElementById('store-detail-name').textContent = s.name;
+  const name = tx(s.name);
+  document.title = `${name} - Trip Guide`;
+  document.getElementById('hdr-name').textContent = name;
+  document.getElementById('store-detail-name').textContent = name;
+  // 간판 표기(현지어 이름)가 다르면 이름 아래에 표시
+  const local = menuName(s.name);
+  const localEl = document.getElementById('store-detail-local');
+  localEl.textContent = local;
+  localEl.classList.toggle('hidden', !local);
   document.getElementById('store-detail-desc').textContent = tx(s.description);
   document.getElementById('store-detail-address').innerHTML =
-    `<a href="${mapsUrl(s.address)}" target="_blank" rel="noopener noreferrer">📍 ${s.address}</a>`;
+    `<a href="${mapsUrl(addressQuery(s.address))}" target="_blank" rel="noopener noreferrer">📍 ${tx(s.address)}</a>`;
 
   document.getElementById('store-detail-meta').innerHTML = `
     <span class="meta-tag">${catLabel('store', s.category)}</span>

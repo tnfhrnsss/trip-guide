@@ -1,0 +1,920 @@
+{
+  "stores": [
+    {
+      "id": "london-bagel-museum-dosan",
+      "name": { "ko": "런던베이글뮤지엄 도산", "en": "London Bagel Museum Dosan", "ja": "ロンドンベーグルミュージアム 島山" },
+      "category": "bakery",
+      "region": "gangnam",
+      "area": "apgujeong-rodeo",
+      "address": { "ko": "서울 강남구 언주로168길 33", "en": "33 Eonju-ro 168-gil, Gangnam-gu, Seoul", "ja": "ソウル江南区彦州路168ギル33" },
+      "lat": 37.52621,
+      "lng": 127.03527,
+      "has_seating": true,
+      "description": {
+        "ko": "서울에서 가장 줄이 긴 베이글 카페 중 하나. 런던 감성 인테리어와 쫄깃한 베이글로 유명.",
+        "en": "One of Seoul's most queued-for bagel cafés, known for its London-style interior and chewy bagels.",
+        "ja": "ソウルで最も行列ができるベーグルカフェのひとつ。ロンドン風のインテリアともちもちのベーグルで有名。"
+      },
+      "order_guide": [
+        {
+          "step": 1,
+          "title": { "ko": "대기 등록", "en": "Join the waitlist", "ja": "順番待ち登録" },
+          "note": {
+            "ko": "대기가 매우 길어요. 도착하면 먼저 대기 등록부터.",
+            "en": "Waits are very long — sign up for the waitlist as soon as you arrive.",
+            "ja": "待ち時間がとても長いので、着いたらまず順番待ち登録を。"
+          },
+          "options": [
+            { "name": { "ko": "현장에서 대기 등록", "en": "Sign up on site", "ja": "現地で登録" }, "recommended": true }
+          ]
+        },
+        {
+          "step": 2,
+          "title": { "ko": "베이글 고르기", "en": "Choose bagels", "ja": "ベーグルを選ぶ" },
+          "note": { "ko": "인기 메뉴는 일찍 품절될 수 있어요.", "en": "Popular flavors can sell out early.", "ja": "人気メニューは早めに売り切れることも。" },
+          "options": [
+            { "name": { "ko": "포테이토 치즈 베이글", "en": "Potato cheese bagel", "ja": "ポテトチーズベーグル" }, "recommended": true },
+            { "name": { "ko": "쪽파 프레첼 베이글", "en": "Scallion pretzel bagel", "ja": "青ねぎプレッツェルベーグル" }, "recommended": true },
+            { "name": { "ko": "플레인 · 참깨 등 기본 베이글", "en": "Plain, sesame, and other basics", "ja": "プレーン・セサミなどの定番" } }
+          ]
+        },
+        {
+          "step": 3,
+          "title": { "ko": "음료", "en": "Drinks", "ja": "ドリンク" },
+          "options": [
+            { "name": { "ko": "커피", "en": "Coffee", "ja": "コーヒー" }, "recommended": true },
+            { "name": { "ko": "우유 · 티 음료", "en": "Milk or tea drinks", "ja": "ミルク・ティー系" } }
+          ]
+        },
+        {
+          "step": 4,
+          "title": { "ko": "매장 / 포장", "en": "For here or to go", "ja": "店内／持ち帰り" },
+          "options": [
+            { "name": { "ko": "매장", "en": "For here", "ja": "店内" }, "recommended": true },
+            { "name": { "ko": "포장", "en": "To go", "ja": "持ち帰り" } }
+          ]
+        }
+      ],
+      "menu_guide": [
+        {
+          "name": { "ko": "포테이토 치즈 베이글", "en": "Potato cheese bagel", "ja": "ポテトチーズベーグル" },
+          "description": {
+            "ko": "감자와 치즈가 들어간 대표 베이글. 가장 많이 찾는 메뉴.",
+            "en": "The signature bagel with potato and cheese — the most-ordered item.",
+            "ja": "じゃがいもとチーズ入りの看板ベーグル。一番人気。"
+          },
+          "recommended": true
+        },
+        {
+          "name": { "ko": "쪽파 프레첼 베이글", "en": "Scallion pretzel bagel", "ja": "青ねぎプレッツェルベーグル" },
+          "description": { "ko": "쪽파 향이 나는 짭짤한 프레첼 베이글.", "en": "A salty pretzel bagel with fragrant scallions.", "ja": "青ねぎが香る塩気のあるプレッツェルベーグル。" },
+          "recommended": true
+        }
+      ],
+      "tips": [
+        { "ko": "매일 08:00~18:00 운영.", "en": "Open daily 8am–6pm.", "ja": "毎日 8:00〜18:00 営業。" },
+        { "ko": "압구정로데오역 5번 출구에서 걸어갈 수 있어요.", "en": "Walkable from Apgujeong Rodeo Station Exit 5.", "ja": "狎鴎亭ロデオ駅5番出口から徒歩圏内。" },
+        {
+          "ko": "오픈 직후나 평일 오전이 대기가 짧은 편.",
+          "en": "Right at opening or weekday mornings have shorter waits.",
+          "ja": "開店直後や平日の午前は比較的待ち時間が短め。"
+        },
+        {
+          "ko": "인기 매장은 현장 기기나 앱(캐치테이블 등)으로 대기 등록을 받아요.",
+          "en": "Popular spots take waitlist sign-ups on a tablet at the door or via apps like CatchTable.",
+          "ja": "人気店は店頭の端末やアプリ（CatchTableなど）で順番待ち登録をします。"
+        },
+        {
+          "ko": "한국은 팁 문화가 없어요. 표시된 가격만 내면 돼요.",
+          "en": "There's no tipping in Korea — just pay the listed price.",
+          "ja": "韓国にチップ文化はありません。表示価格だけでOK。"
+        }
+      ]
+    },
+    {
+      "id": "knotted-cheongdam",
+      "name": { "ko": "노티드 청담", "en": "Knotted Cheongdam", "ja": "ノッテッド 清潭" },
+      "category": "dessert",
+      "region": "gangnam",
+      "area": "apgujeong-rodeo",
+      "address": { "ko": "서울 강남구 도산대로53길 15", "en": "15 Dosan-daero 53-gil, Gangnam-gu, Seoul", "ja": "ソウル江南区島山大路53ギル15" },
+      "lat": 37.52448,
+      "lng": 127.03859,
+      "description": {
+        "ko": "크림이 가득 찬 도넛으로 유명한 디저트 카페. 귀여운 스마일 캐릭터 굿즈도 인기.",
+        "en": "Dessert café famous for cream-filled doughnuts and its cute smiley-face character goods.",
+        "ja": "クリームたっぷりのドーナツで有名なデザートカフェ。かわいいスマイルキャラのグッズも人気。"
+      },
+      "order_guide": [
+        {
+          "step": 1,
+          "title": { "ko": "도넛 고르기", "en": "Choose doughnuts", "ja": "ドーナツを選ぶ" },
+          "note": {
+            "ko": "진열대를 보고 고른 뒤 카운터에서 주문해요.",
+            "en": "Pick from the display case, then order at the counter.",
+            "ja": "ショーケースを見て選び、カウンターで注文。"
+          },
+          "options": [
+            { "name": { "ko": "우유 생크림 도넛", "en": "Milk cream doughnut", "ja": "ミルク生クリームドーナツ" }, "recommended": true },
+            { "name": { "ko": "시즌 한정 도넛", "en": "Seasonal doughnut", "ja": "季節限定ドーナツ" } }
+          ]
+        },
+        {
+          "step": 2,
+          "title": { "ko": "음료", "en": "Drinks", "ja": "ドリンク" },
+          "options": [
+            { "name": { "ko": "아메리카노", "en": "Americano", "ja": "アメリカーノ" }, "recommended": true },
+            { "name": { "ko": "라떼", "en": "Latte", "ja": "ラテ" } }
+          ]
+        },
+        {
+          "step": 3,
+          "title": { "ko": "따뜻하게 / 아이스", "en": "Hot or iced", "ja": "ホット／アイス" },
+          "options": [
+            { "name": { "ko": "아이스", "en": "Iced", "ja": "アイス" }, "recommended": true },
+            { "name": { "ko": "따뜻하게", "en": "Hot", "ja": "ホット" } }
+          ]
+        },
+        {
+          "step": 4,
+          "title": { "ko": "매장 / 포장", "en": "For here or to go", "ja": "店内／持ち帰り" },
+          "options": [
+            { "name": { "ko": "매장", "en": "For here", "ja": "店内" }, "recommended": true },
+            { "name": { "ko": "포장", "en": "To go", "ja": "持ち帰り" } }
+          ]
+        }
+      ],
+      "menu_guide": [
+        {
+          "name": { "ko": "우유 생크림 도넛", "en": "Milk cream doughnut", "ja": "ミルク生クリームドーナツ" },
+          "description": {
+            "ko": "폭신한 도넛에 우유 생크림을 가득 채운 대표 메뉴.",
+            "en": "The signature: a fluffy doughnut packed with fresh milk cream.",
+            "ja": "ふわふわの生地にミルク生クリームをたっぷり詰めた看板メニュー。"
+          },
+          "recommended": true
+        }
+      ],
+      "tips": [
+        { "ko": "압구정로데오역 5번 출구 쪽에서 가까워요.", "en": "Close to Apgujeong Rodeo Station Exit 5.", "ja": "狎鴎亭ロデオ駅5番出口から近い。" },
+        {
+          "ko": "크림 도넛은 포장 시 보냉 상태에 주의하세요.",
+          "en": "If taking cream doughnuts to go, keep them cool.",
+          "ja": "クリームドーナツを持ち帰るなら温度に注意。"
+        },
+        { "ko": "캐릭터 굿즈는 기념품으로 좋아요.", "en": "The character goods make nice souvenirs.", "ja": "キャラクターグッズはお土産にぴったり。" },
+        {
+          "ko": "한국은 팁 문화가 없어요. 표시된 가격만 내면 돼요.",
+          "en": "There's no tipping in Korea — just pay the listed price.",
+          "ja": "韓国にチップ文化はありません。表示価格だけでOK。"
+        }
+      ]
+    },
+    {
+      "id": "nudake-haus-dosan",
+      "name": { "ko": "누데이크 하우스 도산", "en": "Nudake Haus Dosan", "ja": "ヌデイク ハウス島山" },
+      "category": "dessert",
+      "region": "gangnam",
+      "area": "apgujeong-rodeo",
+      "address": {
+        "ko": "서울 강남구 압구정로46길 50 하우스 도산 B1",
+        "en": "B1 Haus Dosan, 50 Apgujeong-ro 46-gil, Gangnam-gu, Seoul",
+        "ja": "ソウル江南区狎鴎亭路46ギル50 ハウス島山 B1"
+      },
+      "lat": 37.52581,
+      "lng": 127.0359,
+      "description": {
+        "ko": "젠틀몬스터의 디저트 브랜드. 예술 작품 같은 디저트와 전시 공간 같은 매장. 하우스 도산 지하 1층.",
+        "en": "Gentle Monster's dessert brand — art-like desserts in a gallery-like space, on B1 of Haus Dosan.",
+        "ja": "ジェントルモンスターのデザートブランド。アート作品のようなデザートと展示空間のような店内。ハウス島山の地下1階。"
+      },
+      "order_guide": [
+        {
+          "step": 1,
+          "title": { "ko": "디저트 고르기", "en": "Choose a dessert", "ja": "デザートを選ぶ" },
+          "note": { "ko": "진열된 디저트를 보고 카운터에서 주문.", "en": "Browse the display and order at the counter.", "ja": "ショーケースを見てカウンターで注文。" },
+          "options": [
+            { "name": { "ko": "피크 케이크 (시그니처)", "en": "Peak cake", "ja": "ピークケーキ（看板）" }, "recommended": true },
+            { "name": { "ko": "시즌 디저트", "en": "Seasonal dessert", "ja": "季節のデザート" } }
+          ]
+        },
+        {
+          "step": 2,
+          "title": { "ko": "음료", "en": "Drinks", "ja": "ドリンク" },
+          "options": [
+            { "name": { "ko": "커피", "en": "Coffee", "ja": "コーヒー" }, "recommended": true },
+            { "name": { "ko": "티", "en": "Tea", "ja": "ティー" } }
+          ]
+        },
+        {
+          "step": 3,
+          "title": { "ko": "매장 / 포장", "en": "For here or to go", "ja": "店内／持ち帰り" },
+          "options": [
+            { "name": { "ko": "매장", "en": "For here", "ja": "店内" }, "recommended": true },
+            { "name": { "ko": "포장", "en": "To go", "ja": "持ち帰り" } }
+          ]
+        }
+      ],
+      "menu_guide": [
+        {
+          "name": { "ko": "피크 케이크", "en": "Peak cake", "ja": "ピークケーキ" },
+          "description": {
+            "ko": "검은 페이스트리 안에 말차 크림이 든, 산봉우리 모양의 대표 디저트.",
+            "en": "The signature mountain-shaped black pastry filled with matcha cream.",
+            "ja": "黒い生地の中に抹茶クリームが入った山の形の看板デザート。"
+          },
+          "recommended": true
+        }
+      ],
+      "tips": [
+        {
+          "ko": "영업 11:00~21:00, 매월 첫째 주 월요일 휴무 (방문 전 확인).",
+          "en": "Open 11am–9pm; closed the first Monday of each month (check before visiting).",
+          "ja": "営業 11:00〜21:00、毎月第1月曜休み（訪問前に確認を）。"
+        },
+        {
+          "ko": "같은 건물에 젠틀몬스터·탬버린즈 매장도 있어 함께 구경하기 좋아요.",
+          "en": "Gentle Monster and Tamburins stores are in the same building.",
+          "ja": "同じ建物にジェントルモンスターやタンバリンズの店舗も。"
+        },
+        {
+          "ko": "압구정로데오역 5번 출구에서 도보 약 10분.",
+          "en": "About 10 minutes' walk from Apgujeong Rodeo Station Exit 5.",
+          "ja": "狎鴎亭ロデオ駅5番出口から徒歩約10分。"
+        },
+        {
+          "ko": "한국은 팁 문화가 없어요. 표시된 가격만 내면 돼요.",
+          "en": "There's no tipping in Korea — just pay the listed price.",
+          "ja": "韓国にチップ文化はありません。表示価格だけでOK。"
+        }
+      ]
+    },
+    {
+      "id": "milestone-coffee",
+      "name": { "ko": "마일스톤커피", "en": "Milestone Coffee", "ja": "マイルストーンコーヒー" },
+      "category": "cafe",
+      "region": "gangnam",
+      "area": "sinsa",
+      "address": { "ko": "서울 강남구 논현로159길 49", "en": "49 Nonhyeon-ro 159-gil, Gangnam-gu, Seoul", "ja": "ソウル江南区論峴路159ギル49" },
+      "lat": 37.52301,
+      "lng": 127.02694,
+      "description": {
+        "ko": "2014년부터 가로수길을 지켜온 카페. 아인슈페너와 애플 크럼블이 대표 메뉴.",
+        "en": "A Garosu-gil café holding its ground since 2014. Famous for its einspänner and apple crumble.",
+        "ja": "2014年からカロスキルで営業を続けるカフェ。アインシュペナーとアップルクランブルが看板。"
+      },
+      "order_guide": [
+        {
+          "step": 1,
+          "title": { "ko": "음료 고르기", "en": "Choose a drink", "ja": "ドリンクを選ぶ" },
+          "options": [
+            { "name": { "ko": "아인슈페너 (시그니처)", "en": "Einspänner", "ja": "アインシュペナー（看板）" }, "recommended": true },
+            { "name": { "ko": "아메리카노", "en": "Americano", "ja": "アメリカーノ" } },
+            { "name": { "ko": "라떼", "en": "Latte", "ja": "ラテ" } }
+          ]
+        },
+        {
+          "step": 2,
+          "title": { "ko": "디저트 추가", "en": "Add a dessert", "ja": "デザートを追加" },
+          "note": {
+            "ko": "매장에서 먹으면 애플 크럼블에 바닐라 아이스크림이 함께 나와요.",
+            "en": "Dine in and the apple crumble comes with vanilla ice cream.",
+            "ja": "店内で食べるとアップルクランブルにバニラアイスが付きます。"
+          },
+          "options": [
+            { "name": { "ko": "애플 크럼블", "en": "Apple crumble", "ja": "アップルクランブル" }, "recommended": true },
+            { "name": { "ko": "디저트 없음", "en": "No dessert", "ja": "なし" } }
+          ]
+        },
+        {
+          "step": 3,
+          "title": { "ko": "매장 / 포장", "en": "For here or to go", "ja": "店内／持ち帰り" },
+          "options": [
+            { "name": { "ko": "매장", "en": "For here", "ja": "店内" }, "recommended": true },
+            { "name": { "ko": "포장", "en": "To go", "ja": "持ち帰り" } }
+          ]
+        }
+      ],
+      "menu_guide": [
+        {
+          "name": { "ko": "아인슈페너", "en": "Einspänner", "ja": "アインシュペナー" },
+          "description": {
+            "ko": "커피 위에 진한 크림을 올린 음료. 크림이 너무 달지 않아 커피와 잘 어울려요.",
+            "en": "Coffee topped with thick cream that isn't too sweet.",
+            "ja": "コーヒーに濃厚なクリームをのせたドリンク。甘すぎずコーヒーとよく合う。"
+          },
+          "recommended": true
+        },
+        {
+          "name": { "ko": "애플 크럼블", "en": "Apple crumble", "ja": "アップルクランブル" },
+          "description": { "ko": "사과와 시나몬이 가득한 디저트.", "en": "Packed with apple and cinnamon.", "ja": "りんごとシナモンたっぷりのデザート。" },
+          "recommended": true
+        }
+      ],
+      "tips": [
+        { "ko": "매일 10:00~21:00 운영.", "en": "Open daily 10am–9pm.", "ja": "毎日 10:00〜21:00 営業。" },
+        { "ko": "아주 이르거나 늦은 시간이 아니면 붐벼요.", "en": "Busy unless you go very early or late.", "ja": "朝早くか夜遅く以外は混雑しがち。" },
+        {
+          "ko": "가로수길은 신사역 8번 출구에서 도보 5분.",
+          "en": "Garosu-gil is 5 minutes from Sinsa Station Exit 8.",
+          "ja": "カロスキルは新沙駅8番出口から徒歩5分。"
+        },
+        {
+          "ko": "한국은 팁 문화가 없어요. 표시된 가격만 내면 돼요.",
+          "en": "There's no tipping in Korea — just pay the listed price.",
+          "ja": "韓国にチップ文化はありません。表示価格だけでOK。"
+        }
+      ]
+    },
+    {
+      "id": "gute-leute",
+      "name": { "ko": "구테로이테", "en": "Gute Leute", "ja": "グーテロイテ" },
+      "category": "cafe",
+      "region": "gangnam",
+      "area": "gangnam-gu-office",
+      "address": { "ko": "서울 강남구 선릉로131길 16 1층", "en": "1F, 16 Seolleung-ro 131-gil, Gangnam-gu, Seoul", "ja": "ソウル江南区宣陵路131ギル16 1階" },
+      "lat": 37.5177,
+      "lng": 127.03966,
+      "description": {
+        "ko": "커피 전문 카페. 버터스카치 베이스의 시그니처 에스프레소 음료와 커피 코스로 유명.",
+        "en": "A coffee specialist known for its butterscotch-based signature espresso drink and coffee tasting courses.",
+        "ja": "コーヒー専門カフェ。バタースコッチベースの看板エスプレッソドリンクとコーヒーコースで有名。"
+      },
+      "order_guide": [
+        {
+          "step": 1,
+          "title": { "ko": "음료 고르기", "en": "Choose a drink", "ja": "ドリンクを選ぶ" },
+          "options": [
+            { "name": { "ko": "구테로이테 (시그니처)", "en": "The Gute Leute", "ja": "グーテロイテ（看板）" }, "recommended": true },
+            { "name": { "ko": "클래식 코스 (시그니처 5잔)", "en": "Five-cup classic course", "ja": "クラシックコース（看板5杯）" } },
+            { "name": { "ko": "시즌 메뉴", "en": "Seasonal menu", "ja": "季節メニュー" } }
+          ]
+        },
+        {
+          "step": 2,
+          "title": { "ko": "매장 / 포장", "en": "For here or to go", "ja": "店内／持ち帰り" },
+          "options": [
+            { "name": { "ko": "매장", "en": "For here", "ja": "店内" }, "recommended": true },
+            { "name": { "ko": "포장", "en": "To go", "ja": "持ち帰り" } }
+          ]
+        }
+      ],
+      "menu_guide": [
+        {
+          "name": { "ko": "구테로이테", "en": "The Gute Leute", "ja": "グーテロイテ" },
+          "description": {
+            "ko": "버터스카치 베이스 에스프레소에 쿠키 앤 크림을 올린 달콤한 음료.",
+            "en": "A sweet espresso drink on a butterscotch base, topped with cookies and cream.",
+            "ja": "バタースコッチベースのエスプレッソにクッキー＆クリームをのせた甘いドリンク。"
+          },
+          "recommended": true
+        },
+        {
+          "name": { "ko": "클래식 코스", "en": "Classic course", "ja": "クラシックコース" },
+          "description": { "ko": "시그니처 음료 다섯 가지를 한 번에 맛보는 코스.", "en": "Sample five signature drinks at once.", "ja": "看板ドリンク5種を一度に味わえるコース。" }
+        }
+      ],
+      "tips": [
+        {
+          "ko": "매일 08:00~24:00 운영. 늦은 시간에도 들르기 좋아요.",
+          "en": "Open daily 8am–midnight — good for a late coffee.",
+          "ja": "毎日 8:00〜24:00 営業。夜遅くにも寄りやすい。"
+        },
+        {
+          "ko": "7호선 학동역 또는 9호선 신논현역에서 갈 수 있어요.",
+          "en": "Reach it from Hakdong (Line 7) or Sinnonhyeon (Line 9).",
+          "ja": "7号線鶴洞駅または9号線新論峴駅から。"
+        },
+        {
+          "ko": "한국은 팁 문화가 없어요. 표시된 가격만 내면 돼요.",
+          "en": "There's no tipping in Korea — just pay the listed price.",
+          "ja": "韓国にチップ文化はありません。表示価格だけでOK。"
+        }
+      ]
+    },
+    {
+      "id": "terarosa-posco-center",
+      "name": { "ko": "테라로사 포스코센터점", "en": "Terarosa POSCO Center", "ja": "テラロサ ポスコセンター店" },
+      "category": "cafe",
+      "region": "gangnam",
+      "area": "samseong",
+      "address": {
+        "ko": "서울 강남구 테헤란로 440 포스코센터 서관 1·2층",
+        "en": "1F–2F West Wing, POSCO Center, 440 Teheran-ro, Gangnam-gu, Seoul",
+        "ja": "ソウル江南区テヘラン路440 ポスコセンター西館1・2階"
+      },
+      "lat": 37.50569,
+      "lng": 127.0559,
+      "has_seating": true,
+      "description": {
+        "ko": "강릉에서 시작한 로스터리 카페. 1만 권이 넘는 책으로 둘러싸인 높은 층고의 공간이 압권.",
+        "en": "A roastery café that started in Gangneung. The soaring space is surrounded by more than 10,000 books.",
+        "ja": "江陵発のロースタリーカフェ。1万冊以上の本に囲まれた天井の高い空間が圧巻。"
+      },
+      "order_guide": [
+        {
+          "step": 1,
+          "title": { "ko": "음료 고르기", "en": "Choose a drink", "ja": "ドリンクを選ぶ" },
+          "note": {
+            "ko": "원두를 골라 핸드드립으로 마시는 게 이 집의 재미.",
+            "en": "Choosing beans for a hand drip is the fun here.",
+            "ja": "豆を選んでハンドドリップで飲むのがこの店の楽しみ。"
+          },
+          "options": [
+            { "name": { "ko": "핸드드립 (원두 선택)", "en": "Hand drip (choose your beans)", "ja": "ハンドドリップ（豆を選ぶ）" }, "recommended": true },
+            { "name": { "ko": "아메리카노", "en": "Americano", "ja": "アメリカーノ" } },
+            { "name": { "ko": "라떼", "en": "Latte", "ja": "ラテ" } }
+          ]
+        },
+        {
+          "step": 2,
+          "title": { "ko": "빵 추가", "en": "Add bread", "ja": "パンを追加" },
+          "options": [
+            { "name": { "ko": "진열된 빵 고르기", "en": "Pick from the bread display", "ja": "並んでいるパンから選ぶ" }, "recommended": true },
+            { "name": { "ko": "음료만", "en": "Just the drink", "ja": "ドリンクのみ" } }
+          ]
+        },
+        {
+          "step": 3,
+          "title": { "ko": "매장 / 포장", "en": "For here or to go", "ja": "店内／持ち帰り" },
+          "options": [
+            { "name": { "ko": "매장", "en": "For here", "ja": "店内" }, "recommended": true },
+            { "name": { "ko": "포장", "en": "To go", "ja": "持ち帰り" } }
+          ]
+        }
+      ],
+      "menu_guide": [
+        {
+          "name": { "ko": "핸드드립 커피", "en": "Hand-drip coffee", "ja": "ハンドドリップコーヒー" },
+          "description": {
+            "ko": "여러 산지 원두 중에서 골라 마실 수 있어요. 원두 맛 설명을 참고하세요.",
+            "en": "Choose from beans of different origins — check the tasting notes.",
+            "ja": "様々な産地の豆から選べます。味の説明を参考に。"
+          },
+          "recommended": true
+        }
+      ],
+      "tips": [
+        {
+          "ko": "평일 07:30~21:00, 주말 08:30~21:00.",
+          "en": "Weekdays 7:30am–9pm, weekends 8:30am–9pm.",
+          "ja": "平日 7:30〜21:00、週末 8:30〜21:00。"
+        },
+        {
+          "ko": "2호선 삼성역 또는 9호선 봉은사역에서 가까워요.",
+          "en": "Near Samseong (Line 2) or Bongeunsa (Line 9).",
+          "ja": "2号線三成駅または9号線奉恩寺駅から近い。"
+        },
+        {
+          "ko": "책으로 둘러싸인 2층 자리가 사진 명소.",
+          "en": "The upstairs seats surrounded by books are a photo spot.",
+          "ja": "本に囲まれた2階席が撮影スポット。"
+        },
+        {
+          "ko": "한국은 팁 문화가 없어요. 표시된 가격만 내면 돼요.",
+          "en": "There's no tipping in Korea — just pay the listed price.",
+          "ja": "韓国にチップ文化はありません。表示価格だけでOK。"
+        }
+      ]
+    },
+    {
+      "id": "blue-bottle-yeoksam",
+      "name": { "ko": "블루보틀 역삼 카페", "en": "Blue Bottle Coffee Yeoksam", "ja": "ブルーボトルコーヒー 駅三カフェ" },
+      "category": "cafe",
+      "region": "gangnam",
+      "area": "yeoksam",
+      "address": {
+        "ko": "서울 강남구 테헤란로 129 강남N타워 1층",
+        "en": "G Floor, Gangnam N Tower, 129 Teheran-ro, Gangnam-gu, Seoul",
+        "ja": "ソウル江南区テヘラン路129 江南Nタワー1階"
+      },
+      "lat": 37.49983,
+      "lng": 127.03239,
+      "description": {
+        "ko": "미국 오클랜드에서 시작한 스페셜티 커피 브랜드. 역삼역 근처 강남N타워 1층.",
+        "en": "The specialty coffee brand born in Oakland, on the ground floor of Gangnam N Tower near Yeoksam Station.",
+        "ja": "米オークランド発のスペシャルティコーヒー。駅三駅近くの江南Nタワー1階。"
+      },
+      "order_guide": [
+        {
+          "step": 1,
+          "title": { "ko": "음료 고르기", "en": "Choose a drink", "ja": "ドリンクを選ぶ" },
+          "options": [
+            { "name": { "ko": "뉴올리언스 (아이스 커피)", "en": "New Orleans iced coffee", "ja": "ニューオーリンズ（アイスコーヒー）" }, "recommended": true },
+            { "name": { "ko": "핸드드립", "en": "Pour-over", "ja": "ハンドドリップ" }, "recommended": true },
+            { "name": { "ko": "라떼", "en": "Latte", "ja": "ラテ" } }
+          ]
+        },
+        {
+          "step": 2,
+          "title": { "ko": "따뜻하게 / 아이스", "en": "Hot or iced", "ja": "ホット／アイス" },
+          "options": [
+            { "name": { "ko": "아이스", "en": "Iced", "ja": "アイス" }, "recommended": true },
+            { "name": { "ko": "따뜻하게", "en": "Hot", "ja": "ホット" } }
+          ]
+        },
+        {
+          "step": 3,
+          "title": { "ko": "매장 / 포장", "en": "For here or to go", "ja": "店内／持ち帰り" },
+          "options": [
+            { "name": { "ko": "매장", "en": "For here", "ja": "店内" }, "recommended": true },
+            { "name": { "ko": "포장", "en": "To go", "ja": "持ち帰り" } }
+          ]
+        }
+      ],
+      "menu_guide": [
+        {
+          "name": { "ko": "뉴올리언스", "en": "New Orleans", "ja": "ニューオーリンズ" },
+          "description": {
+            "ko": "치커리를 넣은 콜드브루에 우유를 더한 달콤한 아이스 커피.",
+            "en": "Chicory cold brew with milk — sweet and smooth.",
+            "ja": "チコリ入りの水出しコーヒーにミルクを加えた甘いアイスコーヒー。"
+          },
+          "recommended": true
+        }
+      ],
+      "tips": [
+        {
+          "ko": "역삼역에서 가까워 테헤란로 직장인들이 많이 찾아요.",
+          "en": "Near Yeoksam Station and popular with Teheran-ro office workers.",
+          "ja": "駅三駅から近く、テヘラン路の会社員に人気。"
+        },
+        { "ko": "점심시간(12~13시)은 붐벼요.", "en": "Busy at lunchtime (12–1pm).", "ja": "昼休み（12〜13時）は混雑。" },
+        {
+          "ko": "한국은 팁 문화가 없어요. 표시된 가격만 내면 돼요.",
+          "en": "There's no tipping in Korea — just pay the listed price.",
+          "ja": "韓国にチップ文化はありません。表示価格だけでOK。"
+        }
+      ]
+    },
+    {
+      "id": "shake-shack-gangnam",
+      "name": { "ko": "쉐이크쉑 강남", "en": "Shake Shack Gangnam", "ja": "シェイクシャック 江南" },
+      "category": "burger",
+      "region": "gangnam",
+      "area": "gangnam-sinnonhyeon",
+      "address": { "ko": "서울 강남구 강남대로 452", "en": "452 Gangnam-daero, Gangnam-gu, Seoul", "ja": "ソウル江南区江南大路452" },
+      "lat": 37.50284,
+      "lng": 127.02571,
+      "has_seating": true,
+      "description": {
+        "ko": "2016년 문을 연 쉐이크쉑 한국 1호점. 강남역과 신논현역 사이 강남대로.",
+        "en": "Shake Shack's first store in Korea, opened in 2016 on Gangnam-daero between Gangnam and Sinnonhyeon stations.",
+        "ja": "2016年オープンのシェイクシャック韓国1号店。江南駅と新論峴駅の間の江南大路沿い。"
+      },
+      "order_guide": [
+        {
+          "step": 1,
+          "title": { "ko": "주문 방법", "en": "How to order", "ja": "注文方法" },
+          "note": {
+            "ko": "키오스크나 카운터에서 주문하고 진동벨을 받아 기다려요.",
+            "en": "Order at a kiosk or the counter, then wait for your buzzer.",
+            "ja": "キオスクかカウンターで注文し、呼び出しベルを受け取って待ちます。"
+          },
+          "options": [
+            { "name": { "ko": "키오스크", "en": "Kiosk", "ja": "キオスク" }, "recommended": true },
+            { "name": { "ko": "카운터", "en": "Counter", "ja": "カウンター" } }
+          ]
+        },
+        {
+          "step": 2,
+          "title": { "ko": "버거 고르기", "en": "Choose a burger", "ja": "バーガーを選ぶ" },
+          "options": [
+            { "name": { "ko": "쉑버거", "en": "ShackBurger", "ja": "シャックバーガー" }, "recommended": true },
+            { "name": { "ko": "스모크쉑", "en": "SmokeShack", "ja": "スモークシャック" } },
+            { "name": { "ko": "더블 쉑버거", "en": "Double ShackBurger", "ja": "ダブルシャックバーガー" } }
+          ]
+        },
+        {
+          "step": 3,
+          "title": { "ko": "사이드 · 음료", "en": "Sides & drinks", "ja": "サイド・ドリンク" },
+          "options": [
+            { "name": { "ko": "크링클 컷 감자튀김", "en": "Crinkle-cut fries", "ja": "クリンクルカットポテト" }, "recommended": true },
+            { "name": { "ko": "쉐이크", "en": "Shake", "ja": "シェイク" } }
+          ]
+        },
+        {
+          "step": 4,
+          "title": { "ko": "매장 / 포장", "en": "For here or to go", "ja": "店内／持ち帰り" },
+          "options": [
+            { "name": { "ko": "매장", "en": "For here", "ja": "店内" }, "recommended": true },
+            { "name": { "ko": "포장", "en": "To go", "ja": "持ち帰り" } }
+          ]
+        }
+      ],
+      "menu_guide": [
+        {
+          "name": { "ko": "쉑소스", "en": "ShackSauce", "ja": "シャックソース" },
+          "description": {
+            "ko": "쉑버거에 들어가는 마요네즈 베이스 특제 소스.",
+            "en": "The mayo-based special sauce on the ShackBurger.",
+            "ja": "シャックバーガーに入るマヨベースの特製ソース。"
+          },
+          "recommended": true
+        }
+      ],
+      "tips": [
+        {
+          "ko": "한국 매장에만 있는 한정 메뉴가 나올 때도 있어요.",
+          "en": "Korea-only limited items appear from time to time.",
+          "ja": "韓国限定メニューが出ることもあります。"
+        },
+        { "ko": "신논현역에서 가장 가까워요.", "en": "Closest to Sinnonhyeon Station.", "ja": "新論峴駅から一番近い。" },
+        {
+          "ko": "한국은 팁 문화가 없어요. 표시된 가격만 내면 돼요.",
+          "en": "There's no tipping in Korea — just pay the listed price.",
+          "ja": "韓国にチップ文化はありません。表示価格だけでOK。"
+        }
+      ]
+    },
+    {
+      "id": "jinmi-pyeongyang-naengmyeon",
+      "name": { "ko": "진미평양냉면", "en": "Jinmi Pyeongyang Naengmyeon", "ja": "チンミ平壌冷麺" },
+      "category": "korean",
+      "region": "gangnam",
+      "area": "gangnam-gu-office",
+      "address": { "ko": "서울 강남구 학동로 305-3", "en": "305-3 Hakdong-ro, Gangnam-gu, Seoul", "ja": "ソウル江南区鶴洞路305-3" },
+      "lat": 37.51611,
+      "lng": 127.03592,
+      "has_seating": true,
+      "description": {
+        "ko": "미쉐린 가이드 빕 구르망에 선정된 평양냉면 맛집. 담백하고 슴슴한 메밀 냉면.",
+        "en": "A Michelin Bib Gourmand Pyeongyang naengmyeon restaurant serving mild, delicate buckwheat cold noodles.",
+        "ja": "ミシュランガイドのビブグルマンに選ばれた平壌冷麺の名店。あっさり淡い味わいのそば冷麺。"
+      },
+      "order_guide": [
+        {
+          "step": 1,
+          "title": { "ko": "냉면 고르기", "en": "Choose your noodles", "ja": "冷麺を選ぶ" },
+          "note": {
+            "ko": "평양냉면은 국물이 담백해요. 처음엔 식초·겨자 없이 맛본 뒤 취향대로 넣으세요.",
+            "en": "Pyeongyang broth is very mild — taste it first before adding vinegar or mustard.",
+            "ja": "平壌冷麺のスープはとても淡白。まずそのまま味わってから酢やからしを。"
+          },
+          "options": [
+            { "name": { "ko": "물냉면 (평양냉면)", "en": "Mul naengmyeon (cold broth)", "ja": "水冷麺（平壌冷麺）" }, "recommended": true },
+            { "name": { "ko": "비빔냉면", "en": "Bibim naengmyeon (spicy, no broth)", "ja": "ビビン冷麺（汁なし・辛め）" } }
+          ]
+        },
+        {
+          "step": 2,
+          "title": { "ko": "곁들임 메뉴", "en": "Side dishes", "ja": "サイドメニュー" },
+          "note": {
+            "ko": "여럿이 가면 고기나 만두를 하나 시켜 나눠 먹기 좋아요.",
+            "en": "With a group, share a meat or dumpling plate.",
+            "ja": "複数人なら肉か餃子を頼んでシェアするのがおすすめ。"
+          },
+          "options": [
+            { "name": { "ko": "수육 (삶은 고기)", "en": "Suyuk (boiled sliced beef/pork)", "ja": "スユク（ゆで肉）" }, "recommended": true },
+            { "name": { "ko": "만두", "en": "Mandu (dumplings)", "ja": "マンドゥ（餃子）" } },
+            { "name": { "ko": "냉면만", "en": "Just noodles", "ja": "冷麺のみ" } }
+          ]
+        }
+      ],
+      "menu_guide": [
+        {
+          "name": { "ko": "평양냉면", "en": "Pyeongyang naengmyeon", "ja": "平壌冷麺" },
+          "description": {
+            "ko": "메밀 면을 차가운 고기 육수에 말아 먹는 북한식 냉면. 맛이 은은해서 '슴슴하다'고 표현해요.",
+            "en": "North Korean-style buckwheat noodles in chilled meat broth — subtle, often described as 'seumseum' (delicately bland).",
+            "ja": "そば粉の麺を冷たい肉スープで食べる北朝鮮式冷麺。ほのかな味わいで「スムスム（淡い）」と表現されます。"
+          },
+          "recommended": true
+        },
+        {
+          "name": { "ko": "식초 · 겨자", "en": "Vinegar & mustard", "ja": "酢・からし" },
+          "description": {
+            "ko": "테이블에 있어요. 조금씩 넣어 맛을 조절하세요.",
+            "en": "On the table — add a little at a time to taste.",
+            "ja": "テーブルにあります。少しずつ加えて味を調整。"
+          }
+        }
+      ],
+      "tips": [
+        {
+          "ko": "7호선 강남구청역 3번 출구에서 도보 약 5분. 학동역, 신논현역에서도 갈 수 있어요.",
+          "en": "About 5 minutes from Gangnam-gu Office Station Exit 3 (Line 7); also reachable from Hakdong or Sinnonhyeon.",
+          "ja": "7号線江南区庁駅3番出口から徒歩約5分。鶴洞駅・新論峴駅からも。"
+        },
+        {
+          "ko": "영업은 대략 11:00~21:00대 (출처마다 달라 방문 전 확인).",
+          "en": "Open roughly 11am–9pm (sources differ, so check first).",
+          "ja": "営業はおおよそ11:00〜21:00台（情報により異なるので要確認）。"
+        },
+        {
+          "ko": "점심시간엔 대기가 있을 수 있어요. 전화(02-515-3469) 문의 가능.",
+          "en": "Expect a line at lunch. Phone: 02-515-3469.",
+          "ja": "昼は待つことも。電話 02-515-3469。"
+        },
+        {
+          "ko": "한국은 팁 문화가 없어요. 표시된 가격만 내면 돼요.",
+          "en": "There's no tipping in Korea — just pay the listed price.",
+          "ja": "韓国にチップ文化はありません。表示価格だけでOK。"
+        }
+      ]
+    },
+    {
+      "id": "gounnim",
+      "name": { "ko": "고운님", "en": "Gounnim", "ja": "コウンニム" },
+      "category": "korean",
+      "region": "gangnam",
+      "area": "samseong",
+      "address": { "ko": "서울 강남구 삼성로81길 22 2층", "en": "2F, 22 Samseong-ro 81-gil, Gangnam-gu, Seoul", "ja": "ソウル江南区三成路81ギル22 2階" },
+      "lat": 37.50431,
+      "lng": 127.05598,
+      "has_seating": true,
+      "description": {
+        "ko": "남도식 해산물 한정식집. 평일 점심엔 매일 바뀌는 점심 정식이 인기인 삼성동 백반집.",
+        "en": "A Namdo-style (southwestern Korea) seafood restaurant. On weekdays, the daily lunch set is a Samseong-dong office-worker favorite.",
+        "ja": "南道（全羅道）式の海鮮韓定食の店。平日の昼は日替わり定食が三成洞の会社員に人気。"
+      },
+      "order_guide": [
+        {
+          "step": 1,
+          "title": { "ko": "점심 / 저녁", "en": "Lunch or dinner", "ja": "ランチ／ディナー" },
+          "note": {
+            "ko": "평일 점심은 대부분 점심 정식을 시켜요.",
+            "en": "At weekday lunch, most people order the daily set.",
+            "ja": "平日のランチはほとんどの人が日替わり定食を注文。"
+          },
+          "options": [
+            { "name": { "ko": "점심 정식 (매일 바뀜)", "en": "Daily lunch set", "ja": "日替わりランチ定食" }, "recommended": true },
+            { "name": { "ko": "저녁 한정식", "en": "Dinner course", "ja": "ディナー韓定食" } }
+          ]
+        },
+        {
+          "step": 2,
+          "title": { "ko": "찌개 고르기", "en": "Choose a stew", "ja": "チゲを選ぶ" },
+          "note": { "ko": "반찬 5~6가지가 함께 나와요.", "en": "Comes with five or six banchan (side dishes).", "ja": "おかず5〜6品が一緒に出てきます。" },
+          "options": [
+            { "name": { "ko": "고추장 두부찌개", "en": "Gochujang tofu stew", "ja": "コチュジャン豆腐チゲ" }, "recommended": true },
+            { "name": { "ko": "김치찌개", "en": "Kimchi stew", "ja": "キムチチゲ" } },
+            { "name": { "ko": "청국장", "en": "Cheonggukjang (fermented soybean stew)", "ja": "チョングッチャン（納豆チゲ）" } }
+          ]
+        }
+      ],
+      "menu_guide": [
+        {
+          "name": { "ko": "반찬", "en": "Banchan", "ja": "パンチャン（おかず）" },
+          "description": {
+            "ko": "기본으로 나오는 반찬. 대부분 리필을 부탁할 수 있어요.",
+            "en": "Complimentary side dishes — refills are usually fine to ask for.",
+            "ja": "無料で出てくるおかず。たいていおかわりを頼めます。"
+          },
+          "recommended": true
+        }
+      ],
+      "tips": [
+        { "ko": "매일 11:00~22:00 운영.", "en": "Open daily 11am–10pm.", "ja": "毎日 11:00〜22:00 営業。" },
+        {
+          "ko": "2호선 삼성역 또는 9호선 봉은사역에서 갈 수 있어요.",
+          "en": "From Samseong (Line 2) or Bongeunsa (Line 9).",
+          "ja": "2号線三成駅または9号線奉恩寺駅から。"
+        },
+        {
+          "ko": "저녁 단체를 위한 룸이 있어요. 예약 02-562-9292.",
+          "en": "Private rooms for groups at dinner. Reservations: 02-562-9292.",
+          "ja": "夜は団体向けの個室あり。予約 02-562-9292。"
+        },
+        {
+          "ko": "물과 수저는 테이블 서랍이나 셀프 코너에 있는 경우가 많아요.",
+          "en": "Water and utensils are often in a table drawer or at a self-service corner.",
+          "ja": "水やスプーン・箸はテーブルの引き出しやセルフコーナーにあることが多いです。"
+        },
+        {
+          "ko": "한국은 팁 문화가 없어요. 표시된 가격만 내면 돼요.",
+          "en": "There's no tipping in Korea — just pay the listed price.",
+          "ja": "韓国にチップ文化はありません。表示価格だけでOK。"
+        }
+      ]
+    },
+    {
+      "id": "byeongangsoe-tteokbokki",
+      "name": { "ko": "변강쇠떡볶이", "en": "Byeongangsoe Tteokbokki", "ja": "ピョンガンセ トッポッキ" },
+      "category": "snack",
+      "region": "gangnam",
+      "area": "apgujeong-rodeo",
+      "address": { "ko": "서울 강남구 선릉로153길 21 1층", "en": "1F, 21 Seolleung-ro 153-gil, Gangnam-gu, Seoul", "ja": "ソウル江南区宣陵路153ギル21 1階" },
+      "lat": 37.52463,
+      "lng": 127.03764,
+      "description": {
+        "ko": "압구정 분식 맛집. 아침마다 뽑는 가래떡으로 만든 국물 떡볶이와 소시지 김밥이 유명.",
+        "en": "An Apgujeong snack bar famous for soupy tteokbokki made with rice cakes pulled fresh each morning, and sausage gimbap.",
+        "ja": "狎鴎亭の粉食（軽食）の名店。毎朝作るカレトックのスープトッポッキとソーセージキンパが有名。"
+      },
+      "order_guide": [
+        {
+          "step": 1,
+          "title": { "ko": "메뉴 고르기", "en": "Choose your order", "ja": "メニューを選ぶ" },
+          "options": [
+            { "name": { "ko": "떡볶이 (새우깡 토핑)", "en": "Tteokbokki with shrimp crackers", "ja": "トッポッキ（エビせんのせ）" }, "recommended": true },
+            { "name": { "ko": "소시지 김밥", "en": "Sausage gimbap", "ja": "ソーセージキンパ" }, "recommended": true }
+          ]
+        },
+        {
+          "step": 2,
+          "title": { "ko": "매장 / 포장", "en": "For here or to go", "ja": "店内／持ち帰り" },
+          "options": [
+            { "name": { "ko": "매장", "en": "For here", "ja": "店内" }, "recommended": true },
+            { "name": { "ko": "포장", "en": "To go", "ja": "持ち帰り" } }
+          ]
+        }
+      ],
+      "menu_guide": [
+        {
+          "name": { "ko": "가래떡 떡볶이", "en": "Garae-tteok tteokbokki", "ja": "カレトックのトッポッキ" },
+          "description": {
+            "ko": "굵은 가래떡을 국물 자작한 양념에 끓인 떡볶이. 새우깡을 올려 바삭함을 더해요.",
+            "en": "Thick rice-cake bars simmered in a soupy sauce, topped with shrimp crackers for crunch.",
+            "ja": "太いカレトックを汁気の多いたれで煮たトッポッキ。エビせんをのせてサクサク感をプラス。"
+          },
+          "recommended": true
+        },
+        {
+          "name": { "ko": "소시지 김밥", "en": "Sausage gimbap", "ja": "ソーセージキンパ" },
+          "description": { "ko": "포장 손님이 특히 많은 인기 김밥.", "en": "A popular gimbap, especially for takeout.", "ja": "持ち帰りが特に多い人気キンパ。" },
+          "recommended": true
+        }
+      ],
+      "tips": [
+        {
+          "ko": "월~토 11:40~21:30, 일 12:00~20:00.",
+          "en": "Mon–Sat 11:40am–9:30pm, Sun noon–8pm.",
+          "ja": "月〜土 11:40〜21:30、日 12:00〜20:00。"
+        },
+        {
+          "ko": "떡볶이는 매콤달콤해요. 매운 걸 못 먹으면 조금씩 맛보세요.",
+          "en": "The tteokbokki is sweet and spicy — go slow if you're sensitive to heat.",
+          "ja": "トッポッキは甘辛。辛いのが苦手なら少しずつ。"
+        },
+        {
+          "ko": "압구정역(3호선) 또는 압구정로데오역에서 갈 수 있어요.",
+          "en": "From Apgujeong (Line 3) or Apgujeong Rodeo Station.",
+          "ja": "狎鴎亭駅（3号線）または狎鴎亭ロデオ駅から。"
+        },
+        {
+          "ko": "한국은 팁 문화가 없어요. 표시된 가격만 내면 돼요.",
+          "en": "There's no tipping in Korea — just pay the listed price.",
+          "ja": "韓国にチップ文化はありません。表示価格だけでOK。"
+        }
+      ]
+    },
+    {
+      "id": "duru",
+      "name": { "ko": "두루", "en": "Duru", "ja": "トゥル" },
+      "category": "korean",
+      "region": "gangnam",
+      "area": "cheongdam",
+      "address": { "ko": "서울 강남구 선릉로148길 28", "en": "28 Seolleung-ro 148-gil, Gangnam-gu, Seoul", "ja": "ソウル江南区宣陵路148ギル28" },
+      "lat": 37.52261,
+      "lng": 127.04187,
+      "has_seating": true,
+      "description": {
+        "ko": "청담동의 깔끔한 한식집. 김치말이국수와 주먹밥이 대표 메뉴. 브레이크 타임 없이 운영.",
+        "en": "A clean, modern Korean spot in Cheongdam known for cold kimchi noodles and rice balls. No break time.",
+        "ja": "清潭洞のすっきりした韓国料理店。キムチマリククスとおにぎりが看板。休憩時間なしで営業。"
+      },
+      "order_guide": [
+        {
+          "step": 1,
+          "title": { "ko": "메뉴 고르기", "en": "Choose your order", "ja": "メニューを選ぶ" },
+          "options": [
+            {
+              "name": { "ko": "김치말이국수", "en": "Kimchi-mari-guksu (cold kimchi noodles)", "ja": "キムチマリククス（冷たいキムチ麺）" },
+              "recommended": true
+            },
+            { "name": { "ko": "주먹밥", "en": "Rice balls", "ja": "おにぎり" }, "recommended": true }
+          ]
+        }
+      ],
+      "menu_guide": [
+        {
+          "name": { "ko": "김치말이국수", "en": "Kimchi-mari-guksu", "ja": "キムチマリククス" },
+          "description": {
+            "ko": "시원한 김치 국물에 국수를 말아 먹는 새콤한 냉국수.",
+            "en": "Noodles in chilled, tangy kimchi broth.",
+            "ja": "冷たいキムチスープに麺を入れた酸味のある冷麺。"
+          },
+          "recommended": true
+        }
+      ],
+      "tips": [
+        {
+          "ko": "매일 11:00~21:00, 브레이크 타임 없음. 회전이 빨라요.",
+          "en": "Open daily 11am–9pm with no break time; tables turn over fast.",
+          "ja": "毎日 11:00〜21:00、休憩時間なし。回転が速い。"
+        },
+        {
+          "ko": "7호선 청담역에서 갈 수 있어요. 문의 02-3443-8834.",
+          "en": "Reach it from Cheongdam Station (Line 7). Phone: 02-3443-8834.",
+          "ja": "7号線清潭駅から。問い合わせ 02-3443-8834。"
+        },
+        {
+          "ko": "한국은 팁 문화가 없어요. 표시된 가격만 내면 돼요.",
+          "en": "There's no tipping in Korea — just pay the listed price.",
+          "ja": "韓国にチップ文化はありません。表示価格だけでOK。"
+        }
+      ]
+    }
+  ]
+}

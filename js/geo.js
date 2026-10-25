@@ -26,7 +26,8 @@ async function loadGeo() {
     || Geo.nations.find(n => n.id === saved)
     || Geo.nations[0];
   storageSet(localStorage, 'trip_nation', Geo.nation.id);
-  Geo.regions = (await fetchJson(dataUrl('regions.json'))).regions;
+  // disabled 지역(예: 준비 중인 서초구)은 화면에서 제외
+  Geo.regions = (await fetchJson(dataUrl('regions.json'))).regions.filter(r => !r.disabled);
   return Geo;
 }
 
@@ -77,9 +78,22 @@ function menuName(name) {
   return local && local !== tx(name) ? local : '';
 }
 
-// ── 지도 링크 (국가 설정의 maps) ──
+// 지도 검색어: 다국어 주소면 메뉴판 언어(현지어) 주소로 검색
+function addressQuery(address) {
+  if (address && typeof address === 'object') return address[Geo.nation?.menu_lang] || tx(address);
+  return address || '';
+}
+
+// 검색용: 다국어 이름의 모든 언어를 이어 붙인 소문자 문자열
+function searchText(value) {
+  if (value && typeof value === 'object') return Object.values(value).join(' ').toLowerCase();
+  return String(value || '').toLowerCase();
+}
+
+// ── 지도 링크 (국가 설정의 maps). 좌표("lat,lng") 검색은 구글 지도 ──
 function mapsUrl(query) {
-  if (Geo.nation?.maps === 'naver') {
+  const isCoords = /^-?\d+(\.\d+)?,-?\d+(\.\d+)?$/.test(query);
+  if (Geo.nation?.maps === 'naver' && !isCoords) {
     return `https://map.naver.com/p/search/${encodeURIComponent(query)}`;
   }
   return `https://maps.google.com/?q=${encodeURIComponent(query)}`;

@@ -10,7 +10,8 @@ function filtered() {
   return stores.filter(s => {
     if (!matchesPlace(s, region, area)) return false;
     if (category !== 'all' && s.category !== category) return false;
-    if (q && !s.name.toLowerCase().includes(q) && !s.category.toLowerCase().includes(q)) return false;
+    if (q && !searchText(s.name).includes(q) && !s.category.includes(q)
+        && !catLabel('store', s.category).toLowerCase().includes(q)) return false;
     return true;
   });
 }
@@ -25,7 +26,7 @@ function renderList() {
   list.innerHTML = items.map(s => `
     <a class="store-card" href="store.html?nation=${Geo.nation.id}&id=${s.id}">
       <div class="store-card-top">
-        <div class="store-name">${s.name}</div>
+        <div class="store-name">${tx(s.name)}</div>
         <div style="display:flex;align-items:center;gap:6px;flex-shrink:0">
           ${s.price_range ? `<span class="price-tag">${s.price_range}</span>` : ''}
           <div class="cat-tag">${catLabel('store', s.category)}</div>

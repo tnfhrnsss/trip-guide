@@ -57,9 +57,9 @@ function renderSpots() {
           </button>
         ` : ''}
         <div class="spot-address">
-          <a href="${mapsUrl(s.address)}"
+          <a href="${mapsUrl(addressQuery(s.address))}"
              target="_blank" rel="noopener noreferrer">
-            📍 ${s.address}
+            📍 ${tx(s.address)}
           </a>
         </div>
       </div>`;

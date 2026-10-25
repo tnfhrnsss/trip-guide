@@ -25,6 +25,28 @@
         { "id": "view", "label": { "ko": "전망대", "en": "Observation deck", "ja": "展望台" }, "emoji": "🔭" },
         { "id": "market", "label": { "ko": "마켓", "en": "Market", "ja": "マーケット" }, "emoji": "🛍️" }
       ]
+    },
+    {
+      "id": "kr",
+      "name": { "ko": "한국", "en": "Korea", "ja": "韓国" },
+      "flag": "🇰🇷",
+      "currency": "₩",
+      "maps": "naver",
+      "menu_lang": "ko",
+      "store_categories": [
+        { "id": "cafe", "label": { "ko": "카페", "en": "Café", "ja": "カフェ" }, "emoji": "☕", "color": "#78350F" },
+        { "id": "bakery", "label": { "ko": "베이커리", "en": "Bakery", "ja": "ベーカリー" }, "emoji": "🥯", "color": "#D97706" },
+        { "id": "dessert", "label": { "ko": "디저트", "en": "Dessert", "ja": "デザート" }, "emoji": "🍩", "color": "#DB2777" },
+        { "id": "korean", "label": { "ko": "한식", "en": "Korean", "ja": "韓国料理" }, "emoji": "🍜", "color": "#DC2626" },
+        { "id": "snack", "label": { "ko": "분식", "en": "Street snacks", "ja": "粉食（軽食）" }, "emoji": "🍢", "color": "#EA580C" },
+        { "id": "burger", "label": { "ko": "버거", "en": "Burger", "ja": "バーガー" }, "emoji": "🍔", "color": "#B91C1C" }
+      ],
+      "spot_categories": [
+        { "id": "heritage", "label": { "ko": "역사·사찰", "en": "Heritage & temples", "ja": "史跡・寺院" }, "emoji": "🏯" },
+        { "id": "culture", "label": { "ko": "문화", "en": "Culture", "ja": "カルチャー" }, "emoji": "📚" },
+        { "id": "park", "label": { "ko": "공원", "en": "Park", "ja": "公園" }, "emoji": "🌳" },
+        { "id": "shopping", "label": { "ko": "쇼핑 거리", "en": "Shopping street", "ja": "ショッピング街" }, "emoji": "🛍️" }
+      ]
     }
   ]
 }
