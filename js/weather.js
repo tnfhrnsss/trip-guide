@@ -1,12 +1,3 @@
-const CITY_MAP = {
-  downtown:   { name_ko: '뉴욕 (다운타운)',  lat: 40.7128, lng: -74.0060 },
-  midtown:    { name_ko: '뉴욕 (미드타운)',  lat: 40.7580, lng: -73.9855 },
-  uptown:     { name_ko: '뉴욕 (어퍼사이드)', lat: 40.7831, lng: -73.9712 },
-  queens:     { name_ko: '뉴욕 (퀸즈)',      lat: 40.7282, lng: -73.7949 },
-  washington: { name_ko: '워싱턴 D.C.',      lat: 38.9072, lng: -77.0369 },
-  niagara:    { name_ko: '나이아가라',        lat: 43.0962, lng: -79.0377 },
-};
-
 const WMO = {
   0:  { ko: '맑음',       icon: '☀️' },
   1:  { ko: '대체로 맑음', icon: '🌤️' },
@@ -34,16 +25,16 @@ function wmoInfo(code) {
   return WMO[code] || { ko: '알 수 없음', icon: '🌡️' };
 }
 
-async function fetchCityWeather(city) {
-  const url = `https://api.open-meteo.com/v1/forecast?latitude=${city.lat}&longitude=${city.lng}`
+async function fetchCityWeather(point) {
+  const url = `https://api.open-meteo.com/v1/forecast?latitude=${point.lat}&longitude=${point.lng}`
     + `&daily=temperature_2m_max,temperature_2m_min,precipitation_probability_max,weathercode`
-    + `&timezone=America%2FNew_York&forecast_days=2`;
+    + `&timezone=${encodeURIComponent(point.timezone)}&forecast_days=2`;
   const res = await fetch(url);
   if (!res.ok) throw new Error('fetch failed');
   return res.json();
 }
 
-function buildCards(city, data) {
+function buildCards(point, data) {
   const days = ['오늘', '내일'];
   return [0, 1].map(i => {
     const info = wmoInfo(data.daily.weathercode[i]);
@@ -52,7 +43,7 @@ function buildCards(city, data) {
     const rain = data.daily.precipitation_probability_max[i] ?? 0;
     return `
       <div class="w-card">
-        <div class="w-city">${city.name_ko}</div>
+        <div class="w-city">${point.name}</div>
         <div class="w-day">${days[i]}</div>
         <div class="w-temp">${info.icon} ${max}°</div>
         <div class="w-cond">${info.ko}</div>
@@ -62,21 +53,20 @@ function buildCards(city, data) {
   }).join('');
 }
 
-async function initWeather(containerId, region) {
+// point: geo.js의 weatherPoint() 결과 { key, name, lat, lng, timezone }
+async function initWeather(containerId, point) {
   const el = document.getElementById(containerId);
   if (!el) return;
+  if (!point) { el.innerHTML = ''; return; }
 
-  const city = CITY_MAP[region];
-  if (!city) { el.innerHTML = ''; return; }
-
-  const CACHE_KEY = `nyc_weather_v1_${region}`;
+  const CACHE_KEY = `trip_weather_v1_${point.key}`;
   const TTL = 30 * 60 * 1000; // 30분
 
   // 캐시 유효하면 바로 렌더링
   try {
     const cached = JSON.parse(localStorage.getItem(CACHE_KEY) || 'null');
     if (cached && Date.now() - cached.ts < TTL) {
-      el.innerHTML = buildCards(city, cached.data);
+      el.innerHTML = buildCards(point, cached.data);
       return;
     }
   } catch (_) {}
@@ -85,15 +75,15 @@ async function initWeather(containerId, region) {
 
   // 실시간 fetch
   try {
-    const data = await fetchCityWeather(city);
-    el.innerHTML = buildCards(city, data);
+    const data = await fetchCityWeather(point);
+    el.innerHTML = buildCards(point, data);
     localStorage.setItem(CACHE_KEY, JSON.stringify({ ts: Date.now(), data }));
   } catch (_) {
     // 만료된 캐시라도 사용
     try {
       const stale = JSON.parse(localStorage.getItem(CACHE_KEY) || 'null');
       if (stale) {
-        el.innerHTML = buildCards(city, stale.data);
+        el.innerHTML = buildCards(point, stale.data);
         const banner = document.getElementById('offline-banner');
         if (banner) banner.classList.remove('hidden');
       } else {

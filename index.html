@@ -4,28 +4,23 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <meta name="theme-color" content="#2563EB">
-  <meta name="description" content="뉴욕·퀸즈·워싱턴 D.C.·나이아가라 맛집 주문 가이드">
+  <meta name="description" content="여행지 맛집·카페 주문 가이드">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="default">
-  <title>NYC Guide</title>
+  <title>Trip Guide</title>
   <link rel="manifest" href="manifest.json">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
 <header class="app-header">
-  <h1>🗽 NYC Guide</h1>
+  <h1>🧳 Trip Guide</h1>
+  <div id="nation-switch" class="nation-switch hidden"></div>
 </header>
 
-<!-- Region Tabs -->
-<div class="region-tabs">
-  <button class="region-tab active" data-region="downtown">다운타운</button>
-  <button class="region-tab" data-region="midtown">미드타운</button>
-  <button class="region-tab" data-region="uptown">어퍼사이드</button>
-  <button class="region-tab" data-region="queens">Queens</button>
-  <button class="region-tab" data-region="washington">Washington D.C.</button>
-  <button class="region-tab" data-region="niagara">Niagara</button>
-</div>
+<!-- Region Tabs + Area Chips -->
+<div id="region-tabs" class="region-tabs"></div>
+<div id="area-chips" class="area-row hidden"></div>
 
 <!-- Offline Banner -->
 <div id="offline-banner" class="offline-banner hidden">오프라인 — 마지막 캐시 날씨 표시 중</div>
@@ -44,18 +39,7 @@
   </div>
 
   <!-- Category Filter -->
-  <div class="cat-row">
-    <button class="cat-chip active" data-cat="all">전체</button>
-    <button class="cat-chip" data-cat="bagel">🥯 베이글</button>
-    <button class="cat-chip" data-cat="burger">🍔 버거</button>
-    <button class="cat-chip" data-cat="pizza">🍕 피자</button>
-    <button class="cat-chip" data-cat="deli">🥪 델리</button>
-    <button class="cat-chip" data-cat="coffee">☕ 커피</button>
-    <button class="cat-chip" data-cat="bakery">🥐 베이커리</button>
-    <button class="cat-chip" data-cat="taco">🌮 타코</button>
-    <button class="cat-chip" data-cat="ramen">🍜 라멘</button>
-    <button class="cat-chip" data-cat="other">🍽️ 기타</button>
-  </div>
+  <div id="cat-row" class="cat-row"></div>
 
   <!-- Store List -->
   <div id="store-list" class="store-list"></div>
@@ -85,6 +69,7 @@
   </a>
 </nav>
 
+<script src="js/geo.js"></script>
 <script src="js/weather.js"></script>
 <script src="js/app.js"></script>
 </body>

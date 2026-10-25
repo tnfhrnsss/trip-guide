@@ -1,0 +1,29 @@
+{
+  "nations": [
+    {
+      "id": "us",
+      "name": "미국",
+      "flag": "🇺🇸",
+      "currency": "$",
+      "maps": "google",
+      "store_categories": [
+        { "id": "bagel",  "label": "베이글",   "emoji": "🥯", "color": "#F59E0B" },
+        { "id": "burger", "label": "버거",     "emoji": "🍔", "color": "#DC2626" },
+        { "id": "pizza",  "label": "피자",     "emoji": "🍕", "color": "#EF4444" },
+        { "id": "deli",   "label": "델리",     "emoji": "🥪", "color": "#8B5CF6" },
+        { "id": "coffee", "label": "커피",     "emoji": "☕", "color": "#78350F" },
+        { "id": "bakery", "label": "베이커리", "emoji": "🥐", "color": "#D97706" },
+        { "id": "taco",   "label": "타코",     "emoji": "🌮", "color": "#16A34A" },
+        { "id": "ramen",  "label": "라멘",     "emoji": "🍜", "color": "#EA580C" },
+        { "id": "other",  "label": "기타",     "emoji": "🍽️", "color": "#059669" }
+      ],
+      "spot_categories": [
+        { "id": "landmark", "label": "랜드마크", "emoji": "🗽" },
+        { "id": "museum",   "label": "박물관",   "emoji": "🏛️" },
+        { "id": "park",     "label": "공원",     "emoji": "🌿" },
+        { "id": "view",     "label": "전망대",   "emoji": "🔭" },
+        { "id": "market",   "label": "마켓",     "emoji": "🛍️" }
+      ]
+    }
+  ]
+}

@@ -1,31 +1,13 @@
-const CAT_LABELS = {
-  landmark: '🗽 랜드마크',
-  museum:   '🏛️ 박물관',
-  park:     '🌿 공원',
-  view:     '🔭 전망대',
-  market:   '🛍️ 마켓',
-};
-
-const MANHATTAN_AREAS = new Set(['downtown', 'midtown', 'uptown']);
-
 let spots    = [];
-let region   = 'downtown';
+let region   = null;
+let area     = null;
 let category = 'all';
 let expanded = new Set();
-
-async function loadSpots() {
-  const res  = await fetch('data/spots.json');
-  const json = await res.json();
-  spots = json.spots;
-}
+let catChips = null;
 
 function filtered() {
   return spots.filter(s => {
-    if (MANHATTAN_AREAS.has(region)) {
-      if (s.region !== 'manhattan' || s.area !== region) return false;
-    } else {
-      if (s.region !== region) return false;
-    }
+    if (!matchesPlace(s, region, area)) return false;
     if (category !== 'all' && s.category !== category) return false;
     return true;
   });
@@ -61,7 +43,7 @@ function renderSpots() {
           <div class="spot-badges">${admBadge(s)}${resBadge(s)}</div>
         </div>
         <div class="spot-meta">
-          <span class="meta-tag">${CAT_LABELS[s.category] || s.category}</span>
+          <span class="meta-tag">${catLabel('spot', s.category)}</span>
           <span class="meta-tag">⏰ ${s.hours}</span>
         </div>
         <div class="spot-price-note">${s.admission_note}</div>
@@ -75,7 +57,7 @@ function renderSpots() {
           </button>
         ` : ''}
         <div class="spot-address">
-          <a href="https://maps.google.com/?q=${encodeURIComponent(s.address)}"
+          <a href="${mapsUrl(s.address)}"
              target="_blank" rel="noopener noreferrer">
             📍 ${s.address}
           </a>
@@ -84,28 +66,14 @@ function renderSpots() {
   }).join('');
 }
 
-function initRegionTabs() {
-  document.querySelectorAll('.region-tab').forEach(tab => {
-    tab.addEventListener('click', () => {
-      region = tab.dataset.region;
-      document.querySelectorAll('.region-tab').forEach(t => t.classList.remove('active'));
-      tab.classList.add('active');
-      expanded.clear();
-      initWeather('weather-scroll', region);
-      renderSpots();
-    });
-  });
-}
-
-function initCatFilter() {
-  document.querySelectorAll('.cat-chip').forEach(chip => {
-    chip.addEventListener('click', () => {
-      category = chip.dataset.cat;
-      document.querySelectorAll('.cat-chip').forEach(c => c.classList.remove('active'));
-      chip.classList.add('active');
-      renderSpots();
-    });
-  });
+function onGeoChange(sel) {
+  region = sel.region;
+  area = sel.area;
+  category = 'all';
+  catChips.reset();
+  expanded.clear();
+  initWeather('weather-scroll', weatherPoint(region, area));
+  renderSpots();
 }
 
 function initTipsToggle() {
@@ -119,12 +87,15 @@ function initTipsToggle() {
 }
 
 async function init() {
-  await loadSpots();
-  renderSpots();
-  initRegionTabs();
-  initCatFilter();
+  await loadGeo();
+  spots = await loadData('spots.json', 'spots');
+  initNationSwitch('nation-switch');
+  catChips = initCatChips('cat-row', 'spot', cat => {
+    category = cat;
+    renderSpots();
+  });
   initTipsToggle();
-  initWeather('weather-scroll', region);
+  initGeoTabs({ includeWeatherOnly: false, onChange: onGeoChange });
 }
 
 document.addEventListener('DOMContentLoaded', init);

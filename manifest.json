@@ -1,7 +1,7 @@
 {
-  "name": "NYC Guide",
-  "short_name": "NYC Guide",
-  "description": "뉴욕·퀸즈·워싱턴 D.C.·나이아가라 맛집 주문 가이드",
+  "name": "Trip Guide",
+  "short_name": "Trip Guide",
+  "description": "여행지 맛집·카페 주문 가이드",
   "start_url": "./index.html",
   "display": "standalone",
   "orientation": "portrait",

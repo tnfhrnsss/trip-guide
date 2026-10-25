@@ -97,6 +97,55 @@ body {
   font-weight: 700;
 }
 
+/* ── Area Chips (지역 탭 아래 구역 선택) ── */
+.area-row {
+  display: flex;
+  gap: 6px;
+  padding: 8px 16px;
+  overflow-x: auto;
+  scrollbar-width: none;
+  background: var(--bg);
+  border-bottom: 1px solid var(--border);
+}
+.area-row::-webkit-scrollbar { display: none; }
+.area-chip {
+  flex-shrink: 0;
+  padding: 4px 11px;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 500;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--muted);
+  cursor: pointer;
+}
+.area-chip.active {
+  color: var(--primary);
+  border-color: var(--primary);
+  font-weight: 700;
+}
+
+/* ── Nation Switch (국가가 2개 이상일 때 헤더 오른쪽) ── */
+.nation-switch {
+  margin-left: auto;
+  display: flex;
+  gap: 4px;
+}
+.nation-btn {
+  font-size: 18px;
+  line-height: 1;
+  padding: 4px 6px;
+  border: 1.5px solid transparent;
+  border-radius: 8px;
+  background: none;
+  cursor: pointer;
+  opacity: .5;
+}
+.nation-btn.active {
+  border-color: var(--primary);
+  opacity: 1;
+}
+
 /* ── Weather Strip ── */
 .weather-section {
   background: var(--surface);

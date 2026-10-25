@@ -5,51 +5,35 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <meta name="theme-color" content="#2563EB">
   <meta name="apple-mobile-web-app-capable" content="yes">
-  <title>가게 상세 - NYC Guide</title>
+  <title>화장실 - Trip Guide</title>
   <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-<!-- Sticky header with back + name -->
 <header class="app-header">
-  <button id="back-btn" class="back-btn">← 뒤로</button>
-  <span id="hdr-name" class="hdr-store-name"></span>
+  <h1>🚻 화장실 찾기</h1>
 </header>
 
-<!-- Store Info (scrollable) -->
-<div class="store-info-section">
-  <div id="store-detail-name" class="store-detail-name"></div>
-  <div id="store-detail-meta" class="store-detail-meta"></div>
-  <div id="store-detail-desc" class="store-detail-desc"></div>
-  <div id="store-detail-address" class="store-detail-address"></div>
+<!-- Map (hidden until location acquired) -->
+<div id="wc-map" class="wc-map hidden"></div>
+
+<!-- Initial state -->
+<div id="wc-initial" class="wc-initial">
+  <p class="wc-initial-desc">현재 위치 기준 반경 내<br>공중화장실 및 이용 가능한 화장실을 찾아드립니다.</p>
+  <button id="wc-btn" class="wc-locate-btn">📍 내 위치로 검색하기</button>
 </div>
 
-<!-- Sticky Tabs -->
-<div class="detail-tabs">
-  <button class="detail-tab active" data-tab="ordering">📋 주문 흐름</button>
-  <button class="detail-tab" data-tab="sauce">🧂 소스·메뉴</button>
-  <button class="detail-tab" data-tab="tips">💡 팁</button>
-</div>
+<!-- Info bar (hidden until results) -->
+<div id="wc-info" class="wc-info hidden"></div>
 
-<!-- Tab: Ordering Flow -->
-<div id="tab-ordering" class="tab-content active">
-  <div id="ordering-flow" class="ordering-flow"></div>
-</div>
-
-<!-- Tab: Sauce Guide -->
-<div id="tab-sauce" class="tab-content">
-  <div id="sauce-guide" class="sauce-guide"></div>
-</div>
-
-<!-- Tab: Tips -->
-<div id="tab-tips" class="tab-content">
-  <div id="tips-section" class="tips-section"></div>
-</div>
+<!-- Result list -->
+<div id="wc-list" class="wc-list"></div>
 
 <!-- Bottom Nav -->
 <nav class="bottom-nav">
-  <a class="nav-item active" href="index.html">
+  <a class="nav-item" href="index.html">
     <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
       <path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2"/><line x1="7" y1="2" x2="7" y2="11"/><path d="M21 15V2a5 5 0 0 0-5 5v6h3.5a1.5 1.5 0 0 1 0 3H16v3a1 1 0 0 0 1 1h1a1 1 0 0 0 1-1v-3h.5a1.5 1.5 0 0 0 0-3H21z"/>
     </svg>
@@ -64,8 +48,15 @@
       <polygon points="3,6 9,3 15,6 21,3 21,18 15,21 9,18 3,21"/><line x1="9" y1="3" x2="9" y2="18"/><line x1="15" y1="6" x2="15" y2="21"/>
     </svg>
   </a>
+  <a class="nav-item active" href="restroom.html">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="6" y="2" width="12" height="6" rx="1"/><path d="M6 8v1a6 6 0 0 0 12 0V8"/><line x1="12" y1="15" x2="12" y2="20"/><line x1="8" y1="20" x2="16" y2="20"/>
+    </svg>
+  </a>
 </nav>
 
-<script src="js/store.js"></script>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="js/geo.js"></script>
+<script src="js/restroom.js"></script>
 </body>
 </html>

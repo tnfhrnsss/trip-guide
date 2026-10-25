@@ -1,10 +1,10 @@
-# NYC Guide
+# Trip Guide
 
-뉴욕·퀸즈·워싱턴 D.C.·나이아가라를 여행하는 한국인을 위한 **오프라인 우선 웹앱**.
+여행자를 위한 **오프라인 우선 웹앱**. 현재 뉴욕·퀸즈·워싱턴 D.C.·나이아가라, 강남구 추가 예정.
 
 현지 맛집에서 당황하지 않고 주문할 수 있도록 돕는 한영 병기 주문 가이드 + 관광 스팟 + 화장실 찾기.
 
-> **라이브**: https://tnfhrnsss.github.io/nyc/us-order-guide/
+> **라이브**: https://tnfhrnsss.github.io/trip-guide/
 
 <img src="screenshot.png" width="300" alt="앱 스크린샷">
 
@@ -100,7 +100,7 @@
 ## 로컬 실행
 
 ```bash
-cd us-order-guide
+# 저장소 루트에서
 python3 -m http.server 8787
 ```
 
@@ -117,8 +117,8 @@ Frontend   HTML5 + Vanilla JS (빌드 없음)
 스타일     CSS (모바일 우선, 단일 파일)
 지도       Leaflet.js + OpenStreetMap
 날씨       Open-Meteo API (무료, API 키 불필요)
-데이터     stores.json / spots.json (로컬)
-오프라인   Service Worker (PWA, 캐시 v3)
+데이터     data/nations.json + data/{국가}/*.json (로컬)
+오프라인   Service Worker (PWA, trip-guide-v1)
 배포       GitHub Pages
 ```
 
@@ -127,32 +127,36 @@ Frontend   HTML5 + Vanilla JS (빌드 없음)
 ## 파일 구조
 
 ```
-us-order-guide/
+(저장소 루트)
 ├── index.html       푸드 홈 (맛집 목록)
 ├── store.html       가게 상세 (주문 흐름 · 소스 · 팁)
 ├── spots.html       관광 스팟
 ├── map.html         지도
 ├── restroom.html    화장실 찾기 (현재 위치 기반)
 ├── manifest.json    PWA 설정
-├── sw.js            Service Worker (nyc-guide-v3)
+├── sw.js            Service Worker (trip-guide-v1)
 ├── css/style.css
 ├── js/
+│   ├── geo.js       국가 → 지역 → 구역 공용 로직
 │   ├── app.js       맛집 홈 로직
 │   ├── store.js     가게 상세 로직
 │   ├── spots.js     스팟 로직
 │   ├── map.js       지도 로직
 │   ├── restroom.js  화장실 찾기 로직
-│   └── weather.js   날씨 API (America/New_York 타임존)
+│   └── weather.js   날씨 API (지역별 타임존)
 └── data/
-    ├── stores.json  맛집 데이터 (45곳)
-    └── spots.json   스팟 데이터 (27곳)
+    ├── nations.json 국가 목록 + 카테고리 등 국가 설정
+    └── us/
+        ├── regions.json 지역(뉴욕·워싱턴·나이아가라) + 구역
+        ├── stores.json  맛집 데이터 (45곳)
+        └── spots.json   스팟 데이터 (27곳)
 ```
 
 ---
 
 ## 데이터 추가 방법
 
-### 맛집 추가 (`data/stores.json`)
+### 맛집 추가 (`data/us/stores.json`)
 
 `"stores"` 배열에 항목 추가:
 
@@ -161,8 +165,8 @@ us-order-guide/
   "id": "가게-이름-kebab",
   "name": "영문 가게명",
   "category": "bagel|pizza|deli|coffee|taco|ramen|burger|bakery|other",
-  "region": "manhattan|queens|washington|niagara",
-  "area": "downtown|midtown|uptown",
+  "region": "new-york|washington",
+  "area": "downtown|midtown|uptown|queens|null",
   "address": "주소",
   "lat": 0.0, "lng": 0.0,
   "tip_expected": true,
@@ -175,7 +179,7 @@ us-order-guide/
 }
 ```
 
-### 관광 스팟 추가 (`data/spots.json`)
+### 관광 스팟 추가 (`data/us/spots.json`)
 
 루트 배열에 항목 추가:
 
@@ -183,8 +187,8 @@ us-order-guide/
 {
   "id": "스팟-이름-kebab",
   "name_ko": "한국어 스팟명",
-  "region": "manhattan|queens|washington",
-  "area": "downtown|midtown|uptown|null",
+  "region": "new-york|washington",
+  "area": "downtown|midtown|uptown|queens|null",
   "category": "landmark|museum|park|view|market",
   "address": "주소",
   "lat": 0.0, "lng": 0.0,
@@ -205,7 +209,7 @@ us-order-guide/
 
 저장소: https://github.com/tnfhrnsss/nyc
 
-배포 URL: https://tnfhrnsss.github.io/nyc/us-order-guide/
+배포 URL: https://tnfhrnsss.github.io/trip-guide/
 
 GitHub 저장소 Settings → Pages → Source: `main` 브랜치, `/ (root)` 선택.
 

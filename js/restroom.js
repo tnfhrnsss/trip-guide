@@ -4,6 +4,7 @@ let map, userMarker, currentLat, currentLng;
 let currentRadius = 100;
 
 document.getElementById('wc-btn').addEventListener('click', locate);
+loadGeo().catch(() => {});
 
 function locate() {
   const btn = document.getElementById('wc-btn');
@@ -156,7 +157,7 @@ function buildCard(item, num) {
     ? `<span class="wc-hours">⏰ ${tags.opening_hours}</span>` : '';
   const wcHtml = tags.wheelchair === 'yes'
     ? '<span class="wc-badge wc-badge-wc">♿ 휠체어</span>' : '';
-  const mapsUrl = `https://maps.google.com/?q=${item._lat},${item._lng}`;
+  const url = mapsUrl(`${item._lat},${item._lng}`);
 
   return `
     <div class="wc-card">
@@ -173,7 +174,7 @@ function buildCard(item, num) {
         </div>
         <div class="wc-dist">${dist}m</div>
       </div>
-      <a class="wc-maps-btn" href="${mapsUrl}" target="_blank">지도에서 보기 →</a>
+      <a class="wc-maps-btn" href="${url}" target="_blank">지도에서 보기 →</a>
     </div>`;
 }
 
@@ -187,16 +188,6 @@ function accessLabel(tags) {
   if (a === 'customers') return '고객 전용';
   if (a === 'permissive') return '허용';
   return '공용';
-}
-
-function haversine(lat1, lon1, lat2, lon2) {
-  const R = 6371000;
-  const dLat = (lat2 - lat1) * Math.PI / 180;
-  const dLon = (lon2 - lon1) * Math.PI / 180;
-  const a = Math.sin(dLat / 2) ** 2 +
-    Math.cos(lat1 * Math.PI / 180) * Math.cos(lat2 * Math.PI / 180) *
-    Math.sin(dLon / 2) ** 2;
-  return R * 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
 }
 
 function showInfo(html) {

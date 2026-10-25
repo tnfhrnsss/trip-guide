@@ -1,13 +1,8 @@
-const CAT_EMOJI = { bagel: '🥯', pizza: '🍕', deli: '🥪', coffee: '☕', taco: '🌮', ramen: '🍜', other: '🍽️' };
-const CAT_COLOR = { bagel: '#F59E0B', pizza: '#EF4444', deli: '#8B5CF6', coffee: '#78350F', taco: '#16A34A', ramen: '#EA580C', other: '#059669' };
-const CAT_LABEL = { bagel: '베이글', pizza: '피자', deli: '델리', coffee: '커피', taco: '타코', ramen: '라멘', other: '기타' };
-
 let mapInstance = null;
 let userMarker  = null;
 
 function customIcon(cat) {
-  const color = CAT_COLOR[cat] || '#2563EB';
-  const emoji = CAT_EMOJI[cat] || '📍';
+  const { color = '#2563EB', emoji } = catInfo('store', cat);
   return L.divIcon({
     className: '',
     html: `<div style="
@@ -30,13 +25,13 @@ function addMarkers(stores) {
       .bindPopup(`
         <div style="min-width:190px;font-family:-apple-system,sans-serif">
           <div style="font-weight:800;font-size:15px;margin-bottom:3px">${s.name}</div>
-          <div style="font-size:12px;color:#718096;margin-bottom:7px">${CAT_EMOJI[s.category]} ${CAT_LABEL[s.category] || s.category}</div>
+          <div style="font-size:12px;color:#718096;margin-bottom:7px">${catLabel('store', s.category)}</div>
           <div style="font-size:12px;margin-bottom:8px;line-height:1.4">${s.description}</div>
           <div style="display:flex;gap:8px;font-size:12px;color:#718096;margin-bottom:10px">
             ${s.tip_expected ? '<span>🪙 Tip</span>' : ''}
             ${s.has_seating  ? '<span>🪑</span>' : ''}
           </div>
-          <a href="store.html?id=${s.id}"
+          <a href="store.html?nation=${Geo.nation.id}&id=${s.id}"
             style="display:block;background:#2563EB;color:#fff;padding:8px 12px;
             border-radius:8px;text-align:center;text-decoration:none;font-size:13px;font-weight:700">
             주문 가이드 보기 →
@@ -63,10 +58,17 @@ function locateUser() {
   }, () => {});
 }
 
+// 마지막으로 고른 지역 중심으로 연다 (중심 좌표가 없는 지역이면 첫 지역)
+function initialView() {
+  const { region } = loadSelection(Geo.regions);
+  const r = region.center ? region : Geo.regions.find(x => x.center);
+  return { center: r.center, zoom: r.zoom || 13 };
+}
+
 async function init() {
+  await loadGeo();
   mapInstance = L.map('map', {
-    center: [40.7580, -73.9855],
-    zoom: 13,
+    ...initialView(),
     zoomControl: true,
   });
 
@@ -76,9 +78,7 @@ async function init() {
   }).addTo(mapInstance);
 
   try {
-    const res = await fetch('data/stores.json');
-    const json = await res.json();
-    addMarkers(json.stores);
+    addMarkers(await loadData('stores.json', 'stores'));
   } catch (_) {}
 
   document.getElementById('loc-btn').addEventListener('click', locateUser);

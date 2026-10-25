@@ -1,0 +1,35 @@
+{
+  "regions": [
+    {
+      "id": "new-york",
+      "name": "뉴욕",
+      "timezone": "America/New_York",
+      "center": [40.7580, -73.9855],
+      "zoom": 13,
+      "weather": { "name": "뉴욕", "lat": 40.7580, "lng": -73.9855 },
+      "areas": [
+        { "id": "downtown", "name": "다운타운",   "weather": { "name": "뉴욕 (다운타운)",   "lat": 40.7128, "lng": -74.0060 } },
+        { "id": "midtown",  "name": "미드타운",   "weather": { "name": "뉴욕 (미드타운)",   "lat": 40.7580, "lng": -73.9855 } },
+        { "id": "uptown",   "name": "어퍼사이드", "weather": { "name": "뉴욕 (어퍼사이드)", "lat": 40.7831, "lng": -73.9712 } },
+        { "id": "queens",   "name": "Queens",     "weather": { "name": "뉴욕 (퀸즈)",       "lat": 40.7282, "lng": -73.7949 } }
+      ]
+    },
+    {
+      "id": "washington",
+      "name": "Washington D.C.",
+      "timezone": "America/New_York",
+      "center": [38.8899, -77.0091],
+      "zoom": 14,
+      "weather": { "name": "워싱턴 D.C.", "lat": 38.9072, "lng": -77.0369 },
+      "areas": []
+    },
+    {
+      "id": "niagara",
+      "name": "Niagara",
+      "timezone": "America/New_York",
+      "weather_only": true,
+      "weather": { "name": "나이아가라", "lat": 43.0962, "lng": -79.0377 },
+      "areas": []
+    }
+  ]
+}

@@ -4,7 +4,8 @@
       "id": "ess-a-bagel",
       "name": "Ess-a-Bagel",
       "category": "bagel",
-      "region": "manhattan", "area": "downtown",
+      "region": "new-york",
+      "area": "downtown",
       "address": "324 First Ave, New York, NY 10009",
       "lat": 40.7308,
       "lng": -73.9773,
@@ -18,10 +19,23 @@
           "question_en": "What kind of bagel?",
           "question_ko": "어떤 베이글로 드릴까요?",
           "options": [
-            { "en": "Everything bagel", "ko": "에브리씽 (가장 인기)", "recommended": true },
-            { "en": "Plain bagel", "ko": "플레인 (담백함)" },
-            { "en": "Sesame bagel", "ko": "참깨 베이글" },
-            { "en": "Onion bagel", "ko": "양파 베이글" }
+            {
+              "en": "Everything bagel",
+              "ko": "에브리씽 (가장 인기)",
+              "recommended": true
+            },
+            {
+              "en": "Plain bagel",
+              "ko": "플레인 (담백함)"
+            },
+            {
+              "en": "Sesame bagel",
+              "ko": "참깨 베이글"
+            },
+            {
+              "en": "Onion bagel",
+              "ko": "양파 베이글"
+            }
           ]
         },
         {
@@ -29,8 +43,15 @@
           "question_en": "Toasted?",
           "question_ko": "토스트 해드릴까요?",
           "options": [
-            { "en": "Yes, please.", "ko": "네, 토스트 해주세요.", "recommended": true },
-            { "en": "No, that's okay.", "ko": "아니요, 그냥 주세요." }
+            {
+              "en": "Yes, please.",
+              "ko": "네, 토스트 해주세요.",
+              "recommended": true
+            },
+            {
+              "en": "No, that's okay.",
+              "ko": "아니요, 그냥 주세요."
+            }
           ]
         },
         {
@@ -38,10 +59,24 @@
           "question_en": "What would you like on it?",
           "question_ko": "위에 뭘 올려드릴까요?",
           "options": [
-            { "en": "Plain cream cheese", "ko": "플레인 크림치즈 (기본)", "recommended": true },
-            { "en": "Lox and cream cheese", "ko": "훈제 연어 + 크림치즈 (뉴욕 정통)", "recommended": true },
-            { "en": "Scallion cream cheese", "ko": "파 크림치즈" },
-            { "en": "Butter", "ko": "버터만" }
+            {
+              "en": "Plain cream cheese",
+              "ko": "플레인 크림치즈 (기본)",
+              "recommended": true
+            },
+            {
+              "en": "Lox and cream cheese",
+              "ko": "훈제 연어 + 크림치즈 (뉴욕 정통)",
+              "recommended": true
+            },
+            {
+              "en": "Scallion cream cheese",
+              "ko": "파 크림치즈"
+            },
+            {
+              "en": "Butter",
+              "ko": "버터만"
+            }
           ]
         },
         {
@@ -50,8 +85,15 @@
           "question_ko": "소스를 베이글에 발라드릴까요, 따로 드릴까요?",
           "tip": "처음이면 'on the bagel'이 편해요.",
           "options": [
-            { "en": "On the bagel, please.", "ko": "발라서 주세요.", "recommended": true },
-            { "en": "On the side, please.", "ko": "따로 주세요." }
+            {
+              "en": "On the bagel, please.",
+              "ko": "발라서 주세요.",
+              "recommended": true
+            },
+            {
+              "en": "On the side, please.",
+              "ko": "따로 주세요."
+            }
           ]
         },
         {
@@ -59,8 +101,14 @@
           "question_en": "For here or to go?",
           "question_ko": "드시고 가세요, 포장이세요?",
           "options": [
-            { "en": "To go, please.", "ko": "포장이요." },
-            { "en": "For here.", "ko": "여기서 먹을게요." }
+            {
+              "en": "To go, please.",
+              "ko": "포장이요."
+            },
+            {
+              "en": "For here.",
+              "ko": "여기서 먹을게요."
+            }
           ]
         }
       ],
@@ -101,7 +149,8 @@
       "id": "katzs-delicatessen",
       "name": "Katz's Delicatessen",
       "category": "deli",
-      "region": "manhattan", "area": "downtown",
+      "region": "new-york",
+      "area": "downtown",
       "address": "205 E Houston St, New York, NY 10002",
       "lat": 40.7223,
       "lng": -73.9873,
@@ -116,10 +165,23 @@
           "question_ko": "무엇을 드릴까요?",
           "tip": "입구에서 티켓(ticket)을 받아야 해요. 잃어버리면 $50 벌금!",
           "options": [
-            { "en": "Pastrami sandwich", "ko": "파스트라미 샌드위치 (시그니처)", "recommended": true },
-            { "en": "Corned beef sandwich", "ko": "콘드비프 샌드위치" },
-            { "en": "Turkey sandwich", "ko": "터키 샌드위치" },
-            { "en": "Hot dog", "ko": "핫도그" }
+            {
+              "en": "Pastrami sandwich",
+              "ko": "파스트라미 샌드위치 (시그니처)",
+              "recommended": true
+            },
+            {
+              "en": "Corned beef sandwich",
+              "ko": "콘드비프 샌드위치"
+            },
+            {
+              "en": "Turkey sandwich",
+              "ko": "터키 샌드위치"
+            },
+            {
+              "en": "Hot dog",
+              "ko": "핫도그"
+            }
           ]
         },
         {
@@ -127,8 +189,15 @@
           "question_en": "What kind of bread?",
           "question_ko": "어떤 빵으로 드릴까요?",
           "options": [
-            { "en": "Rye bread", "ko": "호밀빵 (정통)", "recommended": true },
-            { "en": "White bread", "ko": "식빵" }
+            {
+              "en": "Rye bread",
+              "ko": "호밀빵 (정통)",
+              "recommended": true
+            },
+            {
+              "en": "White bread",
+              "ko": "식빵"
+            }
           ]
         },
         {
@@ -136,8 +205,15 @@
           "question_en": "Mustard?",
           "question_ko": "머스타드 넣을까요?",
           "options": [
-            { "en": "Yes, please.", "ko": "네, 넣어주세요.", "recommended": true },
-            { "en": "No, thank you.", "ko": "아니요, 괜찮아요." }
+            {
+              "en": "Yes, please.",
+              "ko": "네, 넣어주세요.",
+              "recommended": true
+            },
+            {
+              "en": "No, thank you.",
+              "ko": "아니요, 괜찮아요."
+            }
           ]
         },
         {
@@ -145,8 +221,15 @@
           "question_en": "For here or to go?",
           "question_ko": "드시고 가세요, 포장이세요?",
           "options": [
-            { "en": "For here.", "ko": "여기서 먹을게요.", "recommended": true },
-            { "en": "To go, please.", "ko": "포장이요." }
+            {
+              "en": "For here.",
+              "ko": "여기서 먹을게요.",
+              "recommended": true
+            },
+            {
+              "en": "To go, please.",
+              "ko": "포장이요."
+            }
           ]
         }
       ],
@@ -176,7 +259,8 @@
       "id": "joes-pizza",
       "name": "Joe's Pizza",
       "category": "pizza",
-      "region": "manhattan", "area": "downtown",
+      "region": "new-york",
+      "area": "downtown",
       "address": "7 Carmine St, New York, NY 10014",
       "lat": 40.7303,
       "lng": -74.0025,
@@ -190,9 +274,19 @@
           "question_en": "What can I get you?",
           "question_ko": "무엇을 드릴까요?",
           "options": [
-            { "en": "One slice of cheese, please.", "ko": "치즈 슬라이스 하나요.", "recommended": true },
-            { "en": "One slice of pepperoni.", "ko": "페퍼로니 슬라이스 하나요." },
-            { "en": "Two slices of cheese.", "ko": "치즈 슬라이스 두 개요." }
+            {
+              "en": "One slice of cheese, please.",
+              "ko": "치즈 슬라이스 하나요.",
+              "recommended": true
+            },
+            {
+              "en": "One slice of pepperoni.",
+              "ko": "페퍼로니 슬라이스 하나요."
+            },
+            {
+              "en": "Two slices of cheese.",
+              "ko": "치즈 슬라이스 두 개요."
+            }
           ]
         },
         {
@@ -201,7 +295,11 @@
           "question_ko": "자동으로 다시 데워줘요. 돈 내고 받으면 끝!",
           "tip": "뉴욕 스타일: 피자를 반으로 접어서(fold) 먹는 게 정석.",
           "options": [
-            { "en": "Thank you!", "ko": "감사합니다!", "recommended": true }
+            {
+              "en": "Thank you!",
+              "ko": "감사합니다!",
+              "recommended": true
+            }
           ]
         }
       ],
@@ -237,7 +335,8 @@
       "id": "stumptown-coffee",
       "name": "Stumptown Coffee Roasters",
       "category": "coffee",
-      "region": "manhattan", "area": "midtown",
+      "region": "new-york",
+      "area": "midtown",
       "address": "18 W 29th St, New York, NY 10001",
       "lat": 40.7459,
       "lng": -73.9894,
@@ -251,11 +350,28 @@
           "question_en": "What can I get for you?",
           "question_ko": "무엇을 드릴까요?",
           "options": [
-            { "en": "Latte, please.", "ko": "라떼 주세요.", "recommended": true },
-            { "en": "Cold brew, please.", "ko": "콜드브루 주세요.", "recommended": true },
-            { "en": "Cortado, please.", "ko": "코르타도 주세요." },
-            { "en": "Cappuccino, please.", "ko": "카푸치노 주세요." },
-            { "en": "Drip coffee, please.", "ko": "드립 커피 주세요." }
+            {
+              "en": "Latte, please.",
+              "ko": "라떼 주세요.",
+              "recommended": true
+            },
+            {
+              "en": "Cold brew, please.",
+              "ko": "콜드브루 주세요.",
+              "recommended": true
+            },
+            {
+              "en": "Cortado, please.",
+              "ko": "코르타도 주세요."
+            },
+            {
+              "en": "Cappuccino, please.",
+              "ko": "카푸치노 주세요."
+            },
+            {
+              "en": "Drip coffee, please.",
+              "ko": "드립 커피 주세요."
+            }
           ]
         },
         {
@@ -263,9 +379,19 @@
           "question_en": "What size?",
           "question_ko": "사이즈는 어떻게 드릴까요?",
           "options": [
-            { "en": "Small (8oz)", "ko": "스몰 (8oz, 240ml)" },
-            { "en": "Medium (12oz)", "ko": "미디엄 (12oz, 355ml)", "recommended": true },
-            { "en": "Large (16oz)", "ko": "라지 (16oz, 470ml)" }
+            {
+              "en": "Small (8oz)",
+              "ko": "스몰 (8oz, 240ml)"
+            },
+            {
+              "en": "Medium (12oz)",
+              "ko": "미디엄 (12oz, 355ml)",
+              "recommended": true
+            },
+            {
+              "en": "Large (16oz)",
+              "ko": "라지 (16oz, 470ml)"
+            }
           ]
         },
         {
@@ -273,10 +399,23 @@
           "question_en": "What milk would you like?",
           "question_ko": "우유는 어떤 걸로 드릴까요?",
           "options": [
-            { "en": "Whole milk", "ko": "일반 우유 (풀 밀크)", "recommended": true },
-            { "en": "Oat milk", "ko": "오트 밀크 (+$0.75)" },
-            { "en": "Almond milk", "ko": "아몬드 밀크 (+$0.75)" },
-            { "en": "Skim milk", "ko": "저지방 우유" }
+            {
+              "en": "Whole milk",
+              "ko": "일반 우유 (풀 밀크)",
+              "recommended": true
+            },
+            {
+              "en": "Oat milk",
+              "ko": "오트 밀크 (+$0.75)"
+            },
+            {
+              "en": "Almond milk",
+              "ko": "아몬드 밀크 (+$0.75)"
+            },
+            {
+              "en": "Skim milk",
+              "ko": "저지방 우유"
+            }
           ]
         },
         {
@@ -284,8 +423,15 @@
           "question_en": "Hot or iced?",
           "question_ko": "따뜻하게 드릴까요, 아이스로 드릴까요?",
           "options": [
-            { "en": "Hot, please.", "ko": "따뜻하게요." },
-            { "en": "Iced, please.", "ko": "아이스로요.", "recommended": true }
+            {
+              "en": "Hot, please.",
+              "ko": "따뜻하게요."
+            },
+            {
+              "en": "Iced, please.",
+              "ko": "아이스로요.",
+              "recommended": true
+            }
           ]
         },
         {
@@ -294,7 +440,11 @@
           "question_ko": "이름이 어떻게 되세요?",
           "tip": "간단한 영어 이름이나 발음 쉬운 이름 사용 OK. (예: Ken, Jane)",
           "options": [
-            { "en": "It's [your name].", "ko": "[이름]이요.", "recommended": true }
+            {
+              "en": "It's [your name].",
+              "ko": "[이름]이요.",
+              "recommended": true
+            }
           ]
         }
       ],
@@ -329,7 +479,8 @@
       "id": "halal-guys",
       "name": "The Halal Guys",
       "category": "other",
-      "region": "manhattan", "area": "midtown",
+      "region": "new-york",
+      "area": "midtown",
       "address": "W 53rd St & 6th Ave, New York, NY 10019",
       "lat": 40.7614,
       "lng": -73.9797,
@@ -343,8 +494,15 @@
           "question_en": "Rice platter or sandwich?",
           "question_ko": "라이스 플레이트로 드릴까요, 샌드위치로 드릴까요?",
           "options": [
-            { "en": "Rice platter, please.", "ko": "라이스 플레이트요.", "recommended": true },
-            { "en": "Sandwich, please.", "ko": "샌드위치요." }
+            {
+              "en": "Rice platter, please.",
+              "ko": "라이스 플레이트요.",
+              "recommended": true
+            },
+            {
+              "en": "Sandwich, please.",
+              "ko": "샌드위치요."
+            }
           ]
         },
         {
@@ -352,10 +510,23 @@
           "question_en": "Chicken, gyro (lamb), or combo?",
           "question_ko": "치킨, 자이로(양고기), 아니면 콤보?",
           "options": [
-            { "en": "Combo, please.", "ko": "콤보 (치킨 + 자이로) 주세요.", "recommended": true },
-            { "en": "Chicken only.", "ko": "치킨만요." },
-            { "en": "Gyro only.", "ko": "자이로(양고기)만요." },
-            { "en": "Falafel, please.", "ko": "팔라펠이요. (채식)" }
+            {
+              "en": "Combo, please.",
+              "ko": "콤보 (치킨 + 자이로) 주세요.",
+              "recommended": true
+            },
+            {
+              "en": "Chicken only.",
+              "ko": "치킨만요."
+            },
+            {
+              "en": "Gyro only.",
+              "ko": "자이로(양고기)만요."
+            },
+            {
+              "en": "Falafel, please.",
+              "ko": "팔라펠이요. (채식)"
+            }
           ]
         },
         {
@@ -364,8 +535,15 @@
           "question_ko": "흰 소스 넣을까요?",
           "tip": "흰 소스는 반드시 넣어야 해요! 이 집의 핵심.",
           "options": [
-            { "en": "Yes, a lot of white sauce please!", "ko": "네, 흰 소스 많이요!", "recommended": true },
-            { "en": "A little white sauce.", "ko": "흰 소스 조금만요." }
+            {
+              "en": "Yes, a lot of white sauce please!",
+              "ko": "네, 흰 소스 많이요!",
+              "recommended": true
+            },
+            {
+              "en": "A little white sauce.",
+              "ko": "흰 소스 조금만요."
+            }
           ]
         },
         {
@@ -374,9 +552,19 @@
           "question_ko": "핫 소스는요?",
           "tip": "핫 소스는 진짜 매워요. 처음이면 사이드로 따로 받기를 권장.",
           "options": [
-            { "en": "No hot sauce, thank you.", "ko": "핫 소스 빼주세요.", "recommended": true },
-            { "en": "A little hot sauce on the side.", "ko": "핫 소스 조금, 따로요." },
-            { "en": "Hot sauce on top.", "ko": "핫 소스 위에 뿌려주세요." }
+            {
+              "en": "No hot sauce, thank you.",
+              "ko": "핫 소스 빼주세요.",
+              "recommended": true
+            },
+            {
+              "en": "A little hot sauce on the side.",
+              "ko": "핫 소스 조금, 따로요."
+            },
+            {
+              "en": "Hot sauce on top.",
+              "ko": "핫 소스 위에 뿌려주세요."
+            }
           ]
         }
       ],
@@ -406,7 +594,7 @@
       "id": "xian-famous-foods-flushing",
       "name": "Xi'an Famous Foods",
       "category": "other",
-      "region": "queens",
+      "region": "new-york",
       "address": "41-28 Main St, Flushing, NY 11355",
       "lat": 40.7572,
       "lng": -73.8301,
@@ -421,10 +609,24 @@
           "question_ko": "무엇을 드릴까요?",
           "tip": "계산대에서 직접 주문하고 번호 받아 기다리는 방식.",
           "options": [
-            { "en": "Spicy cumin lamb noodles", "ko": "양고기 커민 국수 — 시그니처, 매콤향긋", "recommended": true },
-            { "en": "Biang Biang noodles", "ko": "비얀비얀 면 — 넓적하고 쫄깃한 손 면", "recommended": true },
-            { "en": "Liang Pi cold skin noodles", "ko": "냉피 — 차가운 쌀 면, 여름에 최고" },
-            { "en": "Pork burger (Rou Jia Mo)", "ko": "로우자모 — 중국식 고기 샌드위치" }
+            {
+              "en": "Spicy cumin lamb noodles",
+              "ko": "양고기 커민 국수 — 시그니처, 매콤향긋",
+              "recommended": true
+            },
+            {
+              "en": "Biang Biang noodles",
+              "ko": "비얀비얀 면 — 넓적하고 쫄깃한 손 면",
+              "recommended": true
+            },
+            {
+              "en": "Liang Pi cold skin noodles",
+              "ko": "냉피 — 차가운 쌀 면, 여름에 최고"
+            },
+            {
+              "en": "Pork burger (Rou Jia Mo)",
+              "ko": "로우자모 — 중국식 고기 샌드위치"
+            }
           ]
         },
         {
@@ -433,9 +635,19 @@
           "question_ko": "맵기는요?",
           "tip": "Regular도 한국인 기준 꽤 매워요. Medium 이하 추천.",
           "options": [
-            { "en": "Medium spicy", "ko": "미디엄 (보통 매운맛)", "recommended": true },
-            { "en": "Mild", "ko": "마일드 (덜 맵게)" },
-            { "en": "Regular spicy", "ko": "레귤러 (제대로 매운맛)" }
+            {
+              "en": "Medium spicy",
+              "ko": "미디엄 (보통 매운맛)",
+              "recommended": true
+            },
+            {
+              "en": "Mild",
+              "ko": "마일드 (덜 맵게)"
+            },
+            {
+              "en": "Regular spicy",
+              "ko": "레귤러 (제대로 매운맛)"
+            }
           ]
         },
         {
@@ -443,8 +655,15 @@
           "question_en": "For here or to go?",
           "question_ko": "드시고 가세요, 포장이세요?",
           "options": [
-            { "en": "For here.", "ko": "여기서 먹을게요.", "recommended": true },
-            { "en": "To go, please.", "ko": "포장이요." }
+            {
+              "en": "For here.",
+              "ko": "여기서 먹을게요.",
+              "recommended": true
+            },
+            {
+              "en": "To go, please.",
+              "ko": "포장이요."
+            }
           ]
         }
       ],
@@ -474,13 +693,14 @@
         "1인분 $12~18. 양 충분.",
         "현금+카드 모두 가능. 팁 불필요.",
         "플러싱 New World Mall 지하에도 지점 있음."
-      ]
+      ],
+      "area": "queens"
     },
     {
       "id": "joes-shanghai-flushing",
       "name": "Joe's Shanghai",
       "category": "other",
-      "region": "queens",
+      "region": "new-york",
       "address": "136-21 37th Ave, Flushing, NY 11354",
       "lat": 40.7554,
       "lng": -73.8313,
@@ -495,8 +715,15 @@
           "question_ko": "샤오롱바오는 돼지고기로 드릴까요, 게살+돼지고기로 드릴까요?",
           "tip": "게살(Pork & Crab)이 시그니처. 가격 차이 있지만 꼭 먹어볼 것.",
           "options": [
-            { "en": "Pork & Crab Xiao Long Bao", "ko": "게살+돼지고기 샤오롱바오 (시그니처)", "recommended": true },
-            { "en": "Pork Xiao Long Bao", "ko": "돼지고기 샤오롱바오 (기본)" }
+            {
+              "en": "Pork & Crab Xiao Long Bao",
+              "ko": "게살+돼지고기 샤오롱바오 (시그니처)",
+              "recommended": true
+            },
+            {
+              "en": "Pork Xiao Long Bao",
+              "ko": "돼지고기 샤오롱바오 (기본)"
+            }
           ]
         },
         {
@@ -504,9 +731,19 @@
           "question_en": "Any other dishes?",
           "question_ko": "다른 메뉴도 주문하시겠어요?",
           "options": [
-            { "en": "Pan-fried pork buns, please.", "ko": "군만두(성지엔빠오) 주세요.", "recommended": true },
-            { "en": "Shanghai rice cakes, please.", "ko": "상하이 떡볶음 주세요." },
-            { "en": "Just the dumplings, thank you.", "ko": "샤오롱바오만요." }
+            {
+              "en": "Pan-fried pork buns, please.",
+              "ko": "군만두(성지엔빠오) 주세요.",
+              "recommended": true
+            },
+            {
+              "en": "Shanghai rice cakes, please.",
+              "ko": "상하이 떡볶음 주세요."
+            },
+            {
+              "en": "Just the dumplings, thank you.",
+              "ko": "샤오롱바오만요."
+            }
           ]
         },
         {
@@ -514,8 +751,15 @@
           "question_en": "Hot tea?",
           "question_ko": "뜨거운 차 드릴까요?",
           "options": [
-            { "en": "Yes, please.", "ko": "네, 주세요.", "recommended": true },
-            { "en": "No, thank you.", "ko": "괜찮아요." }
+            {
+              "en": "Yes, please.",
+              "ko": "네, 주세요.",
+              "recommended": true
+            },
+            {
+              "en": "No, thank you.",
+              "ko": "괜찮아요."
+            }
           ]
         }
       ],
@@ -539,13 +783,14 @@
         "웨이팅 있을 수 있음. 오프피크 타임 권장.",
         "1인당 $20~30 예상. 카드+현금 가능.",
         "맨해튼 차이나타운에도 지점 있음."
-      ]
+      ],
+      "area": "queens"
     },
     {
       "id": "nan-xiang-xiao-long-bao",
       "name": "Nan Xiang Xiao Long Bao",
       "category": "other",
-      "region": "queens",
+      "region": "new-york",
       "address": "38-12 Prince St, Flushing, NY 11354",
       "lat": 40.7585,
       "lng": -73.8307,
@@ -560,9 +805,20 @@
           "question_ko": "어떤 만두로 드릴까요?",
           "tip": "New World Mall 지하 푸드코트 안에 있어요. 줄 서서 주문.",
           "options": [
-            { "en": "Pork Xiao Long Bao (6 pcs)", "ko": "돼지고기 샤오롱바오 6개", "recommended": true },
-            { "en": "Pork & Crab Xiao Long Bao (6 pcs)", "ko": "게살+돼지고기 샤오롱바오 6개", "recommended": true },
-            { "en": "Shrimp & Pork Xiao Long Bao", "ko": "새우+돼지고기 샤오롱바오" }
+            {
+              "en": "Pork Xiao Long Bao (6 pcs)",
+              "ko": "돼지고기 샤오롱바오 6개",
+              "recommended": true
+            },
+            {
+              "en": "Pork & Crab Xiao Long Bao (6 pcs)",
+              "ko": "게살+돼지고기 샤오롱바오 6개",
+              "recommended": true
+            },
+            {
+              "en": "Shrimp & Pork Xiao Long Bao",
+              "ko": "새우+돼지고기 샤오롱바오"
+            }
           ]
         },
         {
@@ -570,8 +826,15 @@
           "question_en": "Anything else?",
           "question_ko": "추가로 더 필요한 게 있으세요?",
           "options": [
-            { "en": "Pan-fried buns, please.", "ko": "군만두(성지엔빠오) 추가요.", "recommended": true },
-            { "en": "That's all.", "ko": "이게 다예요." }
+            {
+              "en": "Pan-fried buns, please.",
+              "ko": "군만두(성지엔빠오) 추가요.",
+              "recommended": true
+            },
+            {
+              "en": "That's all.",
+              "ko": "이게 다예요."
+            }
           ]
         }
       ],
@@ -595,13 +858,14 @@
         "6개 한 바구니 기준 $8~12. 가성비 최고.",
         "현금 선호. 근처 ATM 있음.",
         "주변 푸드코트에서 다양한 중국 음식도 같이 먹을 수 있어요."
-      ]
+      ],
+      "area": "queens"
     },
     {
       "id": "taverna-kyclades",
       "name": "Taverna Kyclades",
       "category": "other",
-      "region": "queens",
+      "region": "new-york",
       "address": "33-07 Ditmars Blvd, Astoria, NY 11105",
       "lat": 40.7757,
       "lng": -73.9286,
@@ -616,8 +880,15 @@
           "question_ko": "예약하셨나요?",
           "tip": "웨이팅이 길어요. 예약 필수. 예약 없으면 오픈 직후 방문.",
           "options": [
-            { "en": "Yes, reservation under [name].", "ko": "네, [이름]으로 예약했어요.", "recommended": true },
-            { "en": "No reservation. Is there a wait?", "ko": "예약 없는데요. 대기 있나요?" }
+            {
+              "en": "Yes, reservation under [name].",
+              "ko": "네, [이름]으로 예약했어요.",
+              "recommended": true
+            },
+            {
+              "en": "No reservation. Is there a wait?",
+              "ko": "예약 없는데요. 대기 있나요?"
+            }
           ]
         },
         {
@@ -625,9 +896,20 @@
           "question_en": "What would you like to start?",
           "question_ko": "시작으로 무엇을 드릴까요?",
           "options": [
-            { "en": "Grilled octopus, please.", "ko": "문어구이 주세요.", "recommended": true },
-            { "en": "Tzatziki, please.", "ko": "차치키 주세요. (요거트 딥)", "recommended": true },
-            { "en": "Saganaki, please.", "ko": "사가나키 주세요. (그리스 치즈 튀김)" }
+            {
+              "en": "Grilled octopus, please.",
+              "ko": "문어구이 주세요.",
+              "recommended": true
+            },
+            {
+              "en": "Tzatziki, please.",
+              "ko": "차치키 주세요. (요거트 딥)",
+              "recommended": true
+            },
+            {
+              "en": "Saganaki, please.",
+              "ko": "사가나키 주세요. (그리스 치즈 튀김)"
+            }
           ]
         },
         {
@@ -636,9 +918,19 @@
           "question_ko": "메인으로 어떤 생선으로 드릴까요?",
           "tip": "생선은 무게 단위로 가격이 매겨져요. 주문 전 가격 확인하기.",
           "options": [
-            { "en": "Branzino (sea bass), please.", "ko": "브란지노 (지중해 농어) 주세요.", "recommended": true },
-            { "en": "Whole grilled red snapper.", "ko": "도미 통구이 주세요." },
-            { "en": "Grilled shrimp, please.", "ko": "새우구이 주세요." }
+            {
+              "en": "Branzino (sea bass), please.",
+              "ko": "브란지노 (지중해 농어) 주세요.",
+              "recommended": true
+            },
+            {
+              "en": "Whole grilled red snapper.",
+              "ko": "도미 통구이 주세요."
+            },
+            {
+              "en": "Grilled shrimp, please.",
+              "ko": "새우구이 주세요."
+            }
           ]
         },
         {
@@ -646,9 +938,20 @@
           "question_en": "Any sides?",
           "question_ko": "사이드 메뉴는요?",
           "options": [
-            { "en": "Greek salad, please.", "ko": "그리스 샐러드 주세요.", "recommended": true },
-            { "en": "Lemon potatoes, please.", "ko": "레몬 감자 주세요.", "recommended": true },
-            { "en": "That's fine.", "ko": "됐어요." }
+            {
+              "en": "Greek salad, please.",
+              "ko": "그리스 샐러드 주세요.",
+              "recommended": true
+            },
+            {
+              "en": "Lemon potatoes, please.",
+              "ko": "레몬 감자 주세요.",
+              "recommended": true
+            },
+            {
+              "en": "That's fine.",
+              "ko": "됐어요."
+            }
           ]
         }
       ],
@@ -679,13 +982,15 @@
         "카드 OK. 팁 20% 권장.",
         "지하철 N/W선 Ditmars Blvd 역에서 도보 3분.",
         "Astoria 관광과 함께 방문 추천."
-      ]
+      ],
+      "area": "queens"
     },
     {
       "id": "los-tacos-no1",
       "name": "Los Tacos No. 1",
       "category": "taco",
-      "region": "manhattan", "area": "downtown",
+      "region": "new-york",
+      "area": "downtown",
       "address": "75 9th Ave, New York, NY 10011 (Chelsea Market)",
       "lat": 40.7424,
       "lng": -74.0048,
@@ -700,10 +1005,24 @@
           "question_ko": "어떤 타코로 드릴까요?",
           "tip": "알 파스토르는 반드시 먹어야 해요. 줄 서는 동안 메뉴 미리 정하기.",
           "options": [
-            { "en": "Al pastor", "ko": "알 파스토르 — 양념 돼지고기 (시그니처)", "recommended": true },
-            { "en": "Carne asada", "ko": "카르네 아사다 — 구운 소고기", "recommended": true },
-            { "en": "Pollo", "ko": "폴로 — 닭고기" },
-            { "en": "Adobada", "ko": "아도바다 — 매콤 돼지고기" }
+            {
+              "en": "Al pastor",
+              "ko": "알 파스토르 — 양념 돼지고기 (시그니처)",
+              "recommended": true
+            },
+            {
+              "en": "Carne asada",
+              "ko": "카르네 아사다 — 구운 소고기",
+              "recommended": true
+            },
+            {
+              "en": "Pollo",
+              "ko": "폴로 — 닭고기"
+            },
+            {
+              "en": "Adobada",
+              "ko": "아도바다 — 매콤 돼지고기"
+            }
           ]
         },
         {
@@ -711,8 +1030,15 @@
           "question_en": "Corn or flour tortilla?",
           "question_ko": "토르티야는 옥수수(corn)로 드릴까요, 밀가루(flour)로 드릴까요?",
           "options": [
-            { "en": "Corn tortilla", "ko": "콘 토르티야 (정통)", "recommended": true },
-            { "en": "Flour tortilla", "ko": "플라워 토르티야 (더 부드러움)" }
+            {
+              "en": "Corn tortilla",
+              "ko": "콘 토르티야 (정통)",
+              "recommended": true
+            },
+            {
+              "en": "Flour tortilla",
+              "ko": "플라워 토르티야 (더 부드러움)"
+            }
           ]
         },
         {
@@ -721,9 +1047,19 @@
           "question_ko": "양파랑 고수 넣어드릴까요?",
           "tip": "고수(cilantro) 싫으면 'no cilantro please'라고 하면 돼요.",
           "options": [
-            { "en": "Yes, please.", "ko": "네, 넣어주세요.", "recommended": true },
-            { "en": "No cilantro, please.", "ko": "고수 빼주세요." },
-            { "en": "No onion and cilantro.", "ko": "양파, 고수 둘 다 빼주세요." }
+            {
+              "en": "Yes, please.",
+              "ko": "네, 넣어주세요.",
+              "recommended": true
+            },
+            {
+              "en": "No cilantro, please.",
+              "ko": "고수 빼주세요."
+            },
+            {
+              "en": "No onion and cilantro.",
+              "ko": "양파, 고수 둘 다 빼주세요."
+            }
           ]
         },
         {
@@ -732,9 +1068,19 @@
           "question_ko": "몇 개 드릴까요?",
           "tip": "타코 하나가 작아요. 1인당 2~3개 권장.",
           "options": [
-            { "en": "Two, please.", "ko": "두 개요.", "recommended": true },
-            { "en": "Three, please.", "ko": "세 개요." },
-            { "en": "One, please.", "ko": "하나요." }
+            {
+              "en": "Two, please.",
+              "ko": "두 개요.",
+              "recommended": true
+            },
+            {
+              "en": "Three, please.",
+              "ko": "세 개요."
+            },
+            {
+              "en": "One, please.",
+              "ko": "하나요."
+            }
           ]
         }
       ],
@@ -776,7 +1122,8 @@
       "id": "tacombi",
       "name": "Tacombi",
       "category": "taco",
-      "region": "manhattan", "area": "downtown",
+      "region": "new-york",
+      "area": "downtown",
       "address": "255 Bleecker St, New York, NY 10014",
       "lat": 40.7317,
       "lng": -74.0029,
@@ -791,7 +1138,11 @@
           "question_ko": "주문하시겠어요?",
           "tip": "앉아서 서버가 오면 주문. Los Tacos No.1과 달리 레스토랑 방식.",
           "options": [
-            { "en": "Yes, I'd like to start with tacos.", "ko": "네, 타코로 시작할게요.", "recommended": true }
+            {
+              "en": "Yes, I'd like to start with tacos.",
+              "ko": "네, 타코로 시작할게요.",
+              "recommended": true
+            }
           ]
         },
         {
@@ -799,10 +1150,24 @@
           "question_en": "Which tacos would you like?",
           "question_ko": "어떤 타코로 드릴까요?",
           "options": [
-            { "en": "Taco de Canasta — braised pork", "ko": "타코 데 카나스타 — 브레이즈드 돼지고기", "recommended": true },
-            { "en": "Carne Asada taco", "ko": "카르네 아사다 — 구운 소고기", "recommended": true },
-            { "en": "Shrimp taco", "ko": "쉬림프 타코 — 새우" },
-            { "en": "Mushroom taco", "ko": "머쉬룸 타코 — 채식" }
+            {
+              "en": "Taco de Canasta — braised pork",
+              "ko": "타코 데 카나스타 — 브레이즈드 돼지고기",
+              "recommended": true
+            },
+            {
+              "en": "Carne Asada taco",
+              "ko": "카르네 아사다 — 구운 소고기",
+              "recommended": true
+            },
+            {
+              "en": "Shrimp taco",
+              "ko": "쉬림프 타코 — 새우"
+            },
+            {
+              "en": "Mushroom taco",
+              "ko": "머쉬룸 타코 — 채식"
+            }
           ]
         },
         {
@@ -810,9 +1175,19 @@
           "question_en": "Anything to drink?",
           "question_ko": "음료는요?",
           "options": [
-            { "en": "Horchata, please.", "ko": "오르차타 주세요. (쌀+계피 음료, 달콤)", "recommended": true },
-            { "en": "Just water, please.", "ko": "물만 주세요." },
-            { "en": "A margarita, please.", "ko": "마가리타 주세요." }
+            {
+              "en": "Horchata, please.",
+              "ko": "오르차타 주세요. (쌀+계피 음료, 달콤)",
+              "recommended": true
+            },
+            {
+              "en": "Just water, please.",
+              "ko": "물만 주세요."
+            },
+            {
+              "en": "A margarita, please.",
+              "ko": "마가리타 주세요."
+            }
           ]
         },
         {
@@ -820,8 +1195,15 @@
           "question_en": "For here?",
           "question_ko": "여기서 드시는 거죠?",
           "options": [
-            { "en": "Yes, for here.", "ko": "네, 여기서 먹을게요.", "recommended": true },
-            { "en": "To go, please.", "ko": "포장이요." }
+            {
+              "en": "Yes, for here.",
+              "ko": "네, 여기서 먹을게요.",
+              "recommended": true
+            },
+            {
+              "en": "To go, please.",
+              "ko": "포장이요."
+            }
           ]
         }
       ],
@@ -857,7 +1239,8 @@
       "id": "ippudo-ny",
       "name": "Ippudo NY",
       "category": "ramen",
-      "region": "manhattan", "area": "downtown",
+      "region": "new-york",
+      "area": "downtown",
       "address": "65 4th Ave, New York, NY 10003",
       "lat": 40.7297,
       "lng": -73.9905,
@@ -872,9 +1255,20 @@
           "question_ko": "어떤 라멘으로 드릴까요?",
           "tip": "Shiromaru가 기본. 처음이면 Shiromaru Classic 추천.",
           "options": [
-            { "en": "Shiromaru Classic", "ko": "시로마루 클래식 — 돼지뼈 기본 육수 (추천)", "recommended": true },
-            { "en": "Akamaru Modern", "ko": "아카마루 모던 — 미소+마늘 오일 가미", "recommended": true },
-            { "en": "Karaka", "ko": "카라카 — 매운 버전" }
+            {
+              "en": "Shiromaru Classic",
+              "ko": "시로마루 클래식 — 돼지뼈 기본 육수 (추천)",
+              "recommended": true
+            },
+            {
+              "en": "Akamaru Modern",
+              "ko": "아카마루 모던 — 미소+마늘 오일 가미",
+              "recommended": true
+            },
+            {
+              "en": "Karaka",
+              "ko": "카라카 — 매운 버전"
+            }
           ]
         },
         {
@@ -882,9 +1276,19 @@
           "question_en": "How would you like your noodles?",
           "question_ko": "면 익힘은 어떻게 드릴까요?",
           "options": [
-            { "en": "Firm (kata)", "ko": "하드 (카타) — 꼬들꼬들", "recommended": true },
-            { "en": "Medium (futsuu)", "ko": "미디엄 (후츠우) — 보통" },
-            { "en": "Soft (yawa)", "ko": "소프트 (야와) — 부드럽게" }
+            {
+              "en": "Firm (kata)",
+              "ko": "하드 (카타) — 꼬들꼬들",
+              "recommended": true
+            },
+            {
+              "en": "Medium (futsuu)",
+              "ko": "미디엄 (후츠우) — 보통"
+            },
+            {
+              "en": "Soft (yawa)",
+              "ko": "소프트 (야와) — 부드럽게"
+            }
           ]
         },
         {
@@ -892,9 +1296,19 @@
           "question_en": "Broth richness?",
           "question_ko": "육수 농도는요?",
           "options": [
-            { "en": "Regular", "ko": "보통", "recommended": true },
-            { "en": "Rich (koi-aji)", "ko": "진하게 (코이아지)" },
-            { "en": "Light (usui-aji)", "ko": "연하게 (우스이아지)" }
+            {
+              "en": "Regular",
+              "ko": "보통",
+              "recommended": true
+            },
+            {
+              "en": "Rich (koi-aji)",
+              "ko": "진하게 (코이아지)"
+            },
+            {
+              "en": "Light (usui-aji)",
+              "ko": "연하게 (우스이아지)"
+            }
           ]
         },
         {
@@ -903,9 +1317,20 @@
           "question_ko": "토핑 추가하시겠어요?",
           "tip": "교자(만두)는 사이드로 꼭 추천!",
           "options": [
-            { "en": "Extra chashu pork, please.", "ko": "차슈 추가요.", "recommended": true },
-            { "en": "Soft-boiled egg, please.", "ko": "반숙 달걀 추가요.", "recommended": true },
-            { "en": "No extra toppings.", "ko": "추가 토핑 없이요." }
+            {
+              "en": "Extra chashu pork, please.",
+              "ko": "차슈 추가요.",
+              "recommended": true
+            },
+            {
+              "en": "Soft-boiled egg, please.",
+              "ko": "반숙 달걀 추가요.",
+              "recommended": true
+            },
+            {
+              "en": "No extra toppings.",
+              "ko": "추가 토핑 없이요."
+            }
           ]
         }
       ],
@@ -947,7 +1372,8 @@
       "id": "totto-ramen",
       "name": "Totto Ramen",
       "category": "ramen",
-      "region": "manhattan", "area": "midtown",
+      "region": "new-york",
+      "area": "midtown",
       "address": "366 W 52nd St, New York, NY 10019",
       "lat": 40.7642,
       "lng": -73.9907,
@@ -962,9 +1388,19 @@
           "question_ko": "어떤 라멘으로 드릴까요?",
           "tip": "Chicken Paitan이 시그니처. 돼지뼈 없이 닭으로만 낸 크리미한 육수.",
           "options": [
-            { "en": "Chicken Paitan ramen", "ko": "치킨 파이탄 라멘 — 닭 뼈 크리미 육수 (시그니처)", "recommended": true },
-            { "en": "Spicy Chicken Paitan", "ko": "스파이시 치킨 파이탄 — 매운 버전" },
-            { "en": "Shoyu ramen", "ko": "쇼유 라멘 — 간장 베이스, 깔끔함" }
+            {
+              "en": "Chicken Paitan ramen",
+              "ko": "치킨 파이탄 라멘 — 닭 뼈 크리미 육수 (시그니처)",
+              "recommended": true
+            },
+            {
+              "en": "Spicy Chicken Paitan",
+              "ko": "스파이시 치킨 파이탄 — 매운 버전"
+            },
+            {
+              "en": "Shoyu ramen",
+              "ko": "쇼유 라멘 — 간장 베이스, 깔끔함"
+            }
           ]
         },
         {
@@ -972,8 +1408,15 @@
           "question_en": "Size?",
           "question_ko": "사이즈는요?",
           "options": [
-            { "en": "Regular", "ko": "레귤러", "recommended": true },
-            { "en": "Large", "ko": "라지 (+$3)" }
+            {
+              "en": "Regular",
+              "ko": "레귤러",
+              "recommended": true
+            },
+            {
+              "en": "Large",
+              "ko": "라지 (+$3)"
+            }
           ]
         },
         {
@@ -981,9 +1424,19 @@
           "question_en": "Any add-ons?",
           "question_ko": "추가 토핑 있으세요?",
           "options": [
-            { "en": "Soft-boiled egg, please.", "ko": "반숙 달걀 추가요.", "recommended": true },
-            { "en": "Extra chicken, please.", "ko": "치킨 추가요." },
-            { "en": "No add-ons.", "ko": "없어요." }
+            {
+              "en": "Soft-boiled egg, please.",
+              "ko": "반숙 달걀 추가요.",
+              "recommended": true
+            },
+            {
+              "en": "Extra chicken, please.",
+              "ko": "치킨 추가요."
+            },
+            {
+              "en": "No add-ons.",
+              "ko": "없어요."
+            }
           ]
         },
         {
@@ -991,8 +1444,15 @@
           "question_en": "Anything else?",
           "question_ko": "더 필요한 거 있으세요?",
           "options": [
-            { "en": "A chicken rice ball, please.", "ko": "치킨 라이스볼 추가요.", "recommended": true },
-            { "en": "That's all, thank you.", "ko": "이게 다예요, 감사해요." }
+            {
+              "en": "A chicken rice ball, please.",
+              "ko": "치킨 라이스볼 추가요.",
+              "recommended": true
+            },
+            {
+              "en": "That's all, thank you.",
+              "ko": "이게 다예요, 감사해요."
+            }
           ]
         }
       ],
@@ -1028,7 +1488,8 @@
       "id": "go-go-curry",
       "name": "Go Go Curry",
       "category": "other",
-      "region": "manhattan", "area": "midtown",
+      "region": "new-york",
+      "area": "midtown",
       "address": "38 W 46th St, New York, NY 10036",
       "lat": 40.7573,
       "lng": -73.9804,
@@ -1043,9 +1504,19 @@
           "question_ko": "사이즈는요?",
           "tip": "미디엄도 양이 꽤 많아요. 처음이면 미디엄 추천.",
           "options": [
-            { "en": "Medium, please.", "ko": "미디엄으로요.", "recommended": true },
-            { "en": "Large, please.", "ko": "라지로요." },
-            { "en": "Small, please.", "ko": "스몰로요." }
+            {
+              "en": "Medium, please.",
+              "ko": "미디엄으로요.",
+              "recommended": true
+            },
+            {
+              "en": "Large, please.",
+              "ko": "라지로요."
+            },
+            {
+              "en": "Small, please.",
+              "ko": "스몰로요."
+            }
           ]
         },
         {
@@ -1054,10 +1525,23 @@
           "question_ko": "토핑은 어떤 걸로 드릴까요?",
           "tip": "치킨 카츠가 가장 무난하고 인기. 새우는 추가 요금.",
           "options": [
-            { "en": "Chicken katsu, please.", "ko": "치킨 카츠로요. (인기)", "recommended": true },
-            { "en": "Pork katsu, please.", "ko": "포크 카츠로요." },
-            { "en": "Shrimp, please.", "ko": "새우로요." },
-            { "en": "Veggie, please.", "ko": "채식으로요." }
+            {
+              "en": "Chicken katsu, please.",
+              "ko": "치킨 카츠로요. (인기)",
+              "recommended": true
+            },
+            {
+              "en": "Pork katsu, please.",
+              "ko": "포크 카츠로요."
+            },
+            {
+              "en": "Shrimp, please.",
+              "ko": "새우로요."
+            },
+            {
+              "en": "Veggie, please.",
+              "ko": "채식으로요."
+            }
           ]
         },
         {
@@ -1065,9 +1549,19 @@
           "question_en": "Spice level?",
           "question_ko": "맵기는요?",
           "options": [
-            { "en": "Regular, please.", "ko": "보통으로요.", "recommended": true },
-            { "en": "Spicy, please.", "ko": "매콤하게요." },
-            { "en": "Mild, please.", "ko": "마일드로요." }
+            {
+              "en": "Regular, please.",
+              "ko": "보통으로요.",
+              "recommended": true
+            },
+            {
+              "en": "Spicy, please.",
+              "ko": "매콤하게요."
+            },
+            {
+              "en": "Mild, please.",
+              "ko": "마일드로요."
+            }
           ]
         }
       ],
@@ -1097,7 +1591,8 @@
       "id": "shake-shack-msq",
       "name": "Shake Shack",
       "category": "burger",
-      "region": "manhattan", "area": "midtown",
+      "region": "new-york",
+      "area": "midtown",
       "address": "SE Corner of Madison Square Park, New York, NY 10010",
       "lat": 40.7411,
       "lng": -73.9881,
@@ -1112,9 +1607,20 @@
           "question_ko": "무엇을 드릴까요?",
           "tip": "ShackBurger가 시그니처. 특제 ShackSauce가 들어간 기본 버거.",
           "options": [
-            { "en": "ShackBurger, please.", "ko": "쉐이크버거 주세요. (시그니처)", "recommended": true },
-            { "en": "SmokeShack, please.", "ko": "스모크쉑 주세요. (베이컨+체리페퍼)", "recommended": true },
-            { "en": "Double ShackBurger.", "ko": "더블 쉐이크버거요." }
+            {
+              "en": "ShackBurger, please.",
+              "ko": "쉐이크버거 주세요. (시그니처)",
+              "recommended": true
+            },
+            {
+              "en": "SmokeShack, please.",
+              "ko": "스모크쉑 주세요. (베이컨+체리페퍼)",
+              "recommended": true
+            },
+            {
+              "en": "Double ShackBurger.",
+              "ko": "더블 쉐이크버거요."
+            }
           ]
         },
         {
@@ -1122,9 +1628,19 @@
           "question_en": "Fries?",
           "question_ko": "감자튀김 드릴까요?",
           "options": [
-            { "en": "Crinkle-cut fries, please.", "ko": "주름 감자튀김 주세요.", "recommended": true },
-            { "en": "Cheese fries, please.", "ko": "치즈 감자튀김 주세요." },
-            { "en": "No fries, thank you.", "ko": "감자튀김 없어요." }
+            {
+              "en": "Crinkle-cut fries, please.",
+              "ko": "주름 감자튀김 주세요.",
+              "recommended": true
+            },
+            {
+              "en": "Cheese fries, please.",
+              "ko": "치즈 감자튀김 주세요."
+            },
+            {
+              "en": "No fries, thank you.",
+              "ko": "감자튀김 없어요."
+            }
           ]
         },
         {
@@ -1132,8 +1648,15 @@
           "question_en": "For here or to go?",
           "question_ko": "드시고 가세요, 포장이세요?",
           "options": [
-            { "en": "For here.", "ko": "여기서 먹을게요.", "recommended": true },
-            { "en": "To go, please.", "ko": "포장이요." }
+            {
+              "en": "For here.",
+              "ko": "여기서 먹을게요.",
+              "recommended": true
+            },
+            {
+              "en": "To go, please.",
+              "ko": "포장이요."
+            }
           ]
         }
       ],
@@ -1162,9 +1685,10 @@
       "id": "burger-joint",
       "name": "Burger Joint",
       "category": "burger",
-      "region": "manhattan", "area": "midtown",
+      "region": "new-york",
+      "area": "midtown",
       "address": "119 W 56th St (Le Parker Meridien Hotel), New York, NY 10019",
-      "lat": 40.7630,
+      "lat": 40.763,
       "lng": -73.9793,
       "tip_expected": false,
       "has_seating": true,
@@ -1177,9 +1701,19 @@
           "question_ko": "무엇으로 드릴까요?",
           "tip": "Le Parker Meridien 호텔 로비 들어가서 오른쪽 커튼 뒤를 찾으세요. 작은 표지판이 있어요!",
           "options": [
-            { "en": "Cheeseburger, please.", "ko": "치즈버거 주세요. (시그니처)", "recommended": true },
-            { "en": "Hamburger, please.", "ko": "햄버거 주세요." },
-            { "en": "Double cheeseburger.", "ko": "더블 치즈버거요." }
+            {
+              "en": "Cheeseburger, please.",
+              "ko": "치즈버거 주세요. (시그니처)",
+              "recommended": true
+            },
+            {
+              "en": "Hamburger, please.",
+              "ko": "햄버거 주세요."
+            },
+            {
+              "en": "Double cheeseburger.",
+              "ko": "더블 치즈버거요."
+            }
           ]
         },
         {
@@ -1187,9 +1721,19 @@
           "question_en": "How do you want it cooked?",
           "question_ko": "굽기는 어떻게 드릴까요?",
           "options": [
-            { "en": "Medium, please.", "ko": "미디엄으로요.", "recommended": true },
-            { "en": "Medium well.", "ko": "미디엄 웰로요." },
-            { "en": "Well done.", "ko": "웰던으로요." }
+            {
+              "en": "Medium, please.",
+              "ko": "미디엄으로요.",
+              "recommended": true
+            },
+            {
+              "en": "Medium well.",
+              "ko": "미디엄 웰로요."
+            },
+            {
+              "en": "Well done.",
+              "ko": "웰던으로요."
+            }
           ]
         },
         {
@@ -1197,8 +1741,15 @@
           "question_en": "What toppings?",
           "question_ko": "토핑은요?",
           "options": [
-            { "en": "The works — lettuce, tomato, onion, pickles, ketchup, mustard.", "ko": "다 넣어주세요.", "recommended": true },
-            { "en": "Just ketchup and mustard.", "ko": "케첩이랑 머스타드만요." }
+            {
+              "en": "The works — lettuce, tomato, onion, pickles, ketchup, mustard.",
+              "ko": "다 넣어주세요.",
+              "recommended": true
+            },
+            {
+              "en": "Just ketchup and mustard.",
+              "ko": "케첩이랑 머스타드만요."
+            }
           ]
         }
       ],
@@ -1222,7 +1773,8 @@
       "id": "levain-bakery",
       "name": "Levain Bakery",
       "category": "bakery",
-      "region": "manhattan", "area": "uptown",
+      "region": "new-york",
+      "area": "uptown",
       "address": "167 W 74th St, New York, NY 10023",
       "lat": 40.7783,
       "lng": -73.9815,
@@ -1237,10 +1789,23 @@
           "question_ko": "어떤 쿠키로 드릴까요?",
           "tip": "갓 구운 따뜻한 쿠키를 바로 받아요. 한 개만 먹어도 배불러요!",
           "options": [
-            { "en": "Chocolate chip walnut, please.", "ko": "초콜릿칩 호두 쿠키 주세요. (시그니처)", "recommended": true },
-            { "en": "Dark chocolate chocolate chip.", "ko": "다크초콜릿 초콜릿칩 주세요." },
-            { "en": "Oatmeal raisin.", "ko": "오트밀 건포도요." },
-            { "en": "Dark chocolate peanut butter chip.", "ko": "다크초콜릿 피넛버터칩이요." }
+            {
+              "en": "Chocolate chip walnut, please.",
+              "ko": "초콜릿칩 호두 쿠키 주세요. (시그니처)",
+              "recommended": true
+            },
+            {
+              "en": "Dark chocolate chocolate chip.",
+              "ko": "다크초콜릿 초콜릿칩 주세요."
+            },
+            {
+              "en": "Oatmeal raisin.",
+              "ko": "오트밀 건포도요."
+            },
+            {
+              "en": "Dark chocolate peanut butter chip.",
+              "ko": "다크초콜릿 피넛버터칩이요."
+            }
           ]
         },
         {
@@ -1248,9 +1813,19 @@
           "question_en": "How many?",
           "question_ko": "몇 개 드릴까요?",
           "options": [
-            { "en": "One, please.", "ko": "하나요.", "recommended": true },
-            { "en": "Two, please.", "ko": "두 개요." },
-            { "en": "A box of four.", "ko": "4개 박스로요." }
+            {
+              "en": "One, please.",
+              "ko": "하나요.",
+              "recommended": true
+            },
+            {
+              "en": "Two, please.",
+              "ko": "두 개요."
+            },
+            {
+              "en": "A box of four.",
+              "ko": "4개 박스로요."
+            }
           ]
         }
       ],
@@ -1274,7 +1849,8 @@
       "id": "absolute-bagels",
       "name": "Absolute Bagels",
       "category": "bagel",
-      "region": "manhattan", "area": "uptown",
+      "region": "new-york",
+      "area": "uptown",
       "address": "2788 Broadway, New York, NY 10025",
       "lat": 40.8028,
       "lng": -73.9677,
@@ -1288,10 +1864,24 @@
           "question_en": "What kind of bagel?",
           "question_ko": "어떤 베이글로 드릴까요?",
           "options": [
-            { "en": "Sesame bagel", "ko": "참깨 베이글 (여기선 특히 맛있음)", "recommended": true },
-            { "en": "Everything bagel", "ko": "에브리씽 베이글", "recommended": true },
-            { "en": "Plain bagel", "ko": "플레인 베이글" },
-            { "en": "Poppy seed bagel", "ko": "양귀비씨 베이글" }
+            {
+              "en": "Sesame bagel",
+              "ko": "참깨 베이글 (여기선 특히 맛있음)",
+              "recommended": true
+            },
+            {
+              "en": "Everything bagel",
+              "ko": "에브리씽 베이글",
+              "recommended": true
+            },
+            {
+              "en": "Plain bagel",
+              "ko": "플레인 베이글"
+            },
+            {
+              "en": "Poppy seed bagel",
+              "ko": "양귀비씨 베이글"
+            }
           ]
         },
         {
@@ -1299,8 +1889,15 @@
           "question_en": "Toasted?",
           "question_ko": "토스트 해드릴까요?",
           "options": [
-            { "en": "Yes, please.", "ko": "네, 토스트 해주세요.", "recommended": true },
-            { "en": "No, that's okay.", "ko": "아니요, 그냥이요." }
+            {
+              "en": "Yes, please.",
+              "ko": "네, 토스트 해주세요.",
+              "recommended": true
+            },
+            {
+              "en": "No, that's okay.",
+              "ko": "아니요, 그냥이요."
+            }
           ]
         },
         {
@@ -1308,10 +1905,24 @@
           "question_en": "What would you like on it?",
           "question_ko": "위에 뭘 올려드릴까요?",
           "options": [
-            { "en": "Lox and cream cheese", "ko": "록스 + 크림치즈 (강력 추천)", "recommended": true },
-            { "en": "Plain cream cheese", "ko": "플레인 크림치즈", "recommended": true },
-            { "en": "Scallion cream cheese", "ko": "파 크림치즈" },
-            { "en": "Butter", "ko": "버터" }
+            {
+              "en": "Lox and cream cheese",
+              "ko": "록스 + 크림치즈 (강력 추천)",
+              "recommended": true
+            },
+            {
+              "en": "Plain cream cheese",
+              "ko": "플레인 크림치즈",
+              "recommended": true
+            },
+            {
+              "en": "Scallion cream cheese",
+              "ko": "파 크림치즈"
+            },
+            {
+              "en": "Butter",
+              "ko": "버터"
+            }
           ]
         }
       ],
@@ -1341,7 +1952,8 @@
       "id": "grays-papaya",
       "name": "Gray's Papaya",
       "category": "other",
-      "region": "manhattan", "area": "uptown",
+      "region": "new-york",
+      "area": "uptown",
       "address": "2090 Broadway, New York, NY 10023",
       "lat": 40.7802,
       "lng": -73.9813,
@@ -1356,9 +1968,19 @@
           "question_ko": "무엇으로 드릴까요?",
           "tip": "Recession Special (핫도그 2개 + 음료 $6~7)이 가성비 최고!",
           "options": [
-            { "en": "Recession Special, please.", "ko": "리세션 스페셜 주세요. (핫도그 2개 + 음료)", "recommended": true },
-            { "en": "One hot dog, please.", "ko": "핫도그 하나요." },
-            { "en": "Two hot dogs, please.", "ko": "핫도그 두 개요." }
+            {
+              "en": "Recession Special, please.",
+              "ko": "리세션 스페셜 주세요. (핫도그 2개 + 음료)",
+              "recommended": true
+            },
+            {
+              "en": "One hot dog, please.",
+              "ko": "핫도그 하나요."
+            },
+            {
+              "en": "Two hot dogs, please.",
+              "ko": "핫도그 두 개요."
+            }
           ]
         },
         {
@@ -1366,9 +1988,19 @@
           "question_en": "Papaya drink or something else?",
           "question_ko": "파파야 주스로 드릴까요?",
           "options": [
-            { "en": "Papaya drink, please.", "ko": "파파야 주스요. (정석)", "recommended": true },
-            { "en": "Piña colada (non-alcoholic), please.", "ko": "피나콜라다 주세요. (무알콜)" },
-            { "en": "Orange drink, please.", "ko": "오렌지 음료요." }
+            {
+              "en": "Papaya drink, please.",
+              "ko": "파파야 주스요. (정석)",
+              "recommended": true
+            },
+            {
+              "en": "Piña colada (non-alcoholic), please.",
+              "ko": "피나콜라다 주세요. (무알콜)"
+            },
+            {
+              "en": "Orange drink, please.",
+              "ko": "오렌지 음료요."
+            }
           ]
         }
       ],
@@ -1413,8 +2045,15 @@
           "question_ko": "예약하셨나요?",
           "tip": "점심 피크 타임엔 예약 추천. 바 자리는 예약 없이도 가능.",
           "options": [
-            { "en": "Yes, under [name].", "ko": "네, [이름]으로 예약했어요.", "recommended": true },
-            { "en": "No reservation. Can we sit at the bar?", "ko": "예약 없는데요. 바 자리에 앉을 수 있나요?" }
+            {
+              "en": "Yes, under [name].",
+              "ko": "네, [이름]으로 예약했어요.",
+              "recommended": true
+            },
+            {
+              "en": "No reservation. Can we sit at the bar?",
+              "ko": "예약 없는데요. 바 자리에 앉을 수 있나요?"
+            }
           ]
         },
         {
@@ -1422,9 +2061,19 @@
           "question_en": "Can I start you off with something to drink?",
           "question_ko": "음료로 무엇을 드릴까요?",
           "options": [
-            { "en": "Water is fine, thank you.", "ko": "물이면 충분해요, 감사합니다.", "recommended": true },
-            { "en": "A Coke, please.", "ko": "콜라 주세요." },
-            { "en": "What do you have on draft?", "ko": "생맥주 어떤 거 있어요?" }
+            {
+              "en": "Water is fine, thank you.",
+              "ko": "물이면 충분해요, 감사합니다.",
+              "recommended": true
+            },
+            {
+              "en": "A Coke, please.",
+              "ko": "콜라 주세요."
+            },
+            {
+              "en": "What do you have on draft?",
+              "ko": "생맥주 어떤 거 있어요?"
+            }
           ]
         },
         {
@@ -1433,10 +2082,24 @@
           "question_ko": "주문하시겠어요?",
           "tip": "굴(Oysters)과 Old Ebbitt Burger가 시그니처.",
           "options": [
-            { "en": "Old Ebbitt Burger, please.", "ko": "올드 에빗 버거 주세요. (시그니처)", "recommended": true },
-            { "en": "Half dozen oysters, please.", "ko": "굴 6개 주세요.", "recommended": true },
-            { "en": "The club sandwich, please.", "ko": "클럽 샌드위치 주세요." },
-            { "en": "Could I see the specials?", "ko": "오늘의 스페셜 메뉴 알려주세요." }
+            {
+              "en": "Old Ebbitt Burger, please.",
+              "ko": "올드 에빗 버거 주세요. (시그니처)",
+              "recommended": true
+            },
+            {
+              "en": "Half dozen oysters, please.",
+              "ko": "굴 6개 주세요.",
+              "recommended": true
+            },
+            {
+              "en": "The club sandwich, please.",
+              "ko": "클럽 샌드위치 주세요."
+            },
+            {
+              "en": "Could I see the specials?",
+              "ko": "오늘의 스페셜 메뉴 알려주세요."
+            }
           ]
         }
       ],
@@ -1460,7 +2123,8 @@
         "바 자리는 예약 불필요. 혼자 방문 시 바 추천.",
         "1인당 $30~50 예상. 카드 OK. 팁 20% 권장.",
         "화이트하우스에서 도보 3분."
-      ]
+      ],
+      "area": null
     },
     {
       "id": "founding-farmers-dc",
@@ -1481,8 +2145,15 @@
           "question_ko": "예약하셨나요?",
           "tip": "주말 브런치·점심은 예약 필수. OpenTable 앱으로 사전 예약 권장.",
           "options": [
-            { "en": "Yes, under [name].", "ko": "네, [이름]으로 예약했어요.", "recommended": true },
-            { "en": "No, is there a wait?", "ko": "예약 없는데요. 대기 있나요?" }
+            {
+              "en": "Yes, under [name].",
+              "ko": "네, [이름]으로 예약했어요.",
+              "recommended": true
+            },
+            {
+              "en": "No, is there a wait?",
+              "ko": "예약 없는데요. 대기 있나요?"
+            }
           ]
         },
         {
@@ -1491,10 +2162,24 @@
           "question_ko": "주문하시겠어요?",
           "tip": "팬케이크·에그 베네딕트가 브런치 인기. 점심은 버거·샌드위치 추천.",
           "options": [
-            { "en": "The FF Burger, please.", "ko": "FF 버거 주세요.", "recommended": true },
-            { "en": "Buttermilk pancakes, please.", "ko": "버터밀크 팬케이크 주세요.", "recommended": true },
-            { "en": "Eggs Benedict, please.", "ko": "에그 베네딕트 주세요." },
-            { "en": "Farmer's Breakfast, please.", "ko": "파머스 브렉퍼스트 주세요." }
+            {
+              "en": "The FF Burger, please.",
+              "ko": "FF 버거 주세요.",
+              "recommended": true
+            },
+            {
+              "en": "Buttermilk pancakes, please.",
+              "ko": "버터밀크 팬케이크 주세요.",
+              "recommended": true
+            },
+            {
+              "en": "Eggs Benedict, please.",
+              "ko": "에그 베네딕트 주세요."
+            },
+            {
+              "en": "Farmer's Breakfast, please.",
+              "ko": "파머스 브렉퍼스트 주세요."
+            }
           ]
         },
         {
@@ -1502,9 +2187,19 @@
           "question_en": "Anything to drink?",
           "question_ko": "음료는요?",
           "options": [
-            { "en": "Fresh-squeezed OJ, please.", "ko": "생 오렌지 주스 주세요.", "recommended": true },
-            { "en": "Coffee, please.", "ko": "커피 주세요." },
-            { "en": "Just water, thanks.", "ko": "물만 주세요." }
+            {
+              "en": "Fresh-squeezed OJ, please.",
+              "ko": "생 오렌지 주스 주세요.",
+              "recommended": true
+            },
+            {
+              "en": "Coffee, please.",
+              "ko": "커피 주세요."
+            },
+            {
+              "en": "Just water, thanks.",
+              "ko": "물만 주세요."
+            }
           ]
         }
       ],
@@ -1522,7 +2217,8 @@
         "포기 바텀 역(블루/오렌지/실버선) 도보 5분.",
         "1인당 $20~35 예상. 카드 OK. 팁 18~20% 권장.",
         "브런치와 점심 메뉴 경계가 애매 — 원하는 메뉴 직접 확인하기."
-      ]
+      ],
+      "area": null
     },
     {
       "id": "district-taco-dc",
@@ -1543,10 +2239,24 @@
           "question_ko": "무엇으로 드릴까요?",
           "tip": "카운터에서 줄 서서 주문. 메뉴판 보면서 미리 결정.",
           "options": [
-            { "en": "Chicken taco, please.", "ko": "치킨 타코 주세요.", "recommended": true },
-            { "en": "Carne asada taco, please.", "ko": "카르네 아사다 타코 주세요.", "recommended": true },
-            { "en": "Al pastor taco, please.", "ko": "알 파스토르 타코 주세요." },
-            { "en": "Veggie taco, please.", "ko": "베지 타코 주세요." }
+            {
+              "en": "Chicken taco, please.",
+              "ko": "치킨 타코 주세요.",
+              "recommended": true
+            },
+            {
+              "en": "Carne asada taco, please.",
+              "ko": "카르네 아사다 타코 주세요.",
+              "recommended": true
+            },
+            {
+              "en": "Al pastor taco, please.",
+              "ko": "알 파스토르 타코 주세요."
+            },
+            {
+              "en": "Veggie taco, please.",
+              "ko": "베지 타코 주세요."
+            }
           ]
         },
         {
@@ -1554,8 +2264,15 @@
           "question_en": "Corn or flour tortilla?",
           "question_ko": "토르티야는 콘(옥수수)이요, 플라워(밀)이요?",
           "options": [
-            { "en": "Corn, please.", "ko": "콘 토르티야요.", "recommended": true },
-            { "en": "Flour, please.", "ko": "플라워 토르티야요." }
+            {
+              "en": "Corn, please.",
+              "ko": "콘 토르티야요.",
+              "recommended": true
+            },
+            {
+              "en": "Flour, please.",
+              "ko": "플라워 토르티야요."
+            }
           ]
         },
         {
@@ -1563,9 +2280,19 @@
           "question_en": "What salsa?",
           "question_ko": "살사는요?",
           "options": [
-            { "en": "Pico de gallo, please.", "ko": "피코 데 가요 주세요. (순한 토마토 살사)", "recommended": true },
-            { "en": "Salsa verde, please.", "ko": "살사 베르데요. (초록 살사)" },
-            { "en": "Habanero, please.", "ko": "하바네로요. (매우 매운 거)" }
+            {
+              "en": "Pico de gallo, please.",
+              "ko": "피코 데 가요 주세요. (순한 토마토 살사)",
+              "recommended": true
+            },
+            {
+              "en": "Salsa verde, please.",
+              "ko": "살사 베르데요. (초록 살사)"
+            },
+            {
+              "en": "Habanero, please.",
+              "ko": "하바네로요. (매우 매운 거)"
+            }
           ]
         }
       ],
@@ -1595,7 +2322,8 @@
         "셀프 살사 바에서 원하는 만큼 추가 가능.",
         "팁 카운터에 나오지만 필수 아님.",
         "Penn Quarter 위치 — 국립 조각원 공원(Sculpture Garden) 근처."
-      ]
+      ],
+      "area": null
     },
     {
       "id": "shake-shack-dc",
@@ -1604,7 +2332,7 @@
       "region": "washington",
       "address": "1216 18th St NW, Washington, DC 20036",
       "lat": 38.9099,
-      "lng": -77.0430,
+      "lng": -77.043,
       "tip_expected": false,
       "has_seating": true,
       "price_range": "$10~16",
@@ -1616,9 +2344,19 @@
           "question_ko": "무엇으로 드릴까요?",
           "tip": "ShackBurger가 시그니처. 패티 추가는 +$2~3.",
           "options": [
-            { "en": "ShackBurger, please.", "ko": "쉐이크버거 주세요. (시그니처)", "recommended": true },
-            { "en": "SmokeShack, please.", "ko": "스모크쉑 주세요. (베이컨+체리페퍼)" },
-            { "en": "Double ShackBurger, please.", "ko": "더블 쉐이크버거요." }
+            {
+              "en": "ShackBurger, please.",
+              "ko": "쉐이크버거 주세요. (시그니처)",
+              "recommended": true
+            },
+            {
+              "en": "SmokeShack, please.",
+              "ko": "스모크쉑 주세요. (베이컨+체리페퍼)"
+            },
+            {
+              "en": "Double ShackBurger, please.",
+              "ko": "더블 쉐이크버거요."
+            }
           ]
         },
         {
@@ -1626,8 +2364,15 @@
           "question_en": "Fries?",
           "question_ko": "감자튀김 드릴까요?",
           "options": [
-            { "en": "Crinkle-cut fries, please.", "ko": "주름 감자튀김 주세요.", "recommended": true },
-            { "en": "No fries, thank you.", "ko": "감자튀김 없어요." }
+            {
+              "en": "Crinkle-cut fries, please.",
+              "ko": "주름 감자튀김 주세요.",
+              "recommended": true
+            },
+            {
+              "en": "No fries, thank you.",
+              "ko": "감자튀김 없어요."
+            }
           ]
         },
         {
@@ -1635,9 +2380,19 @@
           "question_en": "Any shakes?",
           "question_ko": "쉐이크 드릴까요?",
           "options": [
-            { "en": "Vanilla shake, please.", "ko": "바닐라 쉐이크 주세요.", "recommended": true },
-            { "en": "Chocolate shake, please.", "ko": "초콜릿 쉐이크 주세요." },
-            { "en": "No shake, just a drink.", "ko": "쉐이크 말고 음료만요." }
+            {
+              "en": "Vanilla shake, please.",
+              "ko": "바닐라 쉐이크 주세요.",
+              "recommended": true
+            },
+            {
+              "en": "Chocolate shake, please.",
+              "ko": "초콜릿 쉐이크 주세요."
+            },
+            {
+              "en": "No shake, just a drink.",
+              "ko": "쉐이크 말고 음료만요."
+            }
           ]
         }
       ],
@@ -1654,7 +2409,8 @@
         "버거 1개 + 감자 + 음료 = $18~22 예상.",
         "팁 불필요 (카운터 서비스).",
         "듀폰 서클에서 도보 5분."
-      ]
+      ],
+      "area": null
     },
     {
       "id": "mitsitam-cafe",
@@ -1663,7 +2419,7 @@
       "region": "washington",
       "address": "4th St & Independence Ave SW (NMAI), Washington, DC 20560",
       "lat": 38.8888,
-      "lng": -77.0170,
+      "lng": -77.017,
       "tip_expected": false,
       "has_seating": true,
       "price_range": "$10~16",
@@ -1675,8 +2431,15 @@
           "question_ko": "각 스테이션 둘러보세요.",
           "tip": "카페테리아식 구성. 각 스테이션이 북미 원주민 전통 음식 테마.",
           "options": [
-            { "en": "I'll look around first.", "ko": "둘러보고 올게요.", "recommended": true },
-            { "en": "What do you recommend?", "ko": "추천 메뉴 있나요?" }
+            {
+              "en": "I'll look around first.",
+              "ko": "둘러보고 올게요.",
+              "recommended": true
+            },
+            {
+              "en": "What do you recommend?",
+              "ko": "추천 메뉴 있나요?"
+            }
           ]
         },
         {
@@ -1685,10 +2448,24 @@
           "question_ko": "무엇으로 드릴까요?",
           "tip": "프라이 브레드(Fry Bread)는 꼭 먹어봐야 할 원주민 전통 빵.",
           "options": [
-            { "en": "Fry bread, please.", "ko": "프라이 브레드 주세요. (원주민 전통 빵, 필수)", "recommended": true },
-            { "en": "Bison burger, please.", "ko": "바이슨 버거 주세요. (들소 버거, 이색 경험)", "recommended": true },
-            { "en": "Wild rice soup, please.", "ko": "와일드 라이스 수프 주세요." },
-            { "en": "Three Sisters stew, please.", "ko": "쓰리 시스터즈 스튜 주세요. (옥수수+콩+호박)" }
+            {
+              "en": "Fry bread, please.",
+              "ko": "프라이 브레드 주세요. (원주민 전통 빵, 필수)",
+              "recommended": true
+            },
+            {
+              "en": "Bison burger, please.",
+              "ko": "바이슨 버거 주세요. (들소 버거, 이색 경험)",
+              "recommended": true
+            },
+            {
+              "en": "Wild rice soup, please.",
+              "ko": "와일드 라이스 수프 주세요."
+            },
+            {
+              "en": "Three Sisters stew, please.",
+              "ko": "쓰리 시스터즈 스튜 주세요. (옥수수+콩+호박)"
+            }
           ]
         }
       ],
@@ -1712,7 +2489,8 @@
         "카페테리아 방식이라 여러 스테이션 메뉴 조합 가능.",
         "1인 $12~18 예상. 카드 OK.",
         "시즌별 메뉴가 바뀌어요. 이색 경험을 원한다면 강력 추천."
-      ]
+      ],
+      "area": null
     },
     {
       "id": "jaleo-dc",
@@ -1733,8 +2511,15 @@
           "question_ko": "예약하셨나요?",
           "tip": "예약 강력 권장. OpenTable에서 사전 예약. 바 자리는 워크인 가능.",
           "options": [
-            { "en": "Yes, under [name].", "ko": "네, [이름]으로 예약했어요.", "recommended": true },
-            { "en": "No reservation. Is the bar available?", "ko": "예약 없는데요. 바 자리 있나요?" }
+            {
+              "en": "Yes, under [name].",
+              "ko": "네, [이름]으로 예약했어요.",
+              "recommended": true
+            },
+            {
+              "en": "No reservation. Is the bar available?",
+              "ko": "예약 없는데요. 바 자리 있나요?"
+            }
           ]
         },
         {
@@ -1743,10 +2528,25 @@
           "question_ko": "타파스 주문하시겠어요?",
           "tip": "타파스는 작은 접시 여러 개를 나눠 먹는 방식. 2인당 4~6가지 추천.",
           "options": [
-            { "en": "Pan con tomate, please.", "ko": "판 콘 토마테 주세요. (토마토 브레드, 필수)", "recommended": true },
-            { "en": "Gambas al ajillo, please.", "ko": "감바스 알 아히요 주세요. (마늘 새우)", "recommended": true },
-            { "en": "Patatas bravas, please.", "ko": "파타타스 브라바스 주세요. (매콤 감자튀김)", "recommended": true },
-            { "en": "Jamón ibérico, please.", "ko": "하몽 이베리코 주세요. (스페인 생햄)" }
+            {
+              "en": "Pan con tomate, please.",
+              "ko": "판 콘 토마테 주세요. (토마토 브레드, 필수)",
+              "recommended": true
+            },
+            {
+              "en": "Gambas al ajillo, please.",
+              "ko": "감바스 알 아히요 주세요. (마늘 새우)",
+              "recommended": true
+            },
+            {
+              "en": "Patatas bravas, please.",
+              "ko": "파타타스 브라바스 주세요. (매콤 감자튀김)",
+              "recommended": true
+            },
+            {
+              "en": "Jamón ibérico, please.",
+              "ko": "하몽 이베리코 주세요. (스페인 생햄)"
+            }
           ]
         },
         {
@@ -1754,9 +2554,19 @@
           "question_en": "Something to drink?",
           "question_ko": "음료는요?",
           "options": [
-            { "en": "Sangria, please.", "ko": "상그리아 주세요.", "recommended": true },
-            { "en": "Sparkling water, please.", "ko": "탄산수 주세요." },
-            { "en": "Still water, thanks.", "ko": "그냥 물이요." }
+            {
+              "en": "Sangria, please.",
+              "ko": "상그리아 주세요.",
+              "recommended": true
+            },
+            {
+              "en": "Sparkling water, please.",
+              "ko": "탄산수 주세요."
+            },
+            {
+              "en": "Still water, thanks.",
+              "ko": "그냥 물이요."
+            }
           ]
         }
       ],
@@ -1780,7 +2590,8 @@
         "1인당 $30~50 예상. 카드 OK. 팁 20% 권장.",
         "Penn Quarter 위치 — 국립 조각원, 히르쉬혼 미술관 근처.",
         "호세 안드레스는 스페인 출신 세계 최고 셰프 중 한 명. DC의 명물."
-      ]
+      ],
+      "area": null
     },
     {
       "id": "eastern-market-dc",
@@ -1801,10 +2612,24 @@
           "question_ko": "무엇으로 드릴까요?",
           "tip": "각 스탠드마다 별도 주문. 돌아다니며 원하는 곳에서 주문.",
           "options": [
-            { "en": "A hot dog, please.", "ko": "핫도그 주세요.", "recommended": true },
-            { "en": "A crepe, please.", "ko": "크레이프 주세요.", "recommended": true },
-            { "en": "Half dozen oysters, please.", "ko": "굴 6개 주세요." },
-            { "en": "What's fresh today?", "ko": "오늘 뭐가 신선해요?" }
+            {
+              "en": "A hot dog, please.",
+              "ko": "핫도그 주세요.",
+              "recommended": true
+            },
+            {
+              "en": "A crepe, please.",
+              "ko": "크레이프 주세요.",
+              "recommended": true
+            },
+            {
+              "en": "Half dozen oysters, please.",
+              "ko": "굴 6개 주세요."
+            },
+            {
+              "en": "What's fresh today?",
+              "ko": "오늘 뭐가 신선해요?"
+            }
           ]
         }
       ],
@@ -1822,7 +2647,8 @@
         "스탠드별 가격 다름. 전체 예산 $10~15면 충분.",
         "현금 선호 스탠드 많음. 소액 현금 준비 추천.",
         "실내 마켓은 화~일 오전 7시~6시 운영. 월요일 휴무."
-      ]
+      ],
+      "area": null
     },
     {
       "id": "teds-bulletin-dc",
@@ -1830,7 +2656,7 @@
       "category": "deli",
       "region": "washington",
       "address": "505 8th St SE, Washington, DC 20003",
-      "lat": 38.8840,
+      "lat": 38.884,
       "lng": -76.9941,
       "tip_expected": true,
       "has_seating": true,
@@ -1842,9 +2668,19 @@
           "question_en": "Table for how many?",
           "question_ko": "몇 분이세요?",
           "options": [
-            { "en": "Just one.", "ko": "혼자요." },
-            { "en": "Two, please.", "ko": "두 명이요.", "recommended": true },
-            { "en": "Three or four.", "ko": "세 명 / 네 명이요." }
+            {
+              "en": "Just one.",
+              "ko": "혼자요."
+            },
+            {
+              "en": "Two, please.",
+              "ko": "두 명이요.",
+              "recommended": true
+            },
+            {
+              "en": "Three or four.",
+              "ko": "세 명 / 네 명이요."
+            }
           ]
         },
         {
@@ -1853,10 +2689,25 @@
           "question_ko": "주문하시겠어요?",
           "tip": "올데이 브렉퍼스트라 점심에도 아침 메뉴 주문 가능.",
           "options": [
-            { "en": "Breakfast sandwich, please.", "ko": "브렉퍼스트 샌드위치 주세요.", "recommended": true },
-            { "en": "Ted's Club sandwich, please.", "ko": "테드's 클럽 샌드위치 주세요.", "recommended": true },
-            { "en": "Griddle cakes, please.", "ko": "그리들 케이크(팬케이크) 주세요." },
-            { "en": "And a homemade Pop Tart too.", "ko": "홈메이드 팝 타르트도요. (꼭!)", "recommended": true }
+            {
+              "en": "Breakfast sandwich, please.",
+              "ko": "브렉퍼스트 샌드위치 주세요.",
+              "recommended": true
+            },
+            {
+              "en": "Ted's Club sandwich, please.",
+              "ko": "테드's 클럽 샌드위치 주세요.",
+              "recommended": true
+            },
+            {
+              "en": "Griddle cakes, please.",
+              "ko": "그리들 케이크(팬케이크) 주세요."
+            },
+            {
+              "en": "And a homemade Pop Tart too.",
+              "ko": "홈메이드 팝 타르트도요. (꼭!)",
+              "recommended": true
+            }
           ]
         },
         {
@@ -1864,9 +2715,19 @@
           "question_en": "What to drink?",
           "question_ko": "음료는요?",
           "options": [
-            { "en": "Coffee, please.", "ko": "커피 주세요.", "recommended": true },
-            { "en": "Fresh OJ, please.", "ko": "오렌지 주스요." },
-            { "en": "Water is fine.", "ko": "물이면 돼요." }
+            {
+              "en": "Coffee, please.",
+              "ko": "커피 주세요.",
+              "recommended": true
+            },
+            {
+              "en": "Fresh OJ, please.",
+              "ko": "오렌지 주스요."
+            },
+            {
+              "en": "Water is fine.",
+              "ko": "물이면 돼요."
+            }
           ]
         }
       ],
@@ -1884,7 +2745,8 @@
         "팝 타르트는 꼭 주문.",
         "1인당 $18~28 예상. 카드 OK. 팁 18~20% 권장.",
         "국회의사당에서 도보 12분."
-      ]
+      ],
+      "area": null
     },
     {
       "id": "bens-chili-bowl",
@@ -1905,10 +2767,24 @@
           "question_ko": "무엇으로 드릴까요?",
           "tip": "Half-Smoke with chili가 시그니처. 꼭 주문해야 할 1번 메뉴.",
           "options": [
-            { "en": "Half-Smoke with chili, please.", "ko": "칠리 하프 스모크 주세요. (시그니처, 필수)", "recommended": true },
-            { "en": "Chili cheese fries, please.", "ko": "칠리 치즈 프라이 주세요.", "recommended": true },
-            { "en": "Veggie dog, please.", "ko": "베지 독 주세요." },
-            { "en": "Chili burger, please.", "ko": "칠리 버거 주세요." }
+            {
+              "en": "Half-Smoke with chili, please.",
+              "ko": "칠리 하프 스모크 주세요. (시그니처, 필수)",
+              "recommended": true
+            },
+            {
+              "en": "Chili cheese fries, please.",
+              "ko": "칠리 치즈 프라이 주세요.",
+              "recommended": true
+            },
+            {
+              "en": "Veggie dog, please.",
+              "ko": "베지 독 주세요."
+            },
+            {
+              "en": "Chili burger, please.",
+              "ko": "칠리 버거 주세요."
+            }
           ]
         },
         {
@@ -1916,9 +2792,19 @@
           "question_en": "Anything to drink?",
           "question_ko": "음료는요?",
           "options": [
-            { "en": "Milkshake, please.", "ko": "밀크쉐이크 주세요.", "recommended": true },
-            { "en": "Lemonade, please.", "ko": "레모네이드요." },
-            { "en": "Soda, please.", "ko": "소다요." }
+            {
+              "en": "Milkshake, please.",
+              "ko": "밀크쉐이크 주세요.",
+              "recommended": true
+            },
+            {
+              "en": "Lemonade, please.",
+              "ko": "레모네이드요."
+            },
+            {
+              "en": "Soda, please.",
+              "ko": "소다요."
+            }
           ]
         }
       ],
@@ -1942,16 +2828,18 @@
         "U Street 지하철역(그린/옐로우선) 바로 앞.",
         "1인당 $10~18 예상. 팁 불필요 (카운터 서비스).",
         "내셔널 몰에서 약 2km — 차량·우버로 이동 추천."
-      ]
+      ],
+      "area": null
     },
     {
       "id": "dominique-ansel-bakery",
       "name": "Dominique Ansel Bakery",
       "category": "bakery",
-      "region": "manhattan", "area": "downtown",
+      "region": "new-york",
+      "area": "downtown",
       "address": "189 Spring St, New York, NY 10012",
       "lat": 40.7252,
-      "lng": -74.0000,
+      "lng": -74.0,
       "tip_expected": false,
       "has_seating": true,
       "price_range": "$6~14",
@@ -1963,10 +2851,24 @@
           "question_ko": "무엇으로 드릴까요?",
           "tip": "크로넛은 매일 한정 수량. 온라인 예약하거나 오픈 전 줄 서기 권장.",
           "options": [
-            { "en": "One Cronut, please.", "ko": "크로넛 하나요. (시그니처, 1인 2개 한도)", "recommended": true },
-            { "en": "DKA, please.", "ko": "DKA 주세요. (쿠이냥 아만 — 줄 없이 바로 구매 가능)", "recommended": true },
-            { "en": "Cookie shot, please.", "ko": "쿠키 샷 주세요. (밀크 채운 초콜릿칩 쿠키)" },
-            { "en": "Frozen S'more, please.", "ko": "프로즌 스모어 주세요." }
+            {
+              "en": "One Cronut, please.",
+              "ko": "크로넛 하나요. (시그니처, 1인 2개 한도)",
+              "recommended": true
+            },
+            {
+              "en": "DKA, please.",
+              "ko": "DKA 주세요. (쿠이냥 아만 — 줄 없이 바로 구매 가능)",
+              "recommended": true
+            },
+            {
+              "en": "Cookie shot, please.",
+              "ko": "쿠키 샷 주세요. (밀크 채운 초콜릿칩 쿠키)"
+            },
+            {
+              "en": "Frozen S'more, please.",
+              "ko": "프로즌 스모어 주세요."
+            }
           ]
         },
         {
@@ -1974,8 +2876,15 @@
           "question_en": "For here or to go?",
           "question_ko": "드시고 가세요, 포장이세요?",
           "options": [
-            { "en": "For here.", "ko": "여기서 먹을게요.", "recommended": true },
-            { "en": "To go, please.", "ko": "포장이요." }
+            {
+              "en": "For here.",
+              "ko": "여기서 먹을게요.",
+              "recommended": true
+            },
+            {
+              "en": "To go, please.",
+              "ko": "포장이요."
+            }
           ]
         }
       ],
@@ -2005,7 +2914,8 @@
       "id": "clinton-st-baking-co",
       "name": "Clinton St. Baking Co.",
       "category": "bakery",
-      "region": "manhattan", "area": "downtown",
+      "region": "new-york",
+      "area": "downtown",
       "address": "4 Clinton St, New York, NY 10002",
       "lat": 40.7191,
       "lng": -73.9835,
@@ -2020,9 +2930,19 @@
           "question_ko": "몇 분이세요?",
           "tip": "주말 웨이팅 1~2시간. 평일 오전 방문 또는 오픈 시간(8am)에 맞춰 가기.",
           "options": [
-            { "en": "Two, please.", "ko": "두 명이요.", "recommended": true },
-            { "en": "Just one.", "ko": "혼자요." },
-            { "en": "Three or four.", "ko": "세 명 / 네 명이요." }
+            {
+              "en": "Two, please.",
+              "ko": "두 명이요.",
+              "recommended": true
+            },
+            {
+              "en": "Just one.",
+              "ko": "혼자요."
+            },
+            {
+              "en": "Three or four.",
+              "ko": "세 명 / 네 명이요."
+            }
           ]
         },
         {
@@ -2031,10 +2951,24 @@
           "question_ko": "주문하시겠어요?",
           "tip": "Wild Blueberry Pancakes가 시그니처. 버터밀크 팬케이크도 인기.",
           "options": [
-            { "en": "Wild blueberry pancakes, please.", "ko": "와일드 블루베리 팬케이크 주세요. (시그니처)", "recommended": true },
-            { "en": "Buttermilk pancakes, please.", "ko": "버터밀크 팬케이크 주세요.", "recommended": true },
-            { "en": "Eggs Benedict, please.", "ko": "에그 베네딕트 주세요." },
-            { "en": "Breakfast sandwich, please.", "ko": "브렉퍼스트 샌드위치 주세요." }
+            {
+              "en": "Wild blueberry pancakes, please.",
+              "ko": "와일드 블루베리 팬케이크 주세요. (시그니처)",
+              "recommended": true
+            },
+            {
+              "en": "Buttermilk pancakes, please.",
+              "ko": "버터밀크 팬케이크 주세요.",
+              "recommended": true
+            },
+            {
+              "en": "Eggs Benedict, please.",
+              "ko": "에그 베네딕트 주세요."
+            },
+            {
+              "en": "Breakfast sandwich, please.",
+              "ko": "브렉퍼스트 샌드위치 주세요."
+            }
           ]
         },
         {
@@ -2042,9 +2976,19 @@
           "question_en": "Something to drink?",
           "question_ko": "음료는요?",
           "options": [
-            { "en": "Coffee, please.", "ko": "커피 주세요.", "recommended": true },
-            { "en": "Fresh OJ, please.", "ko": "오렌지 주스요." },
-            { "en": "Water is fine.", "ko": "물이면 돼요." }
+            {
+              "en": "Coffee, please.",
+              "ko": "커피 주세요.",
+              "recommended": true
+            },
+            {
+              "en": "Fresh OJ, please.",
+              "ko": "오렌지 주스요."
+            },
+            {
+              "en": "Water is fine.",
+              "ko": "물이면 돼요."
+            }
           ]
         }
       ],
@@ -2068,7 +3012,8 @@
       "id": "russ-and-daughters-cafe",
       "name": "Russ & Daughters Cafe",
       "category": "deli",
-      "region": "manhattan", "area": "downtown",
+      "region": "new-york",
+      "area": "downtown",
       "address": "127 Orchard St, New York, NY 10002",
       "lat": 40.7193,
       "lng": -73.9886,
@@ -2083,8 +3028,15 @@
           "question_ko": "몇 분이세요?",
           "tip": "카페는 앉아서 먹는 공간. 길 건너 본점(appetizing shop)은 테이크아웃 전문.",
           "options": [
-            { "en": "Two, please.", "ko": "두 명이요.", "recommended": true },
-            { "en": "Just one.", "ko": "혼자요." }
+            {
+              "en": "Two, please.",
+              "ko": "두 명이요.",
+              "recommended": true
+            },
+            {
+              "en": "Just one.",
+              "ko": "혼자요."
+            }
           ]
         },
         {
@@ -2093,9 +3045,20 @@
           "question_ko": "무엇으로 드릴까요?",
           "tip": "Classic Board(훈제연어 + 크림치즈 + 베이글 세트)가 시그니처. 연어 종류를 고르는 게 핵심.",
           "options": [
-            { "en": "The Classic Board, please.", "ko": "클래식 보드 주세요. (훈제연어+크림치즈+베이글 세트)", "recommended": true },
-            { "en": "Nova lox bagel, please.", "ko": "노바 록스 베이글 주세요. (부드러운 훈제연어)", "recommended": true },
-            { "en": "Super Heebster, please.", "ko": "수퍼 히브스터 주세요. (와사비 크림치즈+훈제연어)" }
+            {
+              "en": "The Classic Board, please.",
+              "ko": "클래식 보드 주세요. (훈제연어+크림치즈+베이글 세트)",
+              "recommended": true
+            },
+            {
+              "en": "Nova lox bagel, please.",
+              "ko": "노바 록스 베이글 주세요. (부드러운 훈제연어)",
+              "recommended": true
+            },
+            {
+              "en": "Super Heebster, please.",
+              "ko": "수퍼 히브스터 주세요. (와사비 크림치즈+훈제연어)"
+            }
           ]
         },
         {
@@ -2103,9 +3066,19 @@
           "question_en": "What kind of cream cheese?",
           "question_ko": "크림치즈는 어떤 걸로요?",
           "options": [
-            { "en": "Plain cream cheese.", "ko": "플레인 크림치즈요. (기본)", "recommended": true },
-            { "en": "Scallion cream cheese.", "ko": "파 크림치즈요." },
-            { "en": "Vegetable cream cheese.", "ko": "야채 크림치즈요." }
+            {
+              "en": "Plain cream cheese.",
+              "ko": "플레인 크림치즈요. (기본)",
+              "recommended": true
+            },
+            {
+              "en": "Scallion cream cheese.",
+              "ko": "파 크림치즈요."
+            },
+            {
+              "en": "Vegetable cream cheese.",
+              "ko": "야채 크림치즈요."
+            }
           ]
         }
       ],
@@ -2135,7 +3108,8 @@
       "id": "sadelles",
       "name": "Sadelle's",
       "category": "bakery",
-      "region": "manhattan", "area": "downtown",
+      "region": "new-york",
+      "area": "downtown",
       "address": "463 W Broadway, New York, NY 10012",
       "lat": 40.7263,
       "lng": -74.0012,
@@ -2150,8 +3124,15 @@
           "question_ko": "예약하셨나요?",
           "tip": "주말 브런치 예약 필수. OpenTable에서 사전 예약 권장.",
           "options": [
-            { "en": "Yes, under [name].", "ko": "네, [이름]으로 예약했어요.", "recommended": true },
-            { "en": "No, is there a wait?", "ko": "예약 없는데요. 대기 있나요?" }
+            {
+              "en": "Yes, under [name].",
+              "ko": "네, [이름]으로 예약했어요.",
+              "recommended": true
+            },
+            {
+              "en": "No, is there a wait?",
+              "ko": "예약 없는데요. 대기 있나요?"
+            }
           ]
         },
         {
@@ -2160,9 +3141,20 @@
           "question_ko": "주문하시겠어요?",
           "tip": "Lox Tower(연어 타워)가 인스타 명물. 최소 2인 이상 주문 권장.",
           "options": [
-            { "en": "The Lox Tower, please.", "ko": "록스 타워 주세요. (훈제연어 타워 세트, 인스타 명물)", "recommended": true },
-            { "en": "Bagel with cream cheese and lox, please.", "ko": "베이글에 크림치즈랑 훈제연어 주세요.", "recommended": true },
-            { "en": "Pancakes, please.", "ko": "팬케이크 주세요." }
+            {
+              "en": "The Lox Tower, please.",
+              "ko": "록스 타워 주세요. (훈제연어 타워 세트, 인스타 명물)",
+              "recommended": true
+            },
+            {
+              "en": "Bagel with cream cheese and lox, please.",
+              "ko": "베이글에 크림치즈랑 훈제연어 주세요.",
+              "recommended": true
+            },
+            {
+              "en": "Pancakes, please.",
+              "ko": "팬케이크 주세요."
+            }
           ]
         },
         {
@@ -2170,9 +3162,19 @@
           "question_en": "Any drinks?",
           "question_ko": "음료는요?",
           "options": [
-            { "en": "Coffee, please.", "ko": "커피 주세요.", "recommended": true },
-            { "en": "Fresh juice, please.", "ko": "주스 주세요." },
-            { "en": "Sparkling water.", "ko": "탄산수요." }
+            {
+              "en": "Coffee, please.",
+              "ko": "커피 주세요.",
+              "recommended": true
+            },
+            {
+              "en": "Fresh juice, please.",
+              "ko": "주스 주세요."
+            },
+            {
+              "en": "Sparkling water.",
+              "ko": "탄산수요."
+            }
           ]
         }
       ],
@@ -2196,10 +3198,11 @@
       "id": "breads-bakery",
       "name": "Breads Bakery",
       "category": "bakery",
-      "region": "manhattan", "area": "downtown",
+      "region": "new-york",
+      "area": "downtown",
       "address": "18 E 16th St, New York, NY 10003",
       "lat": 40.7367,
-      "lng": -73.9910,
+      "lng": -73.991,
       "tip_expected": false,
       "has_seating": true,
       "price_range": "$5~9",
@@ -2211,10 +3214,24 @@
           "question_ko": "무엇으로 드릴까요?",
           "tip": "초콜릿 바브카가 시그니처. 슬라이스 또는 통으로 구매 가능.",
           "options": [
-            { "en": "Chocolate babka, please.", "ko": "초콜릿 바브카 주세요. (시그니처)", "recommended": true },
-            { "en": "Cinnamon babka, please.", "ko": "시나몬 바브카 주세요." },
-            { "en": "Cheese bourekas, please.", "ko": "치즈 부레카스 주세요. (유대식 파이)", "recommended": true },
-            { "en": "One croissant, please.", "ko": "크루아상 하나요." }
+            {
+              "en": "Chocolate babka, please.",
+              "ko": "초콜릿 바브카 주세요. (시그니처)",
+              "recommended": true
+            },
+            {
+              "en": "Cinnamon babka, please.",
+              "ko": "시나몬 바브카 주세요."
+            },
+            {
+              "en": "Cheese bourekas, please.",
+              "ko": "치즈 부레카스 주세요. (유대식 파이)",
+              "recommended": true
+            },
+            {
+              "en": "One croissant, please.",
+              "ko": "크루아상 하나요."
+            }
           ]
         },
         {
@@ -2222,8 +3239,15 @@
           "question_en": "Slice or whole loaf?",
           "question_ko": "슬라이스로 드릴까요, 통으로 드릴까요?",
           "options": [
-            { "en": "A slice, please.", "ko": "슬라이스로요.", "recommended": true },
-            { "en": "A whole loaf.", "ko": "통으로요." }
+            {
+              "en": "A slice, please.",
+              "ko": "슬라이스로요.",
+              "recommended": true
+            },
+            {
+              "en": "A whole loaf.",
+              "ko": "통으로요."
+            }
           ]
         }
       ],
@@ -2253,10 +3277,11 @@
       "id": "magnolia-bakery-midtown",
       "name": "Magnolia Bakery",
       "category": "bakery",
-      "region": "manhattan", "area": "midtown",
+      "region": "new-york",
+      "area": "midtown",
       "address": "1240 6th Ave, New York, NY 10020",
       "lat": 40.7595,
-      "lng": -73.9800,
+      "lng": -73.98,
       "tip_expected": false,
       "has_seating": false,
       "price_range": "$4~7",
@@ -2268,10 +3293,24 @@
           "question_ko": "무엇으로 드릴까요?",
           "tip": "바나나 푸딩은 컵케이크만큼이나 유명. 꼭 같이 주문할 것.",
           "options": [
-            { "en": "Vanilla cupcake, please.", "ko": "바닐라 컵케이크 주세요. (시그니처)", "recommended": true },
-            { "en": "Banana pudding, please.", "ko": "바나나 푸딩 주세요. (필수)", "recommended": true },
-            { "en": "Red velvet cupcake, please.", "ko": "레드벨벳 컵케이크 주세요." },
-            { "en": "Chocolate cupcake, please.", "ko": "초콜릿 컵케이크 주세요." }
+            {
+              "en": "Vanilla cupcake, please.",
+              "ko": "바닐라 컵케이크 주세요. (시그니처)",
+              "recommended": true
+            },
+            {
+              "en": "Banana pudding, please.",
+              "ko": "바나나 푸딩 주세요. (필수)",
+              "recommended": true
+            },
+            {
+              "en": "Red velvet cupcake, please.",
+              "ko": "레드벨벳 컵케이크 주세요."
+            },
+            {
+              "en": "Chocolate cupcake, please.",
+              "ko": "초콜릿 컵케이크 주세요."
+            }
           ]
         },
         {
@@ -2279,8 +3318,15 @@
           "question_en": "Anything else?",
           "question_ko": "다른 건요?",
           "options": [
-            { "en": "That's all, thank you.", "ko": "이게 다예요, 감사합니다.", "recommended": true },
-            { "en": "One more cupcake please.", "ko": "컵케이크 하나 더요." }
+            {
+              "en": "That's all, thank you.",
+              "ko": "이게 다예요, 감사합니다.",
+              "recommended": true
+            },
+            {
+              "en": "One more cupcake please.",
+              "ko": "컵케이크 하나 더요."
+            }
           ]
         }
       ],
@@ -2310,7 +3356,8 @@
       "id": "juniors-restaurant",
       "name": "Junior's Restaurant",
       "category": "other",
-      "region": "manhattan", "area": "midtown",
+      "region": "new-york",
+      "area": "midtown",
       "address": "1515 Broadway, New York, NY 10036",
       "lat": 40.7582,
       "lng": -73.9856,
@@ -2324,8 +3371,15 @@
           "question_en": "Table for how many?",
           "question_ko": "몇 분이세요?",
           "options": [
-            { "en": "Two, please.", "ko": "두 명이요.", "recommended": true },
-            { "en": "Just one.", "ko": "혼자요." }
+            {
+              "en": "Two, please.",
+              "ko": "두 명이요.",
+              "recommended": true
+            },
+            {
+              "en": "Just one.",
+              "ko": "혼자요."
+            }
           ]
         },
         {
@@ -2334,9 +3388,20 @@
           "question_ko": "무엇으로 드릴까요?",
           "tip": "Original Plain Cheesecake가 시그니처. 한 조각도 양이 매우 많음.",
           "options": [
-            { "en": "Original cheesecake, please.", "ko": "오리지널 치즈케이크 주세요. (시그니처)", "recommended": true },
-            { "en": "Strawberry cheesecake, please.", "ko": "딸기 치즈케이크 주세요." },
-            { "en": "Cheesecake and a coffee.", "ko": "치즈케이크랑 커피요.", "recommended": true }
+            {
+              "en": "Original cheesecake, please.",
+              "ko": "오리지널 치즈케이크 주세요. (시그니처)",
+              "recommended": true
+            },
+            {
+              "en": "Strawberry cheesecake, please.",
+              "ko": "딸기 치즈케이크 주세요."
+            },
+            {
+              "en": "Cheesecake and a coffee.",
+              "ko": "치즈케이크랑 커피요.",
+              "recommended": true
+            }
           ]
         }
       ],
@@ -2360,7 +3425,8 @@
       "id": "jongro-bbq",
       "name": "Jongro BBQ",
       "category": "other",
-      "region": "manhattan", "area": "midtown",
+      "region": "new-york",
+      "area": "midtown",
       "address": "22 W 32nd St, New York, NY 10001",
       "lat": 40.7484,
       "lng": -73.9877,
@@ -2375,8 +3441,15 @@
           "question_ko": "몇 분이세요?",
           "tip": "코리아타운 32번가는 한국 식당 밀집 지역. 예약 없어도 입장 가능하지만 저녁엔 웨이팅.",
           "options": [
-            { "en": "Two, please.", "ko": "두 명이요.", "recommended": true },
-            { "en": "Four, please.", "ko": "네 명이요." }
+            {
+              "en": "Two, please.",
+              "ko": "두 명이요.",
+              "recommended": true
+            },
+            {
+              "en": "Four, please.",
+              "ko": "네 명이요."
+            }
           ]
         },
         {
@@ -2385,9 +3458,20 @@
           "question_ko": "어떤 고기로 시작하시겠어요?",
           "tip": "삼겹살+갈비 조합이 인기. 점원이 대신 구워주는 경우도 있음.",
           "options": [
-            { "en": "Samgyeopsal (pork belly), please.", "ko": "삼겹살 주세요.", "recommended": true },
-            { "en": "Galbi (short rib), please.", "ko": "갈비 주세요.", "recommended": true },
-            { "en": "Bulgogi, please.", "ko": "불고기 주세요." }
+            {
+              "en": "Samgyeopsal (pork belly), please.",
+              "ko": "삼겹살 주세요.",
+              "recommended": true
+            },
+            {
+              "en": "Galbi (short rib), please.",
+              "ko": "갈비 주세요.",
+              "recommended": true
+            },
+            {
+              "en": "Bulgogi, please.",
+              "ko": "불고기 주세요."
+            }
           ]
         },
         {
@@ -2395,9 +3479,19 @@
           "question_en": "Any sides or drinks?",
           "question_ko": "사이드나 음료는요?",
           "options": [
-            { "en": "Doenjang jjigae, please.", "ko": "된장찌개 주세요.", "recommended": true },
-            { "en": "Soju, please.", "ko": "소주 주세요." },
-            { "en": "Just water for now.", "ko": "일단 물만요." }
+            {
+              "en": "Doenjang jjigae, please.",
+              "ko": "된장찌개 주세요.",
+              "recommended": true
+            },
+            {
+              "en": "Soju, please.",
+              "ko": "소주 주세요."
+            },
+            {
+              "en": "Just water for now.",
+              "ko": "일단 물만요."
+            }
           ]
         }
       ],
@@ -2427,10 +3521,11 @@
       "id": "cafe-lalo",
       "name": "Cafe Lalo",
       "category": "coffee",
-      "region": "manhattan", "area": "uptown",
+      "region": "new-york",
+      "area": "uptown",
       "address": "201 W 83rd St, New York, NY 10024",
       "lat": 40.7853,
-      "lng": -73.9800,
+      "lng": -73.98,
       "tip_expected": true,
       "has_seating": true,
       "price_range": "$8~14",
@@ -2441,8 +3536,15 @@
           "question_en": "Table for how many?",
           "question_ko": "몇 분이세요?",
           "options": [
-            { "en": "Two, please.", "ko": "두 명이요.", "recommended": true },
-            { "en": "Just one.", "ko": "혼자요." }
+            {
+              "en": "Two, please.",
+              "ko": "두 명이요.",
+              "recommended": true
+            },
+            {
+              "en": "Just one.",
+              "ko": "혼자요."
+            }
           ]
         },
         {
@@ -2451,9 +3553,20 @@
           "question_ko": "무엇으로 드릴까요?",
           "tip": "케이크·타르트 종류가 많음. 진열장 보면서 직접 고르기.",
           "options": [
-            { "en": "A slice of cake and a coffee, please.", "ko": "케이크 한 조각이랑 커피 주세요.", "recommended": true },
-            { "en": "Cappuccino, please.", "ko": "카푸치노 주세요.", "recommended": true },
-            { "en": "Hot chocolate and a tart.", "ko": "핫초코랑 타르트요." }
+            {
+              "en": "A slice of cake and a coffee, please.",
+              "ko": "케이크 한 조각이랑 커피 주세요.",
+              "recommended": true
+            },
+            {
+              "en": "Cappuccino, please.",
+              "ko": "카푸치노 주세요.",
+              "recommended": true
+            },
+            {
+              "en": "Hot chocolate and a tart.",
+              "ko": "핫초코랑 타르트요."
+            }
           ]
         }
       ],
@@ -2477,7 +3590,8 @@
       "id": "hungarian-pastry-shop",
       "name": "Hungarian Pastry Shop",
       "category": "bakery",
-      "region": "manhattan", "area": "uptown",
+      "region": "new-york",
+      "area": "uptown",
       "address": "1030 Amsterdam Ave, New York, NY 10025",
       "lat": 40.8041,
       "lng": -73.9637,
@@ -2492,9 +3606,20 @@
           "question_ko": "무엇으로 드릴까요?",
           "tip": "셀프 주문 방식. 카운터에서 고르고 계산.",
           "options": [
-            { "en": "Coffee and a pastry, please.", "ko": "커피랑 페이스트리 주세요.", "recommended": true },
-            { "en": "Cappuccino, please.", "ko": "카푸치노 주세요." },
-            { "en": "A slice of strudel, please.", "ko": "슈트루델 한 조각요.", "recommended": true }
+            {
+              "en": "Coffee and a pastry, please.",
+              "ko": "커피랑 페이스트리 주세요.",
+              "recommended": true
+            },
+            {
+              "en": "Cappuccino, please.",
+              "ko": "카푸치노 주세요."
+            },
+            {
+              "en": "A slice of strudel, please.",
+              "ko": "슈트루델 한 조각요.",
+              "recommended": true
+            }
           ]
         }
       ],
@@ -2518,7 +3643,8 @@
       "id": "zabars",
       "name": "Zabar's",
       "category": "deli",
-      "region": "manhattan", "area": "uptown",
+      "region": "new-york",
+      "area": "uptown",
       "address": "2245 Broadway, New York, NY 10024",
       "lat": 40.7842,
       "lng": -73.9812,
@@ -2533,9 +3659,20 @@
           "question_ko": "무엇으로 드릴까요?",
           "tip": "카운터마다 담당 품목이 다름. 훈제연어는 Appetizing 카운터, 샌드위치는 Deli 카운터.",
           "options": [
-            { "en": "Lox on a bagel, please.", "ko": "베이글에 훈제연어 주세요.", "recommended": true },
-            { "en": "A smoked fish platter, please.", "ko": "훈제 생선 플래터 주세요.", "recommended": true },
-            { "en": "What coffee do you have?", "ko": "커피 어떤 거 있어요?" }
+            {
+              "en": "Lox on a bagel, please.",
+              "ko": "베이글에 훈제연어 주세요.",
+              "recommended": true
+            },
+            {
+              "en": "A smoked fish platter, please.",
+              "ko": "훈제 생선 플래터 주세요.",
+              "recommended": true
+            },
+            {
+              "en": "What coffee do you have?",
+              "ko": "커피 어떤 거 있어요?"
+            }
           ]
         },
         {
@@ -2543,8 +3680,16 @@
           "question_en": "Anything else?",
           "question_ko": "다른 건 없으세요?",
           "options": [
-            { "en": "That's all, thanks.", "ko": "이게 다예요.", "recommended": true },
-            { "en": "A rugelach too, please.", "ko": "루겔라흐도 주세요. (유대식 과자)", "recommended": true }
+            {
+              "en": "That's all, thanks.",
+              "ko": "이게 다예요.",
+              "recommended": true
+            },
+            {
+              "en": "A rugelach too, please.",
+              "ko": "루겔라흐도 주세요. (유대식 과자)",
+              "recommended": true
+            }
           ]
         }
       ],
@@ -2568,7 +3713,7 @@
       "id": "new-world-mall-food-court",
       "name": "New World Mall Food Court",
       "category": "other",
-      "region": "queens",
+      "region": "new-york",
       "address": "136-20 Roosevelt Ave B1, Flushing, NY 11354",
       "lat": 40.7576,
       "lng": -73.8309,
@@ -2583,10 +3728,24 @@
           "question_ko": "무엇으로 드릴까요?",
           "tip": "각 부스마다 별도 주문. 돌아다니며 원하는 곳에서 주문·계산.",
           "options": [
-            { "en": "One bowl of beef noodle soup.", "ko": "우육면 한 그릇 주세요. (대만식 소고기 국수)", "recommended": true },
-            { "en": "Scallion pancake, please.", "ko": "파전(총유빙) 주세요.", "recommended": true },
-            { "en": "Pork chop rice, please.", "ko": "돼지갈비 덮밥 주세요." },
-            { "en": "Bubble tea, please.", "ko": "버블티 주세요." }
+            {
+              "en": "One bowl of beef noodle soup.",
+              "ko": "우육면 한 그릇 주세요. (대만식 소고기 국수)",
+              "recommended": true
+            },
+            {
+              "en": "Scallion pancake, please.",
+              "ko": "파전(총유빙) 주세요.",
+              "recommended": true
+            },
+            {
+              "en": "Pork chop rice, please.",
+              "ko": "돼지갈비 덮밥 주세요."
+            },
+            {
+              "en": "Bubble tea, please.",
+              "ko": "버블티 주세요."
+            }
           ]
         }
       ],
@@ -2610,15 +3769,17 @@
         "현금 선호 부스 많음. $20 현금 준비 권장.",
         "팁 불필요.",
         "Xi'an Famous Foods, Joe's Shanghai 방문 후 디저트·간식 투어로 연계 추천."
-      ]
+      ],
+      "area": "queens"
     },
     {
       "id": "blue-bottle-coffee-nyc",
       "name": "Blue Bottle Coffee",
       "category": "coffee",
-      "region": "manhattan", "area": "downtown",
+      "region": "new-york",
+      "area": "downtown",
       "address": "450 W 15th St, New York, NY 10011",
-      "lat": 40.7420,
+      "lat": 40.742,
       "lng": -74.0047,
       "tip_expected": false,
       "has_seating": true,
@@ -2631,10 +3792,24 @@
           "question_ko": "무엇으로 드릴까요?",
           "tip": "New Orleans Iced Coffee가 시그니처. 핸드드립도 추천.",
           "options": [
-            { "en": "New Orleans Iced Coffee, please.", "ko": "뉴올리언스 아이스 커피 주세요. (시그니처)", "recommended": true },
-            { "en": "Single origin pour-over, please.", "ko": "싱글 오리진 핸드드립 주세요.", "recommended": true },
-            { "en": "Latte, please.", "ko": "라떼 주세요." },
-            { "en": "Cappuccino, please.", "ko": "카푸치노 주세요." }
+            {
+              "en": "New Orleans Iced Coffee, please.",
+              "ko": "뉴올리언스 아이스 커피 주세요. (시그니처)",
+              "recommended": true
+            },
+            {
+              "en": "Single origin pour-over, please.",
+              "ko": "싱글 오리진 핸드드립 주세요.",
+              "recommended": true
+            },
+            {
+              "en": "Latte, please.",
+              "ko": "라떼 주세요."
+            },
+            {
+              "en": "Cappuccino, please.",
+              "ko": "카푸치노 주세요."
+            }
           ]
         },
         {
@@ -2642,8 +3817,15 @@
           "question_en": "Hot or iced?",
           "question_ko": "따뜻하게요, 아이스로요?",
           "options": [
-            { "en": "Iced, please.", "ko": "아이스로요.", "recommended": true },
-            { "en": "Hot, please.", "ko": "따뜻하게요." }
+            {
+              "en": "Iced, please.",
+              "ko": "아이스로요.",
+              "recommended": true
+            },
+            {
+              "en": "Hot, please.",
+              "ko": "따뜻하게요."
+            }
           ]
         }
       ],
@@ -2673,7 +3855,8 @@
       "id": "intelligentsia-coffee-chelsea",
       "name": "Intelligentsia Coffee",
       "category": "coffee",
-      "region": "manhattan", "area": "downtown",
+      "region": "new-york",
+      "area": "downtown",
       "address": "75 9th Ave, New York, NY 10011 (Chelsea Market 내)",
       "lat": 40.7424,
       "lng": -74.0048,
@@ -2688,10 +3871,24 @@
           "question_ko": "무엇으로 드릴까요?",
           "tip": "Black Cat Espresso가 시그니처 블렌드. 라떼에 사용하면 고소하고 묵직한 맛.",
           "options": [
-            { "en": "Latte, please.", "ko": "라떼 주세요.", "recommended": true },
-            { "en": "Black Cat Americano, please.", "ko": "블랙캣 아메리카노 주세요.", "recommended": true },
-            { "en": "Pour-over, please.", "ko": "핸드드립 주세요." },
-            { "en": "Cold brew, please.", "ko": "콜드브루 주세요." }
+            {
+              "en": "Latte, please.",
+              "ko": "라떼 주세요.",
+              "recommended": true
+            },
+            {
+              "en": "Black Cat Americano, please.",
+              "ko": "블랙캣 아메리카노 주세요.",
+              "recommended": true
+            },
+            {
+              "en": "Pour-over, please.",
+              "ko": "핸드드립 주세요."
+            },
+            {
+              "en": "Cold brew, please.",
+              "ko": "콜드브루 주세요."
+            }
           ]
         },
         {
@@ -2699,8 +3896,15 @@
           "question_en": "Hot or iced?",
           "question_ko": "따뜻하게요, 아이스로요?",
           "options": [
-            { "en": "Iced, please.", "ko": "아이스로요.", "recommended": true },
-            { "en": "Hot, please.", "ko": "따뜻하게요." }
+            {
+              "en": "Iced, please.",
+              "ko": "아이스로요.",
+              "recommended": true
+            },
+            {
+              "en": "Hot, please.",
+              "ko": "따뜻하게요."
+            }
           ]
         },
         {
@@ -2708,9 +3912,19 @@
           "question_en": "Milk preference?",
           "question_ko": "우유는요?",
           "options": [
-            { "en": "Whole milk.", "ko": "일반 우유요.", "recommended": true },
-            { "en": "Oat milk, please.", "ko": "오트밀크요." },
-            { "en": "Almond milk, please.", "ko": "아몬드밀크요." }
+            {
+              "en": "Whole milk.",
+              "ko": "일반 우유요.",
+              "recommended": true
+            },
+            {
+              "en": "Oat milk, please.",
+              "ko": "오트밀크요."
+            },
+            {
+              "en": "Almond milk, please.",
+              "ko": "아몬드밀크요."
+            }
           ]
         }
       ],
@@ -2734,10 +3948,11 @@
       "id": "la-colombe-tribeca",
       "name": "La Colombe Coffee",
       "category": "coffee",
-      "region": "manhattan", "area": "downtown",
+      "region": "new-york",
+      "area": "downtown",
       "address": "319 Church St, New York, NY 10013",
       "lat": 40.7194,
-      "lng": -74.0030,
+      "lng": -74.003,
       "tip_expected": false,
       "has_seating": true,
       "price_range": "$5~8",
@@ -2749,10 +3964,24 @@
           "question_ko": "무엇으로 드릴까요?",
           "tip": "Draft Latte가 이 곳의 발명품. 질소로 거품 낸 생크림 라떼. 꼭 먹어봐야 할 메뉴.",
           "options": [
-            { "en": "Draft Latte, please.", "ko": "드래프트 라떼 주세요. (원조, 필수)", "recommended": true },
-            { "en": "Pure Black cold brew, please.", "ko": "퓨어 블랙 콜드브루 주세요.", "recommended": true },
-            { "en": "Cortado, please.", "ko": "코르타도 주세요." },
-            { "en": "Cappuccino, please.", "ko": "카푸치노 주세요." }
+            {
+              "en": "Draft Latte, please.",
+              "ko": "드래프트 라떼 주세요. (원조, 필수)",
+              "recommended": true
+            },
+            {
+              "en": "Pure Black cold brew, please.",
+              "ko": "퓨어 블랙 콜드브루 주세요.",
+              "recommended": true
+            },
+            {
+              "en": "Cortado, please.",
+              "ko": "코르타도 주세요."
+            },
+            {
+              "en": "Cappuccino, please.",
+              "ko": "카푸치노 주세요."
+            }
           ]
         },
         {
@@ -2760,8 +3989,15 @@
           "question_en": "For here or to go?",
           "question_ko": "드시고 가세요, 포장이세요?",
           "options": [
-            { "en": "For here.", "ko": "여기서 먹을게요.", "recommended": true },
-            { "en": "To go, please.", "ko": "포장이요." }
+            {
+              "en": "For here.",
+              "ko": "여기서 먹을게요.",
+              "recommended": true
+            },
+            {
+              "en": "To go, please.",
+              "ko": "포장이요."
+            }
           ]
         }
       ],
@@ -2791,7 +4027,8 @@
       "id": "dallas-bbq-times-square",
       "name": "Dallas BBQ Times Square",
       "category": "other",
-      "region": "manhattan", "area": "midtown",
+      "region": "new-york",
+      "area": "midtown",
       "address": "241 W 42nd St, New York, NY 10036",
       "lat": 40.7571,
       "lng": -73.9913,
@@ -2806,8 +4043,16 @@
           "question_ko": "몇 분이세요?",
           "tip": "인원수에 따라 자리 안내. 웨이팅 있을 수 있음.",
           "options": [
-            { "en": "Two, please.", "ko": "두 명이요.", "recommended": false },
-            { "en": "Four, please.", "ko": "네 명이요.", "recommended": false }
+            {
+              "en": "Two, please.",
+              "ko": "두 명이요.",
+              "recommended": false
+            },
+            {
+              "en": "Four, please.",
+              "ko": "네 명이요.",
+              "recommended": false
+            }
           ]
         },
         {
@@ -2816,9 +4061,21 @@
           "question_ko": "주문 받아도 될까요?",
           "tip": "Baby Back Ribs(베이비백 립)가 대표 메뉴. Half rack(하프 랙)으로도 주문 가능.",
           "options": [
-            { "en": "Can I get the Half Rack of Baby Back Ribs?", "ko": "베이비백 립 하프 랙 주세요.", "recommended": true },
-            { "en": "I'll have the BBQ Chicken platter.", "ko": "BBQ 치킨 플래터 주세요.", "recommended": true },
-            { "en": "Can I get the Combo platter for two?", "ko": "2인 콤보 플래터 주세요.", "recommended": false }
+            {
+              "en": "Can I get the Half Rack of Baby Back Ribs?",
+              "ko": "베이비백 립 하프 랙 주세요.",
+              "recommended": true
+            },
+            {
+              "en": "I'll have the BBQ Chicken platter.",
+              "ko": "BBQ 치킨 플래터 주세요.",
+              "recommended": true
+            },
+            {
+              "en": "Can I get the Combo platter for two?",
+              "ko": "2인 콤보 플래터 주세요.",
+              "recommended": false
+            }
           ]
         },
         {
@@ -2827,9 +4084,21 @@
           "question_ko": "사이드 메뉴는 뭘로 하시겠어요?",
           "tip": "콘브레드, 코울슬로, 맥앤치즈가 인기 사이드.",
           "options": [
-            { "en": "Mac and cheese, please.", "ko": "맥앤치즈 주세요.", "recommended": true },
-            { "en": "Coleslaw, please.", "ko": "코울슬로 주세요.", "recommended": false },
-            { "en": "Corn bread, please.", "ko": "콘브레드 주세요.", "recommended": false }
+            {
+              "en": "Mac and cheese, please.",
+              "ko": "맥앤치즈 주세요.",
+              "recommended": true
+            },
+            {
+              "en": "Coleslaw, please.",
+              "ko": "코울슬로 주세요.",
+              "recommended": false
+            },
+            {
+              "en": "Corn bread, please.",
+              "ko": "콘브레드 주세요.",
+              "recommended": false
+            }
           ]
         }
       ],
@@ -2853,7 +4122,8 @@
       "id": "cava-midtown",
       "name": "CAVA",
       "category": "other",
-      "region": "manhattan", "area": "midtown",
+      "region": "new-york",
+      "area": "midtown",
       "address": "11 W 42nd St, New York, NY 10036",
       "lat": 40.7536,
       "lng": -73.9822,
@@ -2868,9 +4138,21 @@
           "question_ko": "베이스 선택해 주세요.",
           "tip": "그레인볼(Grain Bowl)이 가장 인기. 탄수화물 조절 원하면 Greens(샐러드 베이스) 선택.",
           "options": [
-            { "en": "Grain bowl, please.", "ko": "그레인볼로 주세요.", "recommended": true },
-            { "en": "Greens base, please.", "ko": "그린스(샐러드) 베이스로 주세요.", "recommended": false },
-            { "en": "Pita, please.", "ko": "피타(랩)로 주세요.", "recommended": false }
+            {
+              "en": "Grain bowl, please.",
+              "ko": "그레인볼로 주세요.",
+              "recommended": true
+            },
+            {
+              "en": "Greens base, please.",
+              "ko": "그린스(샐러드) 베이스로 주세요.",
+              "recommended": false
+            },
+            {
+              "en": "Pita, please.",
+              "ko": "피타(랩)로 주세요.",
+              "recommended": false
+            }
           ]
         },
         {
@@ -2879,9 +4161,21 @@
           "question_ko": "단백질(프로틴) 선택해 주세요.",
           "tip": "Grilled Chicken(그릴드 치킨)과 Falafel(팔라펠)이 대표. 스파이시 램 미트볼도 강추.",
           "options": [
-            { "en": "Grilled chicken, please.", "ko": "그릴드 치킨이요.", "recommended": true },
-            { "en": "Spicy lamb meatballs, please.", "ko": "스파이시 램 미트볼이요.", "recommended": true },
-            { "en": "Falafel, please.", "ko": "팔라펠이요.", "recommended": false }
+            {
+              "en": "Grilled chicken, please.",
+              "ko": "그릴드 치킨이요.",
+              "recommended": true
+            },
+            {
+              "en": "Spicy lamb meatballs, please.",
+              "ko": "스파이시 램 미트볼이요.",
+              "recommended": true
+            },
+            {
+              "en": "Falafel, please.",
+              "ko": "팔라펠이요.",
+              "recommended": false
+            }
           ]
         },
         {
@@ -2890,8 +4184,16 @@
           "question_ko": "딥소스 추가하시겠어요?",
           "tip": "Hummus(후무스)와 Tzatziki(차치키)는 기본 무료 추가. 둘 다 넣으면 풍미 업.",
           "options": [
-            { "en": "Hummus and tzatziki, please.", "ko": "후무스랑 차치키 둘 다 주세요.", "recommended": true },
-            { "en": "Just hummus, please.", "ko": "후무스만 주세요.", "recommended": false }
+            {
+              "en": "Hummus and tzatziki, please.",
+              "ko": "후무스랑 차치키 둘 다 주세요.",
+              "recommended": true
+            },
+            {
+              "en": "Just hummus, please.",
+              "ko": "후무스만 주세요.",
+              "recommended": false
+            }
           ]
         },
         {
@@ -2900,7 +4202,11 @@
           "question_ko": "토핑 추가하시겠어요?",
           "tip": "Pickled onions(피클드 어니언), Cucumber(오이), Tomato 추천. 다 무료.",
           "options": [
-            { "en": "Pickled onions, cucumber, and tomato please.", "ko": "피클드 어니언, 오이, 토마토 넣어주세요.", "recommended": true }
+            {
+              "en": "Pickled onions, cucumber, and tomato please.",
+              "ko": "피클드 어니언, 오이, 토마토 넣어주세요.",
+              "recommended": true
+            }
           ]
         },
         {
@@ -2909,8 +4215,16 @@
           "question_ko": "드레싱 선택해 주세요.",
           "tip": "Lemon Herb Tahini(레몬 허브 타히니)가 가장 무난하고 인기 있음.",
           "options": [
-            { "en": "Lemon herb tahini, please.", "ko": "레몬 허브 타히니요.", "recommended": true },
-            { "en": "Greek vinaigrette, please.", "ko": "그릭 비네그레트요.", "recommended": false }
+            {
+              "en": "Lemon herb tahini, please.",
+              "ko": "레몬 허브 타히니요.",
+              "recommended": true
+            },
+            {
+              "en": "Greek vinaigrette, please.",
+              "ko": "그릭 비네그레트요.",
+              "recommended": false
+            }
           ]
         }
       ],

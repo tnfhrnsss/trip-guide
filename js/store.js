@@ -1,37 +1,19 @@
-const CAT_LABELS = {
-  bagel:  '🥯 베이글',
-  pizza:  '🍕 피자',
-  deli:   '🥪 델리',
-  coffee: '☕ 커피',
-  taco:   '🌮 타코',
-  ramen:  '🍜 라멘',
-  other:  '🍽️ 기타',
-};
-const REGION_LABELS = {
-  manhattan:  'Manhattan',
-  queens:     'Queens',
-  washington: 'Washington D.C.',
-  niagara:    'Niagara',
-};
-
 async function loadStore(id) {
-  const res = await fetch('data/stores.json');
-  const json = await res.json();
-  return json.stores.find(s => s.id === id) || null;
+  const stores = await loadData('stores.json', 'stores');
+  return stores.find(s => s.id === id) || null;
 }
 
 function renderHeader(s) {
-  document.title = `${s.name} - NYC Guide`;
+  document.title = `${s.name} - Trip Guide`;
   document.getElementById('hdr-name').textContent = s.name;
   document.getElementById('store-detail-name').textContent = s.name;
   document.getElementById('store-detail-desc').textContent = s.description;
-  const mapsUrl = `https://maps.google.com/?q=${encodeURIComponent(s.address)}`;
   document.getElementById('store-detail-address').innerHTML =
-    `<a href="${mapsUrl}" target="_blank" rel="noopener noreferrer">📍 ${s.address}</a>`;
+    `<a href="${mapsUrl(s.address)}" target="_blank" rel="noopener noreferrer">📍 ${s.address}</a>`;
 
   document.getElementById('store-detail-meta').innerHTML = `
-    <span class="meta-tag">${CAT_LABELS[s.category] || s.category}</span>
-    <span class="meta-tag">📍 ${REGION_LABELS[s.region] || s.region}</span>
+    <span class="meta-tag">${catLabel('store', s.category)}</span>
+    <span class="meta-tag">📍 ${placeName(s)}</span>
     ${s.tip_expected ? '<span class="meta-tag">🪙 Tip</span>' : ''}
     ${s.has_seating  ? '<span class="meta-tag">🪑</span>' : ''}
   `;
@@ -97,6 +79,7 @@ async function init() {
   const id = new URLSearchParams(location.search).get('id');
   if (!id) { location.href = 'index.html'; return; }
 
+  await loadGeo();
   const store = await loadStore(id);
   if (!store) { location.href = 'index.html'; return; }
 
